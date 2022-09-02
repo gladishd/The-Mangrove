@@ -1,3 +1,5 @@
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
 # Da-Repo
 
 Oof. Like the mouse spinners on the drop-down wheel, hmm we're getting somewhere or do we need to say so ourselves? Because it should be self-evident that we are unannounced, our Type 1 and Type 2 Signup Page at the push of a button... instead of requiring the users to fill everything out explicitly we just ask them on one page... could you envision sign-up flow across multiple pages?!?
