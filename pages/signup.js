@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
       </Head>
 
-      <div className="login-page">
+      <a href="/" className="login-page">
         <div className="form">
 
           <form>
@@ -39,7 +39,7 @@ export default function Home() {
             >SIGN UP</button>
           </form>
         </div>
-      </div>
+      </a>
 
       <footer>
         <a

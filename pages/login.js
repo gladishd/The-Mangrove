@@ -15,9 +15,8 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
       </Head>
 
-      <div className="login-page">
+      <a href="/" className="login-page">
         <div className="form">
-
           <form>
             <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json" background="transparent" speed="1" style={{ justifyContent: "center" }} loop autoplay></lottie-player>
             <input type="text" placeholder="&#xf007;  username" />
@@ -39,7 +38,7 @@ export default function Home() {
             >SIGN UP</button>
           </form>
         </div>
-      </div>
+      </a>
 
       <footer>
         <a
@@ -197,6 +196,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </div >
   )
 }
