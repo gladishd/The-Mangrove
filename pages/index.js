@@ -13,6 +13,7 @@ export default class Home extends React.Component {
       display: 'inline-block',
       background: 'linear-gradient(135deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b)',
       '--m': "conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom/80px 51% repeat-x, conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top /80px 51% repeat-x",
+      width: '100vw !important'
     }}>
       <Snowfall />
       <Head>
