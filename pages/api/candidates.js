@@ -40,6 +40,7 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 var db = firebaseApp.firestore()
 export default async function handler(req, res) {
+  // if req.method === 'POST' ... await db.create
   if (req.method === 'GET') {
     // Process a POST request
     let body = req.body
