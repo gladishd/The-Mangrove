@@ -1,3 +1,25 @@
+import SweetAlert2 from 'sweetalert2'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBu8wpxB_YbIjI1Tw8lx1gjffuJ6YYpKr0",
+  authDomain: "the-midway-b98d8.firebaseapp.com",
+  databaseURL: "https://the-midway-b98d8-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "the-midway-b98d8",
+  storageBucket: "the-midway-b98d8.appspot.com",
+  messagingSenderId: "248441553393",
+  appId: "1:248441553393:web:493dc767adb2bfd5918450",
+  measurementId: "G-3WJ6SFM1XC"
+};
+
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+var firebaseDB = firebaseApp.firestore()
+
+
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import DropdownButton from 'react-bootstrap/DropdownButton'
@@ -16,6 +38,7 @@ export default class SignupPolitician extends React.Component {
 
   async submitForm(e) {
     e.preventDefault() // prevents the page from refreshing
+    console.log('Reaches the submitForm function')
     let formBasicEmail = e.target.elements.formBasicEmail.value
     let formBasicPassword = e.target.elements.formBasicPassword.value
     let formBasicPasswordConfirm = e.target.elements.formBasicPasswordConfirm.value
@@ -34,6 +57,60 @@ export default class SignupPolitician extends React.Component {
       formLastName,
       formBasicCheckbox
     })
+
+    try {
+      let response = await axios.post(
+        '/api/sessions',
+        { user: { email: formBasicEmail } },
+        { withCredentials: true }
+      )
+      console.log('The current signup response is ', response)
+      response = await axios.post(
+        '/api/userDatabase',
+        {
+          fieldOne: "testing field one",
+          fieldTwo: "testing field two",
+        },
+        { withCredentials: true }
+      )
+      if (response.data.error) {
+        throw new Error(response.data.error)
+      }
+      firebaseApp.auth()
+        .createUserWithEmailAndPassword(formBasicEmail, formBasicPassword)
+        .then(async response => {
+          firebase.auth()
+            .signInWithEmailAndPassword(formBasicEmail, formBasicPassword)
+            .then(async response => {
+              Router.push('/profilePage')
+            })
+            .catch(err => {
+              let e = `${err}`;
+              if (e.length > 7) {
+                e = e.substring(7)
+              }
+              new SweetAlert2({
+                title: "Hold On!",
+                text: e,
+                icon: "warning",
+                button: "OK",
+              });
+            })
+        }).catch(err => {
+          let e = `${err}`;
+          if (e.length > 7) {
+            e = e.substring(7)
+          }
+          new SweetAlert2({
+            title: "Hold On!",
+            text: e,
+            icon: "warning",
+            button: "OK",
+          });
+        })
+    } catch (err) {
+      console.error(err)
+    }
   }
 
   render() {

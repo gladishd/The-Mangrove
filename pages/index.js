@@ -7,8 +7,62 @@ import {
 } from 'react-bootstrap'
 import Snowfall from 'react-snowfall'
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBu8wpxB_YbIjI1Tw8lx1gjffuJ6YYpKr0",
+  authDomain: "the-midway-b98d8.firebaseapp.com",
+  databaseURL: "https://the-midway-b98d8-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "the-midway-b98d8",
+  storageBucket: "the-midway-b98d8.appspot.com",
+  messagingSenderId: "248441553393",
+  appId: "1:248441553393:web:493dc767adb2bfd5918450",
+  measurementId: "G-3WJ6SFM1XC"
+};
+
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import axios from 'axios'
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+var firebaseDB = firebaseApp.firestore()
+
 
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      userProfile: null,
+      username: null,
+      password: null,
+    }
+    this.login = this.login.bind(this)
+  }
+
+  login = async e => {
+    e.preventDefault()
+
+    console.log("heiheih", this.state)
+    let { username, password } = this.state
+
+    console.log("username and password are ", username, password)
+
+    console.log("process.env.API_URL is ", process.env.API_URL)
+
+    firebaseApp.auth().signInWithEmailAndPassword(username, password).then(async response => {
+      var response = await axios.post(
+        '/api/sessions',
+        { user: { email: username.toLowerCase() } },
+        { withCredentials: true }
+      )
+      console.log("The response is ", response)
+      Router.push('/profilePage')
+    })
+      .catch(err => {
+        alert(err)
+      })
+  }
+
   render() {
     return <div className="container" style={{
       background: "rgb(250,250,250)",
@@ -53,15 +107,15 @@ export default class Home extends React.Component {
 
             <br /><br />
 
-            <input type="email" id="email" name="email" placeholder="Username or Email" />
+            <input onChange={e => this.setState({ username: e.target.value })} type="email" id="email" name="email" placeholder="Username or Email" />
 
             <br /><br />
 
-            <input type="password" id="password" name="password" placeholder="Password" />
+            <input onChange={e => this.setState({ password: e.target.value })} type="password" id="password" name="password" placeholder="Password" />
             <br /><br />
 
             <center>
-              <button style={{ fontSize: '1em', fontWeight: 'bolder', width: '100px' }}>Login</button>
+              <button onClick={e => this.login(e)} style={{ fontSize: '1em', fontWeight: 'bolder', width: '100px' }}>Login</button>
             </center>
           </div>
 
