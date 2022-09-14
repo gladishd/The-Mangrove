@@ -1,10 +1,16 @@
+import { parseCookies } from "../helpers/"
+
 import Head from 'next/head'
 
-export default function Home() {
+export default function LoginPage({ data }) {
   return (
     <div className="container">
       <Head>
         <title>Login</title>
+        <div>
+          <h1>Homepage </h1>
+          <p>Data from cookie: {data.user}</p>
+        </div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="login_style.css" />
@@ -199,3 +205,27 @@ export default function Home() {
     </div >
   )
 }
+
+LoginPage.getInitialProps = async ({ req, res }) => {
+  const data = parseCookies(req)
+
+  console.log("what is the data?")
+
+  if (res) {
+    console.log('Does res exist? ', res)
+    /* If the data object is empty,
+       it means the cookie isn't valid.
+       If the cookie isn't valid,
+       we then redirect the user back to the index page rather than showing a flash of the HomePage before redirecting the user.
+       How to use cookies for persisting users in Nextjs - DEV Community 👩‍💻👨 https://dev.to/debosthefirst/how-to-use-cookies-for-persisting-users-in-nextjs-4617 */
+    if (Object.keys(data).length === 0 && data.constructor === Object) {
+      res.writeHead(301, { Location: "/" })
+      res.end()
+    }
+  }
+
+  return {
+    data: data && data,
+  }
+}
+
