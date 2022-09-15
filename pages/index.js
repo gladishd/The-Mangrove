@@ -35,6 +35,7 @@ export default class Home extends React.Component {
       userProfile: null,
       username: null,
       password: null,
+      cookieValue: null,
     }
     this.login = this.login.bind(this)
   }
@@ -42,7 +43,6 @@ export default class Home extends React.Component {
   login = async e => {
     e.preventDefault()
 
-    console.log("heiheih", this.state)
     let { username, password } = this.state
 
     console.log("username and password are ", username, password)
@@ -81,7 +81,6 @@ export default class Home extends React.Component {
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
 
         <main style={{ zIndex: '3' }}>
 

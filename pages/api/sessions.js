@@ -28,18 +28,18 @@ export default async function handler(req, res) {
   console.log("we are here")
   let response = []
   if (req.method === 'POST') {
-    // await db.collection('new-users')
-    //   .get()
-    //   .then(function (querySnapshot) {
-    //     querySnapshot.forEach(function (doc) {
-    //       response.push(doc.data())
-    //     })
-    //   })
+    await db.collection('new-users')
+      .get()
+      .then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+          response.push(doc.data())
+        })
+      })
     console.log('on the route /api/sessions, the user request body is ', req.body)
     console.log(user)
     var user = req.body.user
     console.log(user)
-    req.session.user = { email: user.email }
+    // req.session.user = { email: user.email }
     console.log('on /auth/setLogin, the req.session is  ', req.session)
     res.status(200).json({ success: "success" })
   }
