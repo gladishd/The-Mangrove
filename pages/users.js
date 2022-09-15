@@ -35,7 +35,6 @@ export default class Users extends React.Component {
   }
 
   render() {
-    console.log(!!this.state.cookieValue)
     return <div style={{
       display: 'flex',
       flexDirection: 'row',
