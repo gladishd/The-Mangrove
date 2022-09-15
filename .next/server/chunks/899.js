@@ -1,0 +1,29 @@
+"use strict";
+exports.id = 899;
+exports.ids = [899];
+exports.modules = {
+
+/***/ 6899:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+const Sequelize = __webpack_require__(496);
+const pkg = __webpack_require__(3430);
+const databaseName = pkg.name + ( false ? 0 : "");
+const database = new Sequelize(process.env.DATABASE_URL || `postgres://localhost:3000/${databaseName}`, {
+    logging: false
+});
+module.exports = database;
+
+
+/***/ }),
+
+/***/ 3430:
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"name":"example-app","description":"a really cool app","version":"1.0.0","engines":{"node":"16.17.0"},"private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"express":"^4.18.1","firebase-admin":"^11.0.1","next":"latest","pg":"^8.8.0","react":"17.0.2","react-bootstrap":"^2.5.0","react-dom":"17.0.2","react-snowfall":"^1.2.1","sequelize":"^6.21.4","sweetalert":"^2.1.2"},"devDependencies":{"axios":"^0.27.2","cookie":"^0.5.0","cookie-parser":"^1.4.6","express-session":"^1.17.3","firebase":"^9.9.4","firebase-admin":"^11.0.1","pg":"^8.8.0","react-bootstrap":"^2.5.0","react-cookie":"^4.1.1","sequelize":"^6.21.4","sweetalert2":"^11.4.33","universal-cookie":"^4.0.4"}}');
+
+/***/ })
+
+};
+;
