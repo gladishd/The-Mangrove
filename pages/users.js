@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React from 'react'
-import ViewCookie from './ViewCookie.js'
+import CookieView from './CookieView.js'
 
 export default class Users extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ export default class Users extends React.Component {
       flexWrap: 'wrap',
       backgroundColor: 'rgb(250,250,250)'
     }}>
-      <ViewCookie propsFn={this.dataFetchPoliticians} />
+      <CookieView propsFn={this.dataFetchPoliticians} />
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, go to /loginCookies and press the text box."
       }
