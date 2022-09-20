@@ -1,11 +1,16 @@
 import Head from 'next/head'
 import React from 'react'
 import Router from 'next/router'
+import { instanceOf } from 'prop-types';
 
 import {
   Navbar,
 } from 'react-bootstrap'
 import Snowfall from 'react-snowfall'
+
+// import { withCookies, Cookies } from "react-cookie"
+
+import { Cookies } from "react-cookie"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBu8wpxB_YbIjI1Tw8lx1gjffuJ6YYpKr0",
@@ -29,15 +34,26 @@ var firebaseDB = firebaseApp.firestore()
 
 
 export default class Home extends React.Component {
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  };
   constructor(props) {
     super(props)
+    const { cookies } = props;
     this.state = {
+      name: cookies && cookies.get('name') || 'Ben',
       userProfile: null,
       username: null,
       password: null,
       cookieValue: null,
+      allProps: props,
+      newCookies: instanceOf(Cookies).isRequired
     }
     this.login = this.login.bind(this)
+  }
+
+  componentDidUpdate() {
+    console.log('the props are ', this.state.allProps)
   }
 
   login = async e => {
@@ -49,6 +65,8 @@ export default class Home extends React.Component {
 
     console.log("process.env.API_URL is ", process.env.API_URL)
 
+    console.log('the state is ', this.state)
+
     firebaseApp.auth().signInWithEmailAndPassword(username, password).then(async response => {
       var response = await axios.post(
         '/api/sessions',
@@ -56,6 +74,18 @@ export default class Home extends React.Component {
         { withCredentials: true }
       )
       console.log("The response is ", response)
+
+      const { cookies } = this.props;
+      const newCookies = this.state.newCookies;
+      console.log("What is newCookies?", newCookies)
+      Cookies.set("user", JSON.stringify({ data: 'some new data goes here from pages/index.js' }), {
+        path: "/",
+        maxAge: 3600, // Expires after 1hr
+        sameSite: true,
+      })
+      newCookies.set('name', name, { path: '/' });
+      this.setState({ name });
+
       Router.push('/profilePage')
     })
       .catch(err => {
