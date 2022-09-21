@@ -1,7 +1,26 @@
 {
+  "/CookieView": "pages/CookieView.html",
   "/_app": "pages/_app.js",
+  "/ProfilePage": "pages/ProfilePage.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/api/database": "pages/api/database.js",
+  "/api/database/database": "pages/api/database/database.js",
+  "/LoginCookies": "pages/LoginCookies.html",
+  "/api/candidates": "pages/api/candidates.js",
+  "/api/sessions": "pages/api/sessions.js",
+  "/api/signup": "pages/api/signup.js",
+  "/api/database/models/candidate": "pages/api/database/models/candidate.js",
+  "/api": "pages/api.js",
+  "/": "pages/index.html",
   "/api/users": "pages/api/users.js",
-  "/": "pages/index.js"
+  "/api/userDatabase": "pages/api/userDatabase.js",
+  "/login": "pages/login.js",
+  "/signup-fork": "pages/signup-fork.html",
+  "/signup-politician": "pages/signup-politician.html",
+  "/old-frontpage": "pages/old-frontpage.html",
+  "/signup-voter": "pages/signup-voter.html",
+  "/signupForm": "pages/signupForm.html",
+  "/signup": "pages/signup.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }
