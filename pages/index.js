@@ -3,6 +3,8 @@ import React from 'react'
 import Router from 'next/router'
 import { instanceOf } from 'prop-types';
 
+import ProfilePage from './profilePage.js'
+
 import {
   Navbar,
 } from 'react-bootstrap'
@@ -107,6 +109,7 @@ export default class Home extends React.Component {
         backgroundColor: 'rgb(250, 250, 250)',
       }}>
         <Snowfall />
+        <ProfilePage name="Dean" />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />

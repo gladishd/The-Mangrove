@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import CookieView from './CookieView.js'
+import LoginCookies from './LoginCookies.js'
 
 export default class Users extends React.Component {
   constructor(props) {
@@ -8,6 +9,7 @@ export default class Users extends React.Component {
     this.state = {
       data: null,
       cookieValue: null,
+      props,
     }
     this.getUsers = this.getUsers.bind(this)
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
@@ -27,6 +29,21 @@ export default class Users extends React.Component {
   }
 
   componentDidMount() {
+    console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API.")
+    // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("x-api-key", "your-api-key");
+
+    var requestOptions = {
+      method: 'GET',
+      headers: myHeaders
+    };
+
+    fetch("https://api4.ballotpedia.org/data/the-endpoint-name-and-options", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
     this.getUsers()
   }
 
@@ -43,7 +60,7 @@ export default class Users extends React.Component {
     }}>
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
-        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, go to /loginCookies and press the text box."
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, go to the right and press the text box. Within 10 seconds refresh the page."
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
@@ -74,6 +91,7 @@ export default class Users extends React.Component {
               <div>{e.formMiddleInitial}</div>
             </div>)
           }</div>}
+      <LoginCookies cookie={this.state.props} />
     </div>
 
   }
