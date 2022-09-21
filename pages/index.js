@@ -3,7 +3,7 @@ import React from 'react'
 import Router from 'next/router'
 import { instanceOf } from 'prop-types';
 
-import ProfilePage from './profilePage.js'
+import ProfilePage from './ProfilePage.js'
 
 import {
   Navbar,
