@@ -49,9 +49,105 @@ export default class Home extends React.Component {
       password: null,
       cookieValue: null,
       allProps: props,
-      newCookies: instanceOf(Cookies).isRequired
+      newCookies: instanceOf(Cookies).isRequired,
+      searchQueryAddress: "",
+      searchQueryLatLng: "",
+      flattenedAdddress: null,
+      flattenedLatLng: null,
     }
     this.login = this.login.bind(this)
+    this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
+    this.queryGeocodioLatLng = this.queryGeocodioLatLng.bind(this)
+  }
+
+  queryGeocodioAddress(address) {
+    const Geocodio = require('geocodio-library-node');
+    const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
+
+    geocoder.geocode(address, ['cd'])
+      .then(response => {
+        console.log("Initial Address", response);
+        let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
+        console.log('latLng is ', latLng)
+        this.setState({ latLng })
+        function flattenObject(ob, prefix = false, result = null) {
+          result = result || {};
+
+          // Preserve empty objects and arrays, they are lost otherwise
+          if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
+            result[prefix] = Array.isArray(ob) ? [] : {};
+            return result;
+          }
+
+          prefix = prefix ? prefix + '.' : '';
+
+          for (const i in ob) {
+            if (Object.prototype.hasOwnProperty.call(ob, i)) {
+              if (typeof ob[i] === 'object' && ob[i] !== null) {
+                // Recursion on deeper objects
+                flattenObject(ob[i], prefix + i, result);
+              } else {
+                result[prefix + i] = ob[i];
+              }
+            }
+          }
+          return result;
+        }
+        let flattenedAddress = flattenObject(response)
+        this.setState({ flattenedAddress })
+        console.log('flattenedAddresss is ', flattenedAddress)
+        /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
+        https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
+      })
+      .catch(err => {
+        console.error(err);
+      }
+      );
+  }
+
+  queryGeocodioLatLng(latLng) {
+    const Geocodio = require('geocodio-library-node');
+    const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
+    geocoder.reverse(latLng, ['cd'])
+      .then(response => {
+        console.log("Reverse Response", response);
+
+        function flattenObject(ob, prefix = false, result = null) {
+          result = result || {};
+
+          // Preserve empty objects and arrays, they are lost otherwise
+          if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
+            result[prefix] = Array.isArray(ob) ? [] : {};
+            return result;
+          }
+
+          prefix = prefix ? prefix + '.' : '';
+
+          for (const i in ob) {
+            if (Object.prototype.hasOwnProperty.call(ob, i)) {
+              if (typeof ob[i] === 'object' && ob[i] !== null) {
+                // Recursion on deeper objects
+                flattenObject(ob[i], prefix + i, result);
+              } else {
+                result[prefix + i] = ob[i];
+              }
+            }
+          }
+          return result;
+        }
+        let flattenedAddress = flattenObject(response)
+        this.setState({ flattenedAddress })
+        /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
+        https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
+      })
+      .catch(err => {
+        console.error(err);
+      }
+      );
+  }
+
+  componentDidMount() {
+    console.log("the Component has mounted yay!")
   }
 
   componentDidUpdate() {
@@ -114,6 +210,13 @@ export default class Home extends React.Component {
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        This is cool
+
+        Is there a way we can temporarily integrate this function with the UI? What we can do is take a text box or maybe create some kind of search box.
+
+        <input placeHolder="Address" onChange={e => this.setState({ searchQuery: e.target.value })} />
+        <button onClick={e => this.queryGeocodioAddress(this.state.searchQuery)}>Click Me</button>
 
         <main style={{ zIndex: '3' }}>
 
