@@ -28,8 +28,12 @@ export default class Users extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    console.log("The component updated on ProfilePageOld, what are the props? ", this.state.props)
+  }
+
   componentDidMount() {
-    console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API.")
+    console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API. WHat are the props here?", this.state.props)
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -91,7 +95,7 @@ export default class Users extends React.Component {
               <div>{e.formMiddleInitial}</div>
             </div>)
           }</div>}
-      <LoginCookies cookie={this.state.props} />
+      <LoginCookies props={this.props} />
     </div>
 
   }

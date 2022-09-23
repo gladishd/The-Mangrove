@@ -4,6 +4,7 @@ import Router from 'next/router'
 import { instanceOf } from 'prop-types';
 
 import ProfilePage from './ProfilePageOld.js'
+import LoginCookies from './LoginCookiesOld.js'
 
 import {
   Navbar,
@@ -54,6 +55,7 @@ export default class Home extends React.Component {
       searchQueryLatLng: "",
       flattenedAdddress: null,
       flattenedLatLng: null,
+      responseSuccess: null,
     }
     this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
@@ -152,6 +154,10 @@ export default class Home extends React.Component {
 
   componentDidUpdate() {
     console.log('the props are ', this.state.allProps)
+    console.log("the component has updated! this.state is ", this.state)
+    if (this.state.responseSuccess) {
+      Router.push('/')
+    }
   }
 
   login = async e => {
@@ -172,19 +178,24 @@ export default class Home extends React.Component {
         { withCredentials: true }
       )
       console.log("The response is ", response)
+      console.log(response && response.data.success)
+      if (response && response.data && response.data.success == "success") {
+        this.setState({
+          'responseSuccess': true
+        })
+      }
 
       const { cookies } = this.props;
-      const newCookies = this.state.newCookies;
-      console.log("What is newCookies?", newCookies)
-      Cookies.set("user", JSON.stringify({ data: 'some new data goes here from pages/index.js' }), {
-        path: "/",
-        maxAge: 3600, // Expires after 1hr
-        sameSite: true,
-      })
-      newCookies.set('name', name, { path: '/' });
-      this.setState({ name });
+      // const newCookies = this.state.newCookies;
+      // console.log("What is newCookies?", newCookies)
+      // Cookies.set("user", JSON.stringify({ data: 'some new data goes here from pages/index.js' }), {
+      //   path: "/",
+      //   maxAge: 3600, // Expires after 1hr
+      //   sameSite: true,
+      // })
+      // newCookies.set('name', name, { path: '/' });
+      // this.setState({ name });
 
-      Router.push('/profilePage')
     })
       .catch(err => {
         alert(err)
@@ -205,7 +216,8 @@ export default class Home extends React.Component {
         backgroundColor: 'rgb(250, 250, 250)',
       }}>
         <Snowfall />
-        <ProfilePage name="Dean" />
+        <LoginCookies name="Dean" cookieSet={this.state.responseSuccess} />
+        <ProfilePage name="Dean" cookieSet={this.state.responseSuccess} />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />
