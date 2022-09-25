@@ -60,6 +60,28 @@ export default class Home extends React.Component {
     this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
     this.queryGeocodioLatLng = this.queryGeocodioLatLng.bind(this)
+    this.setUsername = this.setUsername.bind(this)
+    this.setPassword = this.setPassword.bind(this)
+  }
+
+  setUsername(username) {
+    console.log("the username we want to set is ", username)
+    // if (true) {
+    if (!this.state.responseSuccess) {
+      this.setState({
+        username,
+      })
+    }
+  }
+
+  setPassword(password) {
+    console.log("the password we want to set is ", password)
+    // if (true) {
+    if (!this.state.responseSuccess) {
+      this.setState({
+        password,
+      })
+    }
   }
 
   queryGeocodioAddress(address) {
@@ -71,7 +93,7 @@ export default class Home extends React.Component {
         console.log("Initial Address", response);
         let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
         console.log('latLng is ', latLng)
-        this.setState({ latLng })
+        // this.setState({ latLng })
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
 
@@ -96,7 +118,7 @@ export default class Home extends React.Component {
           return result;
         }
         let flattenedAddress = flattenObject(response)
-        this.setState({ flattenedAddress })
+        // this.setState({ flattenedAddress })
         console.log('flattenedAddresss is ', flattenedAddress)
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
@@ -138,7 +160,7 @@ export default class Home extends React.Component {
           return result;
         }
         let flattenedAddress = flattenObject(response)
-        this.setState({ flattenedAddress })
+        // this.setState({ flattenedAddress })
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
       })
@@ -154,10 +176,10 @@ export default class Home extends React.Component {
 
   componentDidUpdate() {
     console.log('the props are ', this.state.allProps)
-    console.log("the component has updated! this.state is ", this.state)
-    if (this.state.responseSuccess) {
-      Router.push('/')
-    }
+    console.log("the component has updated! this.state is ", this.state, this.state.responseSuccess)
+    // if (this.state.responseSuccess) {
+    //   Router.push('/')
+    // }
   }
 
   login = async e => {
@@ -177,25 +199,15 @@ export default class Home extends React.Component {
         { user: { email: username.toLowerCase() } },
         { withCredentials: true }
       )
+
       console.log("The response is ", response)
       console.log(response && response.data.success)
       if (response && response.data && response.data.success == "success") {
+        console.log("does this script run?")
         this.setState({
           'responseSuccess': true
         })
       }
-
-      const { cookies } = this.props;
-      // const newCookies = this.state.newCookies;
-      // console.log("What is newCookies?", newCookies)
-      // Cookies.set("user", JSON.stringify({ data: 'some new data goes here from pages/index.js' }), {
-      //   path: "/",
-      //   maxAge: 3600, // Expires after 1hr
-      //   sameSite: true,
-      // })
-      // newCookies.set('name', name, { path: '/' });
-      // this.setState({ name });
-
     })
       .catch(err => {
         alert(err)
@@ -223,13 +235,6 @@ export default class Home extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        This is cool
-
-        Is there a way we can temporarily integrate this function with the UI? What we can do is take a text box or maybe create some kind of search box.
-
-        <input placeHolder="Address" onChange={e => this.setState({ searchQuery: e.target.value })} />
-        <button onClick={e => this.queryGeocodioAddress(this.state.searchQuery)}>Click Me</button>
-
         <main style={{ zIndex: '3' }}>
 
           <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
@@ -254,11 +259,19 @@ export default class Home extends React.Component {
 
             <br /><br />
 
-            <input onChange={e => this.setState({ username: e.target.value })} type="email" id="email" name="email" placeholder="Username or Email" />
+            <input
+              onChange={e => this.setUsername(e.target.value)
+                // this.setState({ username: e.target.value })
+              }
+              type="email" id="email" name="email" placeholder="Username or Email" />
 
             <br /><br />
 
-            <input onChange={e => this.setState({ password: e.target.value })} type="password" id="password" name="password" placeholder="Password" />
+            <input
+              onChange={e => this.setPassword(e.target.value)
+                // this.setState({ password: e.target.value })
+              }
+              type="password" id="password" name="password" placeholder="Password" />
             <br /><br />
 
             <center>

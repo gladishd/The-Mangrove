@@ -69,6 +69,14 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <div>
+          This is cool
+
+          Is there a way we can temporarily integrate this function with the UI? What we can do is take a text box or maybe create some kind of search box.
+
+          <input placeHolder="Address"
+          // onChange={e => this.setState({ searchQuery: e.target.value })}
+          />
+          <button onClick={e => this.queryGeocodioAddress(this.state.searchQuery)}>Click Me</button>
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
               margin: '1em',

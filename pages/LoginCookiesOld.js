@@ -4,9 +4,11 @@ import React, { useEffect } from 'react';
 import Router from 'next/router'
 
 const Login = ({ name, cookieSet }) => {
-  const [cookie, setCookie] = useCookies(["user"])
+  const [cookie, setCookie] = useCookies(["user"]);
 
   const [cookieData, setCookieData] = React.useState(cookieSet); // this runs only once, when the component is mounted, not when i.e. contact updates.
+
+  const [variable, setVariable] = React.useState(0);
 
   useEffect(() => {
     setCookieData(cookieSet);
@@ -15,20 +17,25 @@ const Login = ({ name, cookieSet }) => {
   useEffect(async () => {
     console.log("*******we are on the login cookies component, did we get the props from ProfilePageOld and before that from index.js? The props here are : ", name, cookieSet)
     console.log(cookieSet)
-    setTimeout(() => {
-      console.log("Delayed for 1 second.");
-      console.log(cookieSet)
-    }, "1000")
+
     // https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-    if (cookieSet) {
-      console.log("did we reach the set cookie c ode on LOgin Cookies?")
+    if (cookieSet && variable == 0) {
+      console.log("Did we reach the set cookie code on Login Cookies?")
+      setVariable(1)
+
+      setTimeout(() => {
+        console.log("Delayed for 2 seconds.");
+        console.log(cookieSet)
+        // Router.push('/')
+        window.location.reload(true);
+      }, "3000")
+
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
-        maxAge: 10, // Expires after 10 seconds
+        maxAge: 20, // Expires after 10 seconds
         sameSite: true,
       })
-
-      Router.push('/')
+      // Absolutely not. Commenting out Router.push('/') makes the infinite loop even faster than before!
     }
   })
 
