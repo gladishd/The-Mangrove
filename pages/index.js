@@ -171,16 +171,21 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    console.log("the Component has mounted yay!")
+    console.log("the Component has mounted yay!?!?!?!?")
   }
 
   componentDidUpdate() {
-    console.log('the props are ', this.state.allProps)
-    console.log("the component has updated! this.state is ", this.state, this.state.responseSuccess)
+    console.log("Does the component on pages/index.js update?")
+    console.log("Does the component on pages/index.js update?")
+    console.log("Does the component on pages/index.js update?")
+    console.log("Does the component on pages/index.js update?")
+    // console.log('the props are ', this.state.allProps)
+    // console.log("the component has updated! this.state is ", this.state, this.state.responseSuccess)
     // if (this.state.responseSuccess) {
     //   Router.push('/')
     // }
-    console.log("I'm on the index.js page, and the only thing I wanna know is no the cookies object does not exist here.")
+    // console.log("I'm on the index.js page, and the only thing I wanna know is no the cookies object does not exist here.")
+    // console.log("I'm on the index.js page, and what's the value we were looking at?", this.state.responseSuccess)
   }
 
   login = async e => {

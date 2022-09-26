@@ -63,10 +63,9 @@ export default class Users extends React.Component {
       flexWrap: 'wrap',
       backgroundColor: 'rgb(250,250,250)'
     }}>
-      <LogoutComponent />
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
-        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, go to the right and press the text box. Within 10 seconds refresh the page."
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, sign up along the elected official or running for office path, then log in."
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
@@ -104,7 +103,11 @@ export default class Users extends React.Component {
               <div>{e.formLastName}</div>
               <div>{e.formMiddleInitial}</div>
             </div>)
-          }</div>}
+          }</div>
+      }
+      {
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
+      }
       <LoginCookies props={this.props} />
     </div>
 

@@ -13,12 +13,13 @@ const Login = ({ name, cookieSet }) => {
 
   return (
     <>
-      <button onClick={e => {
-        console.log("You clicked the button!")
-        removeCookie("user")
-        window.location.reload(true)
-      }}>
-        If you see this button then you are on the right track.
+      <button className="unTraditionalButton"
+        onClick={e => {
+          console.log("You clicked the button!")
+          removeCookie("user")
+          window.location.reload(true)
+        }}>
+        Logout
       </button>
     </>
   )

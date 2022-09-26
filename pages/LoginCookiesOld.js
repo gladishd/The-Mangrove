@@ -58,7 +58,7 @@ const Login = ({ name, cookieSet }) => {
   return (
     <>
       <label htmlFor="username">
-        hi there
+        {/* hi there */}
         {/* <input type="text" placeholder="pretty please enter username" onClick={e => handleSignIn(e)} /> */}
       </label>
     </>
