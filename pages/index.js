@@ -180,6 +180,7 @@ export default class Home extends React.Component {
     // if (this.state.responseSuccess) {
     //   Router.push('/')
     // }
+    console.log("I'm on the index.js page, and the only thing I wanna know is no the cookies object does not exist here.")
   }
 
   login = async e => {

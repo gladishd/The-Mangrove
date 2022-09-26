@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import CookieView from './CookieView.js'
 import LoginCookies from './LoginCookiesOld.js'
+import LogoutComponent from './LogoutComponent.js'
 
 export default class Users extends React.Component {
   constructor(props) {
@@ -28,9 +29,9 @@ export default class Users extends React.Component {
     })
   }
 
-  componentDidUpdate() {
-    console.log("The component updated on ProfilePageOld, what are the props? ", this.state.props)
-  }
+  // componentDidUpdate() {
+  //   console.log("The component updated on ProfilePageOld, what are the props? ", this.state.props)
+  // }
 
   componentDidMount() {
     console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API. WHat are the props here?", this.state.props)
@@ -62,6 +63,7 @@ export default class Users extends React.Component {
       flexWrap: 'wrap',
       backgroundColor: 'rgb(250,250,250)'
     }}>
+      <LogoutComponent />
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, go to the right and press the text box. Within 10 seconds refresh the page."

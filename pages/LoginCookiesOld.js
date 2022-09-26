@@ -11,7 +11,9 @@ const Login = ({ name, cookieSet }) => {
   const [variable, setVariable] = React.useState(0);
 
   useEffect(() => {
+    console.log('Does the first useEffect in LoginCookiesOld hook get called?')
     setCookieData(cookieSet);
+    console.log("I'm on the LoginCookiesOld.js component, what is the cookieData? ", cookieData)
   }, [cookieSet]) // now this listens to changes in contact
 
   useEffect(async () => {
@@ -32,7 +34,7 @@ const Login = ({ name, cookieSet }) => {
 
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
-        maxAge: 20, // Expires after 10 seconds
+        maxAge: 600, // Expires after 600 seconds
         sameSite: true,
       })
       // Absolutely not. Commenting out Router.push('/') makes the infinite loop even faster than before!
