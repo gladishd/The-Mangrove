@@ -2,16 +2,14 @@ import Head from 'next/head'
 import React from 'react'
 import Router from 'next/router'
 import { instanceOf } from 'prop-types';
-
+import CookieView from './CookieView.js'
 import ProfilePage from './ProfilePageOld.js'
 import LoginCookies from './LoginCookiesOld.js'
 
 import {
   Navbar,
 } from 'react-bootstrap'
-import Snowfall from 'react-snowfall'
 
-// import { withCookies, Cookies } from "react-cookie"
 
 import { Cookies } from "react-cookie"
 
@@ -44,6 +42,7 @@ export default class Home extends React.Component {
     super(props)
     const { cookies } = props;
     this.state = {
+      refresh: false,
       name: cookies && cookies.get('name') || 'Ben',
       userProfile: null,
       username: null,
@@ -53,7 +52,7 @@ export default class Home extends React.Component {
       newCookies: instanceOf(Cookies).isRequired,
       searchQueryAddress: "",
       searchQueryLatLng: "",
-      flattenedAdddress: null,
+      flattenedAddress: null,
       flattenedLatLng: null,
       responseSuccess: null,
     }
@@ -62,11 +61,22 @@ export default class Home extends React.Component {
     this.queryGeocodioLatLng = this.queryGeocodioLatLng.bind(this)
     this.setUsername = this.setUsername.bind(this)
     this.setPassword = this.setPassword.bind(this)
+    this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
   }
 
+  componentDidUpdate() {
+    console.log("The cookie value should be ", this.state.cookieValue)
+    console.log('********this.state is ', this.state)
+  }
+
+  async dataFetchPoliticians(data) {
+    await this.setState({
+      cookieValue: data,
+    })
+  }
+
+
   setUsername(username) {
-    console.log("the username we want to set is ", username)
-    // if (true) {
     if (!this.state.responseSuccess) {
       this.setState({
         username,
@@ -75,8 +85,6 @@ export default class Home extends React.Component {
   }
 
   setPassword(password) {
-    console.log("the password we want to set is ", password)
-    // if (true) {
     if (!this.state.responseSuccess) {
       this.setState({
         password,
@@ -87,9 +95,9 @@ export default class Home extends React.Component {
   queryGeocodioAddress(address) {
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
-
+    console.log('What is address? ', address)
     geocoder.geocode(address, ['cd'])
-      .then(response => {
+      .then(async response => {
         console.log("Initial Address", response);
         let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
         console.log('latLng is ', latLng)
@@ -120,11 +128,16 @@ export default class Home extends React.Component {
         let flattenedAddress = flattenObject(response)
         // this.setState({ flattenedAddress })
         console.log('flattenedAddresss is ', flattenedAddress)
+        // setTimeout(
+        await this.setState({ flattenedAddress, })
+        // )
+
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
       })
       .catch(err => {
         console.error(err);
+        alert(err)
       }
       );
   }
@@ -170,22 +183,12 @@ export default class Home extends React.Component {
       );
   }
 
-  componentDidMount() {
-    console.log("the Component has mounted yay!?!?!?!?")
-  }
+  refresh = async () => {
+    console.log('refresh state is ', this.state)
+    this.setState({
+      refresh: !this.state.refresh
+    })
 
-  componentDidUpdate() {
-    console.log("Does the component on pages/index.js update?")
-    console.log("Does the component on pages/index.js update?")
-    console.log("Does the component on pages/index.js update?")
-    console.log("Does the component on pages/index.js update?")
-    // console.log('the props are ', this.state.allProps)
-    // console.log("the component has updated! this.state is ", this.state, this.state.responseSuccess)
-    // if (this.state.responseSuccess) {
-    //   Router.push('/')
-    // }
-    // console.log("I'm on the index.js page, and the only thing I wanna know is no the cookies object does not exist here.")
-    // console.log("I'm on the index.js page, and what's the value we were looking at?", this.state.responseSuccess)
   }
 
   login = async e => {
@@ -221,103 +224,131 @@ export default class Home extends React.Component {
   }
 
   render() {
-    return <div className="container" style={{
+    console.log("IN The REndeR there are ", this.state.flattenedAddress && this.state.flattenedAddress.input && this.state.flattenedAddress.input.address_components.number)
+    return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
       width: '100vw !important',
       display: 'flex',
       justifyContent: 'center',
 
     }}>
+
+      {
+        this.state.flattenedAddress && console.log("The flattened address is * * * * * * * * * ", this.state.flattenedAddress, Object.keys(this.state.flattenedAddress)) && this.state.flattenedAddress.map((key, value) => console.log('aslkdjflkasdjf'))
+      }
+      {/* {
+        this.state.flattenedAddress && Object.keys(this.state.flattenedAddress)[[1]]
+      } */}
+
+      <CookieView propsFn={this.dataFetchPoliticians} />
       <div style={{
         maxWidth: '1300px',
         display: 'inline-block',
         backgroundColor: 'rgb(250, 250, 250)',
       }}>
-        <Snowfall />
         <LoginCookies name="Dean" cookieSet={this.state.responseSuccess} />
-        <ProfilePage name="Dean" cookieSet={this.state.responseSuccess} />
+        <ProfilePage name="Dean" cookieSet={this.state.responseSuccess}
+          queryGeocodioAddress={this.queryGeocodioAddress}
+          searchQueryAddress={this.state.searchQueryAddress}
+          queryGeocodioLatLng={this.queryGeocodioLatLng}
+        />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <div className="ProfilePageOld">
+          <main style={{ zIndex: '3', display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none" }}>
 
-        <main style={{ zIndex: '3' }}>
+            <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
+              <img style={{ width: '200px', height: '200px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mangroves_at_sunset.jpg/1200px-Mangroves_at_sunset.jpg"
 
-          <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
-            <img style={{ width: '200px', height: '200px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mangroves_at_sunset.jpg/1200px-Mangroves_at_sunset.jpg"
+              />
+            </h1>
 
-            />
-          </h1>
+            <div style={{
+              backgroundColor: "white",
+              borderStyle: 'outset',
+              borderWidth: '0.1em',
+              zIndex: '3',
+              display: 'flex',
+              flexDirection: 'column',
+              width: '350px',
+              height: '350px',
+              alignContent: 'space-around',
+            }}>
+              <br />
+              <center style={{ fontSize: '2em', fontWeight: 'bolder' }}>Mangrove</center>
 
-          <div style={{
-            backgroundColor: "white",
-            borderStyle: 'outset',
-            borderWidth: '0.1em',
-            zIndex: '3',
-            display: 'flex',
-            flexDirection: 'column',
-            width: '350px',
-            height: '350px',
-            alignContent: 'space-around'
-          }}>
+              <br /><br />
+
+              <input
+                onChange={e => this.setUsername(e.target.value)
+                  // this.setState({ username: e.target.value })
+                }
+                type="email" id="email" name="email" placeholder="Username or Email" />
+
+              <br /><br />
+
+              <input
+                onChange={e => this.setPassword(e.target.value)
+                  // this.setState({ password: e.target.value })
+                }
+                type="password" id="password" name="password" placeholder="Password" />
+              <br /><br />
+
+              <center>
+                <button onClick={e => this.login(e)} style={{ fontSize: '1em', fontWeight: 'bolder', width: '100px' }}>Login</button>
+              </center>
+            </div>
+
             <br />
-            <center style={{ fontSize: '2em', fontWeight: 'bolder' }}>Mangrove</center>
 
-            <br /><br />
+            <center style={{
+              backgroundColor: "white",
+              borderStyle: 'outset',
+              borderWidth: '0.1em',
+              zIndex: '3',
+              display: 'flex',
+              flexDirection: 'column',
+              width: '350px',
+              height: '100px',
+              alignContent: 'space-around'
+            }}>
+              <br />
+              <div>New User?</div>
+              <br />
 
-            <input
-              onChange={e => this.setUsername(e.target.value)
-                // this.setState({ username: e.target.value })
-              }
-              type="email" id="email" name="email" placeholder="Username or Email" />
 
-            <br /><br />
 
-            <input
-              onChange={e => this.setPassword(e.target.value)
-                // this.setState({ password: e.target.value })
-              }
-              type="password" id="password" name="password" placeholder="Password" />
-            <br /><br />
-
-            <center>
-              <button onClick={e => this.login(e)} style={{ fontSize: '1em', fontWeight: 'bolder', width: '100px' }}>Login</button>
+              <button onClick={e => Router.push('/signup-fork')} style={{ width: '100px', marginLeft: '125px' }}>Sign up</button>
             </center>
-          </div>
+          </main>
 
-          <br />
+          <footer>
+            <a
+              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Powered by{' '}
+              <img src="/vercel.svg" alt="Vercel" className="logo" />
+            </a>
+            <button className="unTraditionalButton" onClick={e => this.refresh()}>Refresh</button>
+          </footer>
 
-          <center style={{
-            backgroundColor: "white",
-            borderStyle: 'outset',
-            borderWidth: '0.1em',
-            zIndex: '3',
-            display: 'flex',
-            flexDirection: 'column',
-            width: '350px',
-            height: '100px',
-            alignContent: 'space-around'
-          }}>
-            <br />
-            <div>New User?</div>
-            <br />
+        </div>
 
-
-
-            <button onClick={e => Router.push('/signup-fork')} style={{ width: '100px', marginLeft: '125px' }}>Sign up</button>
-          </center>
-        </main>
-
-        <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/vercel.svg" alt="Vercel" className="logo" />
-          </a>
-        </footer>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {
+            this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
+              return <div key={key} style={{ backgroundColor: `rgb(${3 * index + 100}, ${3 * index}, ${2 * index + 100})` }}>
+                <div>
+                  {this.state.flattenedAddress[key]}
+                </div>
+              </div>
+            })
+          }
+        </div>
 
         <style jsx>{`
         .container {

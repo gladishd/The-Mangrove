@@ -10,7 +10,6 @@ export default function App({ propsFn }) {
 
   return (
     <div>
-      <h1>React cookies</h1>
       {cookies.user && console.log(cookies.user)}
     </div>
   );

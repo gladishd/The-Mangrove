@@ -3,6 +3,7 @@ import React from 'react'
 import CookieView from './CookieView.js'
 import LoginCookies from './LoginCookiesOld.js'
 import LogoutComponent from './LogoutComponent.js'
+import Snowfall from 'react-snowfall'
 
 export default class Users extends React.Component {
   constructor(props) {
@@ -11,9 +12,19 @@ export default class Users extends React.Component {
       data: null,
       cookieValue: null,
       props,
+      showUsers: false,
     }
     this.getUsers = this.getUsers.bind(this)
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
+    this.showUsers = this.showUsers.bind(this)
+  }
+
+  showUsers(e) {
+    e.preventDefault()
+    console.log('did the showUsers function get triggered?')
+    this.setState({
+      showUsers: !this.state.showUsers
+    })
   }
 
   async dataFetchPoliticians(data) {
@@ -35,6 +46,7 @@ export default class Users extends React.Component {
 
   componentDidMount() {
     console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API. WHat are the props here?", this.state.props)
+    this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -52,20 +64,22 @@ export default class Users extends React.Component {
     this.getUsers()
   }
 
-  componentDidUpdate() {
-    console.log('component updated! this.state is ', this.state, this.state.cookieValue && this.state.cookieValue.user && this.state.cookieValue.user.data)
-  }
-
   render() {
     return <div style={{
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',
       backgroundColor: 'rgb(250,250,250)'
-    }}>
+    }} >
+      {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
+        <button className="unTraditionalButton" onClick={e => this.showUsers(e)}>Show Users</button>
+      }
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
-        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data, sign up along the elected official or running for office path, then log in."
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data sign up along the elected official or running for office path, then log in."
+      }
+      {
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && <Snowfall />
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
@@ -74,10 +88,15 @@ export default class Users extends React.Component {
 
           Is there a way we can temporarily integrate this function with the UI? What we can do is take a text box or maybe create some kind of search box.
 
-          <input placeHolder="Address"
-          // onChange={e => this.setState({ searchQuery: e.target.value })}
+          <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
+            onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
-          <button onClick={e => this.queryGeocodioAddress(this.state.searchQuery)}>Click Me</button>
+          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Search</button>
+        </div>}
+      {
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
+        <div>
+          hello
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
               margin: '1em',
@@ -103,11 +122,16 @@ export default class Users extends React.Component {
               <div>{e.formLastName}</div>
               <div>{e.formMiddleInitial}</div>
             </div>)
-          }</div>
+          }
+        </div>
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
       }
+
+      {/* {
+        this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 && <LogoutComponent />
+      } */}
       <LoginCookies props={this.props} />
     </div>
 

@@ -34,7 +34,7 @@ const Login = ({ name, cookieSet }) => {
 
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
-        maxAge: 600, // Expires after 600 seconds
+        maxAge: 2147483647, // Expires after 600 seconds
         sameSite: true,
       })
       // Absolutely not. Commenting out Router.push('/') makes the infinite loop even faster than before!
