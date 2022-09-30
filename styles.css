@@ -1,5 +1,67 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+.signupForkPage {
+  background-image: url('aditya-joshi-7FW5-3vVRSw-unsplash.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 10000px rgba(255, 0, 150, 0.3);
+  width: 100vw !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.signUpForkPagePose {
+  border-style: outset;
+  border-width: 0.1em;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 50vh;
+  align-content: space-around;
+  justify-content: space-evenly;
+  background-color: rgb(250, 250, 250);
+  border-radius: 0.2em;
+}
+
+.signUpForkPage {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .signupForkPage {
+    height: 100vh !important;
+  }
+
+  canvas {
+    height: 1000px !important;
+  }
+
+  .signUpForkPage {
+    height: 100vh;
+  }
+
+  .signUpForkPagePose {
+    width: 100vw;
+  }
+}
+
+.signUpButton {
+  font-family: "Times New Roman";
+  font-size: 1em;
+  width: 50%;
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+}
+
+.signUpButton:hover {
+  background-color: white;
+  border: 1px solid grey;
+}
+
 .ProfilePageOld {
   background:
     radial-gradient(circle at 100% 50%, transparent 20%, #00D4F0 21%,

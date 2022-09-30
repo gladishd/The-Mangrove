@@ -10,65 +10,30 @@ import Snowfall from 'react-snowfall'
 
 export default class Home extends React.Component {
   render() {
-    return <div className="container" style={{
-      background: "rgb(250,250,250)",
-      width: '100vw !important',
-      height: '100vh',
-      display: 'flex',
-      justifyContent: 'center',
+    return <div className="container signupForkPage">
 
-    }}>
-      <div style={{
-        maxWidth: '1300px',
-        display: 'inline-block',
-        backgroundColor: 'rgb(250, 250, 250)',
-      }}>
-        <Snowfall />
+      <div className='signUpForkPage'>
+        <Snowfall color="rgb(250,250,250)" style={{ height: '100vh' }} snowflakeCount={10} />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-
-        <main style={{ zIndex: '3' }}>
-
-
-
+        <div className="signUpForkPagePose">
           <div style={{
-            backgroundColor: "white",
-            borderStyle: 'outset',
-            borderWidth: '0.1em',
-            zIndex: '3',
-            display: 'flex',
-            flexDirection: 'column',
-            width: '350px',
-            height: '350px',
-            alignContent: 'space-around',
-            justifyContent: 'center'
-          }}>
-            <br />
-            <h2>Are you currently an elected official or running for office?</h2>
-            <br />
-            <br />
-            <br />
-            <div style={{
-              display: 'flex',
-              flexDirection: 'row',
-              marginLeft: '130px'
-            }}>
-              <button onClick={e => Router.push('/signup-politician')}>Yes</button>
-              <div style={{ width: "20px" }} />
-              <button onClick={e => Router.push('/signup-voter')}>No</button>
-
-            </div>
-
-
+            fontSize: "1.25em",
+            width: '100%',
+            textAlign: 'center',
+          }}>Are you currently an elected official or running for office?
           </div>
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+            <button className="signUpButton" onClick={e => Router.push('/signup-politician')}>Yes</button>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+            <button className="signUpButton" onClick={e => Router.push('/signup-voter')}>No</button>
+          </div>
+        </div>
 
-          <br />
-
-
-        </main>
 
         <style jsx>{`
         .container {
@@ -215,7 +180,9 @@ export default class Home extends React.Component {
           box-sizing: border-box;
         }
       `}</style>
+
       </div >
+
     </div >
   }
 }
