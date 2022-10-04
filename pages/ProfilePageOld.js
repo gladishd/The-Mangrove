@@ -76,17 +76,12 @@ export default class Users extends React.Component {
       }
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
-        this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && "To access user data sign up along the elected official or running for office path, then log in."
-      }
-      {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && <Snowfall />
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <div>
-          This is cool
-
-          Is there a way we can temporarily integrate this function with the UI? What we can do is take a text box or maybe create some kind of search box.
+          For when we are able to add general assembly members to the search function...!
 
           <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}

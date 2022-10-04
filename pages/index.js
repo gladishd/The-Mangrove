@@ -64,11 +64,6 @@ export default class Home extends React.Component {
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
   }
 
-  componentDidUpdate() {
-    console.log("The cookie value should be ", this.state.cookieValue)
-    console.log('********this.state is ', this.state)
-  }
-
   async dataFetchPoliticians(data) {
     await this.setState({
       cookieValue: data,
@@ -95,13 +90,9 @@ export default class Home extends React.Component {
   queryGeocodioAddress(address) {
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
-    console.log('What is address? ', address)
     geocoder.geocode(address, ['cd'])
       .then(async response => {
-        console.log("Initial Address", response);
         let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
-        console.log('latLng is ', latLng)
-        // this.setState({ latLng })
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
 
@@ -126,11 +117,7 @@ export default class Home extends React.Component {
           return result;
         }
         let flattenedAddress = flattenObject(response)
-        // this.setState({ flattenedAddress })
-        console.log('flattenedAddresss is ', flattenedAddress)
-        // setTimeout(
         await this.setState({ flattenedAddress, })
-        // )
 
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
@@ -147,8 +134,6 @@ export default class Home extends React.Component {
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
     geocoder.reverse(latLng, ['cd'])
       .then(response => {
-        console.log("Reverse Response", response);
-
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
 
@@ -184,7 +169,6 @@ export default class Home extends React.Component {
   }
 
   refresh = async () => {
-    console.log('refresh state is ', this.state)
     this.setState({
       refresh: !this.state.refresh
     })
@@ -196,23 +180,13 @@ export default class Home extends React.Component {
 
     let { username, password } = this.state
 
-    console.log("username and password are ", username, password)
-
-    console.log("process.env.API_URL is ", process.env.API_URL)
-
-    console.log('the state is ', this.state)
-
     firebaseApp.auth().signInWithEmailAndPassword(username, password).then(async response => {
       var response = await axios.post(
         '/api/sessions',
         { user: { email: username.toLowerCase() } },
         { withCredentials: true }
       )
-
-      console.log("The response is ", response)
-      console.log(response && response.data.success)
       if (response && response.data && response.data.success == "success") {
-        console.log("does this script run?")
         this.setState({
           'responseSuccess': true
         })
@@ -224,7 +198,6 @@ export default class Home extends React.Component {
   }
 
   render() {
-    console.log("IN The REndeR there are ", this.state.flattenedAddress && this.state.flattenedAddress.input && this.state.flattenedAddress.input.address_components.number)
     return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
       width: '100vw !important',
@@ -232,13 +205,6 @@ export default class Home extends React.Component {
       justifyContent: 'center',
 
     }}>
-
-      {
-        this.state.flattenedAddress && console.log("The flattened address is * * * * * * * * * ", this.state.flattenedAddress, Object.keys(this.state.flattenedAddress)) && this.state.flattenedAddress.map((key, value) => console.log('aslkdjflkasdjf'))
-      }
-      {/* {
-        this.state.flattenedAddress && Object.keys(this.state.flattenedAddress)[[1]]
-      } */}
 
       <CookieView propsFn={this.dataFetchPoliticians} />
       <div style={{
@@ -282,18 +248,15 @@ export default class Home extends React.Component {
               <br /><br />
 
               <input
-                onChange={e => this.setUsername(e.target.value)
-                  // this.setState({ username: e.target.value })
-                }
+                onChange={e => this.setUsername(e.target.value)}
                 type="email" id="email" name="email" placeholder="Username or Email" />
 
               <br /><br />
 
               <input
-                onChange={e => this.setPassword(e.target.value)
-                  // this.setState({ password: e.target.value })
-                }
+                onChange={e => this.setPassword(e.target.value)}
                 type="password" id="password" name="password" placeholder="Password" />
+
               <br /><br />
 
               <center>
@@ -340,8 +303,8 @@ export default class Home extends React.Component {
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           {
-            this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
-              return <div key={key} style={{ backgroundColor: `rgb(${3 * index + 100}, ${3 * index}, ${2 * index + 100})` }}>
+            this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
+              return <div key={key} style={{ backgroundColor: `rgb(${0.5 * index + 200}, ${0 * index + 200}, ${0.3 * index + 200})` }}>
                 <div>
                   {this.state.flattenedAddress[key]}
                 </div>
