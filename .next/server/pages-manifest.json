@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+  "/api/ArcGISData": "pages/api/ArcGISData.js",
   "/api/users": "pages/api/users.js"
 }

@@ -1,5 +1,8 @@
 import axios from 'axios'
-import React from 'react'
+// import React from 'react'
+import React, { useState } from 'react';
+import ItemsCarousel from 'react-items-carousel';
+
 import CookieView from './CookieView.js'
 import LoginCookies from './LoginCookiesOld.js'
 import LogoutComponent from './LogoutComponent.js'
@@ -9,14 +12,22 @@ export default class Users extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: null,
+      activeItemIndex: 0,
+      arcGISData: null,
       cookieValue: null,
+      data: null,
       props,
       showUsers: false,
     }
-    this.getUsers = this.getUsers.bind(this)
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
+    this.getArcGISData = this.getArcGISData.bind(this)
+    this.getUsers = this.getUsers.bind(this)
+    this.setActiveItemIndex = this.setActiveItemIndex.bind(this)
     this.showUsers = this.showUsers.bind(this)
+  }
+
+  setActiveItemIndex(value) {
+    this.setState({ activeItemIndex: value })
   }
 
   showUsers(e) {
@@ -40,12 +51,16 @@ export default class Users extends React.Component {
     })
   }
 
-  // componentDidUpdate() {
-  //   console.log("The component updated on ProfilePageOld, what are the props? ", this.state.props)
-  // }
+  async getArcGISData() {
+    let res = await axios.get(`/api/ArcGISData`)
+    console.log("Fetches Arc GIS Data ", res)
+    this.setState({
+      arcGISData: res
+    })
+  }
 
-  componentDidMount() {
-    console.log("We are on the Profile page component. Let's query the developers.ballotpedia.org API. WHat are the props here?", this.state.props)
+  async componentDidMount() {
+    await this.getArcGISData()
     this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
@@ -72,7 +87,7 @@ export default class Users extends React.Component {
       backgroundColor: 'rgb(250,250,250)'
     }} >
       {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
-        <button className="unTraditionalButton" onClick={e => this.showUsers(e)}>Show Users</button>
+        <button className="unTraditionalButton" style={{ fontSize: "10em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
       }
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
@@ -81,7 +96,7 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <div>
-          For when we are able to add general assembly members to the search function...!
+          When we are able to add general assembly members to the search function...:)
 
           <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
@@ -91,7 +106,123 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
         <div>
-          hello
+
+
+
+          <div style={{ padding: `0 ${40}px`, }}>
+            {
+              this.state.arcGISData && this.state.arcGISData.config && this.state.arcGISData.config.url
+            }
+            <br />
+            {
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.properties.name
+            }
+            <br />
+            {
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.type
+            }
+            <br />
+            {
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[1].docTitle
+            }
+            <br />
+            {
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[2].docTitle
+            }
+            <ItemsCarousel
+              activeItemIndex={this.state.activeItemIndex}
+              requestToChangeActive={this.setActiveItemIndex}
+              numberOfCards={29}
+              gutter={20}
+              leftChevron={<button>{'<'}</button>}
+              rightChevron={<button>{'>'}</button>}
+              outsideChevron
+              chevronWidth={10}
+            >
+              {
+                this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response.splice(0, 3) && this.state.arcGISData.data.response.map(e => {
+                  console.log("here", this.state.arcGISData.data.response)
+                  return <div style={{
+                    margin: '1em',
+                    padding: '1em',
+                    width: '200px',
+                    border: 'groove',
+                    borderStyle: 'outset',
+                    borderWidth: '1px',
+                    backgroundColor: 'white'
+                  }}>
+                    <img src={'https://source.unsplash.com/random'} style={{
+                      width: '50%',
+                      height: '100px',
+                      display: 'block',
+                      marginLeft: 'auto',
+                      marginRight: 'auto',
+                    }}></img>
+                    <div>{e.geometry.type}</div>
+                    <div>{e.properties.SHAPE_Area}</div>
+                    <div>{e.properties.acres}</div>
+                    <div>{e.properties.county_ward}</div>
+                    <div>{e.properties.municode}</div>
+                    <div>{e.properties.municode2}</div>
+                    <div>{e.properties.objectid}</div>
+                    <div>{e.properties.sqmiles}</div>
+                    <div>{e.properties.ward}</div>
+                    <div>{e.properties.ward_county}</div>
+                    <div>{e.properties.wardtext}</div>
+
+
+                  </div>
+                })
+              }
+            </ItemsCarousel>
+          </div>
+
+          <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            width: '100vw',
+            flexWrap: 'wrap',
+            backgroundColor: "rgb(10,20,30)"
+          }}>
+            {
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response.splice(0, 3) && this.state.arcGISData.data.response.map((e, index) => {
+                console.log("here", this.state.arcGISData.data.response)
+                return <div style={{
+                  margin: '1em',
+                  padding: '1em',
+                  width: '200px',
+                  border: 'groove',
+                  borderStyle: 'outset',
+                  borderWidth: '1px',
+                  backgroundColor: 'white',
+                  fontFamily: "Apple Chancery, cursive	"
+                }}>
+                  <img src={'https://source.unsplash.com/random'} style={{
+                    width: '50%',
+                    height: '100px',
+                    display: 'block',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                  }}></img>
+                  <div style={{ fontWeight: "bolder" }}>{e.geometry.type}</div>
+                  <div style={{ fontWeight: "boldest" }}>{e.properties.SHAPE_Area}</div>
+                  <div>{e.properties.acres}</div>
+                  <div style={{ fontWeight: "bold" }}>{e.properties.county_ward}</div>
+                  <div style={{ fontWeight: "bold" }}>{e.properties.municode}</div>
+                  <div style={{ fontWeight: "bold" }}>{e.properties.municode2}</div>
+                  <div>{e.properties.objectid}</div>
+                  <div>{e.properties.sqmiles}</div>
+                  <div style={{ fontWeight: "1000" }}>{e.properties.ward}</div>
+                  <div>{e.properties.ward_county}</div>
+                  <div>{e.properties.wardtext}</div>
+                  <div style={{ fontWeight: "bold" }}>{e.geometry.coordinates[index][0]}</div>
+                  <div style={{ fontWeight: "bold" }}>{e.geometry.coordinates[index][1]}</div>
+                </div>
+              })
+            }
+          </div>
+
+
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
               margin: '1em',
@@ -124,9 +255,6 @@ export default class Users extends React.Component {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
       }
 
-      {/* {
-        this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 && <LogoutComponent />
-      } */}
       <LoginCookies props={this.props} />
     </div>
 
