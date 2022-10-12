@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+.mangroveTheBackstory {
+  zoom: 70% !important;
+}
+
+@media (max-width: 400),
+(max-height: 800) {
+  .mangroveTheBackstory {
+    zoom: 40% !important;
+  }
+}
+
+
 .signupForkPage {
   /* background-image: url('aditya-joshi-7FW5-3vVRSw-unsplash.jpg'); */
   background-image: url('https://images.unsplash.com/photo-1555848965-141f2e58d1a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2800&q=80');

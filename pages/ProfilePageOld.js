@@ -7,6 +7,7 @@ import CookieView from './CookieView.js'
 import LoginCookies from './LoginCookiesOld.js'
 import LogoutComponent from './LogoutComponent.js'
 import Snowfall from 'react-snowfall'
+import MapContainer from './MapContainer.js'
 
 export default class Users extends React.Component {
   constructor(props) {
@@ -18,9 +19,11 @@ export default class Users extends React.Component {
       data: null,
       props,
       showUsers: false,
+      locationForMapContainer: {}
     }
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
     this.getArcGISData = this.getArcGISData.bind(this)
+    this.setArcGISData = this.setArcGISData.bind(this)
     this.getUsers = this.getUsers.bind(this)
     this.setActiveItemIndex = this.setActiveItemIndex.bind(this)
     this.showUsers = this.showUsers.bind(this)
@@ -32,7 +35,6 @@ export default class Users extends React.Component {
 
   showUsers(e) {
     e.preventDefault()
-    console.log('did the showUsers function get triggered?')
     this.setState({
       showUsers: !this.state.showUsers
     })
@@ -55,12 +57,23 @@ export default class Users extends React.Component {
     let res = await axios.get(`/api/ArcGISData`)
     console.log("Fetches Arc GIS Data ", res)
     this.setState({
-      arcGISData: res
+      arcGISData: res,
     })
+  }
+
+  async setArcGISData() {
+    console.log("THE DATA IS ", this.state.arcGISData)
+    // let newData = await this.state.arcGISData.data.response
+    // let loc = this.state.arcGISData.data.response.map((e, i) => {
+    //   if (e.geometry) {
+    //     return { id: i, location: { lat: e.geometry.coordinates[0], lng: e.geometry.coordinates[1] } }
+    //   }
+    // })
   }
 
   async componentDidMount() {
     await this.getArcGISData()
+    await this.setArcGISData()
     this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
@@ -87,7 +100,7 @@ export default class Users extends React.Component {
       backgroundColor: 'rgb(250,250,250)'
     }} >
       {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
-        <button className="unTraditionalButton" style={{ fontSize: "10em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
+        <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
       }
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
@@ -129,6 +142,7 @@ export default class Users extends React.Component {
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[2].docTitle
             }
+            <MapContainer array={[{ id: 1, location: { lat: 40.488, lng: -79.918 } }, { id: 2, location: { lat: 40.588, lng: -79.818 } }, { id: 3, location: { lat: 40.490, lng: -79.928 } }, { id: 4, location: { lat: 40.450, lng: -79.948 } }, { id: 1, location: { lat: 40.481, lng: -79.922 } }]} />
             <ItemsCarousel
               activeItemIndex={this.state.activeItemIndex}
               requestToChangeActive={this.setActiveItemIndex}
@@ -141,7 +155,6 @@ export default class Users extends React.Component {
             >
               {
                 this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response.splice(0, 3) && this.state.arcGISData.data.response.map(e => {
-                  console.log("here", this.state.arcGISData.data.response)
                   return <div style={{
                     margin: '1em',
                     padding: '1em',
@@ -186,7 +199,6 @@ export default class Users extends React.Component {
           }}>
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response.splice(0, 3) && this.state.arcGISData.data.response.map((e, index) => {
-                console.log("here", this.state.arcGISData.data.response)
                 return <div style={{
                   margin: '1em',
                   padding: '1em',
