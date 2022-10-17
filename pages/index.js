@@ -132,7 +132,42 @@ export default class Home extends React.Component {
   queryGeocodioLatLng(latLng) {
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
-    geocoder.reverse(latLng, ['cd'])
+    console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng)
+    // geocoder.reverse(latLng, ['cd'])
+    //   .then(response => {
+    //     function flattenObject(ob, prefix = false, result = null) {
+    //       result = result || {};
+
+    //       // Preserve empty objects and arrays, they are lost otherwise
+    //       if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
+    //         result[prefix] = Array.isArray(ob) ? [] : {};
+    //         return result;
+    //       }
+
+    //       prefix = prefix ? prefix + '.' : '';
+
+    //       for (const i in ob) {
+    //         if (Object.prototype.hasOwnProperty.call(ob, i)) {
+    //           if (typeof ob[i] === 'object' && ob[i] !== null) {
+    //             // Recursion on deeper objects
+    //             flattenObject(ob[i], prefix + i, result);
+    //           } else {
+    //             result[prefix + i] = ob[i];
+    //           }
+    //         }
+    //       }
+    //       return result;
+    //     }
+    //     let flattenedAddress = flattenObject(response)
+    //     // this.setState({ flattenedAddress })
+    //     /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
+    //     https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
+    //   })
+    //   .catch(err => {
+    //     console.error(err);
+    //   }
+    //   );
+    geocoder.reverse(latLng, ["timezone"], 5)
       .then(response => {
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
@@ -157,15 +192,13 @@ export default class Home extends React.Component {
           }
           return result;
         }
-        let flattenedAddress = flattenObject(response)
-        // this.setState({ flattenedAddress })
-        /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
-        https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
+        let flattened = flattenObject(response.results[0])
+        console.log("the response has been received!", flattened)
+        this.setState({ latLngQueryFlattened: flattened })
       })
       .catch(err => {
-        console.error(err);
-      }
-      );
+        console.log("There's an error: ", err)
+      })
   }
 
   refresh = async () => {
@@ -198,6 +231,7 @@ export default class Home extends React.Component {
   }
 
   render() {
+    console.log("The console log at the beginning of index.js is ", this.state.flattenedAddress)
     return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
       width: '100vw !important',
@@ -303,9 +337,23 @@ export default class Home extends React.Component {
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           {
+            this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {
+              return <div key={key} style={{ backgroundColor: `rgb(${0.5 * index + 100}, ${0 * index + 100}, ${0.3 * index + 10})` }}>
+                <div>
+                  the real lat lng are
+                  {this.state.latLngQueryFlattened[key]}
+                </div>
+              </div>
+            })
+          }
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
               return <div key={key} style={{ backgroundColor: `rgb(${0.5 * index + 200}, ${0 * index + 200}, ${0.3 * index + 200})` }}>
                 <div>
+                  the keys are
                   {this.state.flattenedAddress[key]}
                 </div>
               </div>

@@ -75,6 +75,7 @@ export default class Users extends React.Component {
     await this.getArcGISData()
     await this.setArcGISData()
     this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
+    this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -97,7 +98,7 @@ export default class Users extends React.Component {
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',
-      backgroundColor: 'rgb(250,250,250)'
+      backgroundColor: 'rgb(250,250,150)'
     }} >
       {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
@@ -114,7 +115,11 @@ export default class Users extends React.Component {
           <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
-          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Search</button>
+          <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
+            onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
+          />
+          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
+          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
         </div>}
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
@@ -128,19 +133,19 @@ export default class Users extends React.Component {
             }
             <br />
             {
-              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.properties.name
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0] && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.properties.name
             }
             <br />
             {
-              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.type
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0] && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.type
             }
             <br />
             {
-              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[1].docTitle
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[1] && this.state.arcGISData.data.response[1].docTitle
             }
             <br />
             {
-              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[2].docTitle
+              this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[2] && this.state.arcGISData.data.response[2].docTitle
             }
             <MapContainer array={[{ id: 1, location: { lat: 40.488, lng: -79.918 } }, { id: 2, location: { lat: 40.588, lng: -79.818 } }, { id: 3, location: { lat: 40.490, lng: -79.928 } }, { id: 4, location: { lat: 40.450, lng: -79.948 } }, { id: 1, location: { lat: 40.481, lng: -79.922 } }]} />
             <ItemsCarousel
@@ -209,6 +214,7 @@ export default class Users extends React.Component {
                   backgroundColor: 'white',
                   fontFamily: "Apple Chancery, cursive	"
                 }}>
+                  leen
                   <img src={'https://source.unsplash.com/random'} style={{
                     width: '50%',
                     height: '100px',
@@ -234,7 +240,7 @@ export default class Users extends React.Component {
             }
           </div>
 
-
+          Where is it getting mapped?
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
               margin: '1em',
@@ -245,6 +251,7 @@ export default class Users extends React.Component {
               borderWidth: '1px',
               backgroundColor: 'white'
             }}>
+              aww
               <img src={'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'} style={{
                 width: '50%',
                 height: '100px',

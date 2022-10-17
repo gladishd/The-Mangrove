@@ -14,6 +14,7 @@
     "download-webviewer": "npx @pdftron/webviewer-downloader"
   },
   "dependencies": {
+    "@arcgis/core": "^4.24.7",
     "@pdftron/webviewer": "^8.9.0",
     "@react-google-maps/api": "^2.13.1",
     "express": "^4.18.1",
@@ -32,6 +33,7 @@
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {
+    "arcgis": "^1.0.2",
     "axios": "^0.27.2",
     "cookie": "^0.5.0",
     "cookie-parser": "^1.4.6",

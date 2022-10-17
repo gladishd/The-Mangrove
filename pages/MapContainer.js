@@ -5,6 +5,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 // import Button from '@material-ui/core/Button';
+// https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#:~:text=You%20can%20use%20this%20module,generate%20candidates%20for%20an%20address.
+import * as locator from "@arcgis/core/rest/locator";
 
 const MapContainer = ({ array, isAdding, getLocation }) => {
   const [currentPosition, setCurrentPosition] = useState({});
@@ -18,12 +20,32 @@ const MapContainer = ({ array, isAdding, getLocation }) => {
   }
 
   const success = (position) => {
+    console.log("is this getting looped?")
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
     const currentPosition = {
       lat: latitude,
       lng: longitude
     }
+
+    // https://developers.arcgis.com/documentation/mapping-apis-and-services/search/reverse-geocoding/
+    let pt = currentPosition;
+    const geocodingServiceUrl = "https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer";
+
+    const params = {
+      location: pt
+    };
+
+    locator.locationToAddress(geocodingServiceUrl, params).then(
+      (response) => {
+        if (response) {
+          showPopup(response);
+        }
+      },
+      (err) => {
+        showPopup("No address found.", pt);
+      }
+    );
     setCurrentPosition(currentPosition);
   }
 
@@ -55,6 +77,11 @@ const MapContainer = ({ array, isAdding, getLocation }) => {
   }
 
   useEffect(() => {
+    console.log("IN THE USE EFFECT HOOK", currentPosition)
+    console.log("IN THE USE EFFECT HOOK", currentPosition)
+    console.log("IN THE USE EFFECT HOOK", currentPosition)
+    console.log("IN THE USE EFFECT HOOK", currentPosition)
+    console.log("IN THE USE EFFECT HOOK", currentPosition)
     navigator.geolocation.getCurrentPosition(success);
   })
 
@@ -71,6 +98,14 @@ const MapContainer = ({ array, isAdding, getLocation }) => {
           zoom={13}
           center={currentPosition.lat ? currentPosition : defaultCenter}
         >
+          {
+            currentPosition && <Marker
+              key={'currentPositionId'}
+              position={currentPosition}
+              onClick={() => onSelect(currentPosition)}
+            />
+          }
+
           {
             array ?
               array.map(item => {
