@@ -231,13 +231,11 @@ export default class Home extends React.Component {
   }
 
   render() {
-    console.log("The console log at the beginning of index.js is ", this.state.flattenedAddress)
     return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
       width: '100vw !important',
       display: 'flex',
       justifyContent: 'center',
-
     }}>
 
       <CookieView propsFn={this.dataFetchPoliticians} />
@@ -335,27 +333,30 @@ export default class Home extends React.Component {
 
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        {/* https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/ */}
+
+        <h1>The Latitude & Longitude Query.</h1>
+        <div className="cards">
           {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {
-              return <div key={key} style={{ backgroundColor: `rgb(${0.5 * index + 100}, ${0 * index + 100}, ${0.3 * index + 10})` }}>
-                <div>
-                  the real lat lng are
-                  {this.state.latLngQueryFlattened[key]}
-                </div>
+              return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 100}, ${0 * 10 * index + 100}, ${0.3 * 10 * index + 10})` }}>
+                <b>{key}</b>
+
+                <div>{this.state.latLngQueryFlattened[key]}</div>
+
               </div>
             })
           }
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <h1>The Address Query.</h1>
+        <div className="cards">
           {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
-              return <div key={key} style={{ backgroundColor: `rgb(${0.5 * index + 200}, ${0 * index + 200}, ${0.3 * index + 200})` }}>
-                <div>
-                  the keys are
-                  {this.state.flattenedAddress[key]}
-                </div>
+              return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 200}, ${0 * 10 * index + 200}, ${0.3 * 10 * index + 200})` }}>
+                <b style={{ fontSize: '0.25em' }}> {key}</b>
+                <div>{this.state.flattenedAddress[key]}</div>
+
               </div>
             })
           }
@@ -497,9 +498,7 @@ export default class Home extends React.Component {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: 'Times New Roman', Times, serif;
         }
 
         * {

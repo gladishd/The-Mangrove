@@ -98,7 +98,7 @@ export default class Users extends React.Component {
       display: 'flex',
       flexDirection: 'row',
       flexWrap: 'wrap',
-      backgroundColor: 'rgb(250,250,150)'
+      backgroundColor: 'rgb(255,255,255)'
     }} >
       {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
@@ -110,7 +110,7 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
         <div>
-          When we are able to add general assembly members to the search function...:)
+          Todo: Add General Assembly Members to the Search Function>:D)
 
           <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
