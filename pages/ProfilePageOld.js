@@ -1,6 +1,5 @@
 import axios from 'axios'
-// import React from 'react'
-import React, { useState } from 'react';
+import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
 
 import CookieView from './CookieView.js'
@@ -62,7 +61,6 @@ export default class Users extends React.Component {
   }
 
   async setArcGISData() {
-    console.log("THE DATA IS ", this.state.arcGISData)
     // let newData = await this.state.arcGISData.data.response
     // let loc = this.state.arcGISData.data.response.map((e, i) => {
     //   if (e.geometry) {
@@ -75,7 +73,6 @@ export default class Users extends React.Component {
     await this.getArcGISData()
     await this.setArcGISData()
     this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
-    this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")
     // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -96,37 +93,40 @@ export default class Users extends React.Component {
   render() {
     return <div style={{
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
       flexWrap: 'wrap',
-      backgroundColor: 'rgb(255,255,255)'
+      backgroundColor: 'rgb(255,255,255)',
+      height: '100vh',
+      width: 'auto'
     }} >
-      {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
-        <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
-      }
       <CookieView propsFn={this.dataFetchPoliticians} />
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length === 0 && <Snowfall />
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
-        <div>
-          Todo: Add General Assembly Members to the Search Function>:D)
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 'auto', justifyContent: 'space-between' }}>
 
-          <input className='addressSearchClass' placeHolder="1109 N Highland St, Arlington, VA 22201" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
+          {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
+            <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
+          }
+          <input
+            className='addressSearchClass'
+            placeHolder="1109 N Highland St, Arlington, VA 22201"
+            style={{ width: '50vw', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
+          {/* <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
+
           <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
-          />
+          /> */}
           <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
-          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
         </div>}
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
         <div>
-
-
-
           <div style={{ padding: `0 ${40}px`, }}>
             {
               this.state.arcGISData && this.state.arcGISData.config && this.state.arcGISData.config.url
@@ -273,8 +273,8 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
       }
-
       <LoginCookies props={this.props} />
+      Todo: Add General Assembly Members to the Search Function>:D)
     </div>
 
   }

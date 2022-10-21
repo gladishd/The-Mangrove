@@ -55,6 +55,7 @@ export default class Home extends React.Component {
       flattenedAddress: null,
       flattenedLatLng: null,
       responseSuccess: null,
+      latAndLongFromAddress: null,
     }
     this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
@@ -121,6 +122,10 @@ export default class Home extends React.Component {
 
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
+        console.log("On the queryGeocodioAddress, our latitude and longitude are ", flattenedAddress["results.0.location.lat"], flattenedAddress["results.0.location.lng"])
+        let latitudeLongitude = flattenedAddress["results.0.location.lat"] + ", " + flattenedAddress["results.0.location.lng"]
+        console.log("THe LAtTiDUE And LonGiTudE ARe ", latitudeLongitude)
+        this.queryGeocodioLatLng(latitudeLongitude)
       })
       .catch(err => {
         console.error(err);
@@ -132,41 +137,9 @@ export default class Home extends React.Component {
   queryGeocodioLatLng(latLng) {
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
-    console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng)
-    // geocoder.reverse(latLng, ['cd'])
-    //   .then(response => {
-    //     function flattenObject(ob, prefix = false, result = null) {
-    //       result = result || {};
-
-    //       // Preserve empty objects and arrays, they are lost otherwise
-    //       if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
-    //         result[prefix] = Array.isArray(ob) ? [] : {};
-    //         return result;
-    //       }
-
-    //       prefix = prefix ? prefix + '.' : '';
-
-    //       for (const i in ob) {
-    //         if (Object.prototype.hasOwnProperty.call(ob, i)) {
-    //           if (typeof ob[i] === 'object' && ob[i] !== null) {
-    //             // Recursion on deeper objects
-    //             flattenObject(ob[i], prefix + i, result);
-    //           } else {
-    //             result[prefix + i] = ob[i];
-    //           }
-    //         }
-    //       }
-    //       return result;
-    //     }
-    //     let flattenedAddress = flattenObject(response)
-    //     // this.setState({ flattenedAddress })
-    //     /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
-    //     https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
-    //   })
-    //   .catch(err => {
-    //     console.error(err);
-    //   }
-    //   );
+    console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng, "and the geocoder object is ", geocoder)
+    /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
+         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
     geocoder.reverse(latLng, ["timezone"], 5)
       .then(response => {
         function flattenObject(ob, prefix = false, result = null) {
@@ -230,6 +203,15 @@ export default class Home extends React.Component {
       })
   }
 
+  // componentDidUpdate() {
+  //   if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
+  //     let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
+  //     this.setState({
+  //       latAndLongFromAddress
+  //     })
+  //   }
+  // }
+
   render() {
     return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
@@ -249,6 +231,8 @@ export default class Home extends React.Component {
           queryGeocodioAddress={this.queryGeocodioAddress}
           searchQueryAddress={this.state.searchQueryAddress}
           queryGeocodioLatLng={this.queryGeocodioLatLng}
+        // flattenedAddress={this.state.latAndLongFromAddress}
+        // flattenedAddress={"38.886672, -77.094735"}
         />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
@@ -330,25 +314,7 @@ export default class Home extends React.Component {
             </a>
             <button className="unTraditionalButton" onClick={e => this.refresh()}>Refresh</button>
           </footer>
-
         </div>
-
-        {/* https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/ */}
-
-        <h1>The Latitude & Longitude Query.</h1>
-        <div className="cards">
-          {
-            this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {
-              return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 100}, ${0 * 10 * index + 100}, ${0.3 * 10 * index + 10})` }}>
-                <b>{key}</b>
-
-                <div>{this.state.latLngQueryFlattened[key]}</div>
-
-              </div>
-            })
-          }
-        </div>
-
         <h1>The Address Query.</h1>
         <div className="cards">
           {
@@ -356,6 +322,23 @@ export default class Home extends React.Component {
               return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 200}, ${0 * 10 * index + 200}, ${0.3 * 10 * index + 200})` }}>
                 <b style={{ fontSize: '0.25em' }}> {key}</b>
                 <div>{this.state.flattenedAddress[key]}</div>
+
+              </div>
+            })
+          }
+        </div>
+
+        {/* https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/ */}
+
+
+        <h3>The Latitude & Longitude Query. By default, this will be equal to the query generated following the Address Query -> Returns information like Congressional Districts, Contact Phone & URL, (Biography: Birthday, Party, Last Name,) and Current Legislators Source & Type.</h3>
+        <div className="cards">
+          {
+            this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {
+              return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 100}, ${0 * 10 * index + 100}, ${0.3 * 10 * index + 10})` }}>
+                <b>{key}</b>
+
+                <div>{this.state.latLngQueryFlattened[key]}</div>
 
               </div>
             })
