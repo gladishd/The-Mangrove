@@ -91,8 +91,14 @@ export default class Home extends React.Component {
   queryGeocodioAddress(address) {
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('166b422226b9264993154a4a4652b61423a3153');
-    geocoder.geocode(address, ['cd'])
+    // geocoder.geocode(address, ['cd'])
+    geocoder.geocode(address, ['cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6', 'stateleg', 'stateleg-next', 'school', "census", "census2000", 'census2010', "census2011", "census2012", "census2013", 'census2014', 'census2015', 'census2016', 'census2017', 'census2018', 'census2019', 'census2020', 'census2021', 'acs-demographics', 'acs-economics', 'acs-families', 'acs-housing', 'acs-social', 'zip4', 'riding', 'provriding', 'statcan', 'timezone'])
       .then(async response => {
+        console.group('On queryGeoCodioAddress, the response we are getting is like this:'); // Group Method with parameter
+        console.log("Group Begin");
+        console.log(response);
+        console.log("Group End");
+        console.groupEnd();
         let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
@@ -140,8 +146,14 @@ export default class Home extends React.Component {
     console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng, "and the geocoder object is ", geocoder)
     /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
          https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
-    geocoder.reverse(latLng, ["timezone"], 5)
+    // geocoder.reverse(latLng, ["timezone"], 5)
+    geocoder.reverse(latLng)
       .then(response => {
+        console.group('On queryGeoCodioLatLnG, the response we are getting is like this:'); // Group Method with parameter
+        console.log("Group Begin");
+        console.log(response);
+        console.log("Group End");
+        console.groupEnd();
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
 
