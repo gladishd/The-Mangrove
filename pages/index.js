@@ -308,31 +308,26 @@ export default class Home extends React.Component {
               <br />
               <div>New User?</div>
               <br />
-
-
-
               <button onClick={e => Router.push('/signup-fork')} style={{ width: '100px', marginLeft: '125px' }}>Sign up</button>
             </center>
           </main>
-
           <footer>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Powered by{' '}
-              <img src="/vercel.svg" alt="Vercel" className="logo" />
-            </a>
             <button className="unTraditionalButton" onClick={e => this.refresh()}>Refresh</button>
           </footer>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>The Address Query.</h1>
         <div className="cards">
           {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
-              return <div className="card" key={key} style={{ backgroundColor: `rgb(${0.5 * 10 * index + 200}, ${0 * 10 * index + 200}, ${0.3 * 10 * index + 200})` }}>
-                <b style={{ fontSize: '0.25em' }}> {key}</b>
+              return <div
+                className="card"
+                key={key}
+                style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
+                <b style={{ fontSize: '0.25em' }}>{key}</b>
                 <div>{this.state.flattenedAddress[key]}</div>
 
               </div>

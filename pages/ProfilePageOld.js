@@ -97,7 +97,7 @@ export default class Users extends React.Component {
       justifyContent: 'space-between',
       flexWrap: 'wrap',
       backgroundColor: 'rgb(255,255,255)',
-      height: '100vh',
+      height: '0',
       width: 'auto'
     }} >
       <CookieView propsFn={this.dataFetchPoliticians} />
@@ -106,7 +106,13 @@ export default class Users extends React.Component {
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: 'auto', justifyContent: 'space-between' }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          height: 'auto',
+          justifyContent: 'space-between',
+        }}>
 
           {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
             <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
@@ -122,7 +128,9 @@ export default class Users extends React.Component {
           <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
           /> */}
-          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
+          <button
+            className='unTraditionalButton'
+            onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
         </div>}
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
@@ -274,7 +282,6 @@ export default class Users extends React.Component {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
       }
       <LoginCookies props={this.props} />
-      Todo: Add General Assembly Members to the Search Function>:D)
     </div>
 
   }
