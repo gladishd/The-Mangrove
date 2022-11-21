@@ -3,7 +3,7 @@
   "description": "a really cool app",
   "version": "1.0.0",
   "engines": {
-    "node": "16.17.0"
+    "node": "16.18.1"
   },
   "private": true,
   "scripts": {
@@ -33,7 +33,7 @@
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {
-    "arcgis": "^1.0.2",
+    "arcgis": "^0.0.2",
     "axios": "^0.27.2",
     "cookie": "^0.5.0",
     "cookie-parser": "^1.4.6",

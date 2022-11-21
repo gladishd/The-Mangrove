@@ -2808,7 +2808,7 @@ declare namespace Core.PDFNet {
          */
         getLockedFields(): Promise<string[]>;
         /**
-         * Verifies this cryptographic digital signature in the manner specified by the VerificationOptions. EXPERIMENTAL. Digital signature verification is undergoing active development, but currently does not support a number of features. If we are missing a feature that is important to you, or if you have files that do not act as expected, please contact us using one of the following forms: https://www.pdftron.com/form/trial-support/ or https://www.pdftron.com/form/request/
+         * Verifies this cryptographic digital signature in the manner specified by the VerificationOptions.
          * @param in_opts - - The options specifying how to do the verification.
          * @returns A promise that resolves to a VerificationResult object containing various information about the verifiability of the cryptographic digital signature.
          */
@@ -18878,6 +18878,10 @@ declare namespace Core.PDFNet {
          */
         setRevocationProxyPrefix(in_str: string): Promise<void>;
         /**
+         * Sets the timeout for online revocation requests.
+         */
+        setRevocationTimeout(in_revocation_timeout_milliseconds: number): Promise<void>;
+        /**
          * Enables/disables online CRL revocation checking. The default setting is
          * for it to be turned off, but this may change in future versions.
          *
@@ -20339,12 +20343,12 @@ declare namespace Core.PDFNet {
          */
         class XODOutputOptions extends PDFNet.Convert.XPSOutputCommonOptions {
             /**
-             * Sets whether per page thumbnails should be included in the file.
-            Default is true.
-             * @param include_thumbs - if true thumbnails will be included
+             * Sets whether text extraction uses Z-order as reading order.
+            Default is false.
+             * @param use_zorder - if true text extraction uses Z-order as reading order.
              * @returns this object, for call chaining
              */
-            setOutputThumbnails(include_thumbs: boolean): PDFNet.Convert.XODOutputOptions;
+            setExtractUsingZorder(use_zorder: boolean): PDFNet.Convert.XODOutputOptions;
             /**
              * Sets whether per page thumbnails should be included in the file.
             Default is true.
@@ -23423,7 +23427,11 @@ declare namespace Core {
                 /**
                  * Compressed data of the attachment
                  */
-                content: string;
+                content?: string;
+                /**
+                 * URL pointing to the attachment saved on cloud
+                 */
+                url?: string;
             };
             /**
              */
@@ -24598,7 +24606,7 @@ declare namespace Core {
             /**
              * Gets or sets the border dash style of an annotation. e.g '3' or '3,3'
              */
-            Dashes: string;
+            Dashes: string | number[];
             /**
              * Gets or sets the annotation's precision from its measure dictionary.
              * @example
@@ -24726,7 +24734,7 @@ declare namespace Core {
             /**
              * Gets or sets the border dash style of an annotation. e.g '3' or '3,3'
              */
-            Dashes: string;
+            Dashes: string | number[];
             /**
              * Gets or sets the annotation's precision from its measure dictionary.
              * @example
@@ -25210,7 +25218,7 @@ declare namespace Core {
             /**
              * Gets or sets the border dash style of an annotation. e.g '3' or '3,3'
              */
-            Dashes: string;
+            Dashes: string | number[];
             /**
              * Gets or sets the annotation's precision from its measure dictionary.
              * @example
@@ -25393,7 +25401,7 @@ declare namespace Core {
             /**
              * Gets or sets the border dash style of an annotation. e.g '3' or '3,3'
              */
-            Dashes: string;
+            Dashes: string | number[];
             /**
              * Gets or sets the annotation's precision from its measure dictionary.
              * @example
@@ -25519,7 +25527,7 @@ declare namespace Core {
             /**
              * Gets or sets the border dash style of an annotation. e.g '3' or '3,3'
              */
-            Dashes: string;
+            Dashes: string | number[];
             /**
              * Gets or sets the annotation's precision from its measure dictionary.
              * @example
@@ -26073,6 +26081,11 @@ declare namespace Core {
              * @returns Boolean representing whether this widget is setup for initials or signatures. Based on this flag it will either render the "Sign Here" text handler or "Initials"
              */
             requiresInitials(): boolean;
+            /**
+             * Signs a signature widget by adding a signature annotation that is rotated and resized accordingly.
+             * @param signature - a freehand annotation or a stamp annotation to sign with.
+             */
+            sign(signature: Core.Annotations.FreeHandAnnotation | Core.Annotations.StampAnnotation): void;
             /**
              * Get or set the annotation associated with the signature widget.
              */
@@ -27178,6 +27191,19 @@ declare namespace Core {
             DIAMOND,
             CIRCLE,
             SLASH
+        }
+        /**
+         * An enum representing different line types that are available for line annotations
+         */
+        enum LineStyleType {
+            SOLID,
+            DASH_1_2_2,
+            DASH_3_3,
+            DASH_3_3_4,
+            DASH_1_3_5,
+            DASH_2_2_4,
+            DASH_4_3_16_3,
+            CLOUDY
         }
     }
     /**
@@ -28442,6 +28468,10 @@ declare namespace Core {
          * If true, source will be considered as relative path/url.
          */
         isRelativePath?: boolean;
+        /**
+         * If true, will retrieve invalid bookmarks
+         */
+        showInvalidBookmarks?: boolean;
         /**
          * An object that contains the options for an Office document.
          */
@@ -29951,7 +29981,7 @@ declare namespace Core {
          * Sets the XFDF retriever that will be called when a document is being loaded. The XFDF returned from the retriever will be merged into the document.
          * It is recommended to use this function instead of annotManager.importAnnotations if you are loading XFDF from your server so that you don't need to wait for the annotationsLoaded event to be triggered. setDocumentXFDFRetriever will ensure that the annotation data is merged at the right time and as early as possible.
          * @example
-         * instance.docViewer.setDocumentXFDFRetriever(async (documentId) => {
+         * instance.Core.documentViewer.setDocumentXFDFRetriever(async (documentId) => {
          *   const documentXFDFString = await fetchDocumentXFDFFromServer(documentId);
          *   return documentXFDFString;
          * })
@@ -31176,7 +31206,7 @@ declare namespace Core {
     }
     namespace DocumentViewer {
         /**
-         * @param docId - the id of the document that is being loaded
+         * @param docId - The id of the document that is being loaded
          */
         type DocumentXFDFRetriever = (docId: string) => Promise<string | string[]>;
         /**
@@ -34747,6 +34777,20 @@ declare namespace Core {
              */
             disableAutoFocusOnCreate(): void;
             /**
+             * Enables the abilities to add free text annotations with less clicks.
+             * @example
+             * const { Core } = instance;
+             * Core.documentViewer.getTool(Core.Tools.ToolNames.FREETEXT).enableCreationWhileSelecting();
+             */
+            enableCreationWhileSelecting(): void;
+            /**
+             * Disables the abilities to add free text annotations with less clicks.
+             * @example
+             * const { Core } = instance;
+             * Core.documentViewer.getTool(Core.Tools.ToolNames.FREETEXT).disableCreationWhileSelecting();
+             */
+            disableCreationWhileSelecting(): void;
+            /**
              * Returns whether free text annotations autofocus on creation.
              * @returns Returns true if free texts are autofocused on creation, false otherwise.
              */
@@ -35218,15 +35262,15 @@ declare namespace Core {
         }
         /**
          * Represents a point on a page
-         * @property pageIndex - the 0-based page value
+         * @property pageNumber - the 1-indexed page number
          * @property x - the x offset of this point relative to the top left corner of the page
          * @property y - the y offset of this point relative to the top left corner of the page
          */
         class PageCoordinate {
             /**
-             * the 0-based page value
+             * the 1-indexed page number
             */
-            pageIndex: number;
+            pageNumber: number;
             /**
              * the x offset of this point relative to the top left corner of the page
             */
@@ -38804,6 +38848,17 @@ declare namespace Core {
      *   });
      */
     var documentViewer: Core.DocumentViewer;
+    /**
+     * Gets an array of currently instantiated documentViewer objects.
+     * @example
+     * WebViewer(...)
+     *   .then(function(instance) {
+     *     const documentViewerList = instance.Core.getDocumentViewers();
+     *     documentViewerList.forEach(documentViewer => documentViewer.loadDocument(doc, options));
+     *   });
+     * @returns Array of documentViewer objects that are being used for the UI
+     */
+    function getDocumentViewers(): Core.DocumentViewer[];
 }
 
 /**
@@ -40617,6 +40672,24 @@ declare namespace UI {
          *   });
          */
         function disableAttachmentPreview(): void;
+        /**
+         * @param file - The file selected to be uploaded
+         */
+        type attachmentHandler = (file: File) => Promise<string>;
+        /**
+         * Set the handler function for reply attachment. Can use this for uploading attachments to cloud.
+         * @example
+         * WebViewer(...)
+         *   .then(function(instance) {
+         *     instance.UI.NotesPanel.setAttachmentHandler(async (file) => {
+         *       const uploadedURL = await aws.upload(file); //e.g. https://pdftron.s3.amazonaws.com/downloads/pl/demo.pdf
+         *
+         *       return uploadedURL;
+         *     });
+         *   });
+         * @param handler - The handler function
+         */
+        function setAttachmentHandler(handler: UI.NotesPanel.attachmentHandler): void;
     }
     /**
      * Sets visibility states of the elements to be visible. Note that openElements works only for panel/overlay/popup/modal elements.
@@ -40826,6 +40899,24 @@ declare namespace UI {
          * @returns Current items in the PageManipulationOverlay.
          */
         getItems(): UI.PageManipulationOverlay.PageManipulationSection[];
+        /**
+         * Disables the Page Manipulation Overlay opening through right-click.
+         * @example
+         * WebViewer(...)
+         *   .then(function(instance) {
+         *     instance.UI.pageManipulationOverlay.disableOpeningByRightClick();
+         *   });
+         */
+        disableOpeningByRightClick(): void;
+        /**
+         * Enables the Page Manipulation Overlay opening through right-click.
+         * @example
+         * WebViewer(...)
+         *   .then(function(instance) {
+         *     instance.UI.pageManipulationOverlay.enableOpeningByRightClick();
+         *   });
+         */
+        enableOpeningByRightClick(): void;
     }
     /**
      * Print the current document.
@@ -41220,6 +41311,34 @@ declare namespace UI {
      * @param customOverlayInfo - an array of customOverlay configurations. The configuration object has five properties: title, label, validate, value, and onChange
      */
     function setCustomMeasurementOverlay(customOverlayInfo: any[]): void;
+    /**
+     * @param acceptedFileFormats - The file formats to support when accepting files in multiviewer mode
+     */
+    type CustomMultiViewerAcceptedFileFormats = (acceptedFileFormats: string[]) => void;
+    /**
+     * @example
+     * WebViewer(...)
+     *   .then(function(instance) {
+     *     instance.UI.setCustomMultiViewerAcceptedFormats(['pdf']);
+     *   });
+     */
+    function setCustomMultiViewerAcceptedFileFormats(customMultiViewerAcceptedFileFormats: UI.CustomMultiViewerAcceptedFileFormats): void;
+    /**
+     * @param primaryDocumentViewerKey - The primary documentViewerKey to be used when syncing
+     * @param removeHandlerFunctions - The event listeners to remove when syncing is finished
+     */
+    type CustomMultiViewerSyncHandler = (primaryDocumentViewerKey: number, removeHandlerFunctions: ((...params: any[]) => void)[]) => void;
+    /**
+     * @example
+     * WebViewer(...)
+     *   .then(function(instance) {
+     *     instance.UI.setCustomMultiViewerSyncHandler((primaryDocumentViewerKey, removeHandlerFunctions) => {
+     *       // some code
+     *     })
+     *   });
+     * @param customMultiViewerSyncHandler - The function that will be invoked when syncing documents in multi viewer mode.
+     */
+    function setCustomMultiViewerSyncHandler(customMultiViewerSyncHandler: UI.CustomMultiViewerSyncHandler): void;
     /**
      * Filter the annotations shown in the notes panel
      * @example
@@ -41733,6 +41852,22 @@ declare namespace UI {
         width: number;
     }): void;
     /**
+     * Sets preset page dimensions to be used when selecting a page size in the Insert Page Modal
+     * @example
+     * WebViewer(...)
+     *   .then(function(instance) {
+     *     instance.UI.setPresetNewPageDimensions('Letter', {'height': 11, 'width': 8.5});
+     *   });
+     * @param presetName - The name of a current preset or the name to give to a new preset
+     * @param newPreset - A set of dimensions to use for a preset new page
+     * @param newPreset.height - The height of the new page in inches
+     * @param newPreset.width - The width of the new page in inches
+     */
+    function setPresetNewPageDimensions(presetName: string, newPreset: {
+        height: number;
+        width: number;
+    }): void;
+    /**
      * Sets the print quality. Higher values are higher quality but takes longer to complete and use more memory. The viewer's default quality is 1.
      * @example
      * WebViewer(...)
@@ -41842,14 +41977,13 @@ declare namespace UI {
      *     });
      *   });
      * @param language - The language code for which you want to add/edit translation data
-     * @param translationObject - A key/value object with the new/updated translations
-     * @param translationObject.key - A key value for the new/updated translation.
-     * Refer to the lib/ui/i18n folder to find the existing keys in the translation files
-     * @param translationObject.value - A value of the new/updated translation
+     * @param translationObject - <p> A key/value object with the new/updated translations. </p>
+     * <p> The key values of the translation object will be the translation key for the new/updated translation.
+     * Refer to the lib/ui/i18n folder to find the existing keys in the translation files </p>
+     * <p> The values of the translation object will be the value of the new/updated translation</p>
      */
     function setTranslations(language: string, translationObject: {
-        key: string;
-        value: string;
+        [key: string]: string;
     }): void;
     /**
      * Set the WV3D Properties Panel with an array of model data objects
@@ -42022,6 +42156,18 @@ declare namespace UI {
         onConfirm: (...params: any[]) => any;
         onCancel: (...params: any[]) => any;
     }): void;
+    /**
+     * Signs a specified signature widget with a specified signature.
+     * If no signature is provided, select an available signature or start the process to create a new one, and then use it to sign the signature widget.
+     * @example
+     * WebViewer(...)
+     *   .then(function(instance) {
+     *     instance.UI.signSignatureWidget(signatureWidget, signature);
+     *   });
+     * @param signatureWidget - The signature widget to sign.
+     * @param [signature] - The signature annotation to sign with.
+     */
+    function signSignatureWidget(signatureWidget: Core.Annotations.SignatureWidgetAnnotation, signature?: Core.Annotations.FreeHandAnnotation | Core.Annotations.StampAnnotation): void;
     /**
      * Syncs the namespaces under the Core namespace for the window, this instance, as well as others instances.
      * <br/><br/>
@@ -42587,6 +42733,7 @@ declare namespace UI {
      * @property MultiTab - toggle feature to open multiple documents in the same viewer instance
      * @property MultiViewerMode - toggle feature to activate 2 viewers in Compare Mode.
      * @property Initials - toggle feature to activate initials signing mode in the Signature Modal
+     * @property SavedSignaturesTab - toggle feature to enable the saved signatures tab in the Signature Modal and use it to sign elements.
      */
     var Feature: {
         /**
@@ -42689,6 +42836,10 @@ declare namespace UI {
          * toggle feature to activate initials signing mode in the Signature Modal
          */
         Initials: string;
+        /**
+         * toggle feature to enable the saved signatures tab in the Signature Modal and use it to sign elements.
+         */
+        SavedSignaturesTab: string;
     };
     /**
      * Contains all possible modes for fitting/zooming pages to the viewer. The behavior may vary depending on the LayoutMode.

@@ -94,7 +94,8 @@ export default class Home extends React.Component {
     // geocoder.geocode(address, ['cd'])
     geocoder.geocode(address, ['cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6', 'stateleg', 'stateleg-next', 'school', "census", "census2000", 'census2010', "census2011", "census2012", "census2013", 'census2014', 'census2015', 'census2016', 'census2017', 'census2018', 'census2019', 'census2020', 'census2021', 'acs-demographics', 'acs-economics', 'acs-families', 'acs-housing', 'acs-social', 'zip4', 'riding', 'provriding', 'statcan', 'timezone'])
       .then(async response => {
-        console.group('On queryGeoCodioAddress, the response we are getting is like this:'); // Group Method with parameter
+        console.group('On queryGeoCodioAddress, the original response that we get from GeoCodio looks like this', response);
+        // Group Method with parameter
         console.log("Group Begin");
         console.log(response);
         console.log("Group End");
@@ -322,16 +323,30 @@ export default class Home extends React.Component {
         <h1>The Address Query.</h1>
         <div className="cards">
           {
-            this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.flattenedAddress && Object.keys(this.state.flattenedAddress).map((key, index) => {
-              return <div
-                className="card"
-                key={key}
-                style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                <b style={{ fontSize: '0.25em' }}>{key}</b>
-                <div>{this.state.flattenedAddress[key]}</div>
+            console.log("The data object that we are working with is ", this.state.flattenedAddress)
+          }
+          {
+            this.state.cookieValue &&
+            Object.keys(this.state.cookieValue).length &&
+            this.state.flattenedAddress &&
+            Object.keys(this.state.flattenedAddress).filter(key => [
+              "results.0.fields.congressional_districts.0.current_legislators.0.references.ballotpedia_id",
+              "results.0.fields.congressional_districts.0.current_legislators.0.bio.party",
+              "results.0.fields.congressional_districts.0.name",
+              "results.0.fields.congressional_districts.0.current_legislators.0.contact.address",
+              "results.0.fields.congressional_districts.0.current_legislators.0.contact.phone",
+              "results.0.fields.congressional_districts.0.current_legislators.0.contact.url"
+            ].includes(key))
+              .map((key, index) => {
+                return <div
+                  className="card"
+                  key={key}
+                  style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
+                  <b style={{ fontSize: '0.25em' }}>{key}</b>
+                  <div>{this.state.flattenedAddress[key]}</div>
 
-              </div>
-            })
+                </div>
+              })
           }
         </div>
 
