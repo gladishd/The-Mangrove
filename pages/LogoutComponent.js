@@ -13,7 +13,7 @@ const Login = ({ name, cookieSet }) => {
   return (
     <>
       <button className="unTraditionalButton"
-        style={{ margin: 'auto' }}
+        style={{ margin: 'auto', padding: '1em' }}
         onClick={e => {
           console.log("You clicked the button!")
           removeCookie("user")

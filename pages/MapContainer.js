@@ -83,6 +83,9 @@ const MapContainer = ({ array, isAdding, getLocation }) => {
     console.log("IN THE USE EFFECT HOOK", currentPosition)
     console.log("IN THE USE EFFECT HOOK", currentPosition)
     navigator.geolocation.getCurrentPosition(success);
+    return () => {
+      console.log('This will be logged on unmount');
+    };
   })
 
   return (

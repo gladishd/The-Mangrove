@@ -3,34 +3,36 @@ import { useCookies } from "react-cookie"
 import React, { useEffect } from 'react';
 import Router from 'next/router'
 
-const Login = ({ name, cookieSet }) => {
+const Login = (props) => {
   const [cookie, setCookie] = useCookies(["user"]);
 
-  const [cookieData, setCookieData] = React.useState(cookieSet); // this runs only once, when the component is mounted, not when i.e. contact updates.
+  const [cookieData, setCookieData] = React.useState(props.cookieSet); // this runs only once, when the component is mounted, not when i.e. contact updates.
 
   const [variable, setVariable] = React.useState(0);
 
   useEffect(() => {
-    console.log('Does the first useEffect in LoginCookiesOld hook get called?')
-    setCookieData(cookieSet);
-    console.log("I'm on the LoginCookiesOld.js component, what is the cookieData? ", cookieData)
-  }, [cookieSet]) // now this listens to changes in contact
+    setCookieData(props.cookieSet);
+    console.log("I'm on the LoginCookiesOld.js component, what is the cookieData? Yes the useEffect hoook gets called", cookieData)
+    return () => {
+      console.log('This will be logged on unmount');
+    };
+  }, [props.cookieSet]) // now this listens to changes in contact
 
-  useEffect(async () => {
-    console.log("*******we are on the login cookies component, did we get the props from ProfilePageOld and before that from index.js? The props here are : ", name, cookieSet)
-    console.log(cookieSet)
+  useEffect(() => {
 
+    console.log("*******we are on the login cookies component, did we get the props from ProfilePageOld and before that from index.js? The props here are : ", props)
+    console.log(props)
     // https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-    if (cookieSet && variable == 0) {
+    if (props.cookieSet && variable == 0) {
       console.log("Did we reach the set cookie code on Login Cookies?")
       setVariable(1)
 
       setTimeout(() => {
         console.log("Delayed for 2 seconds.");
-        console.log(cookieSet)
+        console.log(props.cookieSet)
         // Router.push('/')
         window.location.reload(true);
-      }, "3000")
+      }, "0")
 
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
@@ -39,6 +41,9 @@ const Login = ({ name, cookieSet }) => {
       })
       // Absolutely not. Commenting out Router.push('/') makes the infinite loop even faster than before!
     }
+    return () => {
+      console.log('This will be logged on unmount');
+    };
   })
 
   const handleSignIn = async (e) => {

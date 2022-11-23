@@ -69,6 +69,7 @@ export default class Home extends React.Component {
     await this.setState({
       cookieValue: data,
     })
+    return;
   }
 
 
@@ -78,6 +79,7 @@ export default class Home extends React.Component {
         username,
       })
     }
+    return;
   }
 
   setPassword(password) {
@@ -86,6 +88,7 @@ export default class Home extends React.Component {
         password,
       })
     }
+    return;
   }
 
   queryGeocodioAddress(address) {
@@ -191,7 +194,7 @@ export default class Home extends React.Component {
     this.setState({
       refresh: !this.state.refresh
     })
-
+    return;
   }
 
   login = async e => {
@@ -214,16 +217,17 @@ export default class Home extends React.Component {
       .catch(err => {
         alert(err)
       })
+    return;
   }
 
-  // componentDidUpdate() {
-  //   if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
-  //     let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
-  //     this.setState({
-  //       latAndLongFromAddress
-  //     })
-  //   }
-  // }
+  componentDidUpdate() {
+    if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
+      let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
+      this.setState({
+        latAndLongFromAddress
+      })
+    }
+  }
 
   render() {
     return <div className="container ProfilePageOld" style={{
@@ -252,6 +256,9 @@ export default class Home extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="ProfilePageOld">
+          {
+            console.log("So what is this.state.cookieValue? ", this.state.cookieValue)
+          }
           <main style={{ zIndex: '3', display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none" }}>
 
             <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
@@ -322,38 +329,69 @@ export default class Home extends React.Component {
         <br />
         <h1>The Address Query.</h1>
         <div className="cards">
-          {
-            console.log("The data object that we are working with is ", this.state.flattenedAddress)
-          }
-          {
-            this.state.cookieValue &&
-            Object.keys(this.state.cookieValue).length &&
-            this.state.flattenedAddress &&
-            Object.keys(this.state.flattenedAddress).filter(key => [
-              "results.0.fields.congressional_districts.0.current_legislators.0.references.ballotpedia_id",
-              "results.0.fields.congressional_districts.0.current_legislators.0.bio.party",
-              "results.0.fields.congressional_districts.0.name",
-              "results.0.fields.congressional_districts.0.current_legislators.0.contact.address",
-              "results.0.fields.congressional_districts.0.current_legislators.0.contact.phone",
-              "results.0.fields.congressional_districts.0.current_legislators.0.contact.url"
-            ].includes(key))
-              .map((key, index) => {
-                return <div
-                  className="card"
-                  key={key}
-                  style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                  <b style={{ fontSize: '0.25em' }}>{key}</b>
-                  <div>{this.state.flattenedAddress[key]}</div>
+          <div className="card">
+            {
+              console.log("The data object that we are working with is ", this.state.flattenedAddress)
+            }
+            {
+              this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length &&
+              this.state.flattenedAddress &&
+              Object.keys(this.state.flattenedAddress).filter(key => [
+                "results.0.fields.congressional_districts.0.current_legislators.0.references.ballotpedia_id",
+                "results.0.fields.congressional_districts.0.current_legislators.0.bio.party",
+                "results.0.fields.congressional_districts.0.name",
+                "results.0.fields.congressional_districts.0.current_legislators.0.contact.address",
+                "results.0.fields.congressional_districts.0.current_legislators.0.contact.phone",
+                "results.0.fields.congressional_districts.0.current_legislators.0.contact.url",
 
-                </div>
-              })
-          }
+                "results.0.fields.congressional_districts.0.current_legislators.1.references.ballotpedia_id",
+                "results.0.fields.congressional_districts.0.current_legislators.1.bio.party",
+                "results.0.fields.congressional_districts.0.name",
+                "results.0.fields.congressional_districts.0.current_legislators.1.contact.address",
+                "results.0.fields.congressional_districts.0.current_legislators.1.contact.phone",
+                "results.0.fields.congressional_districts.0.current_legislators.1.contact.url"
+
+              ].includes(key))
+                .map((key, index) => {
+                  return <div
+
+                    key={key}
+                    style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
+                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    <div>{this.state.flattenedAddress[key]}</div>
+
+                  </div>
+                })
+            }
+          </div>
+          <div className="card">
+            {
+              console.log("The data object that we are working with is ", this.state.flattenedAddress)
+            }
+            {
+              this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length &&
+              this.state.flattenedAddress &&
+              Object.keys(this.state.flattenedAddress).filter(key => true)
+                .map((key, index) => {
+                  return <div
+
+                    key={key}
+                    style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
+                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    <div>{this.state.flattenedAddress[key]}</div>
+
+                  </div>
+                })
+            }
+          </div>
         </div>
 
         {/* https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/ */}
 
 
-        <h3>The Latitude & Longitude Query. By default, this will be equal to the query generated following the Address Query -> Returns information like Congressional Districts, Contact Phone & URL, (Biography: Birthday, Party, Last Name,) and Current Legislators Source & Type.</h3>
+        <h3>The Latitude & Longitude Query. By default, this will be equal to the query generated following the Address Query `{'->'}` Returns information like Congressional Districts, Contact Phone & URL, (Biography: Birthday, Party, Last Name,) and Current Legislators Source & Type.</h3>
         <div className="cards">
           {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {

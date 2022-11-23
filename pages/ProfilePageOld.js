@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
-
 import CookieView from './CookieView.js'
 import LoginCookies from './LoginCookiesOld.js'
 import LogoutComponent from './LogoutComponent.js'
@@ -52,6 +51,10 @@ export default class Users extends React.Component {
     })
   }
 
+  componentDidUpdate() {
+    console.log("The component has updated on ProfilePageOld, the state is ", this.state)
+  }
+
   async getArcGISData() {
     let res = await axios.get(`/api/ArcGISData`)
     console.log("Fetches Arc GIS Data ", res)
@@ -61,6 +64,8 @@ export default class Users extends React.Component {
   }
 
   async setArcGISData() {
+    /** Comment this "back" in! No!  */
+    // console.log("within setarcgisdata, the state is ", this.state)
     // let newData = await this.state.arcGISData.data.response
     // let loc = this.state.arcGISData.data.response.map((e, i) => {
     //   if (e.geometry) {
@@ -77,12 +82,10 @@ export default class Users extends React.Component {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-api-key", "your-api-key");
-
     var requestOptions = {
       method: 'GET',
       headers: myHeaders
     };
-
     fetch("https://api4.ballotpedia.org/data/the-endpoint-name-and-options", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
@@ -123,11 +126,11 @@ export default class Users extends React.Component {
             style={{ width: '50vw', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
-          {/* <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
+          <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
 
           <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
-          /> */}
+          />
           <button
             className='unTraditionalButton'
             onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
@@ -195,14 +198,11 @@ export default class Users extends React.Component {
                     <div>{e.properties.ward}</div>
                     <div>{e.properties.ward_county}</div>
                     <div>{e.properties.wardtext}</div>
-
-
                   </div>
                 })
               }
             </ItemsCarousel>
           </div>
-
           <div style={{
             display: 'flex',
             flexDirection: 'row',
@@ -247,7 +247,6 @@ export default class Users extends React.Component {
               })
             }
           </div>
-
           Where is it getting mapped?
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
@@ -281,8 +280,10 @@ export default class Users extends React.Component {
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
       }
+      {
+        console.log("IF you're on ProfilePageOld.js, want to console.log these props ", this.props)
+      }
       <LoginCookies props={this.props} />
     </div>
-
   }
 }
