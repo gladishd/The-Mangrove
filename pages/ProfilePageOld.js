@@ -120,20 +120,31 @@ export default class Users extends React.Component {
           {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
             <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
           }
+          <br />
+          <br />
           <input
             className='addressSearchClass'
             placeHolder="1109 N Highland St, Arlington, VA 22201"
             style={{ width: '50vw', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
+          <br />
+          <br />
           <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
+          <br />
+          <br />
 
           <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
           />
+          <br />
+          <br />
           <button
             className='unTraditionalButton'
             onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
+
+          <br />
+          <br />
         </div>}
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&

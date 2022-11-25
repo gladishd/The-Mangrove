@@ -13,13 +13,14 @@
 }
 
 .card {
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  padding: .5rem;
-  background-color: purple;
+  border: 2px groove #e7e7e7;
+  border-radius: 2px;
+  padding: 1rem;
+  background-color: rgba(49, 0, 49, 0.274);
   display: flex;
   flex-direction: column;
   width: auto;
+  height: auto;
 }
 
 .mangroveTheBackstory {
@@ -98,7 +99,7 @@
 }
 
 .ProfilePageOld {
-  background-color: rgb(255, 233, 255);
+  background-color: rgba(255, 233, 255, 0);
 
 }
 
