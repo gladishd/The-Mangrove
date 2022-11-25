@@ -9,7 +9,7 @@ export default function HomePage() {
       WebViewer(
         {
           path: '/lib',
-          initialDoc: '/files/mangrove-the-backstory.pdf',
+          initialDoc: '/files/mangroveBackstory.pdf',
         },
         viewer.current,
       ).then((instance) => {
