@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"mangrove-the-backstory.js -> @pdftron/webviewer":{"id":"mangrove-the-backstory.js -> @pdftron/webviewer","files":["static/chunks/node_modules_pdftron_webviewer_webviewer_min_js.js"]}}
