@@ -363,7 +363,6 @@ export default class Home extends React.Component {
         <br />
         <br />
         <br />
-
         <div className="cards">
 
           <div className="card">
@@ -387,7 +386,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          Now all we need to do is remove those tiny text on the top labeling the fields.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -409,7 +408,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          The first thing we "need" to do is remove the address components, style that div address components. Referring to the results.0 object,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -467,7 +466,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          we have the roof-top accuracy of 1, latitude and longitude,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -489,6 +488,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
+          information about the Congressional Districts number and proportion,
 
           <div className="card">
             {this.state.cookieValue &&
@@ -532,7 +532,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          the current legislators' numeric biography & contacts, social,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -575,7 +575,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          references to places like bioguide, thomas, opensecrets, lis, cspan, govtrack, votesmart, ballotpedia, Washington Post, icpsr, and Wikipedia.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -618,7 +618,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          The legislator data is originally collected and aggregated by https://github.com/unitedstates/. "Just as" we have information on subjects like Don Beyer we "also" have information on legislators {`>`} senators like Mark Warner,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -644,7 +644,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          Following this immediately we have Timothy Kaine in the same fashion. Then, there is the State House District 2, Arlington County Public Schools with Unified LEA code &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -664,7 +664,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          low or high-grade.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -685,7 +685,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          Then, there is timezone name, utc_offset, observes_dst (daylight savings time?), abbreviation and source.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -714,7 +714,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          Census results, including year, state fips * county fips * tract code * block code * block group * full fips * metro statistical area * place name & fips.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -747,7 +747,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          A lot of census and statistically-related data. 2010 &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -780,7 +780,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          2011
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -813,7 +813,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          ...We who are living & looking on the meaning of happiness... we don't know how much census data we have, but it goes from 2010, 2011, ..., 2021.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1110,7 +1110,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          The source and survey, &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1129,7 +1129,7 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
+          the population by minimum level of education.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
