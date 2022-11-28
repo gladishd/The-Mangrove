@@ -145,6 +145,7 @@ export default class Home extends React.Component {
           }
           return result;
         }
+        console.warn("The response from the first Geocodio query is ", response)
         let flattenedAddress = flattenObject(response)
         await this.setState({ flattenedAddress, })
 
@@ -200,6 +201,7 @@ export default class Home extends React.Component {
           }
           return result;
         }
+        console.warn("the response we receive on the second GeoCodio Query is ", response)
         let flattened = flattenObject(response.results[0])
         console.log("the response has been received!", flattened)
         this.setState({ latLngQueryFlattened: flattened })
