@@ -16,7 +16,7 @@
   border: 2px groove #e7e7e7;
   border-radius: 2px;
   padding: 1rem;
-  background-color: rgba(49, 0, 49, 0.274);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   width: auto;
@@ -36,7 +36,6 @@
 
 
 .signupForkPage {
-  /* background-image: url('aditya-joshi-7FW5-3vVRSw-unsplash.jpg'); */
   background-image: url('https://images.unsplash.com/photo-1555848965-141f2e58d1a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2800&q=80');
   background-size: cover;
   box-shadow: inset 0 0 0 10000px rgba(255, 0, 150, 0.3);
@@ -99,8 +98,7 @@
 }
 
 .ProfilePageOld {
-  background-color: rgba(255, 233, 255, 0);
-
+  background-color: rgb(255, 255, 255);
 }
 
 .addressSearchClass {
@@ -132,7 +130,6 @@ https://cssgradient.io/blog/gradient-patterns/ */
   --c: rgb(0, 0, 0);
   color: var(--c);
   font-size: 1em;
-  /* border: none; */
   border: 1px solid #000000;
   border-radius: 10%;
   width: 200px;

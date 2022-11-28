@@ -56,6 +56,7 @@ export default class Home extends React.Component {
       flattenedLatLng: null,
       responseSuccess: null,
       latAndLongFromAddress: null,
+      keyBeingHoveredUpon: null
     }
     this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
@@ -63,6 +64,22 @@ export default class Home extends React.Component {
     this.setUsername = this.setUsername.bind(this)
     this.setPassword = this.setPassword.bind(this)
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
+  }
+
+  handleMouseOver(key) {
+    console.log("We are handling the mouse OVER and the key is ", key)
+    this.setState({
+      keyBeingHoveredUpon: key
+    })
+  }
+
+  handleMouseOut(key) {
+    console.log("We are handling the mouse out and the key is ", key)
+    this.setState({
+      keyBeingHoveredUpon: null
+    })
   }
 
   async dataFetchPoliticians(data) {
@@ -92,6 +109,7 @@ export default class Home extends React.Component {
   }
 
   queryGeocodioAddress(address) {
+    console.warn("We are QueRyING GEOCODIO Address.")
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('b33686cba0ab3063aa65b7c5806783bcb5b7c63');
     // geocoder.geocode(address, ['cd'])
@@ -145,6 +163,7 @@ export default class Home extends React.Component {
   }
 
   queryGeocodioLatLng(latLng) {
+    console.warn("We are Querying the GEoCODIO Latitude and Longitude!")
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('b33686cba0ab3063aa65b7c5806783bcb5b7c63');
     console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng, "and the geocoder object is ", geocoder)
@@ -380,8 +399,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    {/* <b style={{ fontSize: '0.25em' }}>{key}</b> */}
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -402,8 +423,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    {/* <b style={{ fontSize: '0.25em' }}>{key}</b> */}
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -439,8 +462,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -460,8 +485,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -482,8 +509,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -526,8 +555,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -569,8 +600,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -612,8 +645,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -638,8 +673,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -658,8 +695,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -679,8 +718,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -708,8 +749,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -741,8 +784,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -774,8 +819,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -807,8 +854,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -840,8 +889,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -873,8 +924,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -906,8 +959,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -939,8 +994,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -972,8 +1029,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1005,8 +1064,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1038,8 +1099,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1071,8 +1134,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1104,8 +1169,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1123,8 +1190,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1245,8 +1314,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1325,8 +1396,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1395,8 +1468,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1460,8 +1535,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1612,8 +1689,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1656,8 +1735,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1706,8 +1787,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1781,8 +1864,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -1855,8 +1940,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -2027,8 +2114,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -2053,8 +2142,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -2133,8 +2224,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
@@ -2162,8 +2255,10 @@ export default class Home extends React.Component {
                 .map((key, index) => {
                   return <div
                     key={key}
+                    onMouseOver={e => this.handleMouseOver(key)}
+                    onMouseOut={e => this.handleMouseOut(key)}
                     style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    <b style={{ fontSize: '0.25em' }}>{key}</b>
+                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
                     <div>{this.state.flattenedAddress[key]}</div>
                   </div>
                 })}
