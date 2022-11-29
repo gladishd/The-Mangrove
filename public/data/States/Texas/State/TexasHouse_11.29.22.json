@@ -1,0 +1,1050 @@
+{
+  "Sheet1": [
+    {
+      "District": 1,
+      "Name": "Gary VanDeaver",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 2,
+      "Name": "Bryan Slaton",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 3,
+      "Name": "Cecil Bell Jr.",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 4,
+      "Name": "Keith Bell",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 5,
+      "Name": "Cole Hefner",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 6,
+      "Name": "Matt Schaefer",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 7,
+      "Name": "Jay Dean",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 8,
+      "Name": "Cody Harris",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 9,
+      "Name": "Vacant",
+      "State": "TX"
+    },
+    {
+      "District": 10,
+      "Name": "Brian E. Harrison",
+      "Party": "Republican",
+      "AssumedOffice": 44481,
+      "State": "TX"
+    },
+    {
+      "District": 11,
+      "Name": "Travis Clardy",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 12,
+      "Name": "Kyle Kacal",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 13,
+      "Name": "Ben Leman",
+      "Party": "Republican",
+      "AssumedOffice": 2018,
+      "State": "TX"
+    },
+    {
+      "District": 14,
+      "Name": "John Raney",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 15,
+      "Name": "Steve Toth",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 16,
+      "Name": "Will Metcalf",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 17,
+      "Name": "John Cyrier",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 18,
+      "Name": "Ernest Bailes",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 19,
+      "Name": "Vacant",
+      "State": "TX"
+    },
+    {
+      "District": 20,
+      "Name": "Terry Wilson",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 21,
+      "Name": "Dade Phelan",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 22,
+      "Name": "Joe Deshotel",
+      "Party": "Democratic",
+      "AssumedOffice": 1999,
+      "State": "TX"
+    },
+    {
+      "District": 23,
+      "Name": "Mayes Middleton",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 24,
+      "Name": "Greg Bonnen",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 25,
+      "Name": "Cody Vasut",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 26,
+      "Name": "Jacey Jetton",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 27,
+      "Name": "Ron Reynolds",
+      "Party": "Democratic",
+      "AssumedOffice": 40554,
+      "State": "TX"
+    },
+    {
+      "District": 28,
+      "Name": "Gary Gates",
+      "Party": "Republican",
+      "AssumedOffice": 43872,
+      "State": "TX"
+    },
+    {
+      "District": 29,
+      "Name": "Ed Thompson",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 30,
+      "Name": "Geanie Morrison",
+      "Party": "Republican",
+      "AssumedOffice": 1999,
+      "State": "TX"
+    },
+    {
+      "District": 31,
+      "Name": "Ryan Guillen",
+      "Party": "Republican",
+      "AssumedOffice": 2003,
+      "State": "TX"
+    },
+    {
+      "District": 32,
+      "Name": "Todd Hunter",
+      "Party": "Republican",
+      "AssumedOffice": 2009,
+      "State": "TX"
+    },
+    {
+      "District": 33,
+      "Name": "Justin Holland",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 34,
+      "Name": "Abel Herrero",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 35,
+      "Name": "Oscar Longoria",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 36,
+      "Name": "Sergio Munoz Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 37,
+      "Name": "Alex Dominguez",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 38,
+      "Name": "Erin Gamez",
+      "Party": "Democratic",
+      "AssumedOffice": 44635,
+      "State": "TX"
+    },
+    {
+      "District": 39,
+      "Name": "Armando Martinez",
+      "Party": "Democratic",
+      "AssumedOffice": 2005,
+      "State": "TX"
+    },
+    {
+      "District": 40,
+      "Name": "Terry Canales",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 41,
+      "Name": "Robert Guerra",
+      "Party": "Democratic",
+      "AssumedOffice": 41177,
+      "State": "TX"
+    },
+    {
+      "District": 42,
+      "Name": "Richard Raymond",
+      "Party": "Democratic",
+      "AssumedOffice": 36915,
+      "State": "TX"
+    },
+    {
+      "District": 43,
+      "Name": "J.M. Lozano",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 44,
+      "Name": "John Kuempel",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 45,
+      "Name": "Erin Zwiener",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 46,
+      "Name": "Sheryl Cole",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 47,
+      "Name": "Vikki Goodwin",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 48,
+      "Name": "Donna Howard",
+      "Party": "Democratic",
+      "AssumedOffice": 2006,
+      "State": "TX"
+    },
+    {
+      "District": 49,
+      "Name": "Gina Hinojosa",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 50,
+      "Name": "Celia Israel",
+      "Party": "Democratic",
+      "AssumedOffice": 2014,
+      "State": "TX"
+    },
+    {
+      "District": 51,
+      "Name": "Eddie Rodriguez",
+      "Party": "Democratic",
+      "AssumedOffice": 2003,
+      "State": "TX"
+    },
+    {
+      "District": 52,
+      "Name": "James Talarico",
+      "Party": "Democratic",
+      "AssumedOffice": 43425,
+      "State": "TX"
+    },
+    {
+      "District": 53,
+      "Name": "Andrew Murr",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 54,
+      "Name": "Brad Buckley",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 55,
+      "Name": "Hugh Shine",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 56,
+      "Name": "Charles Anderson",
+      "Party": "Republican",
+      "AssumedOffice": 2005,
+      "State": "TX"
+    },
+    {
+      "District": 57,
+      "Name": "Trent Ashby",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 58,
+      "Name": "DeWayne Burns",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 59,
+      "Name": "Shelby Slawson",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 60,
+      "Name": "Glenn Rogers",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 61,
+      "Name": "Phil King",
+      "Party": "Republican",
+      "AssumedOffice": 1999,
+      "State": "TX"
+    },
+    {
+      "District": 62,
+      "Name": "Reggie Smith",
+      "Party": "Republican",
+      "AssumedOffice": 43425,
+      "State": "TX"
+    },
+    {
+      "District": 63,
+      "Name": "Tan Parker",
+      "Party": "Republican",
+      "AssumedOffice": 2007,
+      "State": "TX"
+    },
+    {
+      "District": 64,
+      "Name": "Lynn Stucky",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 65,
+      "Name": "Michelle Beckley",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 66,
+      "Name": "Matt Shaheen",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 67,
+      "Name": "Jeff Leach",
+      "Party": "Republican",
+      "AssumedOffice": 41282,
+      "State": "TX"
+    },
+    {
+      "District": 68,
+      "Name": "David Spiller",
+      "Party": "Republican",
+      "AssumedOffice": 44264,
+      "State": "TX"
+    },
+    {
+      "District": 69,
+      "Name": "James Frank",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 70,
+      "Name": "Scott Sanford",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 71,
+      "Name": "Stan Lambert",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 72,
+      "Name": "Drew Darby",
+      "Party": "Republican",
+      "AssumedOffice": 2007,
+      "State": "TX"
+    },
+    {
+      "District": 73,
+      "Name": "Kyle Biedermann",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 74,
+      "Name": "Eddie Morales Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 75,
+      "Name": "Mary Gonzalez",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 76,
+      "Name": "Claudia Ordaz Perez",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 77,
+      "Name": "Evelina Ortega",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 78,
+      "Name": "Joseph Moody",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 79,
+      "Name": "Art Fierro",
+      "Party": "Democratic",
+      "AssumedOffice": 43507,
+      "State": "TX"
+    },
+    {
+      "District": 80,
+      "Name": "Tracy King",
+      "Party": "Democratic",
+      "AssumedOffice": 2005,
+      "State": "TX"
+    },
+    {
+      "District": 81,
+      "Name": "Brooks Landgraf",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 82,
+      "Name": "Tom Craddick",
+      "Party": "Republican",
+      "AssumedOffice": 1969,
+      "State": "TX"
+    },
+    {
+      "District": 83,
+      "Name": "Dustin Burrows",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 84,
+      "Name": "John Frullo",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 85,
+      "Name": "Phil Stephenson",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 86,
+      "Name": "John Smithee",
+      "Party": "Republican",
+      "AssumedOffice": 1985,
+      "State": "TX"
+    },
+    {
+      "District": 87,
+      "Name": "Four Price",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 88,
+      "Name": "Ken King",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 89,
+      "Name": "Candy Noble",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 90,
+      "Name": "Ramon Romero Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 91,
+      "Name": "Stephanie Klick",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 92,
+      "Name": "Jeff Cason",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 93,
+      "Name": "Matt Krause",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 94,
+      "Name": "Tony Tinderholt",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 95,
+      "Name": "Nicole Collier",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 96,
+      "Name": "David Cook",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 97,
+      "Name": "Craig Goldman",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 98,
+      "Name": "Giovanni Capriglione",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 99,
+      "Name": "Charlie Geren",
+      "Party": "Republican",
+      "AssumedOffice": 2001,
+      "State": "TX"
+    },
+    {
+      "District": 100,
+      "Name": "Jasmine Crockett",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 101,
+      "Name": "Chris Turner",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 102,
+      "Name": "Ana-Maria Ramos",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 103,
+      "Name": "Rafael Anchia",
+      "Party": "Democratic",
+      "AssumedOffice": 38363,
+      "State": "TX"
+    },
+    {
+      "District": 104,
+      "Name": "Jessica Gonzalez",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 105,
+      "Name": "Terry Meza",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 106,
+      "Name": "Jared Patterson",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 107,
+      "Name": "Victoria Neave",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 108,
+      "Name": "Morgan Meyer",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 109,
+      "Name": "Carl Sherman Sr.",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 110,
+      "Name": "Toni Rose",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 111,
+      "Name": "Yvonne Davis",
+      "Party": "Democratic",
+      "AssumedOffice": 33981,
+      "State": "TX"
+    },
+    {
+      "District": 112,
+      "Name": "Angie Chen Button",
+      "Party": "Republican",
+      "AssumedOffice": 2009,
+      "State": "TX"
+    },
+    {
+      "District": 113,
+      "Name": "Rhetta Andrews Bowers",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 114,
+      "Name": "John Turner",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 115,
+      "Name": "Julie Johnson",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 116,
+      "Name": "Trey Martinez Fischer",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 117,
+      "Name": "Philip Cortez",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 118,
+      "Name": "John Lujan",
+      "Party": "Republican",
+      "AssumedOffice": 44516,
+      "State": "TX"
+    },
+    {
+      "District": 119,
+      "Name": "Elizabeth Campos",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 120,
+      "Name": "Barbara Gervin-Hawkins",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 121,
+      "Name": "Steve Allison",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 122,
+      "Name": "Lyle Larson",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 123,
+      "Name": "Diego Bernal",
+      "Party": "Democratic",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 124,
+      "Name": "Ina Minjarez",
+      "Party": "Democratic",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 125,
+      "Name": "Ray Lopez",
+      "Party": "Democratic",
+      "AssumedOffice": 43545,
+      "State": "TX"
+    },
+    {
+      "District": 126,
+      "Name": "E. Sam Harless",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 127,
+      "Name": "Dan Huberty",
+      "Party": "Republican",
+      "AssumedOffice": 2011,
+      "State": "TX"
+    },
+    {
+      "District": 128,
+      "Name": "Briscoe Cain",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 129,
+      "Name": "Dennis Paul",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 130,
+      "Name": "Tom Oliverson",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 131,
+      "Name": "Alma Allen",
+      "Party": "Democratic",
+      "AssumedOffice": 2005,
+      "State": "TX"
+    },
+    {
+      "District": 132,
+      "Name": "Mike Schofield",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 133,
+      "Name": "Jim Murphy",
+      "Party": "Republican",
+      "AssumedOffice": 40554,
+      "State": "TX"
+    },
+    {
+      "District": 134,
+      "Name": "Ann Johnson",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 135,
+      "Name": "Jon Rosenthal",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 136,
+      "Name": "John Bucy III",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 137,
+      "Name": "Gene Wu",
+      "Party": "Democratic",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 138,
+      "Name": "Lacey Hull",
+      "Party": "Republican",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 139,
+      "Name": "Jarvis Johnson",
+      "Party": "Democratic",
+      "AssumedOffice": 2016,
+      "State": "TX"
+    },
+    {
+      "District": 140,
+      "Name": "Armando Walle",
+      "Party": "Democratic",
+      "AssumedOffice": 2009,
+      "State": "TX"
+    },
+    {
+      "District": 141,
+      "Name": "Senfronia Thompson",
+      "Party": "Democratic",
+      "AssumedOffice": 1973,
+      "State": "TX"
+    },
+    {
+      "District": 142,
+      "Name": "Harold Dutton Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": 1985,
+      "State": "TX"
+    },
+    {
+      "District": 143,
+      "Name": "Ana Hernandez",
+      "Party": "Democratic",
+      "AssumedOffice": 38706,
+      "State": "TX"
+    },
+    {
+      "District": 144,
+      "Name": "Mary Ann Perez",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 145,
+      "Name": "Christina Morales",
+      "Party": "Democratic",
+      "AssumedOffice": 2019,
+      "State": "TX"
+    },
+    {
+      "District": 146,
+      "Name": "Shawn Thierry",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 147,
+      "Name": "Jolanda Jones",
+      "Party": "Democratic",
+      "AssumedOffice": 44699,
+      "State": "TX"
+    },
+    {
+      "District": 148,
+      "Name": "Penny Morales Shaw",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 149,
+      "Name": "Hubert Vo",
+      "Party": "Democratic",
+      "AssumedOffice": 2005,
+      "State": "TX"
+    },
+    {
+      "District": 150,
+      "Name": "Valoree Swanson",
+      "Party": "Republican",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    }
+  ]
+}

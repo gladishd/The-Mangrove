@@ -122,34 +122,36 @@ export default class Home extends React.Component {
     }
   }
 
-  fetchStateSenateData() {
+  fetchStateSenateData(fullStateName) {
     /** Potentially, make a separate JS File just for fetching data. Todo. */
-    let url = `../public/data/States/${this.state.stateName}/State/`;
-
-    // if (fileName.toLowerCase().includes("house"))
-  }
-
-  fetchStateHouseData(fullStateName) {
-    /** Potentially, make a separate JS File just for fetching data. Todo. */
-    // let stringSearch = this.state.stateName
     let stringSearch = fullStateName
-    console.log("What is stringSearch? ", stringSearch)
-
-    // import Default from `../public/data/States/${stringSearch}/State/IllinoisHouse_11.29.22`;
-
     try {
-      let fileName = `${stringSearch}House_11.29.22`
+      let fileName = `${stringSearch}Senate_11.29.22`
       var data = require(`../public/data/States/${stringSearch}/State/${fileName}`);
-      console.log("The data from fetch state house data is ", data)
+      console.log("The data from fetch state senate data is ", data)
       this.setState({
-        fileName: data
+        fileNameSenate: data
       })
 
     } catch (error) {
       console.log(error)
     }
+  }
 
-    // console.log("Here is our customized state house data from the GeoCodio Address Query! ", data)
+  fetchStateHouseData(fullStateName) {
+    /** Potentially, make a separate JS File just for fetching data. Todo. */
+    let stringSearch = fullStateName
+    try {
+      let fileName = `${stringSearch}House_11.29.22`
+      var data = require(`../public/data/States/${stringSearch}/State/${fileName}`);
+      console.log("The data from fetch state house data is ", data)
+      this.setState({
+        fileNameHouse: data
+      })
+
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   mapCodeToState(codeParameter) {
@@ -232,6 +234,7 @@ export default class Home extends React.Component {
           let code = response.input.address_components.state
           fullStateName = this.mapCodeToState(code)
           this.fetchStateHouseData(fullStateName)
+          this.fetchStateSenateData(fullStateName)
         }
         // response.input.address_components.state looks like "IL", want to convert to "Illinois"
 
@@ -518,118 +521,179 @@ export default class Home extends React.Component {
           })
         } */}
 
-        <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisHouse_11.29.22.xlsx.</h3>
-        {/* They're both strings so we don't mind */}
-        {
-          this.state.fileName && this.state.fileName.Sheet1.filter(e => {
-            if (this.state.theOriginalAddressResponse) {
-              return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number || e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
-            }
-          }
-          ).map(element => {
-            return <div>
-              <b>District</b>
-              <div>{element.District}</div>
-              <b>Name</b>
-              <div>{element.Name}</div>
-              <b>Party</b>
-              <div>{element.Party}</div>
-              {/* <b>State</b>
-              <div>{element.State}</div> */}
-              <b>Full State Name</b>
-              <div>{this.state.stateName}</div>
-              ______________
-            </div>
-          })
-        }
 
-        <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisSenate_11.29.22.xlsx.</h3>
 
-        {
-          this.state.fileName && this.state.fileName.Sheet1.filter(e => {
-            if (this.state.theOriginalAddressResponse) {
-              return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number || e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
-            }
-          }
-          ).map(element => {
-            return <div>
-              <b>District</b>
-              <div>{element.District}</div>
-              <b>Name</b>
-              <div>{element.Name}</div>
-              <b>Party</b>
-              <div>{element.Party}</div>
-              {/* <b>State</b>
-              <div>{element.State}</div> */}
-              <b>Full State Name</b>
-              <div>{this.state.stateName}</div>
-              ______________
-            </div>
-          })
-        }
+
 
         #1 priority: List all state-level-and-above politicians on the search tab/site.
 
-        <Carousel responsive={responsive}>
-          <div>First card</div>
-          <div style={{
-            backgroundColor: 'green',
-            border: "groove",
-            borderWidth: '0.5em'
-          }}>
-            <h1>State Legislative Districts House</h1>
-            <br />
-            {
-              console.warn("******* ON the staet ", this.state)
-            }
-            District Number:
-            <b>
-              {
-                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number
+        <Carousel
+          responsive={responsive}
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={this.props.deviceType}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+
+
+          {/* <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisHouse_11.29.22.xlsx.</h3> */}
+          {/* They're both strings so we don't mind */}
+          {
+            this.state.fileNameHouse && this.state.fileNameHouse.Sheet1.filter(e => {
+              if (this.state.theOriginalAddressResponse) {
+                return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number
               }
-            </b>
-            <br />
-            Name:
-            <b>
-              {this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].name}
-            </b>
-            <br />
-            OCD ID:
-            <b>
-              {
-                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].ocd_id
-              }</b>
+            }
+            ).map(element => {
+              return <div>
+                <div>House</div>
+                <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+                <b>District</b>
+                <div>{element.District}</div>
+                <b>Name</b>
+                <div>{element.Name}</div>
+                <b>Party</b>
+                <div>{element.Party}</div>
+                {/* <b>State</b>
+              <div>{element.State}</div> */}
+                <b>Full State Name</b>
+                <div>{this.state.stateName}</div>
+                ______________
+              </div>
+            })
+          }
+
+          {/* <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisSenate_11.29.22.xlsx.</h3> */}
+
+          {
+            this.state.fileNameSenate && this.state.fileNameSenate.Sheet1.filter(e => {
+              if (this.state.theOriginalAddressResponse) {
+                return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+              }
+            }
+            ).map(element => {
+              return <div>
+                <div>Senate</div>
+                <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+                <b>District</b>
+                <div>{element.District}</div>
+                <b>Name</b>
+                <div>{element.Name}</div>
+                <b>Party</b>
+                <div>{element.Party}</div>
+                {/* <b>State</b>
+              <div>{element.State}</div> */}
+                <b>Full State Name</b>
+                <div>{this.state.stateName}</div>
+                ______________
+              </div>
+            })
+          }
+
+          <div className="card">
+            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+            {
+              this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length &&
+              this.state.flattenedAddress &&
+              <div
+                style={{
+                  backgroundColor: "lightgreen"
+                }}>
+                <div>
+                  <b>Name: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.last_name"]}
+                </div>
+                <div>
+                  <b>Party: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.party"]}
+                </div>
+                <div>
+                  <b>Position: </b>
+                  {
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"][0].toUpperCase() +
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"].slice(1)
+                  }
+                </div>
+
+              </div>
+            }
           </div>
 
-          <div style={{
-            backgroundColor: 'red',
-            border: "groove",
-            borderWidth: '0.5em'
-          }}>
-            <h1>
-              State Legislative Districts Senate
-            </h1>
-            <br />
-            The District Number is:
-            <b>
-              {
-                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
-              }
-            </b>
-            <br />
-            Name:
-            <b>
-              {
-                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].name
-              }
-            </b>
-            <br />
-            OCD ID:
-            <b>
-              {
-                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].ocd_id
-              }
-            </b>
+          <div className="card">
+            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+            {
+              this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length &&
+              this.state.flattenedAddress &&
+              <div
+                style={{
+                  backgroundColor: "lightgreen"
+                }}>
+                <div>
+                  <b>Name: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.last_name"]}
+                </div>
+                <div>
+                  <b>Party: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.party"]}
+                </div>
+                <div>
+                  <b>Position: </b>
+                  {
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"][0].toUpperCase() +
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"].slice(1)
+                  }
+                </div>
+
+              </div>
+            }
+          </div>
+
+
+
+          {
+            console.log("The value of this.state.flattenedAddress is ", this.state.flattenedAddress)
+          }
+          <div className="card">
+            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+            {
+              this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length &&
+              this.state.flattenedAddress &&
+              <div
+                style={{
+                  backgroundColor: "palegoldenrod"
+                }}>
+                <div>
+                  <b>Name: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.last_name"]}
+                </div>
+                <div>
+                  <b>Party: </b>
+                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.party"]}
+                </div>
+                <div>
+                  <b>Position: </b>
+                  {
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"][0].toUpperCase() +
+                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"].slice(1)
+                  }
+                </div>
+
+              </div>
+            }
           </div>
         </Carousel>
 
@@ -647,29 +711,7 @@ export default class Home extends React.Component {
         <br />
         <div className="cards">
 
-          <div className="card">
-            {this.state.cookieValue &&
-              Object.keys(this.state.cookieValue).length &&
-              this.state.flattenedAddress &&
-              Object.keys(this.state.flattenedAddress).filter(key => [
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.ballotpedia_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.party",
-                "results.0.fields.congressional_districts.0.name",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.address",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.phone",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.url",
-              ].includes(key))
-                .map((key, index) => {
-                  return <div
-                    key={key}
-                    onMouseOver={e => this.handleMouseOver(key)}
-                    onMouseOut={e => this.handleMouseOut(key)}
-                    style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
-                    <div>{this.state.flattenedAddress[key]}</div>
-                  </div>
-                })}
-          </div>
+
 
           Now all we need to do is remove those tiny text on the top labeling the fields.
 
@@ -794,50 +836,7 @@ export default class Home extends React.Component {
           </div>
           information about the Congressional Districts number and proportion,
 
-          <div className="card">
-            {this.state.cookieValue &&
-              Object.keys(this.state.cookieValue).length &&
-              this.state.flattenedAddress &&
-              Object.keys(this.state.flattenedAddress).filter(key => [
-                "results.0.fields.congressional_districts.0.current_legislators.0.type",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.last_name",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.first_name",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.birthday",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.gender",
-                "results.0.fields.congressional_districts.0.current_legislators.0.bio.party",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.url",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.address",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.phone",
-                "results.0.fields.congressional_districts.0.current_legislators.0.contact.contact_form",
-                "results.0.fields.congressional_districts.0.current_legislators.0.social.rss_url",
-                "results.0.fields.congressional_districts.0.current_legislators.0.social.twitter",
-                "results.0.fields.congressional_districts.0.current_legislators.0.social.facebook",
-                "results.0.fields.congressional_districts.0.current_legislators.0.social.youtube",
-                "results.0.fields.congressional_districts.0.current_legislators.0.social.youtube_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.bioguide_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.thomas_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.opensecrets_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.lis_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.cspan_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.govtrack_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.votesmart_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.ballotpedia_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.washington_post_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.icpsr_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.references.wikipedia_id",
-                "results.0.fields.congressional_districts.0.current_legislators.0.source"
-              ].includes(key))
-                .map((key, index) => {
-                  return <div
-                    key={key}
-                    onMouseOver={e => this.handleMouseOver(key)}
-                    onMouseOut={e => this.handleMouseOut(key)}
-                    style={{ backgroundColor: `rgb(${1 * index + 240}, ${1 * index + 240}, ${0.3 * 10 * index + 240})` }}>
-                    {this.state.keyBeingHoveredUpon === key && <b style={{ fontSize: '0.25em' }}>{key}</b>}
-                    <div>{this.state.flattenedAddress[key]}</div>
-                  </div>
-                })}
-          </div>
+
           the current legislators' numeric biography & contacts, social,
           <div className="card">
             {this.state.cookieValue &&

@@ -1,0 +1,221 @@
+{
+  "Sheet1": [
+    {
+      "District": 1,
+      "Name": "Bryan Hughes",
+      "Party": "Republican",
+      "AssumedOffice": 42745,
+      "State": "TX"
+    },
+    {
+      "District": 2,
+      "Name": "Bob Hall",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 3,
+      "Name": "Robert Nichols",
+      "Party": "Republican",
+      "AssumedOffice": 2007,
+      "State": "TX"
+    },
+    {
+      "District": 4,
+      "Name": "Brandon Creighton",
+      "Party": "Republican",
+      "AssumedOffice": 41877,
+      "State": "TX"
+    },
+    {
+      "District": 5,
+      "Name": "Charles Schwertner",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 6,
+      "Name": "Carol Alvarado",
+      "Party": "Democratic",
+      "AssumedOffice": 43455,
+      "State": "TX"
+    },
+    {
+      "District": 7,
+      "Name": "Paul Bettencourt",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "TX"
+    },
+    {
+      "District": 8,
+      "Name": "Angela Paxton",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 9,
+      "Name": "Kelly Hancock",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 10,
+      "Name": "Beverly Powell",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 11,
+      "Name": "Larry Taylor",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 12,
+      "Name": "Jane Nelson",
+      "Party": "Republican",
+      "AssumedOffice": 1993,
+      "State": "TX"
+    },
+    {
+      "District": 13,
+      "Name": "Borris Miles",
+      "Party": "Democratic",
+      "AssumedOffice": 2017,
+      "State": "TX"
+    },
+    {
+      "District": 14,
+      "Name": "Sarah Eckhardt",
+      "Party": "Democratic",
+      "AssumedOffice": 44043,
+      "State": "TX"
+    },
+    {
+      "District": 15,
+      "Name": "John Whitmire",
+      "Party": "Democratic",
+      "AssumedOffice": 1983,
+      "State": "TX"
+    },
+    {
+      "District": 16,
+      "Name": "Nathan Johnson",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "TX"
+    },
+    {
+      "District": 17,
+      "Name": "Joan Huffman",
+      "Party": "Republican",
+      "AssumedOffice": 2009,
+      "State": "TX"
+    },
+    {
+      "District": 18,
+      "Name": "Lois Kolkhorst",
+      "Party": "Republican",
+      "AssumedOffice": 41995,
+      "State": "TX"
+    },
+    {
+      "District": 19,
+      "Name": "Roland Gutierrez",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 20,
+      "Name": "Juan Hinojosa",
+      "Party": "Democratic",
+      "AssumedOffice": 2002,
+      "State": "TX"
+    },
+    {
+      "District": 21,
+      "Name": "Judith Zaffirini",
+      "Party": "Democratic",
+      "AssumedOffice": 1987,
+      "State": "TX"
+    },
+    {
+      "District": 22,
+      "Name": "Brian Birdwell",
+      "Party": "Republican",
+      "AssumedOffice": 2010,
+      "State": "TX"
+    },
+    {
+      "District": 23,
+      "Name": "Royce West",
+      "Party": "Democratic",
+      "AssumedOffice": 1993,
+      "State": "TX"
+    },
+    {
+      "District": 24,
+      "Name": "Dawn Buckingham",
+      "Party": "Republican",
+      "AssumedOffice": 42745,
+      "State": "TX"
+    },
+    {
+      "District": 25,
+      "Name": "Donna Campbell",
+      "Party": "Republican",
+      "AssumedOffice": 2013,
+      "State": "TX"
+    },
+    {
+      "District": 26,
+      "Name": "Jose Menendez",
+      "Party": "Democratic",
+      "AssumedOffice": 42067,
+      "State": "TX"
+    },
+    {
+      "District": 27,
+      "Name": "Eddie Lucio",
+      "Party": "Democratic",
+      "AssumedOffice": 1991,
+      "State": "TX"
+    },
+    {
+      "District": 28,
+      "Name": "Charles Perry",
+      "Party": "Republican",
+      "AssumedOffice": 41912,
+      "State": "TX"
+    },
+    {
+      "District": 29,
+      "Name": "Cesar Blanco",
+      "Party": "Democratic",
+      "AssumedOffice": 44208,
+      "State": "TX"
+    },
+    {
+      "District": 30,
+      "Name": "Drew Springer",
+      "Party": "Republican",
+      "AssumedOffice": 44202,
+      "State": "TX"
+    },
+    {
+      "District": 31,
+      "Name": "Kel Seliger",
+      "Party": "Republican",
+      "AssumedOffice": 2004,
+      "State": "TX"
+    }
+  ]
+}
