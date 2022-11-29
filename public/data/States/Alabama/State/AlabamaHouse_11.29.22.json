@@ -1,0 +1,634 @@
+﻿{
+    "Sheet1": [
+        {
+            "District": "1",
+            "Name": "Phillip Pettus",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "2",
+            "Name": "Ben Harrison",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "3",
+            "Name": "Kerry Underwood",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "4",
+            "Name": "Parker Moore",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "5",
+            "Name": "Danny Crawford",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "6",
+            "Name": "Andy Whitt",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "7",
+            "Name": "Ernie Yarbrough",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "8",
+            "Name": "Terri Collins",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "9",
+            "Name": "Scott Stadthagen",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "10",
+            "Name": "David Cole",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "11",
+            "Name": "Randall Shedd",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "12",
+            "Name": "Corey Harbison",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "13",
+            "Name": "Matt Woods",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "14",
+            "Name": "Tim Wadsworth",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "15",
+            "Name": "Leigh Hulsey",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "16",
+            "Name": "Kyle South",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "17",
+            "Name": "Tracy Estes",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "18",
+            "Name": "Jamie Kiel",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "19",
+            "Name": "Laura Hall",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "20",
+            "Name": "James Lomax",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "21",
+            "Name": "Rex Reynolds",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "22",
+            "Name": "Ritchie Whorton",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "23",
+            "Name": "Mike Kirkland",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "24",
+            "Name": "Nathaniel Ledbetter",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "25",
+            "Name": "Phillip Rigsby",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "26",
+            "Name": "Brock Colvin",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "27",
+            "Name": "Wes Kitchens",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "28",
+            "Name": "Mack Butler",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "29",
+            "Name": "Mark Gidley",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "30",
+            "Name": "B. Craig Lipscomb",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "31",
+            "Name": "Troy Stubbs",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "32",
+            "Name": "Barbara Boyd",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "33",
+            "Name": "Ben Robbins",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "34",
+            "Name": "David Standridge",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "35",
+            "Name": "Steve Hurst",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "36",
+            "Name": "Randy Wood",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "37",
+            "Name": "Bob Fincher",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "38",
+            "Name": "Debbie Hamby Wood",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "39",
+            "Name": "Ginny Shaver",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "40",
+            "Name": "Chad Robertson",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "41",
+            "Name": "Corley Ellis",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "42",
+            "Name": "Ivan Smith",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "43",
+            "Name": "Arnold Mooney",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "44",
+            "Name": "Danny Garrett",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "45",
+            "Name": "Susan DuBose",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "46",
+            "Name": "David Faulkner",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "47",
+            "Name": "Mike Shaw",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "48",
+            "Name": "Jim Carns",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "49",
+            "Name": "Russell Bedsole",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "50",
+            "Name": "Jim Hill",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "51",
+            "Name": "Allen Treadaway",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "52",
+            "Name": "John Rogers",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "53",
+            "Name": "Anthony Daniels",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "54",
+            "Name": "Neil Rafferty",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "55",
+            "Name": "Fred Plump",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "56",
+            "Name": "Ontario Tillman",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "57",
+            "Name": "Patrick Sellers",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "58",
+            "Name": "Rolanda Hollis",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "59",
+            "Name": "Mary Moore",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "60",
+            "Name": "Juandalynn Givan",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "61",
+            "Name": "Ron Bolton",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "62",
+            "Name": "Bill Lamb",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "63",
+            "Name": "Cynthia Almond",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "64",
+            "Name": "Donna Givens",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "65",
+            "Name": "Brett Easterbrook",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "66",
+            "Name": "Alan Baker",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "67",
+            "Name": "Prince Chestnut",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "68",
+            "Name": "Thomas Jackson",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "69",
+            "Name": "Kelvin Lawrence",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "70",
+            "Name": "Christopher J. England",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "71",
+            "Name": "Artis J. McCampbell",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "72",
+            "Name": "Curtis Travis",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "73",
+            "Name": "Kenneth Paschal",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "74",
+            "Name": "Phillip Ensler",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "75",
+            "Name": "Reed Ingram",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "76",
+            "Name": "Patrice McClammy",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "77",
+            "Name": "TaShina Morris",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "78",
+            "Name": "Kenyatt茅 Hassell",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "79",
+            "Name": "Joe Lovvorn",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "80",
+            "Name": "Chris Blackshear",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "81",
+            "Name": "Ed Oliver",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "82",
+            "Name": "Pebblin Warren",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "83",
+            "Name": "Jeremy Gray",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "84",
+            "Name": "Berry Forte",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "85",
+            "Name": "Rick Rehm",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "86",
+            "Name": "Paul Lee",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "87",
+            "Name": "Jeff Sorrells",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "88",
+            "Name": "Jerry Starnes",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "89",
+            "Name": "Marcus Paramore",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "90",
+            "Name": "Chris Sells",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "91",
+            "Name": "Rhett Marques",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "92",
+            "Name": "Matthew Hammett",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "93",
+            "Name": "Steve Clouse",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "94",
+            "Name": "Jennifer Fidler",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "95",
+            "Name": "Frances Holk-Jones",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "96",
+            "Name": "Matt Simpson",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "97",
+            "Name": "Adline C. Clarke",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "98",
+            "Name": "Napoleon Bracy Jr.",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "99",
+            "Name": "Sam Jones",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "100",
+            "Name": "Mark Shirey",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "101",
+            "Name": "Chris Pringle",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "102",
+            "Name": "Shane Stringer",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "103",
+            "Name": "Barbara Drummond",
+            "Party": "Democratic",
+            "State": "AL"
+        },
+        {
+            "District": "104",
+            "Name": "Margie Wilcox",
+            "Party": "Republican",
+            "State": "AL"
+        },
+        {
+            "District": "105",
+            "Name": "Chip Brown",
+            "Party": "Republican",
+            "State": "AL"
+        }
+    ]
+}

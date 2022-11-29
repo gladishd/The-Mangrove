@@ -1,0 +1,284 @@
+﻿{
+    "Sheet1": [
+        {
+            "District": "1",
+            "Name": "Bart LeBon",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "2",
+            "Name": "Steve Thompson",
+            "Party": "Republican",
+            "AssumedOffice": "18-Jan-11",
+            "State": "AK"
+        },
+        {
+            "District": "3",
+            "Name": "Glenn Prax",
+            "Party": "Republican",
+            "AssumedOffice": "24-Feb-20",
+            "State": "AK"
+        },
+        {
+            "District": "4",
+            "Name": "Grier Hopkins",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "5",
+            "Name": "Adam Wool",
+            "Party": "Democratic",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "6",
+            "Name": "Mike Cronk",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "7",
+            "Name": "Christopher Kurka",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "8",
+            "Name": "Kevin McCabe",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "9",
+            "Name": "George Rauscher",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "10",
+            "Name": "David Eastman",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "11",
+            "Name": "DeLena Johnson",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "12",
+            "Name": "Cathy Tilton",
+            "Party": "Republican",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "13",
+            "Name": "Ken McCarty",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "14",
+            "Name": "Kelly Merrick",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "15",
+            "Name": "David Nelson",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "16",
+            "Name": "Ivy Spohnholz",
+            "Party": "Democratic",
+            "AssumedOffice": "10-Mar-16",
+            "State": "AK"
+        },
+        {
+            "District": "17",
+            "Name": "Andrew Josephson",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-13",
+            "State": "AK"
+        },
+        {
+            "District": "18",
+            "Name": "Harriet Drummond",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-13",
+            "State": "AK"
+        },
+        {
+            "District": "19",
+            "Name": "Geran Tarr",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-13",
+            "State": "AK"
+        },
+        {
+            "District": "20",
+            "Name": "Zack Fields",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "21",
+            "Name": "Matt Claman",
+            "Party": "Democratic",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "22",
+            "Name": "Sara Rasmussen",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "23",
+            "Name": "Chris Tuck",
+            "Party": "Democratic",
+            "AssumedOffice": "2009",
+            "State": "AK"
+        },
+        {
+            "District": "24",
+            "Name": "Thomas McKay",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "25",
+            "Name": "Calvin Schrage",
+            "Party": "Nonpartisan",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "26",
+            "Name": "Laddie Shaw",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "27",
+            "Name": "Liz Snyder",
+            "Party": "Democratic",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "28",
+            "Name": "James Kaufman",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "29",
+            "Name": "Ben Carpenter",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "30",
+            "Name": "Ron Gillham",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "31",
+            "Name": "Sarah Vance",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "32",
+            "Name": "Louise Stutes",
+            "Party": "Republican",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "33",
+            "Name": "Sara Hannan",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "34",
+            "Name": "Andi Story",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "35",
+            "Name": "Jonathan Kreiss-Tomkins",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-13",
+            "State": "AK"
+        },
+        {
+            "District": "36",
+            "Name": "Daniel Ortiz",
+            "Party": "Independent",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "37",
+            "Name": "Bryce Edgmon",
+            "Party": "Independent",
+            "AssumedOffice": "2007",
+            "State": "AK"
+        },
+        {
+            "District": "38",
+            "Name": "Tiffany Zulkosky",
+            "Party": "Democratic",
+            "AssumedOffice": "9-Mar-18",
+            "State": "AK"
+        },
+        {
+            "District": "39",
+            "Name": "Neal Foster",
+            "Party": "Democratic",
+            "AssumedOffice": "16-Nov-09",
+            "State": "AK"
+        },
+        {
+            "District": "40",
+            "Name": "Josiah Patkotak",
+            "Party": "Independent",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        }
+    ]
+}

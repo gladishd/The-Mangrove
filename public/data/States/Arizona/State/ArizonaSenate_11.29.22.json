@@ -1,0 +1,214 @@
+{
+  "Sheet1": [
+    {
+      "District": "1",
+      "Name": "Karen Fann",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "2",
+      "Name": "Rosanna Gabaldon",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "3",
+      "Name": "Sally Ann Gonzales",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "4",
+      "Name": "Lisa Otondo",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "5",
+      "Name": "Sonny Borrelli",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "6",
+      "Name": "Wendy Rogers",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "7",
+      "Name": "Theresa Hatathlie",
+      "Party": "Democratic",
+      "AssumedOffice": "10-Jan-22",
+      "State": "AZ"
+    },
+    {
+      "District": "8",
+      "Name": "T.J. Shope",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "9",
+      "Name": "Victoria Steele",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "10",
+      "Name": "Stephanie Stahl Hamilton",
+      "Party": "Democratic",
+      "AssumedOffice": "28-Oct-21",
+      "State": "AZ"
+    },
+    {
+      "District": "11",
+      "Name": "Vince Leach",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "12",
+      "Name": "Warren Petersen",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "13",
+      "Name": "Sine Kerr",
+      "Party": "Republican",
+      "AssumedOffice": "8-Jan-18",
+      "State": "AZ"
+    },
+    {
+      "District": "14",
+      "Name": "David Gowan",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "15",
+      "Name": "Nancy K. Barto",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "16",
+      "Name": "Kelly Townsend",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "17",
+      "Name": "J.D. Mesnard",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "18",
+      "Name": "Sean Bowie",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "19",
+      "Name": "Lupe Contreras",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "20",
+      "Name": "Paul Boyer",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "21",
+      "Name": "Rick Gray",
+      "Party": "Republican",
+      "AssumedOffice": "19-Jan-18",
+      "State": "AZ"
+    },
+    {
+      "District": "22",
+      "Name": "David Livingston",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "23",
+      "Name": "Michelle Ugenti-Rita",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "24",
+      "Name": "Lela Alston",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "25",
+      "Name": "Tyler Pace",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "26",
+      "Name": "Juan Mendez",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "27",
+      "Name": "Rebecca Rios",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "28",
+      "Name": "Christine Marsh",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "29",
+      "Name": "Martin Quezada",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "30",
+      "Name": "Raquel Teran",
+      "Party": "Democratic",
+      "AssumedOffice": "28-Sep-21",
+      "State": "AZ"
+    }
+  ]
+}

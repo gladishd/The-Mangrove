@@ -1,0 +1,1421 @@
+{
+    "Sheet1": [
+        {
+            "District": "1",
+            "Name": "Patrick Harkins",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "2",
+            "Name": "Robert Merski",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "3",
+            "Name": "Ryan Bizzarro",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "4",
+            "Name": "Curtis Sonney",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-04",
+            "State": "PA"
+        },
+        {
+            "District": "5",
+            "Name": "Barry Jozwiak",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "6",
+            "Name": "Bradley Roae",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "7",
+            "Name": "Mark Longietti",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "8",
+            "Name": "Tim Bonner",
+            "Party": "Republican",
+            "AssumedOffice": "April 6, 2020",
+            "State": "PA"
+        },
+        {
+            "District": "9",
+            "Name": "Chris Sainato",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-94",
+            "State": "PA"
+        },
+        {
+            "District": "10",
+            "Name": "Aaron Bernstine",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "11",
+            "Name": "Marci Mustello",
+            "Party": "Republican",
+            "AssumedOffice": "4-Jun-19",
+            "State": "PA"
+        },
+        {
+            "District": "12",
+            "Name": "Daryl Metcalfe",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-98",
+            "State": "PA"
+        },
+        {
+            "District": "13",
+            "Name": "John Lawrence",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "14",
+            "Name": "Jim Marshall",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "15",
+            "Name": "Joshua Kail",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "16",
+            "Name": "Robert Matzie",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "17",
+            "Name": "Parke Wentling",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "18",
+            "Name": "K.C. Tomlinson",
+            "Party": "Republican",
+            "AssumedOffice": "April 6, 2020",
+            "State": "PA"
+        },
+        {
+            "District": "19",
+            "Name": "Aerion Abney",
+            "Party": "Democratic",
+            "AssumedOffice": "April 26, 2022",
+            "State": "PA"
+        },
+        {
+            "District": "20",
+            "Name": "Emily Kinkead",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "21",
+            "Name": "Sara Innamorato",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "22",
+            "Name": "Peter Schweyer",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "23",
+            "Name": "Dan Frankel",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-98",
+            "State": "PA"
+        },
+        {
+            "District": "24",
+            "Name": "Martell Covington",
+            "Party": "Democratic",
+            "AssumedOffice": "April 26, 2022",
+            "State": "PA"
+        },
+        {
+            "District": "25",
+            "Name": "Brandon Markosek",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "26",
+            "Name": "Timothy Hennessey",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-92",
+            "State": "PA"
+        },
+        {
+            "District": "27",
+            "Name": "Daniel Deasy Jr.",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "28",
+            "Name": "Rob Mercuri",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "29",
+            "Name": "Meghan Schroeder",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "30",
+            "Name": "Lori Mizgorski",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "31",
+            "Name": "Perry Warren",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "32",
+            "Name": "Vacant",
+            "State": "PA"
+        },
+        {
+            "District": "33",
+            "Name": "Carrie DelRosso",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "34",
+            "Name": "Summer Lee",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "35",
+            "Name": "Austin Davis",
+            "Party": "Democratic",
+            "AssumedOffice": "5-Feb-18",
+            "State": "PA"
+        },
+        {
+            "District": "36",
+            "Name": "Jessica Benham",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "37",
+            "Name": "Mindy Fee",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "38",
+            "Name": "Nick Pisciottano",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "39",
+            "Name": "Michael Puskaric",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "40",
+            "Name": "Natalie Mihalek",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "41",
+            "Name": "Brett Miller",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "42",
+            "Name": "Dan Miller",
+            "Party": "Democratic",
+            "AssumedOffice": "4-Jun-13",
+            "State": "PA"
+        },
+        {
+            "District": "43",
+            "Name": "Keith Greiner",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "44",
+            "Name": "Valerie Gaydos",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "45",
+            "Name": "Anita Astorino Kulik",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "46",
+            "Name": "Jason Ortitay",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "47",
+            "Name": "Keith Gillespie",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-02",
+            "State": "PA"
+        },
+        {
+            "District": "48",
+            "Name": "Timothy O'Neal",
+            "Party": "Republican",
+            "AssumedOffice": "5-Jun-18",
+            "State": "PA"
+        },
+        {
+            "District": "49",
+            "Name": "Bud Cook",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "50",
+            "Name": "Pam Snyder",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "51",
+            "Name": "Matthew Dowling",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "52",
+            "Name": "Ryan Warner",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "53",
+            "Name": "Steven Malagari",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "54",
+            "Name": "Robert Brooks",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "55",
+            "Name": "Jason Silvis",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "56",
+            "Name": "George Dunbar",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "57",
+            "Name": "Eric Nelson",
+            "Party": "Republican",
+            "AssumedOffice": "April 5, 2016",
+            "State": "PA"
+        },
+        {
+            "District": "58",
+            "Name": "Eric Davanzo",
+            "Party": "Republican",
+            "AssumedOffice": "April 6, 2020",
+            "State": "PA"
+        },
+        {
+            "District": "59",
+            "Name": "Leslie Baum Rossi",
+            "Party": "Republican",
+            "AssumedOffice": "7-Jun-21",
+            "State": "PA"
+        },
+        {
+            "District": "60",
+            "Name": "Abby Major",
+            "Party": "Republican",
+            "AssumedOffice": "7-Jun-21",
+            "State": "PA"
+        },
+        {
+            "District": "61",
+            "Name": "Liz Hanbidge",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "62",
+            "Name": "James Struzzi II",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "63",
+            "Name": "Donna Oberlander",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "64",
+            "Name": "R. Lee James",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "65",
+            "Name": "Kathy Rapp",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-04",
+            "State": "PA"
+        },
+        {
+            "District": "66",
+            "Name": "Brian Smith",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "67",
+            "Name": "Martin Causer",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-02",
+            "State": "PA"
+        },
+        {
+            "District": "68",
+            "Name": "Clint Owlett",
+            "Party": "Republican",
+            "AssumedOffice": "5-Jun-18",
+            "State": "PA"
+        },
+        {
+            "District": "69",
+            "Name": "Carl Metzgar",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "70",
+            "Name": "Matthew Bradford",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "71",
+            "Name": "James Rigby",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "72",
+            "Name": "Frank Burns",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "73",
+            "Name": "Thomas Sankey",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "74",
+            "Name": "Dan Williams",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "75",
+            "Name": "Mike Armanini",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "76",
+            "Name": "Stephanie Borowicz",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "77",
+            "Name": "H. Scott Conklin",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "78",
+            "Name": "Jesse Topper",
+            "Party": "Republican",
+            "AssumedOffice": "10-Feb-14",
+            "State": "PA"
+        },
+        {
+            "District": "79",
+            "Name": "Louis Schmitt Jr.",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "80",
+            "Name": "James Gregory",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "81",
+            "Name": "Richard Irvin",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "82",
+            "Name": "Johnathan Hershey",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "83",
+            "Name": "Jeff Wheeland",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "84",
+            "Name": "Joe Hamm",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "85",
+            "Name": "David Rowe",
+            "Party": "Republican",
+            "AssumedOffice": "17-Sep-19",
+            "State": "PA"
+        },
+        {
+            "District": "86",
+            "Name": "Perry Stambaugh",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "87",
+            "Name": "Greg Rothman",
+            "Party": "Republican",
+            "AssumedOffice": "25-Aug-15",
+            "State": "PA"
+        },
+        {
+            "District": "88",
+            "Name": "Sheryl Delozier",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "89",
+            "Name": "Rob Kauffman",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-04",
+            "State": "PA"
+        },
+        {
+            "District": "90",
+            "Name": "Paul Schemel",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "91",
+            "Name": "Dan Moul",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "92",
+            "Name": "Dawn Keefer",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "93",
+            "Name": "Mike Jones",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "94",
+            "Name": "Stanley Saylor",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-92",
+            "State": "PA"
+        },
+        {
+            "District": "95",
+            "Name": "Carol Hill-Evans",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "96",
+            "Name": "P. Michael Sturla",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-90",
+            "State": "PA"
+        },
+        {
+            "District": "97",
+            "Name": "Steven Mentzer",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "98",
+            "Name": "David Hickernell",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-02",
+            "State": "PA"
+        },
+        {
+            "District": "99",
+            "Name": "David H. Zimmerman",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "100",
+            "Name": "Bryan Cutler",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "101",
+            "Name": "Francis Ryan",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "102",
+            "Name": "Russell Diamond",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "103",
+            "Name": "Patty Kim",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "104",
+            "Name": "Susan Helm",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "105",
+            "Name": "Andrew Lewis",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "106",
+            "Name": "Thomas Mehaffie",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "107",
+            "Name": "Kurt Masser",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "108",
+            "Name": "Lynda Schlegel Culver",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "109",
+            "Name": "David Millard",
+            "Party": "Republican",
+            "AssumedOffice": "9-Feb-04",
+            "State": "PA"
+        },
+        {
+            "District": "110",
+            "Name": "Tina Pickett",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-00",
+            "State": "PA"
+        },
+        {
+            "District": "111",
+            "Name": "Jonathan Fritz",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "112",
+            "Name": "Kyle Mullins",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "113",
+            "Name": "Thom Welby",
+            "Party": "Democratic",
+            "AssumedOffice": "17-Nov-21",
+            "State": "PA"
+        },
+        {
+            "District": "114",
+            "Name": "Bridget Malloy Kosierowski",
+            "Party": "Democratic",
+            "AssumedOffice": "April 8, 2019",
+            "State": "PA"
+        },
+        {
+            "District": "115",
+            "Name": "Maureen Madden",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "116",
+            "Name": "Robert Schnee",
+            "Party": "Republican",
+            "AssumedOffice": "April 26, 2022",
+            "State": "PA"
+        },
+        {
+            "District": "117",
+            "Name": "Karen Boback",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "118",
+            "Name": "Mike Carroll",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "119",
+            "Name": "Gerald Mullery",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "120",
+            "Name": "Aaron Kaufer",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "121",
+            "Name": "Eddie Day Pashinski",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "122",
+            "Name": "Doyle Heffley",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "123",
+            "Name": "Tim Twardzik",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "124",
+            "Name": "Jerry Knowles",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jun-09",
+            "State": "PA"
+        },
+        {
+            "District": "125",
+            "Name": "Joe Kerwin",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "126",
+            "Name": "Mark Rozzi",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "127",
+            "Name": "Manuel Guzman",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "128",
+            "Name": "Mark Gillen",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "129",
+            "Name": "Jim Cox",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "130",
+            "Name": "David Maloney",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "131",
+            "Name": "Milou Mackenzie",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "132",
+            "Name": "Michael Schlossberg",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "133",
+            "Name": "Jeanne McNeill",
+            "Party": "Democratic",
+            "AssumedOffice": "2-Jan-18",
+            "State": "PA"
+        },
+        {
+            "District": "134",
+            "Name": "Ryan Mackenzie",
+            "Party": "Republican",
+            "AssumedOffice": "8-May-12",
+            "State": "PA"
+        },
+        {
+            "District": "135",
+            "Name": "Steve Samuelson",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-98",
+            "State": "PA"
+        },
+        {
+            "District": "136",
+            "Name": "Robert Freeman",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-98",
+            "State": "PA"
+        },
+        {
+            "District": "137",
+            "Name": "Joe Emrick",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "138",
+            "Name": "Ann Flood",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "139",
+            "Name": "Michael Peifer",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "140",
+            "Name": "John Galloway",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-06",
+            "State": "PA"
+        },
+        {
+            "District": "141",
+            "Name": "Tina Davis",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "142",
+            "Name": "Frank Farry",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "143",
+            "Name": "Shelby Labs",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "144",
+            "Name": "F. Todd Polinchock",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "145",
+            "Name": "Craig Staats",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "146",
+            "Name": "Joseph Ciresi",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "147",
+            "Name": "Tracy Pennycuick",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "148",
+            "Name": "Mary Jo Daley",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "149",
+            "Name": "Tim Briggs",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "150",
+            "Name": "Joseph Webster",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "151",
+            "Name": "Todd Stephens",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "152",
+            "Name": "Nancy Guenst",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "153",
+            "Name": "Ben Sanchez",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "154",
+            "Name": "Napoleon Nelson",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "155",
+            "Name": "Danielle Friel Otten",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "156",
+            "Name": "Dianne Herrin",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "157",
+            "Name": "Melissa Shusterman",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "158",
+            "Name": "Christina Sappey",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "159",
+            "Name": "Brian Kirkland",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "160",
+            "Name": "Craig Williams",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "161",
+            "Name": "Leanne Krueger",
+            "Party": "Democratic",
+            "AssumedOffice": "25-Aug-15",
+            "State": "PA"
+        },
+        {
+            "District": "162",
+            "Name": "David Delloso",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "163",
+            "Name": "Michael Zabel",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "164",
+            "Name": "Gina Curry",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Dec-21",
+            "State": "PA"
+        },
+        {
+            "District": "165",
+            "Name": "Jennifer O'Mara",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "166",
+            "Name": "Gregory Vitali",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-92",
+            "State": "PA"
+        },
+        {
+            "District": "167",
+            "Name": "Kristine Howard",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "168",
+            "Name": "Christopher Quinn",
+            "Party": "Republican",
+            "AssumedOffice": "18-Aug-16",
+            "State": "PA"
+        },
+        {
+            "District": "169",
+            "Name": "Kate Klunk",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "170",
+            "Name": "Martina White",
+            "Party": "Republican",
+            "AssumedOffice": "April 13, 2015",
+            "State": "PA"
+        },
+        {
+            "District": "171",
+            "Name": "Kerry Benninghoff",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-96",
+            "State": "PA"
+        },
+        {
+            "District": "172",
+            "Name": "Kevin Boyle",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "173",
+            "Name": "Vacant",
+            "State": "PA"
+        },
+        {
+            "District": "174",
+            "Name": "Ed Neilson",
+            "Party": "Democratic",
+            "AssumedOffice": "25-Aug-15",
+            "State": "PA"
+        },
+        {
+            "District": "175",
+            "Name": "Mary Isaacson",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "176",
+            "Name": "Jack Rader",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "177",
+            "Name": "Joseph Hohenstein",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "178",
+            "Name": "Wendi Thomas",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "179",
+            "Name": "Jason Dawkins",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-14",
+            "State": "PA"
+        },
+        {
+            "District": "180",
+            "Name": "Angel Cruz",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-00",
+            "State": "PA"
+        },
+        {
+            "District": "181",
+            "Name": "Malcolm Kenyatta",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "182",
+            "Name": "Brian Sims",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "183",
+            "Name": "Zachary Mako",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "184",
+            "Name": "Elizabeth Fiedler",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "185",
+            "Name": "Regina Young",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "186",
+            "Name": "Jordan Harris",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "187",
+            "Name": "Gary Day",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "188",
+            "Name": "Rick Krajewski",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "189",
+            "Name": "Rosemary Brown",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "190",
+            "Name": "Amen Brown",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "191",
+            "Name": "Joanna McClinton",
+            "Party": "Democratic",
+            "AssumedOffice": "25-Aug-15",
+            "State": "PA"
+        },
+        {
+            "District": "192",
+            "Name": "Morgan Cephas",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "193",
+            "Name": "Torren Ecker",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "194",
+            "Name": "Pamela DeLissio",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-10",
+            "State": "PA"
+        },
+        {
+            "District": "195",
+            "Name": "Donna Bullock",
+            "Party": "Democratic",
+            "AssumedOffice": "25-Aug-15",
+            "State": "PA"
+        },
+        {
+            "District": "196",
+            "Name": "Seth Grove",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-08",
+            "State": "PA"
+        },
+        {
+            "District": "197",
+            "Name": "Danilo Burgos",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "198",
+            "Name": "Darisha Parker",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-20",
+            "State": "PA"
+        },
+        {
+            "District": "199",
+            "Name": "Barbara Gleim",
+            "Party": "Republican",
+            "AssumedOffice": "1-Dec-18",
+            "State": "PA"
+        },
+        {
+            "District": "200",
+            "Name": "Christopher Rabb",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "201",
+            "Name": "Stephen Kinsey",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-12",
+            "State": "PA"
+        },
+        {
+            "District": "202",
+            "Name": "Jared Solomon",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        },
+        {
+            "District": "203",
+            "Name": "Isabella Fitzgerald",
+            "Party": "Democratic",
+            "AssumedOffice": "1-Dec-16",
+            "State": "PA"
+        }
+    ]
+}

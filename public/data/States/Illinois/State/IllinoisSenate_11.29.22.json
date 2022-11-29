@@ -1,0 +1,358 @@
+{
+    "Sheet1": [
+        {
+            "Name": "Neil Anderson",
+            "District": "36",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Omar Aquino",
+            "District": "2",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Darren Bailey",
+            "District": "55",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Jason A. Barickman",
+            "District": "53",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Christopher Belt",
+            "District": "57",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Scott M. Bennett",
+            "District": "52",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Terri Bryant",
+            "District": "58",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Melinda Bush",
+            "District": "31",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Cristina Castro",
+            "District": "22",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Javier L Cervantes",
+            "District": "1",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Jacqueline Y. Collins",
+            "District": "16",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Bill Cunningham",
+            "District": "18",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "John F. Curran",
+            "District": "41",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Donald P. DeWitte",
+            "District": "33",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Laura Ellman",
+            "District": "21",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Sara Feigenholtz",
+            "District": "6",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Laura Fine",
+            "District": "9",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Dale Fowler",
+            "District": "59",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Ann Gillespie",
+            "District": "27",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Suzy Glowiak Hilton",
+            "District": "24",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Don Harmon",
+            "District": "39",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Napoleon Harris, III",
+            "District": "15",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Michael E. Hastings",
+            "District": "19",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Linda Holmes",
+            "District": "42",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Mattie Hunter",
+            "District": "3",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Adriane Johnson",
+            "District": "30",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Emil Jones, III",
+            "District": "14",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Patrick J. Joyce",
+            "District": "40",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "David Koehler",
+            "District": "46",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Steven M. Landek",
+            "District": "12",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Kimberly A. Lightford",
+            "District": "4",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Meg Loughran Cappel",
+            "District": "49",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Robert F. Martwick",
+            "District": "10",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Eric Mattson",
+            "District": "43",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Steve McClure",
+            "District": "50",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Dan McConchie",
+            "District": "26",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Julie A. Morrison",
+            "District": "29",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Laura M. Murphy",
+            "District": "28",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Cristina H. Pacione-Zayas",
+            "District": "20",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Diane Pappas",
+            "District": "23",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Robert Peters",
+            "District": "13",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Jason Plummer",
+            "District": "54",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Sue Rezin",
+            "District": "38",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Chapin Rose",
+            "District": "51",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Mike Simmons",
+            "District": "7",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Elgie R. Sims, Jr.",
+            "District": "17",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Steve Stadelman",
+            "District": "34",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Brian W. Stewart",
+            "District": "45",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Win Stoller",
+            "District": "37",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Dave Syverson",
+            "District": "35",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Kris Tharp",
+            "District": "56",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Jil Tracy",
+            "District": "47",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Doris Turner",
+            "District": "48",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Sally J. Turner",
+            "District": "44",
+            "Party": "R",
+            "State": "IL"
+        },
+        {
+            "Name": "Patricia Van Pelt",
+            "District": "5",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Karina Villa",
+            "District": "25",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Celina Villanueva",
+            "District": "11",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Ram Villivalam",
+            "District": "8",
+            "Party": "D",
+            "State": "IL"
+        },
+        {
+            "Name": "Craig Wilcox",
+            "District": "32",
+            "Party": "R",
+            "State": "IL"
+        }
+    ]
+}

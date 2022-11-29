@@ -51,10 +51,6 @@ export default class Users extends React.Component {
     })
   }
 
-  componentDidUpdate() {
-    console.log("The component has updated on ProfilePageOld, the state is ", this.state)
-  }
-
   async getArcGISData() {
     let res = await axios.get(`/api/ArcGISData`)
     console.log("Fetches Arc GIS Data ", res)
@@ -290,9 +286,6 @@ export default class Users extends React.Component {
       }
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && <LogoutComponent />
-      }
-      {
-        console.log("IF you're on ProfilePageOld.js, want to console.log these props ", this.props)
       }
       <LoginCookies props={this.props} />
     </div>

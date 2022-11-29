@@ -1,0 +1,704 @@
+{
+  "Sheet1": [
+    {
+      "District": "1",
+      "Name": "Carol Dalby",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "2",
+      "Name": "Lane Jean",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "3",
+      "Name": "Danny Watson",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "4",
+      "Name": "DeAnn Vaught",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "5",
+      "Name": "David Fielding",
+      "Party": "Democratic",
+      "AssumedOffice": "10-Jan-11",
+      "State": "AR"
+    },
+    {
+      "District": "6",
+      "Name": "Matthew Shepherd",
+      "Party": "Republican",
+      "AssumedOffice": "10-Jan-11",
+      "State": "AR"
+    },
+    {
+      "District": "7",
+      "Name": "Sonia Eubanks Barker",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "8",
+      "Name": "Jeff R. Wardlaw",
+      "Party": "Republican",
+      "AssumedOffice": "10-Jan-11",
+      "State": "AR"
+    },
+    {
+      "District": "9",
+      "Name": "Howard Beaty",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "10",
+      "Name": "Mike Holcomb",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "11",
+      "Name": "Mark McElroy",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "12",
+      "Name": "David Tollett",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "13",
+      "Name": "David Hillman",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "14",
+      "Name": "Roger Lynch",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "15",
+      "Name": "Ken Bragg",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "16",
+      "Name": "Ken Ferguson",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "17",
+      "Name": "Vivian Flowers",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "18",
+      "Name": "Richard Womack",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "19",
+      "Name": "Justin Gonzales",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "20",
+      "Name": "John Maddox",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "21",
+      "Name": "Marcus Richmond",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "22",
+      "Name": "Richard McGrew",
+      "Party": "Republican",
+      "AssumedOffice": "4-Mar-20",
+      "State": "AR"
+    },
+    {
+      "District": "23",
+      "Name": "Lanny Fite",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "24",
+      "Name": "Bruce Cozart",
+      "Party": "Republican",
+      "AssumedOffice": "11-Mar-11",
+      "State": "AR"
+    },
+    {
+      "District": "25",
+      "Name": "Les Warren",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "26",
+      "Name": "Rick McClure",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "27",
+      "Name": "Julie Mayberry",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "28",
+      "Name": "Tony Furman",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "29",
+      "Name": "Fredrick Love",
+      "Party": "Democratic",
+      "AssumedOffice": "2011",
+      "State": "AR"
+    },
+    {
+      "District": "30",
+      "Name": "Fred Allen",
+      "Party": "Democratic",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "31",
+      "Name": "Keith Brooks",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "32",
+      "Name": "Ashley Hudson",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "33",
+      "Name": "Tippi McCullough",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "34",
+      "Name": "Joy C. Springer",
+      "Party": "Democratic",
+      "AssumedOffice": "4-Mar-20",
+      "State": "AR"
+    },
+    {
+      "District": "35",
+      "Name": "Andrew Collins",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "36",
+      "Name": "Denise Ennett",
+      "Party": "Democratic",
+      "AssumedOffice": "2019",
+      "State": "AR"
+    },
+    {
+      "District": "37",
+      "Name": "Jamie Scott",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "38",
+      "Name": "Carlton Wing",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "39",
+      "Name": "Mark Lowery",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "40",
+      "Name": "David Ray",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "41",
+      "Name": "Karilyn Brown",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "42",
+      "Name": "Mark Perry",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "43",
+      "Name": "Brian Evans",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "44",
+      "Name": "Cameron Cooper",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "45",
+      "Name": "Jim Wooten",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "46",
+      "Name": "Les Eaves",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "47",
+      "Name": "Craig Christiansen",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "48",
+      "Name": "Reginald Murdock",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "49",
+      "Name": "Steve Hollowell",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "50",
+      "Name": "Milton Nicks Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "51",
+      "Name": "Deborah Ferguson",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "52",
+      "Name": "Dwight Tosh",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "53",
+      "Name": "Jon Milligan",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "54",
+      "Name": "Johnny Rye",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "55",
+      "Name": "Monte Hodges",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "56",
+      "Name": "Joe Jett",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "57",
+      "Name": "Jimmy Gazaway",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "58",
+      "Name": "Brandt Smith",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "59",
+      "Name": "Jack Ladyman",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "60",
+      "Name": "Frances Cavenaugh",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "61",
+      "Name": "Marsh Davis",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "62",
+      "Name": "Michelle Gray",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "63",
+      "Name": "Stu Smith",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "64",
+      "Name": "John Payton",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "65",
+      "Name": "Rick Beck",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "66",
+      "Name": "Josh Miller",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "67",
+      "Name": "Stephen Meeks",
+      "Party": "Republican",
+      "AssumedOffice": "2011",
+      "State": "AR"
+    },
+    {
+      "District": "68",
+      "Name": "Stan Berry",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "69",
+      "Name": "Aaron Pilkington",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "70",
+      "Name": "Spencer Hawks",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "71",
+      "Name": "Joe Cloud",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "72",
+      "Name": "Steve Magie",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "73",
+      "Name": "Mary Bentley",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "74",
+      "Name": "Jon S. Eubanks",
+      "Party": "Republican",
+      "AssumedOffice": "2011",
+      "State": "AR"
+    },
+    {
+      "District": "75",
+      "Name": "Lee Johnson",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "76",
+      "Name": "Cindy Crawford",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "77",
+      "Name": "Justin Boyd",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "78",
+      "Name": "Jay Richardson",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "79",
+      "Name": "Gary Deffenbaugh",
+      "Party": "Republican",
+      "AssumedOffice": "2011",
+      "State": "AR"
+    },
+    {
+      "District": "80",
+      "Name": "Charlene Fite",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "81",
+      "Name": "Bruce Coleman",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "82",
+      "Name": "Mark Berry",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "83",
+      "Name": "Keith Slape",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "84",
+      "Name": "Denise Garner",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "85",
+      "Name": "David Whitaker",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "86",
+      "Name": "Nicole Clowney",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "87",
+      "Name": "Robin Lundstrum",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "88",
+      "Name": "Clint Penzo",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "89",
+      "Name": "Megan Godfrey",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "90",
+      "Name": "Kendon Underwood",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "91",
+      "Name": "Delia Haak",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "92",
+      "Name": "Gayla McKenzie",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "93",
+      "Name": "Jim Dotson",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-13",
+      "State": "AR"
+    },
+    {
+      "District": "94",
+      "Name": "John Carr",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "95",
+      "Name": "Austin McCollum",
+      "Party": "Republican",
+      "AssumedOffice": "2017",
+      "State": "AR"
+    },
+    {
+      "District": "96",
+      "Name": "Joshua Bryant",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AR"
+    },
+    {
+      "District": "97",
+      "Name": "Harlan Breaux",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AR"
+    },
+    {
+      "District": "98",
+      "Name": "Ron McNair",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    },
+    {
+      "District": "99",
+      "Name": "Jack Fortner",
+      "Party": "Republican",
+      "AssumedOffice": "16-Nov-16",
+      "State": "AR"
+    },
+    {
+      "District": "100",
+      "Name": "Nelda Speaks",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AR"
+    }
+  ]
+}

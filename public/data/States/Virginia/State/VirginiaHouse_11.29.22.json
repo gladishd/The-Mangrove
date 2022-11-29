@@ -1,0 +1,702 @@
+﻿{
+    "Sheet1": [
+        {
+            "District": "1",
+            "Name": "Terry Kilgore",
+            "Party": "Republican",
+            "AssumedOffice": "1994",
+            "State": "VA"
+        },
+        {
+            "District": "2",
+            "Name": "Candi King",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Jan-21",
+            "State": "VA"
+        },
+        {
+            "District": "3",
+            "Name": "James Morefield",
+            "Party": "Republican",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "4",
+            "Name": "William Wampler III",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "5",
+            "Name": "Israel O'Quinn",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "6",
+            "Name": "Jeffrey Campbell",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "7",
+            "Name": "Marie March",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "8",
+            "Name": "Joseph McNamara",
+            "Party": "Republican",
+            "AssumedOffice": "2019",
+            "State": "VA"
+        },
+        {
+            "District": "9",
+            "Name": "Wren Williams",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "10",
+            "Name": "Wendy Gooditis",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "11",
+            "Name": "S. Rasoul",
+            "Party": "Democratic",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "12",
+            "Name": "Jason Ballard",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "13",
+            "Name": "Danica Roem",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "14",
+            "Name": "Danny Marshall",
+            "Party": "Republican",
+            "AssumedOffice": "2002",
+            "State": "VA"
+        },
+        {
+            "District": "15",
+            "Name": "Todd Gilbert",
+            "Party": "Republican",
+            "AssumedOffice": "11-Jan-06",
+            "State": "VA"
+        },
+        {
+            "District": "16",
+            "Name": "Les Adams",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "17",
+            "Name": "Chris Head",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "18",
+            "Name": "Michael Webert",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "19",
+            "Name": "Terry Austin",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "20",
+            "Name": "John Avoli",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "21",
+            "Name": "Kelly Convirs-Fowler",
+            "Party": "Democratic",
+            "AssumedOffice": "10-Jan-18",
+            "State": "VA"
+        },
+        {
+            "District": "22",
+            "Name": "Kathy Byron",
+            "Party": "Republican",
+            "AssumedOffice": "1998",
+            "State": "VA"
+        },
+        {
+            "District": "23",
+            "Name": "Wendell Walker",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "24",
+            "Name": "Ronnie Campbell",
+            "Party": "Republican",
+            "AssumedOffice": "2019",
+            "State": "VA"
+        },
+        {
+            "District": "25",
+            "Name": "Chris Runion",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "26",
+            "Name": "Tony Wilt",
+            "Party": "Republican",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "27",
+            "Name": "Roxann Robinson",
+            "Party": "Republican",
+            "AssumedOffice": "24-Jun-10",
+            "State": "VA"
+        },
+        {
+            "District": "28",
+            "Name": "Tara Durant",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "29",
+            "Name": "Bill Wiley",
+            "Party": "Republican",
+            "AssumedOffice": "19-Nov-20",
+            "State": "VA"
+        },
+        {
+            "District": "30",
+            "Name": "Nick Freitas",
+            "Party": "Republican",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "District": "31",
+            "Name": "Elizabeth Guzman",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "32",
+            "Name": "David Reid",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "33",
+            "Name": "Dave LaRock",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-14",
+            "State": "VA"
+        },
+        {
+            "District": "34",
+            "Name": "Kathleen J. Murphy",
+            "Party": "Democratic",
+            "AssumedOffice": "2015",
+            "State": "VA"
+        },
+        {
+            "District": "35",
+            "Name": "Vacant",
+            "State": "VA"
+        },
+        {
+            "District": "36",
+            "Name": "Ken Plum",
+            "Party": "Democratic",
+            "AssumedOffice": "1982",
+            "State": "VA"
+        },
+        {
+            "District": "37",
+            "Name": "David Bulova",
+            "Party": "Democratic",
+            "AssumedOffice": "2006",
+            "State": "VA"
+        },
+        {
+            "District": "38",
+            "Name": "Kaye Kory",
+            "Party": "Democratic",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "39",
+            "Name": "Vivian Watts",
+            "Party": "Democratic",
+            "AssumedOffice": "1996",
+            "State": "VA"
+        },
+        {
+            "District": "40",
+            "Name": "Dan Helmer",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "41",
+            "Name": "Eileen Filler-Corn",
+            "Party": "Democratic",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "42",
+            "Name": "Kathy Tran",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "43",
+            "Name": "Mark Sickles",
+            "Party": "Democratic",
+            "AssumedOffice": "2004",
+            "State": "VA"
+        },
+        {
+            "District": "44",
+            "Name": "Paul Krizek",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "District": "45",
+            "Name": "Elizabeth Bennett-Parker",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "46",
+            "Name": "Charniele Herring",
+            "Party": "Democratic",
+            "AssumedOffice": "2009",
+            "State": "VA"
+        },
+        {
+            "District": "47",
+            "Name": "Patrick Hope",
+            "Party": "Democratic",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "48",
+            "Name": "R.C. Sullivan, Jr.",
+            "Party": "Democratic",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "49",
+            "Name": "Alfonso Lopez",
+            "Party": "Democratic",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "50",
+            "Name": "Michelle Maldonado",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "51",
+            "Name": "Briana Sewell",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "52",
+            "Name": "Luke Torian",
+            "Party": "Democratic",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "53",
+            "Name": "Marcus Simon",
+            "Party": "Democratic",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "54",
+            "Name": "Bobby Orrock",
+            "Party": "Republican",
+            "AssumedOffice": "1990",
+            "State": "VA"
+        },
+        {
+            "District": "55",
+            "Name": "Buddy Fowler",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "56",
+            "Name": "John McGuire",
+            "Party": "Republican",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "57",
+            "Name": "Sally Hudson",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "58",
+            "Name": "Rob Bell",
+            "Party": "Republican",
+            "AssumedOffice": "2002",
+            "State": "VA"
+        },
+        {
+            "District": "59",
+            "Name": "Matt Fariss",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "60",
+            "Name": "James Edmunds II",
+            "Party": "Republican",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "61",
+            "Name": "Tommy Wright",
+            "Party": "Republican",
+            "AssumedOffice": "2001",
+            "State": "VA"
+        },
+        {
+            "District": "62",
+            "Name": "Carrie Coyner",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "63",
+            "Name": "Kim Taylor",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "64",
+            "Name": "Emily Brewer",
+            "Party": "Republican",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "65",
+            "Name": "Lee Ware",
+            "Party": "Republican",
+            "AssumedOffice": "1998",
+            "State": "VA"
+        },
+        {
+            "District": "66",
+            "Name": "Mike Cherry",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "67",
+            "Name": "Karrie Delaney",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "68",
+            "Name": "Dawn Adams",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "69",
+            "Name": "Betsy Carr",
+            "Party": "Democratic",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "70",
+            "Name": "Delores McQuinn",
+            "Party": "Democratic",
+            "AssumedOffice": "2009",
+            "State": "VA"
+        },
+        {
+            "District": "71",
+            "Name": "Jeff Bourne",
+            "Party": "Democratic",
+            "AssumedOffice": "2017",
+            "State": "VA"
+        },
+        {
+            "District": "72",
+            "Name": "Schuyler VanValkenburg",
+            "Party": "Democratic",
+            "AssumedOffice": "2018",
+            "State": "VA"
+        },
+        {
+            "District": "73",
+            "Name": "Rodney Willett",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "74",
+            "Name": "Lamont Bagby",
+            "Party": "Democratic",
+            "AssumedOffice": "2015",
+            "State": "VA"
+        },
+        {
+            "District": "75",
+            "Name": "H. Otto Wachsmann Jr.",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "76",
+            "Name": "Clinton Jenkins",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "77",
+            "Name": "Cliff Hayes",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "District": "78",
+            "Name": "Jay Leftwich",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "79",
+            "Name": "Nadarius Clark",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "80",
+            "Name": "Don Scott",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "81",
+            "Name": "Barry Knight",
+            "Party": "Republican",
+            "AssumedOffice": "2010",
+            "State": "VA"
+        },
+        {
+            "District": "82",
+            "Name": "Anne Ferrell Tata",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "83",
+            "Name": "Tim Anderson",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "84",
+            "Name": "Glenn Davis",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        },
+        {
+            "District": "85",
+            "Name": "Karen Greenhalgh",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "86",
+            "Name": "Irene Shin",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "87",
+            "Name": "Suhas Subramanyam",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "88",
+            "Name": "Phillip Scott",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "89",
+            "Name": "Jackie Glass",
+            "Party": "Democratic",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "90",
+            "Name": "Angelia Williams Graves",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Jan-21",
+            "State": "VA"
+        },
+        {
+            "District": "91",
+            "Name": "Aijalon Cordoza",
+            "Party": "Republican",
+            "AssumedOffice": "12-Jan-22",
+            "State": "VA"
+        },
+        {
+            "District": "92",
+            "Name": "Jeion Ward",
+            "Party": "Democratic",
+            "AssumedOffice": "14-Jan-04",
+            "State": "VA"
+        },
+        {
+            "District": "93",
+            "Name": "Michael P. Mullin",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "District": "94",
+            "Name": "Shelly Simonds",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "95",
+            "Name": "Marcia Price",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "District": "96",
+            "Name": "Amanda Batten",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "97",
+            "Name": "Scott Wyatt",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "District": "98",
+            "Name": "Keith Hodges",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "99",
+            "Name": "Margaret Ransone",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "District": "100",
+            "Name": "Robert Bloxom",
+            "Party": "Republican",
+            "AssumedOffice": "2014",
+            "State": "VA"
+        }
+    ]
+}

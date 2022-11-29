@@ -12,28 +12,21 @@ const Login = (props) => {
 
   useEffect(() => {
     setCookieData(props.cookieSet);
-    console.log("I'm on the LoginCookiesOld.js component, what is the cookieData? Yes the useEffect hoook gets called", cookieData)
     return () => {
       console.log('This will be logged on unmount');
     };
   }, [props.cookieSet]) // now this listens to changes in contact
 
   useEffect(() => {
-
-    console.log("*******we are on the login cookies component, did we get the props from ProfilePageOld and before that from index.js? The props here are : ", props)
-    console.log(props)
     // https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
     if (props.cookieSet && variable == 0) {
-      console.log("Did we reach the set cookie code on Login Cookies?")
       setVariable(1)
-
       setTimeout(() => {
         console.log("Delayed for 2 seconds.");
         console.log(props.cookieSet)
         // Router.push('/')
         window.location.reload(true);
       }, "0")
-
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
         maxAge: 2147483647, // = 2038-01-19 04:14:07 https://stackoverflow.com/questions/3290424/set-a-cookie-to-never-expire
@@ -47,14 +40,10 @@ const Login = (props) => {
   })
 
   const handleSignIn = async (e) => {
-    console.log('we are looking at useEffect, but not in the function')
     try {
-      console.log('we are looking at useEffect, but not in the function')
       e.preventDefault()
       // const response = await yourLoginFunction(username) //handle API call to sign in here.
       // const data = response.data
-
-
     } catch (err) {
       console.log(err)
     }

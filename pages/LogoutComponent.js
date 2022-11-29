@@ -6,9 +6,9 @@ import Router from 'next/router'
 const Login = ({ name, cookieSet }) => {
   const [cookie, setCookie, removeCookie] = useCookies(["user"]);
 
-  useEffect(() => {
-    console.log("We are using the effect hook on the logout component! On the Logout component we are finding the cookie value, what is it?", cookie)
-  })
+  // useEffect(() => {
+  //   console.log("We are using the effect hook on the logout component! On the Logout component we are finding the cookie value, what is it?", cookie)
+  // })
 
   return (
     <>

@@ -1,0 +1,282 @@
+﻿{
+    "Sheet1": [
+        {
+            "Districts": "1",
+            "Name": "T. Monty Mason",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "Districts": "2",
+            "Name": "Mamie Locke",
+            "Party": "Democratic",
+            "AssumedOffice": "2004",
+            "State": "VA"
+        },
+        {
+            "Districts": "3",
+            "Name": "Thomas Norment Jr.",
+            "Party": "Republican",
+            "AssumedOffice": "1992",
+            "State": "VA"
+        },
+        {
+            "Districts": "4",
+            "Name": "Ryan McDougle",
+            "Party": "Republican",
+            "AssumedOffice": "2006",
+            "State": "VA"
+        },
+        {
+            "Districts": "5",
+            "Name": "Lionell Spruill",
+            "Party": "Democratic",
+            "AssumedOffice": "2016",
+            "State": "VA"
+        },
+        {
+            "Districts": "6",
+            "Name": "Lynwood Lewis",
+            "Party": "Democratic",
+            "AssumedOffice": "28-Jan-14",
+            "State": "VA"
+        },
+        {
+            "Districts": "7",
+            "Name": "Vacant",
+            "State": "VA"
+        },
+        {
+            "Districts": "8",
+            "Name": "Bill DeSteph Jr.",
+            "Party": "Republican",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "9",
+            "Name": "Jennifer McClellan",
+            "Party": "Democratic",
+            "AssumedOffice": "2017",
+            "State": "VA"
+        },
+        {
+            "Districts": "10",
+            "Name": "Ghazala Hashmi",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "Districts": "11",
+            "Name": "Amanda Chase",
+            "Party": "Republican",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "12",
+            "Name": "Siobhan Dunnavant",
+            "Party": "Republican",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "13",
+            "Name": "John Bell",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "Districts": "14",
+            "Name": "John Cosgrove",
+            "Party": "Republican",
+            "AssumedOffice": "2013",
+            "State": "VA"
+        },
+        {
+            "Districts": "15",
+            "Name": "Frank Ruff",
+            "Party": "Republican",
+            "AssumedOffice": "2000",
+            "State": "VA"
+        },
+        {
+            "Districts": "16",
+            "Name": "Joseph Morrissey",
+            "Party": "Democratic",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        },
+        {
+            "Districts": "17",
+            "Name": "Bryce Reeves",
+            "Party": "Republican",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "Districts": "18",
+            "Name": "Louise Lucas",
+            "Party": "Democratic",
+            "AssumedOffice": "1992",
+            "State": "VA"
+        },
+        {
+            "Districts": "19",
+            "Name": "David Suetterlein",
+            "Party": "Republican",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "20",
+            "Name": "Bill Stanley",
+            "Party": "Republican",
+            "AssumedOffice": "2011",
+            "State": "VA"
+        },
+        {
+            "Districts": "21",
+            "Name": "John Edwards",
+            "Party": "Democratic",
+            "AssumedOffice": "1996",
+            "State": "VA"
+        },
+        {
+            "Districts": "22",
+            "Name": "Mark Peake",
+            "Party": "Republican",
+            "AssumedOffice": "2017",
+            "State": "VA"
+        },
+        {
+            "Districts": "23",
+            "Name": "Stephen Newman",
+            "Party": "Republican",
+            "AssumedOffice": "1996",
+            "State": "VA"
+        },
+        {
+            "Districts": "24",
+            "Name": "Emmett Hanger",
+            "Party": "Republican",
+            "AssumedOffice": "1996",
+            "State": "VA"
+        },
+        {
+            "Districts": "25",
+            "Name": "Creigh Deeds",
+            "Party": "Democratic",
+            "AssumedOffice": "2001",
+            "State": "VA"
+        },
+        {
+            "Districts": "26",
+            "Name": "Mark Obenshain",
+            "Party": "Republican",
+            "AssumedOffice": "2004",
+            "State": "VA"
+        },
+        {
+            "Districts": "27",
+            "Name": "Jill Vogel",
+            "Party": "Republican",
+            "AssumedOffice": "2008",
+            "State": "VA"
+        },
+        {
+            "Districts": "28",
+            "Name": "Richard Stuart",
+            "Party": "Republican",
+            "AssumedOffice": "2008",
+            "State": "VA"
+        },
+        {
+            "Districts": "29",
+            "Name": "Jeremy McPike",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "30",
+            "Name": "Adam Ebbin",
+            "Party": "Democratic",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "Districts": "31",
+            "Name": "Barbara Favola",
+            "Party": "Democratic",
+            "AssumedOffice": "2012",
+            "State": "VA"
+        },
+        {
+            "Districts": "32",
+            "Name": "Janet Howell",
+            "Party": "Democratic",
+            "AssumedOffice": "1991",
+            "State": "VA"
+        },
+        {
+            "Districts": "33",
+            "Name": "Jennifer Boysko",
+            "Party": "Democratic",
+            "AssumedOffice": "11-Jan-19",
+            "State": "VA"
+        },
+        {
+            "Districts": "34",
+            "Name": "John Chapman Petersen",
+            "Party": "Democratic",
+            "AssumedOffice": "2008",
+            "State": "VA"
+        },
+        {
+            "Districts": "35",
+            "Name": "Dick Saslaw",
+            "Party": "Democratic",
+            "AssumedOffice": "1980",
+            "State": "VA"
+        },
+        {
+            "Districts": "36",
+            "Name": "Scott Surovell",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Jan-16",
+            "State": "VA"
+        },
+        {
+            "Districts": "37",
+            "Name": "Dave Marsden",
+            "Party": "Democratic",
+            "AssumedOffice": "13-Jan-10",
+            "State": "VA"
+        },
+        {
+            "Districts": "38",
+            "Name": "Travis Hackworth",
+            "Party": "Republican",
+            "AssumedOffice": "April 2, 2021",
+            "State": "VA"
+        },
+        {
+            "Districts": "39",
+            "Name": "George Barker",
+            "Party": "Democratic",
+            "AssumedOffice": "2008",
+            "State": "VA"
+        },
+        {
+            "Districts": "40",
+            "Name": "Todd Pillion",
+            "Party": "Republican",
+            "AssumedOffice": "8-Jan-20",
+            "State": "VA"
+        }
+    ]
+}

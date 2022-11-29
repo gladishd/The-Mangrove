@@ -1,0 +1,424 @@
+{
+  "Sheet1": [
+    {
+      "District": "1",
+      "Name": "Judy Burges",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "2",
+      "Name": "Quang Nguyen",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "3",
+      "Name": "Andrea Dalessandro",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "4",
+      "Name": "Daniel Hernandez Jr.",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "5",
+      "Name": "Andres Cano",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "6",
+      "Name": "Alma Hernandez",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "7",
+      "Name": "Brian Fernandez",
+      "Party": "Democratic",
+      "AssumedOffice": "23-Nov-21",
+      "State": "AZ"
+    },
+    {
+      "District": "8",
+      "Name": "Joel John",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "9",
+      "Name": "Leo Biasiucci",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "10",
+      "Name": "Regina Cobb",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "11",
+      "Name": "Brenda Barton",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "12",
+      "Name": "Walter Blackman",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "13",
+      "Name": "Jasmine Blackwater-Nygren",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Feb-21",
+      "State": "AZ"
+    },
+    {
+      "District": "14",
+      "Name": "Myron Tsosie",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "15",
+      "Name": "Neal Carter",
+      "Party": "Republican",
+      "AssumedOffice": "5-Nov-21",
+      "State": "AZ"
+    },
+    {
+      "District": "16",
+      "Name": "David Cook",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "17",
+      "Name": "Pamela Powers Hannley",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "18",
+      "Name": "Christopher Mathis",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Dec-21",
+      "State": "AZ"
+    },
+    {
+      "District": "19",
+      "Name": "Morgan Abraham",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Dec-21",
+      "State": "AZ"
+    },
+    {
+      "District": "20",
+      "Name": "Domingo DeGrazia",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "21",
+      "Name": "Mark Finchem",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "22",
+      "Name": "Teresa Martinez",
+      "Party": "Republican",
+      "AssumedOffice": "1-Nov-21",
+      "State": "AZ"
+    },
+    {
+      "District": "23",
+      "Name": "Travis Grantham",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "24",
+      "Name": "Jake Hoffman",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "25",
+      "Name": "Tim Dunn",
+      "Party": "Republican",
+      "AssumedOffice": "12-Feb-18",
+      "State": "AZ"
+    },
+    {
+      "District": "26",
+      "Name": "Joanne Osborne",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "27",
+      "Name": "Lupe Diaz",
+      "Party": "Republican",
+      "AssumedOffice": "23-Nov-21",
+      "State": "AZ"
+    },
+    {
+      "District": "28",
+      "Name": "Gail Griffin",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "29",
+      "Name": "Steve Kaiser",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "30",
+      "Name": "Justin Wilmeth",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "31",
+      "Name": "John Fillmore",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "32",
+      "Name": "Jacqueline Parker",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "33",
+      "Name": "Jennifer Pawlik",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "34",
+      "Name": "Jeff Weninger",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "35",
+      "Name": "Denise Epstein",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "36",
+      "Name": "Jennifer Jermaine",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "37",
+      "Name": "Devin Del Palacio",
+      "Party": "Democratic",
+      "AssumedOffice": "5-Oct-22",
+      "State": "AZ"
+    },
+    {
+      "District": "38",
+      "Name": "Lorenzo Sierra",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "39",
+      "Name": "Shawnna Bolick",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "40",
+      "Name": "Judy Schwiebert",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "41",
+      "Name": "Kevin Payne",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "42",
+      "Name": "Beverly Pingerelli",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "43",
+      "Name": "Frank Carroll",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "44",
+      "Name": "Ben Toma",
+      "Party": "Republican",
+      "AssumedOffice": "April 26, 2017",
+      "State": "AZ"
+    },
+    {
+      "District": "45",
+      "Name": "Joseph Chaplik",
+      "Party": "Republican",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "46",
+      "Name": "John Kavanagh",
+      "Party": "Republican",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "47",
+      "Name": "Jennifer Longdon",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "48",
+      "Name": "Amish Shah",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "49",
+      "Name": "Russell Bowers",
+      "Party": "Republican",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "50",
+      "Name": "Michelle Udall",
+      "Party": "Republican",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "51",
+      "Name": "Melody Hernandez",
+      "Party": "Democratic",
+      "AssumedOffice": "11-Jan-21",
+      "State": "AZ"
+    },
+    {
+      "District": "52",
+      "Name": "Athena Salman",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "53",
+      "Name": "Reginald Bolding",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "54",
+      "Name": "Marcelino Qui帽onez",
+      "Party": "Democratic",
+      "AssumedOffice": "16-Dec-21",
+      "State": "AZ"
+    },
+    {
+      "District": "55",
+      "Name": "Kelli Butler",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "56",
+      "Name": "Sarah Liguori",
+      "Party": "Democratic",
+      "AssumedOffice": "27-Oct-21",
+      "State": "AZ"
+    },
+    {
+      "District": "57",
+      "Name": "Richard Andrade",
+      "Party": "Democratic",
+      "AssumedOffice": "12-Jan-15",
+      "State": "AZ"
+    },
+    {
+      "District": "58",
+      "Name": "Cesar Chavez",
+      "Party": "Democratic",
+      "AssumedOffice": "9-Jan-17",
+      "State": "AZ"
+    },
+    {
+      "District": "59",
+      "Name": "Robert Meza",
+      "Party": "Democratic",
+      "AssumedOffice": "14-Jan-19",
+      "State": "AZ"
+    },
+    {
+      "District": "60",
+      "Name": "Christian Solorio",
+      "Party": "Democratic",
+      "AssumedOffice": "4-Nov-21",
+      "State": "AZ"
+    }
+  ]
+}

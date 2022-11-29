@@ -6,6 +6,46 @@ import CookieView from './CookieView.js'
 import ProfilePage from './ProfilePageOld.js'
 import LoginCookies from './LoginCookiesOld.js'
 
+const GoogleImages = require('google-images');
+
+// const excelToJson = require('convert-excel-to-json');
+
+// const result = excelToJson({
+//   sourceFile: "../public/data/IllinoisHouse_11.29.22.xlsx"
+// });
+
+/** Excel To Json Converter - BeautifyTools.com
+https://beautifytools.com/excel-to-json-converter.php */
+import IllinoisHouseData_11_29_22 from "../public/data/States/Illinois/State/IllinoisHouse_11.29.22.json"
+import IllinoisSenateData_11_29_22 from "../public/data/States/Illinois/State/IllinoisSenate_11.29.22.json"
+import CodeToState from "../helpers/codeToState.json"
+// import * as AllData from "../public/data/States"
+
+// result will be an Object containing keys with the same name as the sheets found on the excel file. Each of the keys will have an array of objects where each of them represents a row of the container sheet. e.g. for an Excel file that has two sheets ('sheet1', 'sheet2')
+
+//https://www.npmjs.com/package/react-multi-carousel
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
 import {
   Navbar,
 } from 'react-bootstrap'
@@ -56,7 +96,9 @@ export default class Home extends React.Component {
       flattenedLatLng: null,
       responseSuccess: null,
       latAndLongFromAddress: null,
-      keyBeingHoveredUpon: null
+      keyBeingHoveredUpon: null,
+      stateName: '',
+      stateCode: '',
     }
     this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
@@ -66,6 +108,66 @@ export default class Home extends React.Component {
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
     this.handleMouseOver = this.handleMouseOver.bind(this)
     this.handleMouseOut = this.handleMouseOut.bind(this)
+    this.mapCodeToState = this.mapCodeToState.bind(this)
+    this.fetchStateHouseData = this.fetchStateHouseData.bind(this)
+    this.fetchStateSenateData = this.fetchStateSenateData.bind(this)
+  }
+
+  componentDidUpdate() {
+    if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
+      let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
+      this.setState({
+        latAndLongFromAddress
+      })
+    }
+  }
+
+  fetchStateSenateData() {
+    /** Potentially, make a separate JS File just for fetching data. Todo. */
+    let url = `../public/data/States/${this.state.stateName}/State/`;
+
+    // if (fileName.toLowerCase().includes("house"))
+  }
+
+  fetchStateHouseData(fullStateName) {
+    /** Potentially, make a separate JS File just for fetching data. Todo. */
+    // let stringSearch = this.state.stateName
+    let stringSearch = fullStateName
+    console.log("What is stringSearch? ", stringSearch)
+
+    // import Default from `../public/data/States/${stringSearch}/State/IllinoisHouse_11.29.22`;
+
+    try {
+      let fileName = `${stringSearch}House_11.29.22`
+      var data = require(`../public/data/States/${stringSearch}/State/${fileName}`);
+      console.log("The data from fetch state house data is ", data)
+      this.setState({
+        fileName: data
+      })
+
+    } catch (error) {
+      console.log(error)
+    }
+
+    // console.log("Here is our customized state house data from the GeoCodio Address Query! ", data)
+  }
+
+  mapCodeToState(codeParameter) {
+    let list = CodeToState;
+    if (list) {
+      console.log("On the mapCodeToState function, the current list of codes to states is ", list.Sheet1)
+    }
+    let newName = list.Sheet1.filter(element => {
+      if (element.Code == codeParameter) {
+        return element.State
+      }
+    })
+    console.log("The new name is ", newName[0].State)
+    this.setState({
+      stateName: newName[0].State
+    })
+    console.log("")
+    return newName[0].State
   }
 
   handleMouseOver(key) {
@@ -109,13 +211,37 @@ export default class Home extends React.Component {
   }
 
   queryGeocodioAddress(address) {
+    let fullStateName = '';
+    // Want to convert this address, if it's something like "IL", to "Illinois".
+
+    // Todo: Set the Query on the user's browser, in the form of Local Storage.
+    // That is, want to save the County on local storage so that users have it in their local storage.
+    // State, County, City.
+    console.log("The Address being supplied to GeoCodio is ", address)
+
     console.warn("We are QueRyING GEOCODIO Address.")
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('b33686cba0ab3063aa65b7c5806783bcb5b7c63');
     // geocoder.geocode(address, ['cd'])
-    geocoder.geocode(address, ['cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6', 'stateleg', 'stateleg-next', 'school', "census", "census2000", 'census2010', "census2011", "census2012", "census2013", 'census2014', 'census2015', 'census2016', 'census2017', 'census2018', 'census2019', 'census2020', 'census2021', 'acs-demographics', 'acs-economics', 'acs-families', 'acs-housing', 'acs-social', 'zip4', 'riding', 'provriding', 'statcan', 'timezone'])
+    // geocoder.geocode(address, ['cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6', 'stateleg', 'stateleg-next', 'school', "census", "census2000", 'census2010', "census2011", "census2012", "census2013", 'census2014', 'census2015', 'census2016', 'census2017', 'census2018', 'census2019', 'census2020', 'census2021', 'acs-demographics', 'acs-economics', 'acs-families', 'acs-housing', 'acs-social', 'zip4', 'riding', 'provriding', 'statcan', 'timezone'])
+    geocoder.geocode(address, ['stateleg', 'stateleg-next', 'cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6'])
       .then(async response => {
         console.group('On queryGeoCodioAddress, the original response that we get from GeoCodio looks like this', response);
+        if (response.input.address_components.state.length == 2) {
+          console.log("Let's do the conversion! ", response.input.address_components.state)
+          let code = response.input.address_components.state
+          fullStateName = this.mapCodeToState(code)
+          this.fetchStateHouseData(fullStateName)
+        }
+        // response.input.address_components.state looks like "IL", want to convert to "Illinois"
+
+
+        this.setState({
+          theOriginalAddressResponse: response
+        })
+        console.warn("After that, we want to get the queryGeoCodioAddress state_legislative_districts in order to acquire the General Assembly Members! ",
+          response.results[0].fields.state_legislative_districts.house,
+          response.results[0].fields.state_legislative_districts.senate)
         // Group Method with parameter
         console.log("Group Begin");
         console.log(response);
@@ -145,15 +271,15 @@ export default class Home extends React.Component {
           }
           return result;
         }
-        console.warn("The response from the first Geocodio query is ", response)
+        // console.warn("The response from the first Geocodio query is ", response)
         let flattenedAddress = flattenObject(response)
         await this.setState({ flattenedAddress, })
 
         /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
-        console.log("On the queryGeocodioAddress, our latitude and longitude are ", flattenedAddress["results.0.location.lat"], flattenedAddress["results.0.location.lng"])
+        // console.log("On the queryGeocodioAddress, our latitude and longitude are ", flattenedAddress["results.0.location.lat"], flattenedAddress["results.0.location.lng"])
         let latitudeLongitude = flattenedAddress["results.0.location.lat"] + ", " + flattenedAddress["results.0.location.lng"]
-        console.log("THe LAtTiDUE And LonGiTudE ARe ", latitudeLongitude)
+        // console.log("THe LAtTiDUE And LonGiTudE ARe ", latitudeLongitude)
         this.queryGeocodioLatLng(latitudeLongitude)
       })
       .catch(err => {
@@ -173,7 +299,10 @@ export default class Home extends React.Component {
     // geocoder.reverse(latLng, ["timezone"], 5)
     geocoder.reverse(latLng)
       .then(response => {
-        console.group('On queryGeoCodioLatLnG, the response we are getting is like this:'); // Group Method with parameter
+        // Group Method with parameter
+        this.setState({
+          theOriginalLatLngResponse: response
+        })
         console.log("Group Begin");
         console.log(response);
         console.log("Group End");
@@ -241,14 +370,27 @@ export default class Home extends React.Component {
     return;
   }
 
-  componentDidUpdate() {
-    if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
-      let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
-      this.setState({
-        latAndLongFromAddress
-      })
-    }
-  }
+  // componentDidMount() {
+  //   const client = new GoogleImages('CSE ID', 'API KEY');
+  //   client.search('Steve Angello').then(
+  //     images => {
+  //       console.log(
+  //         [{
+  //           "url": "http://steveangello.com/boss.jpg",
+  //           "type": "image/jpeg",
+  //           "width": 1024,
+  //           "height": 768,
+  //           "size": 102451,
+  //           "thumbnail": {
+  //             "url": "http://steveangello.com/thumbnail.jpg",
+  //             "width": 512,
+  //             "height": 512
+  //           }
+  //         }]
+  //       )
+  //     }
+  //   )
+  // }
 
   render() {
     return <div className="container ProfilePageOld" style={{
@@ -277,9 +419,6 @@ export default class Home extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="ProfilePageOld">
-          {
-            console.log("So what is this.state.cookieValue? ", this.state.cookieValue)
-          }
           <main style={{ zIndex: '3', display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none" }}>
 
             <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
@@ -351,27 +490,149 @@ export default class Home extends React.Component {
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        {/* {
+          CodeToState && CodeToState.Sheet1.map(e => {
+            return <div>
+              <div>{e.State}</div>
+              <div>{e.Code}</div>
+            </div>
+          })
+        } */}
+
+        <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisHouse_11.29.22.xlsx.</h3>
+        {/* They're both strings so we don't mind */}
         {
-          console.log("The data object that we are working with is ", this.state.flattenedAddress)
+          this.state.fileName && this.state.fileName.Sheet1.filter(e => {
+            if (this.state.theOriginalAddressResponse) {
+              return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number || e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+            }
+          }
+          ).map(element => {
+            return <div>
+              <b>District</b>
+              <div>{element.District}</div>
+              <b>Name</b>
+              <div>{element.Name}</div>
+              <b>Party</b>
+              <div>{element.Party}</div>
+              {/* <b>State</b>
+              <div>{element.State}</div> */}
+              <b>Full State Name</b>
+              <div>{this.state.stateName}</div>
+              ______________
+            </div>
+          })
         }
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
+        <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisSenate_11.29.22.xlsx.</h3>
+
+        {
+          this.state.fileName && this.state.fileName.Sheet1.filter(e => {
+            if (this.state.theOriginalAddressResponse) {
+              return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number || e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+            }
+          }
+          ).map(element => {
+            return <div>
+              <b>District</b>
+              <div>{element.District}</div>
+              <b>Name</b>
+              <div>{element.Name}</div>
+              <b>Party</b>
+              <div>{element.Party}</div>
+              {/* <b>State</b>
+              <div>{element.State}</div> */}
+              <b>Full State Name</b>
+              <div>{this.state.stateName}</div>
+              ______________
+            </div>
+          })
+        }
+
+        #1 priority: List all state-level-and-above politicians on the search tab/site.
+
+        <Carousel responsive={responsive}>
+          <div>First card</div>
+          <div style={{
+            backgroundColor: 'green',
+            border: "groove",
+            borderWidth: '0.5em'
+          }}>
+            <h1>State Legislative Districts House</h1>
+            <br />
+            {
+              console.warn("******* ON the staet ", this.state)
+            }
+            District Number:
+            <b>
+              {
+                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number
+              }
+            </b>
+            <br />
+            Name:
+            <b>
+              {this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].name}
+            </b>
+            <br />
+            OCD ID:
+            <b>
+              {
+                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].ocd_id
+              }</b>
+          </div>
+
+          <div style={{
+            backgroundColor: 'red',
+            border: "groove",
+            borderWidth: '0.5em'
+          }}>
+            <h1>
+              State Legislative Districts Senate
+            </h1>
+            <br />
+            The District Number is:
+            <b>
+              {
+                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+              }
+            </b>
+            <br />
+            Name:
+            <b>
+              {
+                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].name
+              }
+            </b>
+            <br />
+            OCD ID:
+            <b>
+              {
+                this.state.theOriginalAddressResponse && this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].ocd_id
+              }
+            </b>
+          </div>
+        </Carousel>
+
         <div style={{
           width: "15em",
           border: "1px solid #333",
@@ -409,7 +670,19 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
+
           Now all we need to do is remove those tiny text on the top labeling the fields.
+
+          <div>
+            This will be our div containing the State House District and State Senate District
+          </div>
+
+          <div className="card">
+            {this.state.cookieValue &&
+              Object.keys(this.state.cookieValue).length}
+
+          </div>
+
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&

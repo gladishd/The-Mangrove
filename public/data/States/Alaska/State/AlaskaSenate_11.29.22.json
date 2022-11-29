@@ -1,0 +1,144 @@
+﻿{
+    "Sheet1": [
+        {
+            "District": "A",
+            "Name": "Scott Kawasaki",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "B",
+            "Name": "Robert Myers Jr.",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "C",
+            "Name": "Click Bishop",
+            "Party": "Republican",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "D",
+            "Name": "David S. Wilson",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "E",
+            "Name": "Mike Shower",
+            "Party": "Republican",
+            "AssumedOffice": "26-Feb-18",
+            "State": "AK"
+        },
+        {
+            "District": "F",
+            "Name": "Shelley Hughes",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "G",
+            "Name": "Lora Reinbold",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "H",
+            "Name": "Bill Wielechowski",
+            "Party": "Democratic",
+            "AssumedOffice": "2007",
+            "State": "AK"
+        },
+        {
+            "District": "I",
+            "Name": "Elvi Gray-Jackson",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "J",
+            "Name": "Tom Begich",
+            "Party": "Democratic",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "K",
+            "Name": "Mia Costello",
+            "Party": "Republican",
+            "AssumedOffice": "20-Jan-15",
+            "State": "AK"
+        },
+        {
+            "District": "L",
+            "Name": "Natasha A. Von Imhof",
+            "Party": "Republican",
+            "AssumedOffice": "17-Jan-17",
+            "State": "AK"
+        },
+        {
+            "District": "M",
+            "Name": "Josh Revak",
+            "Party": "Republican",
+            "AssumedOffice": "2-Nov-19",
+            "State": "AK"
+        },
+        {
+            "District": "N",
+            "Name": "Roger Holland",
+            "Party": "Republican",
+            "AssumedOffice": "19-Jan-21",
+            "State": "AK"
+        },
+        {
+            "District": "O",
+            "Name": "Peter Micciche",
+            "Party": "Republican",
+            "AssumedOffice": "15-Jan-13",
+            "State": "AK"
+        },
+        {
+            "District": "P",
+            "Name": "Gary Stevens",
+            "Party": "Republican",
+            "AssumedOffice": "2003",
+            "State": "AK"
+        },
+        {
+            "District": "Q",
+            "Name": "Jesse Kiehl",
+            "Party": "Democratic",
+            "AssumedOffice": "15-Jan-19",
+            "State": "AK"
+        },
+        {
+            "District": "R",
+            "Name": "Bert Stedman",
+            "Party": "Republican",
+            "AssumedOffice": "20-Nov-03",
+            "State": "AK"
+        },
+        {
+            "District": "S",
+            "Name": "Lyman Hoffman",
+            "Party": "Democratic",
+            "AssumedOffice": "1995",
+            "State": "AK"
+        },
+        {
+            "District": "T",
+            "Name": "Donald Olson",
+            "Party": "Democratic",
+            "AssumedOffice": "2001",
+            "State": "AK"
+        }
+    ]
+}
