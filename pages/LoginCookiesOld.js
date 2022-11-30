@@ -29,7 +29,7 @@ const Login = (props) => {
       }, "0")
       setCookie("user", JSON.stringify({ data: "this is the most authentic cookie you've ever authenticated" }), {
         path: "/",
-        maxAge: 2147483647, // = 2038-01-19 04:14:07 https://stackoverflow.com/questions/3290424/set-a-cookie-to-never-expire
+        maxAge: 3600, // = 2038-01-19 04:14:07 https://stackoverflow.com/questions/3290424/set-a-cookie-to-never-expire
         sameSite: true,
       })
       // Absolutely not. Commenting out Router.push('/') makes the infinite loop even faster than before!

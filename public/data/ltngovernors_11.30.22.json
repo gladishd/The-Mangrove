@@ -1,0 +1,333 @@
+{
+  "Sheet1": [
+    {
+      "Position": "Lieutenant Governor of Alabama",
+      "Name": "Will Ainsworth",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Alabama"
+    },
+    {
+      "Position": "Lieutenant Governor of Alaska",
+      "Name": "Kevin Meyer",
+      "Party": "Republican",
+      "AssumedOffice": 43437,
+      "State": "Alaska"
+    },
+    {
+      "Position": "Lieutenant Governor of American Samoa",
+      "Name": "Talauega Eleasalo Vaalele Ale",
+      "Party": "Democratic",
+      "AssumedOffice": 44199,
+      "State": "American Samoa"
+    },
+    {
+      "Position": "Lieutenant Governor of Arkansas",
+      "Name": "Tim Griffin",
+      "Party": "Republican",
+      "AssumedOffice": 42017,
+      "State": "Arkansas"
+    },
+    {
+      "Position": "Lieutenant Governor of California",
+      "Name": "Eleni Kounalakis",
+      "Party": "Democratic",
+      "AssumedOffice": 2019,
+      "State": "California"
+    },
+    {
+      "Position": "Lieutenant Governor of Colorado",
+      "Name": "Dianne Primavera",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "Colorado"
+    },
+    {
+      "Position": "Lieutenant Governor of Connecticut",
+      "Name": "Susan Bysiewicz",
+      "Party": "Democratic",
+      "AssumedOffice": 43474,
+      "State": "Connecticut"
+    },
+    {
+      "Position": "Lieutenant Governor of Delaware",
+      "Name": "Bethany Hall-Long",
+      "Party": "Democratic",
+      "AssumedOffice": 42752,
+      "State": "Delaware"
+    },
+    {
+      "Position": "Lieutenant Governor of Florida",
+      "Name": "Jeanette Nu帽ez",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "Florida"
+    },
+    {
+      "Position": "Lieutenant Governor of Georgia",
+      "Name": "Geoff Duncan",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Georgia"
+    },
+    {
+      "Position": "Lieutenant Governor of Guam",
+      "Name": "Josh Tenorio",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Guam"
+    },
+    {
+      "Position": "Lieutenant Governor of Hawaii",
+      "Name": "Joshua Green",
+      "Party": "Democratic",
+      "AssumedOffice": 43437,
+      "State": "Hawaii"
+    },
+    {
+      "Position": "Lieutenant Governor of Idaho",
+      "Name": "Janice McGeachin",
+      "Party": "Republican",
+      "AssumedOffice": 43472,
+      "State": "Idaho"
+    },
+    {
+      "Position": "Lieutenant Governor of Illinois",
+      "Name": "Juliana Stratton",
+      "Party": "Democratic",
+      "AssumedOffice": 43479,
+      "State": "Illinois"
+    },
+    {
+      "Position": "Lieutenant Governor of Indiana",
+      "Name": "Suzanne Crouch",
+      "Party": "Republican",
+      "AssumedOffice": 42744,
+      "State": "Indiana"
+    },
+    {
+      "Position": "Lieutenant Governor of Iowa",
+      "Name": "Adam Gregg",
+      "Party": "Republican",
+      "AssumedOffice": 43483,
+      "State": "Iowa"
+    },
+    {
+      "Position": "Lieutenant Governor of Kansas",
+      "Name": "David Toland",
+      "Party": "Democratic",
+      "AssumedOffice": 44200,
+      "State": "Kansas"
+    },
+    {
+      "Position": "Lieutenant Governor of Kentucky",
+      "Name": "Jacqueline Coleman",
+      "Party": "Democratic",
+      "AssumedOffice": 43809,
+      "State": "Kentucky"
+    },
+    {
+      "Position": "Lieutenant Governor of Louisiana",
+      "Name": "Billy Nungesser",
+      "Party": "Republican",
+      "AssumedOffice": 2016,
+      "State": "Louisiana"
+    },
+    {
+      "Position": "Lieutenant Governor of Maryland",
+      "Name": "Boyd Rutherford",
+      "Party": "Republican",
+      "AssumedOffice": 42025,
+      "State": "Maryland"
+    },
+    {
+      "Position": "Lieutenant Governor of Massachusetts",
+      "Name": "Karyn Polito",
+      "Party": "Republican",
+      "AssumedOffice": 42012,
+      "State": "Massachusetts"
+    },
+    {
+      "Position": "Lieutenant Governor of Michigan",
+      "Name": "Garlin Gilchrist II",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "Michigan"
+    },
+    {
+      "Position": "Lieutenant Governor of Minnesota",
+      "Name": "Peggy Flanagan",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Minnesota"
+    },
+    {
+      "Position": "Lieutenant Governor of Mississippi",
+      "Name": "Delbert Hosemann",
+      "Party": "Republican",
+      "AssumedOffice": 43839,
+      "State": "Mississippi"
+    },
+    {
+      "Position": "Lieutenant Governor of Missouri",
+      "Name": "Mike Kehoe",
+      "Party": "Republican",
+      "AssumedOffice": 2018,
+      "State": "Missouri"
+    },
+    {
+      "Position": "Lieutenant Governor of Montana",
+      "Name": "Kristen Juras",
+      "Party": "Republican",
+      "AssumedOffice": 44200,
+      "State": "Montana"
+    },
+    {
+      "Position": "Lieutenant Governor of Nebraska",
+      "Name": "Mike Foley",
+      "Party": "Republican",
+      "AssumedOffice": 42012,
+      "State": "Nebraska"
+    },
+    {
+      "Position": "Lieutenant Governor of Nevada",
+      "Name": "Lisa Cano Burkhead",
+      "Party": "Democratic",
+      "AssumedOffice": 44546,
+      "State": "Nevada"
+    },
+    {
+      "Position": "Lieutenant Governor of New Jersey",
+      "Name": "Sheila Oliver",
+      "Party": "Democratic",
+      "AssumedOffice": 43116,
+      "State": "New Jersey"
+    },
+    {
+      "Position": "Lieutenant Governor of New Mexico",
+      "Name": "Howie Morales",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "New Mexico"
+    },
+    {
+      "Position": "Lieutenant Governor of New York",
+      "Name": "Antonio Delgado",
+      "Party": "Democratic",
+      "AssumedOffice": 44706,
+      "State": "New York"
+    },
+    {
+      "Position": "Lieutenant Governor of North Carolina",
+      "Name": "Mark Robinson",
+      "Party": "Republican",
+      "AssumedOffice": 44197,
+      "State": "North Carolina"
+    },
+    {
+      "Position": "Lieutenant Governor of North Dakota",
+      "Name": "Brent Sanford",
+      "Party": "Republican",
+      "AssumedOffice": 42719,
+      "State": "North Dakota"
+    },
+    {
+      "Position": "Lieutenant Governor of Ohio",
+      "Name": "Jon Husted",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Ohio"
+    },
+    {
+      "Position": "Lieutenant Governor of Oklahoma",
+      "Name": "Matt Pinnell",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Oklahoma"
+    },
+    {
+      "Position": "Lieutenant Governor of Pennsylvania",
+      "Name": "John Fetterman",
+      "Party": "Democratic",
+      "AssumedOffice": 43480,
+      "State": "Pennsylvania"
+    },
+    {
+      "Position": "Lieutenant Governor of Rhode Island",
+      "Name": "Sabina Matos",
+      "Party": "Democratic",
+      "AssumedOffice": "April 14, 2021",
+      "State": "Rhode Island"
+    },
+    {
+      "Position": "Lieutenant Governor of South Carolina",
+      "Name": "Pamela Evette",
+      "Party": "Republican",
+      "AssumedOffice": 43474,
+      "State": "South Carolina"
+    },
+    {
+      "Position": "Lieutenant Governor of South Dakota",
+      "Name": "Larry Rhoden",
+      "Party": "Republican",
+      "AssumedOffice": 43470,
+      "State": "South Dakota"
+    },
+    {
+      "Position": "Lieutenant Governor of Texas",
+      "Name": "Dan Patrick",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "Texas"
+    },
+    {
+      "Position": "Lieutenant Governor of Utah",
+      "Name": "Deidre Henderson",
+      "Party": "Republican",
+      "AssumedOffice": 44200,
+      "State": "Utah"
+    },
+    {
+      "Position": "Lieutenant Governor of Vermont",
+      "Name": "Molly Gray",
+      "Party": "Democratic",
+      "AssumedOffice": 44203,
+      "State": "Vermont"
+    },
+    {
+      "Position": "Lieutenant Governor of Virginia",
+      "Name": "Winsome Sears",
+      "Party": "Republican",
+      "AssumedOffice": 44576,
+      "State": "Virginia"
+    },
+    {
+      "Position": "Lieutenant Governor of Washington",
+      "Name": "Denny Heck",
+      "Party": "Democratic",
+      "AssumedOffice": 44207,
+      "State": "Washington"
+    },
+    {
+      "Position": "Lieutenant Governor of Wisconsin",
+      "Name": "Mandela Barnes",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Wisconsin"
+    },
+    {
+      "Position": "Lieutenant Governor of the Northern Mariana Islands",
+      "Name": "Arnold I. Palacios",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Northern Mariana Islands"
+    },
+    {
+      "Position": "Lieutenant Governor of the U.S. Virgin Islands",
+      "Name": "Tregenza Roach",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "U.S. Virgin Islands"
+    }
+  ]
+}

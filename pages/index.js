@@ -5,54 +5,9 @@ import { instanceOf } from 'prop-types';
 import CookieView from './CookieView.js'
 import ProfilePage from './ProfilePageOld.js'
 import LoginCookies from './LoginCookiesOld.js'
-
-const GoogleImages = require('google-images');
-
-// const excelToJson = require('convert-excel-to-json');
-
-// const result = excelToJson({
-//   sourceFile: "../public/data/IllinoisHouse_11.29.22.xlsx"
-// });
-
-/** Excel To Json Converter - BeautifyTools.com
-https://beautifytools.com/excel-to-json-converter.php */
-import IllinoisHouseData_11_29_22 from "../public/data/States/Illinois/State/IllinoisHouse_11.29.22.json"
-import IllinoisSenateData_11_29_22 from "../public/data/States/Illinois/State/IllinoisSenate_11.29.22.json"
 import CodeToState from "../helpers/codeToState.json"
-// import * as AllData from "../public/data/States"
-
-// result will be an Object containing keys with the same name as the sheets found on the excel file. Each of the keys will have an array of objects where each of them represents a row of the container sheet. e.g. for an Excel file that has two sheets ('sheet1', 'sheet2')
-
-//https://www.npmjs.com/package/react-multi-carousel
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
-
-import {
-  Navbar,
-} from 'react-bootstrap'
-
-
 import { Cookies } from "react-cookie"
-
 const firebaseConfig = {
   apiKey: "AIzaSyBu8wpxB_YbIjI1Tw8lx1gjffuJ6YYpKr0",
   authDomain: "the-midway-b98d8.firebaseapp.com",
@@ -63,16 +18,11 @@ const firebaseConfig = {
   appId: "1:248441553393:web:493dc767adb2bfd5918450",
   measurementId: "G-3WJ6SFM1XC"
 };
-
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import axios from 'axios'
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-var firebaseDB = firebaseApp.firestore()
-
 
 export default class Home extends React.Component {
   static propTypes = {
@@ -82,37 +32,36 @@ export default class Home extends React.Component {
     super(props)
     const { cookies } = props;
     this.state = {
-      refresh: false,
       name: cookies && cookies.get('name') || 'Ben',
-      userProfile: null,
-      username: null,
-      password: null,
-      cookieValue: null,
-      allProps: props,
       newCookies: instanceOf(Cookies).isRequired,
+      latAndLongFromAddress: null,
+      keyBeingHoveredUpon: null,
       searchQueryAddress: "",
       searchQueryLatLng: "",
       flattenedAddress: null,
       flattenedLatLng: null,
       responseSuccess: null,
-      latAndLongFromAddress: null,
-      keyBeingHoveredUpon: null,
+      userProfile: null,
+      cookieValue: null,
+      allProps: props,
+      refresh: false,
+      username: null,
+      password: null,
       stateName: '',
       stateCode: '',
     }
-    this.login = this.login.bind(this)
     this.queryGeocodioAddress = this.queryGeocodioAddress.bind(this)
-    this.queryGeocodioLatLng = this.queryGeocodioLatLng.bind(this)
-    this.setUsername = this.setUsername.bind(this)
-    this.setPassword = this.setPassword.bind(this)
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
+    this.fetchStateSenateData = this.fetchStateSenateData.bind(this)
+    this.queryGeocodioLatLng = this.queryGeocodioLatLng.bind(this)
+    this.fetchStateHouseData = this.fetchStateHouseData.bind(this)
     this.handleMouseOver = this.handleMouseOver.bind(this)
     this.handleMouseOut = this.handleMouseOut.bind(this)
     this.mapCodeToState = this.mapCodeToState.bind(this)
-    this.fetchStateHouseData = this.fetchStateHouseData.bind(this)
-    this.fetchStateSenateData = this.fetchStateSenateData.bind(this)
+    this.setUsername = this.setUsername.bind(this)
+    this.setPassword = this.setPassword.bind(this)
+    this.login = this.login.bind(this)
   }
-
   componentDidUpdate() {
     if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
       let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
@@ -121,79 +70,172 @@ export default class Home extends React.Component {
       })
     }
   }
+  fetchTreasurers(fullStateName) {
+    try {
+      let fileName = `treasurers_11.30.22`
+      var data = require(`../public/data/${fileName}`);
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      console.log("In fetchTreasurers, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameTreasurers: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchAuditorsByState(fullStateName) {
+    try {
+      let fileName = `auditors_11.30.22`
+      var data = require(`../public/data/${fileName}`);
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      console.log("In fetchAuditorsByState, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameAuditors: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchCountyOfState(fullStateName, county) {
+    let stringSearch = fullStateName
+    try {
+      let fileName = `${stringSearch}CountyEO`
+      var data = require(`../public/data/States/${stringSearch}/County/${fileName}`);
+      let filteredData = data.Sheet1.filter(element => {
+        return element.County == county
+      })
+      console.log("On fetchCountyOfState ", filteredData)
+      this.setState({
+        fileNameCounty: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchSecretariesOfState(fullStateName) {
+    try {
+      let fileName = `secretariesofstate_11.30.22`
+      var data = require(`../public/data/${fileName}`)
+      // Filter in this block for only the state that is known as fullStateName.
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      //
+      console.log("In fetchSecretariesOfState, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameSecretaries: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchLtnGovernor(fullStateName) {
+    try {
+      let fileName = `ltngovernors_11.30.22`
+      var data = require(`../public/data/${fileName}`)
+      // Filter in this block for only the state that is known as fullStateName.
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      //
+      console.log("In fetchLtnGovernor, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameLtnGovernor: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchGovernorsData(fullStateName) {
+    try {
+      let fileName = `governors_11.30.22`
+      var data = require(`../public/data/${fileName}`)
+      // Filter in this block for only the state that is known as fullStateName.
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      //
+      console.log("In fetchGovernorsData, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameGovernorsData: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  fetchAttorneyGeneralData(fullStateName) {
+    try {
+      let fileName = `attorneygenerals_11.30.22`
+      var data = require(`../public/data/${fileName}`)
 
+      // Filter in this block for only the state that is known as fullStateName.
+      let filteredData = data.Sheet1.filter(element => {
+        return element.State == fullStateName
+      })
+      //
+
+      console.log("In fetchAttorney, the data looks liek this: ", filteredData)
+      this.setState({
+        fileNameAttorneyGeneral: filteredData
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
   fetchStateSenateData(fullStateName) {
-    /** Potentially, make a separate JS File just for fetching data. Todo. */
     let stringSearch = fullStateName
     try {
       let fileName = `${stringSearch}Senate_11.29.22`
       var data = require(`../public/data/States/${stringSearch}/State/${fileName}`);
-      console.log("The data from fetch state senate data is ", data)
       this.setState({
         fileNameSenate: data
       })
-
     } catch (error) {
       console.log(error)
     }
   }
-
   fetchStateHouseData(fullStateName) {
-    /** Potentially, make a separate JS File just for fetching data. Todo. */
     let stringSearch = fullStateName
     try {
       let fileName = `${stringSearch}House_11.29.22`
       var data = require(`../public/data/States/${stringSearch}/State/${fileName}`);
-      console.log("The data from fetch state house data is ", data)
       this.setState({
         fileNameHouse: data
       })
-
     } catch (error) {
       console.log(error)
     }
   }
-
   mapCodeToState(codeParameter) {
     let list = CodeToState;
-    if (list) {
-      console.log("On the mapCodeToState function, the current list of codes to states is ", list.Sheet1)
-    }
     let newName = list.Sheet1.filter(element => {
-      if (element.Code == codeParameter) {
-        return element.State
-      }
+      if (element.Code == codeParameter) return element.State;
     })
-    console.log("The new name is ", newName[0].State)
     this.setState({
       stateName: newName[0].State
     })
-    console.log("")
     return newName[0].State
   }
-
   handleMouseOver(key) {
-    console.log("We are handling the mouse OVER and the key is ", key)
     this.setState({
       keyBeingHoveredUpon: key
     })
   }
-
   handleMouseOut(key) {
-    console.log("We are handling the mouse out and the key is ", key)
     this.setState({
       keyBeingHoveredUpon: null
     })
   }
-
   async dataFetchPoliticians(data) {
     await this.setState({
       cookieValue: data,
     })
     return;
   }
-
-
   setUsername(username) {
     if (!this.state.responseSuccess) {
       this.setState({
@@ -202,7 +244,6 @@ export default class Home extends React.Component {
     }
     return;
   }
-
   setPassword(password) {
     if (!this.state.responseSuccess) {
       this.setState({
@@ -211,61 +252,43 @@ export default class Home extends React.Component {
     }
     return;
   }
-
   queryGeocodioAddress(address) {
     let fullStateName = '';
-    // Want to convert this address, if it's something like "IL", to "Illinois".
-
-    // Todo: Set the Query on the user's browser, in the form of Local Storage.
-    // That is, want to save the County on local storage so that users have it in their local storage.
-    // State, County, City.
-    console.log("The Address being supplied to GeoCodio is ", address)
-
-    console.warn("We are QueRyING GEOCODIO Address.")
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('b33686cba0ab3063aa65b7c5806783bcb5b7c63');
-    // geocoder.geocode(address, ['cd'])
     // geocoder.geocode(address, ['cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6', 'stateleg', 'stateleg-next', 'school', "census", "census2000", 'census2010', "census2011", "census2012", "census2013", 'census2014', 'census2015', 'census2016', 'census2017', 'census2018', 'census2019', 'census2020', 'census2021', 'acs-demographics', 'acs-economics', 'acs-families', 'acs-housing', 'acs-social', 'zip4', 'riding', 'provriding', 'statcan', 'timezone'])
     geocoder.geocode(address, ['stateleg', 'stateleg-next', 'cd', 'cd1', 'cd2', 'cd3', 'cd4', 'cd5', 'cd6'])
       .then(async response => {
         console.group('On queryGeoCodioAddress, the original response that we get from GeoCodio looks like this', response);
+        let county = response.results[0].source;
+        console.group("The current county we are looking at is ", county)
         if (response.input.address_components.state.length == 2) {
           console.log("Let's do the conversion! ", response.input.address_components.state)
           let code = response.input.address_components.state
           fullStateName = this.mapCodeToState(code)
           this.fetchStateHouseData(fullStateName)
           this.fetchStateSenateData(fullStateName)
+          this.fetchAttorneyGeneralData(fullStateName) // invoke it
+          this.fetchGovernorsData(fullStateName)
+          this.fetchLtnGovernor(fullStateName)
+          this.fetchSecretariesOfState(fullStateName)
+          this.fetchAuditorsByState(fullStateName)
+          this.fetchTreasurers(fullStateName)
+          this.fetchCountyOfState(fullStateName, county)
         }
-        // response.input.address_components.state looks like "IL", want to convert to "Illinois"
-
-
         this.setState({
-          theOriginalAddressResponse: response
+          theOriginalAddressResponse: response,
         })
-        console.warn("After that, we want to get the queryGeoCodioAddress state_legislative_districts in order to acquire the General Assembly Members! ",
-          response.results[0].fields.state_legislative_districts.house,
-          response.results[0].fields.state_legislative_districts.senate)
-        // Group Method with parameter
-        console.log("Group Begin");
-        console.log(response);
-        console.log("Group End");
-        console.groupEnd();
-        let latLng = response.results[0].location.lat + "," + response.results[0].location.lng
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
-
-          // Preserve empty objects and arrays, they are lost otherwise
           if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
             result[prefix] = Array.isArray(ob) ? [] : {};
             return result;
           }
-
           prefix = prefix ? prefix + '.' : '';
-
           for (const i in ob) {
             if (Object.prototype.hasOwnProperty.call(ob, i)) {
               if (typeof ob[i] === 'object' && ob[i] !== null) {
-                // Recursion on deeper objects
                 flattenObject(ob[i], prefix + i, result);
               } else {
                 result[prefix + i] = ob[i];
@@ -274,15 +297,9 @@ export default class Home extends React.Component {
           }
           return result;
         }
-        // console.warn("The response from the first Geocodio query is ", response)
         let flattenedAddress = flattenObject(response)
         await this.setState({ flattenedAddress, })
-
-        /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
-        https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
-        // console.log("On the queryGeocodioAddress, our latitude and longitude are ", flattenedAddress["results.0.location.lat"], flattenedAddress["results.0.location.lng"])
         let latitudeLongitude = flattenedAddress["results.0.location.lat"] + ", " + flattenedAddress["results.0.location.lng"]
-        // console.log("THe LAtTiDUE And LonGiTudE ARe ", latitudeLongitude)
         this.queryGeocodioLatLng(latitudeLongitude)
       })
       .catch(err => {
@@ -293,38 +310,23 @@ export default class Home extends React.Component {
   }
 
   queryGeocodioLatLng(latLng) {
-    console.warn("We are Querying the GEoCODIO Latitude and Longitude!")
     const Geocodio = require('geocodio-library-node');
     const geocoder = new Geocodio('b33686cba0ab3063aa65b7c5806783bcb5b7c63');
-    console.log("THe lat lng being passed to queryGeocodioLatlNg is ", latLng, "and the geocoder object is ", geocoder)
-    /* javascript - Best way to flatten JS object (keys and values) to a single depth array - Stack Overflow
-         https://stackoverflow.com/questions/44134212/best-way-to-flatten-js-object-keys-and-values-to-a-single-depth-array */
-    // geocoder.reverse(latLng, ["timezone"], 5)
     geocoder.reverse(latLng)
       .then(response => {
-        // Group Method with parameter
         this.setState({
           theOriginalLatLngResponse: response
         })
-        console.log("Group Begin");
-        console.log(response);
-        console.log("Group End");
-        console.groupEnd();
         function flattenObject(ob, prefix = false, result = null) {
           result = result || {};
-
-          // Preserve empty objects and arrays, they are lost otherwise
           if (prefix && typeof ob === 'object' && ob !== null && Object.keys(ob).length === 0) {
             result[prefix] = Array.isArray(ob) ? [] : {};
             return result;
           }
-
           prefix = prefix ? prefix + '.' : '';
-
           for (const i in ob) {
             if (Object.prototype.hasOwnProperty.call(ob, i)) {
               if (typeof ob[i] === 'object' && ob[i] !== null) {
-                // Recursion on deeper objects
                 flattenObject(ob[i], prefix + i, result);
               } else {
                 result[prefix + i] = ob[i];
@@ -333,9 +335,7 @@ export default class Home extends React.Component {
           }
           return result;
         }
-        console.warn("the response we receive on the second GeoCodio Query is ", response)
         let flattened = flattenObject(response.results[0])
-        console.log("the response has been received!", flattened)
         this.setState({ latLngQueryFlattened: flattened })
       })
       .catch(err => {
@@ -352,9 +352,7 @@ export default class Home extends React.Component {
 
   login = async e => {
     e.preventDefault()
-
     let { username, password } = this.state
-
     firebaseApp.auth().signInWithEmailAndPassword(username, password).then(async response => {
       var response = await axios.post(
         '/api/sessions',
@@ -372,29 +370,6 @@ export default class Home extends React.Component {
       })
     return;
   }
-
-  // componentDidMount() {
-  //   const client = new GoogleImages('CSE ID', 'API KEY');
-  //   client.search('Steve Angello').then(
-  //     images => {
-  //       console.log(
-  //         [{
-  //           "url": "http://steveangello.com/boss.jpg",
-  //           "type": "image/jpeg",
-  //           "width": 1024,
-  //           "height": 768,
-  //           "size": 102451,
-  //           "thumbnail": {
-  //             "url": "http://steveangello.com/thumbnail.jpg",
-  //             "width": 512,
-  //             "height": 512
-  //           }
-  //         }]
-  //       )
-  //     }
-  //   )
-  // }
-
   render() {
     return <div className="container ProfilePageOld" style={{
       background: "rgb(250,250,250)",
@@ -402,7 +377,6 @@ export default class Home extends React.Component {
       display: 'flex',
       justifyContent: 'center',
     }}>
-
       <CookieView propsFn={this.dataFetchPoliticians} />
       <div style={{
         maxWidth: '1300px',
@@ -414,8 +388,6 @@ export default class Home extends React.Component {
           queryGeocodioAddress={this.queryGeocodioAddress}
           searchQueryAddress={this.state.searchQueryAddress}
           queryGeocodioLatLng={this.queryGeocodioLatLng}
-        // flattenedAddress={this.state.latAndLongFromAddress}
-        // flattenedAddress={"38.886672, -77.094735"}
         />
         <Head>
           <title className='box'>Two Signup Types, and the Users {`&`} Politicians </title>
@@ -423,13 +395,9 @@ export default class Home extends React.Component {
         </Head>
         <div className="ProfilePageOld">
           <main style={{ zIndex: '3', display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none" }}>
-
             <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
-              <img style={{ width: '200px', height: '200px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mangroves_at_sunset.jpg/1200px-Mangroves_at_sunset.jpg"
-
-              />
+              <img style={{ width: '200px', height: '200px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mangroves_at_sunset.jpg/1200px-Mangroves_at_sunset.jpg" />
             </h1>
-
             <div style={{
               backgroundColor: "white",
               borderStyle: 'outset',
@@ -441,30 +409,17 @@ export default class Home extends React.Component {
               height: '350px',
               alignContent: 'space-around',
             }}>
-              <br />
               <center style={{ fontSize: '2em', fontWeight: 'bolder' }}>Mangrove</center>
-
-              <br /><br />
-
               <input
                 onChange={e => this.setUsername(e.target.value)}
                 type="email" id="email" name="email" placeholder="Username or Email" />
-
-              <br /><br />
-
               <input
                 onChange={e => this.setPassword(e.target.value)}
                 type="password" id="password" name="password" placeholder="Password" />
-
-              <br /><br />
-
               <center>
                 <button onClick={e => this.login(e)} style={{ fontSize: '1em', fontWeight: 'bolder', width: '100px' }}>Login</button>
               </center>
             </div>
-
-            <br />
-
             <center style={{
               backgroundColor: "white",
               borderStyle: 'outset',
@@ -476,9 +431,7 @@ export default class Home extends React.Component {
               height: '100px',
               alignContent: 'space-around'
             }}>
-              <br />
               <div>New User?</div>
-              <br />
               <button onClick={e => Router.push('/signup-fork')} style={{ width: '100px', marginLeft: '125px' }}>Sign up</button>
             </center>
           </main>
@@ -506,197 +459,323 @@ export default class Home extends React.Component {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        {/* {
-          CodeToState && CodeToState.Sheet1.map(e => {
-            return <div>
-              <div>{e.State}</div>
-              <div>{e.Code}</div>
-            </div>
-          })
-        } */}
-
-
-
-
-
-        #1 priority: List all state-level-and-above politicians on the search tab/site.
-
-        <Carousel
-          responsive={responsive}
-          swipeable={false}
-          draggable={false}
-          showDots={true}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={this.props.deviceType}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-
-
-          {/* <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisHouse_11.29.22.xlsx.</h3> */}
-          {/* They're both strings so we don't mind */}
-          {
-            this.state.fileNameHouse && this.state.fileNameHouse.Sheet1.filter(e => {
-              if (this.state.theOriginalAddressResponse) {
-                return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number
+        <div>
+          #1 priority: List all state-level-and-above politicians on the search tab/site.
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr"
+          }}>
+            {
+              this.state.fileNameHouse && this.state.fileNameHouse.Sheet1.filter(e => {
+                if (this.state.theOriginalAddressResponse) {
+                  return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.house[0].district_number
+                }
               }
+              ).map(element => {
+                return <a href={'/representatives?repId=' + null}>
+                  <div className="card">
+                    <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
+                    <b>Name:</b>
+                    {element.Name}
+                    <b>Party:</b>
+                    {element.Party}
+                    <b>Position:</b>
+                    State Representative
+                  </div>
+                </a>
+              })
             }
-            ).map(element => {
-              return <div>
-                <div>House</div>
-                <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
-                <b>District</b>
-                <div>{element.District}</div>
-                <b>Name</b>
-                <div>{element.Name}</div>
-                <b>Party</b>
-                <div>{element.Party}</div>
-                {/* <b>State</b>
-              <div>{element.State}</div> */}
-                <b>Full State Name</b>
-                <div>{this.state.stateName}</div>
-                ______________
-              </div>
-            })
-          }
-
-          {/* <h3>Folders = States {`->`} Illinois {`->`} State {`->`} IllinoisSenate_11.29.22.xlsx.</h3> */}
-
-          {
-            this.state.fileNameSenate && this.state.fileNameSenate.Sheet1.filter(e => {
-              if (this.state.theOriginalAddressResponse) {
-                return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+            {
+              this.state.fileNameSenate && this.state.fileNameSenate.Sheet1.filter(e => {
+                if (this.state.theOriginalAddressResponse) {
+                  return e.District == this.state.theOriginalAddressResponse.results[0].fields.state_legislative_districts.senate[0].district_number
+                }
               }
+              ).map(element => {
+                return <a href={'/senators?senId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/300×400' alt='new' width={125} height={125} />
+                    <b>Name:</b>
+                    {element.Name}
+                    <b>Party:</b>
+                    {element.Party}
+                    <b>Position:</b>
+                    State Senator
+                  </div>
+                </a>
+              })
             }
-            ).map(element => {
-              return <div>
-                <div>Senate</div>
-                <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
-                <b>District</b>
-                <div>{element.District}</div>
-                <b>Name</b>
-                <div>{element.Name}</div>
-                <b>Party</b>
-                <div>{element.Party}</div>
-                {/* <b>State</b>
-              <div>{element.State}</div> */}
-                <b>Full State Name</b>
-                <div>{this.state.stateName}</div>
-                ______________
+            <a href={'/currentLegislators0?legId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/200×300' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.last_name"]}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.party"]}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"][0].toUpperCase() +
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"].slice(1)
+                      } in Congress
+                    </div>
+                  </div>
+                }
               </div>
-            })
-          }
+            </a>
+            <a href={'/currentLegislators1?legId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.last_name"]}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.party"]}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"][0].toUpperCase() +
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"].slice(1)
+                      } in Congress
+                    </div>
+                  </div>
+                }
+              </div>
+            </a>
+            <a href={'/currentLegislators2?legId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.last_name"]}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.party"]}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"][0].toUpperCase() +
+                        this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"].slice(1)
+                      } in Congress
+                    </div>
+                  </div>
+                }
+              </div>
+            </a>
+            <a href={'/attorneyGenerals?attId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/350×300' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.fileNameAttorneyGeneral[0].Name}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.fileNameAttorneyGeneral[0].Party}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {this.state.fileNameAttorneyGeneral[0].Position}
+                    </div>
+                  </div>
+                }
+              </div>
+            </a>
+            <a href={'/governors?govId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/300×350' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.fileNameGovernorsData[0].Name}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.fileNameGovernorsData[0].Party}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {this.state.fileNameGovernorsData[0].Position}
+                    </div>
+                  </div>
+                }
+              </div>
+            </a>
 
-          <div className="card">
-            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
             {
-              this.state.cookieValue &&
-              Object.keys(this.state.cookieValue).length &&
-              this.state.flattenedAddress &&
-              <div
-                style={{
-                  backgroundColor: "lightgreen"
-                }}>
-                <div>
-                  <b>Name: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.last_name"]}
-                </div>
-                <div>
-                  <b>Party: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.bio.party"]}
-                </div>
-                <div>
-                  <b>Position: </b>
-                  {
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"][0].toUpperCase() +
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1.type"].slice(1)
-                  }
-                </div>
+              this.state.fileNameLtnGovernor && this.state.fileNameLtnGovernor.map(element => {
+                return <a href={'/ltngovernors?ltnId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/320×300' alt='new' width={125} height={125} />
+                    {
+                      this.state.fileNameLtnGovernor && this.state.fileNameLtnGovernor[0] && this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {this.state.fileNameLtnGovernor[0].Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {this.state.fileNameLtnGovernor[0].Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {this.state.fileNameLtnGovernor[0].Position}
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </a>
+              })
+            }
 
+
+
+            <a href={'/secretariesofstate?secId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.fileNameSecretaries[0].Name}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.fileNameSecretaries[0].Party}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {this.state.fileNameSecretaries[0].Position}
+                    </div>
+                  </div>
+                }
               </div>
+            </a>
+            {
+              this.state.fileNameAuditors && this.state.fileNameAuditors.map(element => {
+                return <a href={'/auditors?audId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {element.Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </a>
+              })
+            }
+
+
+            <a href={'/treasurers?treId=' + null}>
+              <div className="card">
+                <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
+                {
+                  this.state.cookieValue &&
+                  Object.keys(this.state.cookieValue).length &&
+                  this.state.flattenedAddress &&
+                  <div>
+                    <div>
+                      <b>Name: </b>
+                      {this.state.fileNameTreasurers[0].Name}
+                    </div>
+                    <div>
+                      <b>Party: </b>
+                      {this.state.fileNameTreasurers[0].Party}
+                    </div>
+                    <div>
+                      <b>Position: </b>
+                      {this.state.fileNameTreasurers[0].Position}
+                    </div>
+                  </div>
+                }
+              </div>
+            </a>
+
+
+            {
+              this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
+                return <a href={'/counties?countId=' + null}>
+                  <div className="card">
+                    <img src={`https://source.unsplash.com/random/400x400`} alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {element.Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </a>
+              })
             }
           </div>
-
-          <div className="card">
-            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
-            {
-              this.state.cookieValue &&
-              Object.keys(this.state.cookieValue).length &&
-              this.state.flattenedAddress &&
-              <div
-                style={{
-                  backgroundColor: "lightgreen"
-                }}>
-                <div>
-                  <b>Name: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.last_name"]}
-                </div>
-                <div>
-                  <b>Party: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.bio.party"]}
-                </div>
-                <div>
-                  <b>Position: </b>
-                  {
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"][0].toUpperCase() +
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2.type"].slice(1)
-                  }
-                </div>
-
-              </div>
-            }
-          </div>
-
-
-
-          {
-            console.log("The value of this.state.flattenedAddress is ", this.state.flattenedAddress)
-          }
-          <div className="card">
-            <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
-            {
-              this.state.cookieValue &&
-              Object.keys(this.state.cookieValue).length &&
-              this.state.flattenedAddress &&
-              <div
-                style={{
-                  backgroundColor: "palegoldenrod"
-                }}>
-                <div>
-                  <b>Name: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.first_name"] + " " + this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.last_name"]}
-                </div>
-                <div>
-                  <b>Party: </b>
-                  {this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio.party"]}
-                </div>
-                <div>
-                  <b>Position: </b>
-                  {
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"][0].toUpperCase() +
-                    this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.type"].slice(1)
-                  }
-                </div>
-
-              </div>
-            }
-          </div>
-        </Carousel>
-
+        </div>
         <div style={{
           width: "15em",
           border: "1px solid #333",
@@ -706,25 +785,11 @@ export default class Home extends React.Component {
         }}>
           <p>The Address Query.</p>
         </div>
-        <br />
-        <br />
-        <br />
         <div className="cards">
-
-
-
-          Now all we need to do is remove those tiny text on the top labeling the fields.
-
-          <div>
-            This will be our div containing the State House District and State Senate District
-          </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length}
-
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -748,7 +813,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          The first thing we "need" to do is remove the address components, style that div address components. Referring to the results.0 object,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -787,7 +851,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -810,7 +873,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          we have the roof-top accuracy of 1, latitude and longitude,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -834,10 +896,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          information about the Congressional Districts number and proportion,
-
-
-          the current legislators' numeric biography & contacts, social,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -882,7 +940,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          references to places like bioguide, thomas, opensecrets, lis, cspan, govtrack, votesmart, ballotpedia, Washington Post, icpsr, and Wikipedia.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -927,7 +984,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          The legislator data is originally collected and aggregated by https://github.com/unitedstates/. "Just as" we have information on subjects like Don Beyer we "also" have information on legislators {`>`} senators like Mark Warner,
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -955,7 +1011,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          Following this immediately we have Timothy Kaine in the same fashion. Then, there is the State House District 2, Arlington County Public Schools with Unified LEA code &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -977,7 +1032,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          low or high-grade.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1000,7 +1054,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          Then, there is timezone name, utc_offset, observes_dst (daylight savings time?), abbreviation and source.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1031,7 +1084,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          Census results, including year, state fips * county fips * tract code * block code * block group * full fips * metro statistical area * place name & fips.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1066,7 +1118,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          A lot of census and statistically-related data. 2010 &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1101,7 +1152,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          2011
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1136,7 +1186,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          ...We who are living & looking on the meaning of happiness... we don't know how much census data we have, but it goes from 2010, 2011, ..., 2021.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1171,7 +1220,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1206,7 +1254,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1241,7 +1288,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1276,7 +1322,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1311,7 +1356,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1346,7 +1390,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1381,7 +1424,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1416,7 +1458,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1451,7 +1492,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          The source and survey, &
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1472,7 +1512,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-          the population by minimum level of education.
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1596,7 +1635,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1678,7 +1716,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1750,7 +1787,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1817,7 +1853,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -1971,7 +2006,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2017,7 +2051,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2069,7 +2102,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2146,7 +2178,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2222,7 +2253,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2396,7 +2426,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2424,7 +2453,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2506,7 +2534,6 @@ export default class Home extends React.Component {
                   </div>
                 })}
           </div>
-
           <div className="card">
             {this.state.cookieValue &&
               Object.keys(this.state.cookieValue).length &&
@@ -2541,10 +2568,6 @@ export default class Home extends React.Component {
             <button className="unTraditionalButton" onClick={e => this.refresh()}>Refresh</button>
           </footer>
         </div>
-        {/* https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/ */}
-        {/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div */}
-        <br />
-        <br />
         <div style={{
           width: "15em",
           border: "1px solid #333",
@@ -2552,13 +2575,8 @@ export default class Home extends React.Component {
           padding: "8px 12px",
           backgroundImage: "linear-gradient(180deg, #fff, #ddd 40%, #ccc)"
         }}>
-          <p>What is Latitude and what is Longitude?
-
-            The idea is that we can generate a follow-up query, that is following the Address Query. This new query returns information not with-standing Congressional Districts, Contact Phone & URL, and the Biographies (Party and Last Name) of the operators, and the Current Legislator Source & Type.</p>
+          <p>Latitude & Longitude "Reverse" Query.</p>
         </div>
-        <br />
-        <br />
-        <br />
         <div className="cards">
           {
             this.state.cookieValue && Object.keys(this.state.cookieValue).length && this.state.latLngQueryFlattened && Object.keys(this.state.latLngQueryFlattened).map((key, index) => {
@@ -2699,7 +2717,6 @@ export default class Home extends React.Component {
           }
         }
       `}</style>
-
         <style jsx global>{`
         html,
         body {

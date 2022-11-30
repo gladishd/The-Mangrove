@@ -6,51 +6,44 @@ import LoginCookies from './LoginCookiesOld.js'
 import LogoutComponent from './LogoutComponent.js'
 import Snowfall from 'react-snowfall'
 import MapContainer from './MapContainer.js'
-
 export default class Users extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      locationForMapContainer: {},
       activeItemIndex: 0,
-      arcGISData: null,
       cookieValue: null,
+      arcGISData: null,
+      showUsers: false,
       data: null,
       props,
-      showUsers: false,
-      locationForMapContainer: {}
     }
     this.dataFetchPoliticians = this.dataFetchPoliticians.bind(this)
-    this.getArcGISData = this.getArcGISData.bind(this)
-    this.setArcGISData = this.setArcGISData.bind(this)
-    this.getUsers = this.getUsers.bind(this)
     this.setActiveItemIndex = this.setActiveItemIndex.bind(this)
+    this.getArcGISData = this.getArcGISData.bind(this)
     this.showUsers = this.showUsers.bind(this)
+    this.getUsers = this.getUsers.bind(this)
   }
-
   setActiveItemIndex(value) {
     this.setState({ activeItemIndex: value })
   }
-
   showUsers(e) {
     e.preventDefault()
     this.setState({
       showUsers: !this.state.showUsers
     })
   }
-
   async dataFetchPoliticians(data) {
     await this.setState({
       cookieValue: data,
     })
   }
-
   async getUsers() {
     let res = await axios.get(`/api/users`)
     this.setState({
       data: res
     })
   }
-
   async getArcGISData() {
     let res = await axios.get(`/api/ArcGISData`)
     console.log("Fetches Arc GIS Data ", res)
@@ -58,23 +51,9 @@ export default class Users extends React.Component {
       arcGISData: res,
     })
   }
-
-  async setArcGISData() {
-    /** Comment this "back" in! No!  */
-    // console.log("within setarcgisdata, the state is ", this.state)
-    // let newData = await this.state.arcGISData.data.response
-    // let loc = this.state.arcGISData.data.response.map((e, i) => {
-    //   if (e.geometry) {
-    //     return { id: i, location: { lat: e.geometry.coordinates[0], lng: e.geometry.coordinates[1] } }
-    //   }
-    // })
-  }
-
   async componentDidMount() {
     await this.getArcGISData()
-    await this.setArcGISData()
-    this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")
-    // https://api4.ballotpedia.org/data/election_dates/list?state=WI&type=Special&year=2020&page=1
+    this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1029 Main Street, Pittsburgh, PA 15215")
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-api-key", "your-api-key");
@@ -88,7 +67,6 @@ export default class Users extends React.Component {
       .catch(error => console.log('error', error));
     this.getUsers()
   }
-
   render() {
     return <div style={{
       display: 'flex',
@@ -112,35 +90,22 @@ export default class Users extends React.Component {
           height: 'auto',
           justifyContent: 'space-between',
         }}>
-
           {this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 &&
             <button className="unTraditionalButton" style={{ fontSize: "1em", fontWeight: '500' }} onClick={e => this.showUsers(e)}>Show Users</button>
           }
-          <br />
-          <br />
           <input
             className='addressSearchClass'
-            placeHolder="1109 N Highland St, Arlington, VA 22201"
+            placeHolder="1029 Main Street, Pittsburgh, PA 15215"
             style={{ width: '50vw', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryAddress: e.target.value })}
           />
-          <br />
-          <br />
           <button className='unTraditionalButton' onClick={e => this.props.queryGeocodioLatLng(this.state.searchQueryLatLng || "38.9002898, -76.9990361")}>Query Geocodio Lat/Lng</button>
-          <br />
-          <br />
-
           <input className='addressSearchClass' placeHolder="38.9002898, -76.9990361" style={{ width: '20em', padding: '1em', borderStyle: "ridge" }}
             onChange={e => this.setState({ searchQueryLatLng: e.target.value })}
           />
-          <br />
-          <br />
           <button
             className='unTraditionalButton'
             onClick={e => this.props.queryGeocodioAddress(this.state.searchQueryAddress || "1109 N Highland St, Arlington, VA 22201")}>Query Geocodio Address</button>
-
-          <br />
-          <br />
         </div>}
       {
         this.state.cookieValue && Object.keys(this.state.cookieValue).length !== 0 && this.state.showUsers &&
@@ -149,19 +114,15 @@ export default class Users extends React.Component {
             {
               this.state.arcGISData && this.state.arcGISData.config && this.state.arcGISData.config.url
             }
-            <br />
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0] && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.properties.name
             }
-            <br />
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[0] && this.state.arcGISData.data.response[0].docTitle && this.state.arcGISData.data.response[0].docTitle.type
             }
-            <br />
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[1] && this.state.arcGISData.data.response[1].docTitle
             }
-            <br />
             {
               this.state.arcGISData && this.state.arcGISData.data && this.state.arcGISData.data.response[2] && this.state.arcGISData.data.response[2].docTitle
             }
@@ -229,7 +190,6 @@ export default class Users extends React.Component {
                   backgroundColor: 'white',
                   fontFamily: "Apple Chancery, cursive	"
                 }}>
-                  leen
                   <img src={'https://source.unsplash.com/random'} style={{
                     width: '50%',
                     height: '100px',
@@ -254,7 +214,6 @@ export default class Users extends React.Component {
               })
             }
           </div>
-          Where is it getting mapped?
           {
             this.state.data && this.state.data.data.response.map(e => <div style={{
               margin: '1em',
@@ -265,7 +224,6 @@ export default class Users extends React.Component {
               borderWidth: '1px',
               backgroundColor: 'white'
             }}>
-              aww
               <img src={'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'} style={{
                 width: '50%',
                 height: '100px',

@@ -1,0 +1,420 @@
+{
+  "Sheet1": [
+    {
+      "Position": "Attorney General of Alabama",
+      "Name": "Steve Marshall",
+      "Party": "Republican",
+      "AssumedOffice": 42776,
+      "State": "Alabama",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Alaska",
+      "Name": "Treg Taylor",
+      "Party": "Republican",
+      "AssumedOffice": 44327,
+      "State": "Alaska",
+      "ElectedOrAppointed": "Appointed by Governor"
+    },
+    {
+      "Position": "Attorney General of Arizona",
+      "Name": "Mark Brnovich",
+      "Party": "Republican",
+      "AssumedOffice": 42009,
+      "State": "Arizona",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Arkansas",
+      "Name": "Leslie Rutledge",
+      "Party": "Republican",
+      "AssumedOffice": 42017,
+      "State": "Arkansas",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of California",
+      "Name": "Rob Bonta",
+      "Party": "Democratic",
+      "AssumedOffice": "April 23, 2021",
+      "State": "California",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Colorado",
+      "Name": "Phil Weiser",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "Colorado",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Connecticut",
+      "Name": "William Tong",
+      "Party": "Democratic",
+      "AssumedOffice": 43474,
+      "State": "Connecticut",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Delaware",
+      "Name": "Kathy Jennings",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "Delaware",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Florida",
+      "Name": "Ashley B. Moody",
+      "Party": "Republican",
+      "AssumedOffice": 43473,
+      "State": "Florida",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Georgia",
+      "Name": "Chris Carr",
+      "Party": "Republican",
+      "AssumedOffice": 42675,
+      "State": "Georgia",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Guam",
+      "Name": "Leevin Taitano Camacho",
+      "Party": "Independent",
+      "AssumedOffice": 43472,
+      "State": "Guam",
+      "ElectedOrAppointed": "N/A"
+    },
+    {
+      "Position": "Attorney General of Hawaii",
+      "Name": "Holly Shikada",
+      "Party": "Democratic",
+      "AssumedOffice": "April 19, 2022",
+      "State": "Hawaii",
+      "ElectedOrAppointed": "Appointed by Governor"
+    },
+    {
+      "Position": "Attorney General of Idaho",
+      "Name": "Lawrence Wasden",
+      "Party": "Republican",
+      "AssumedOffice": 37624,
+      "State": "Idaho",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Illinois",
+      "Name": "Kwame Raoul",
+      "Party": "Democratic",
+      "AssumedOffice": 43480,
+      "State": "Illinois",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Indiana",
+      "Name": "Todd Rokita",
+      "Party": "Republican",
+      "AssumedOffice": 44207,
+      "State": "Indiana",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Iowa",
+      "Name": "Thomas John Miller",
+      "Party": "Democratic",
+      "AssumedOffice": 1995,
+      "State": "Iowa",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Kansas",
+      "Name": "Derek Schmidt",
+      "Party": "Republican",
+      "AssumedOffice": 40553,
+      "State": "Kansas",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Kentucky",
+      "Name": "Daniel Cameron",
+      "Party": "Republican",
+      "AssumedOffice": 43816,
+      "State": "Kentucky",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Louisiana",
+      "Name": "Jeff Landry",
+      "Party": "Republican",
+      "AssumedOffice": 42380,
+      "State": "Louisiana",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Maine",
+      "Name": "Aaron Frey",
+      "Party": "Democratic",
+      "AssumedOffice": 43473,
+      "State": "Maine",
+      "ElectedOrAppointed": "Appointed by Legislature"
+    },
+    {
+      "Position": "Attorney General of Maryland",
+      "Name": "Brian Frosh",
+      "Party": "Democratic",
+      "AssumedOffice": 2015,
+      "State": "Maryland",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Massachusetts",
+      "Name": "Maura Healey",
+      "Party": "Democratic",
+      "AssumedOffice": 42025,
+      "State": "Massachusetts",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Michigan",
+      "Name": "Dana Nessel",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "Michigan",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Minnesota",
+      "Name": "Keith Ellison",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Minnesota",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Mississippi",
+      "Name": "Lynn Fitch",
+      "Party": "Republican",
+      "AssumedOffice": 43839,
+      "State": "Mississippi",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Missouri",
+      "Name": "Eric Schmitt",
+      "Party": "Republican",
+      "AssumedOffice": 2019,
+      "State": "Missouri",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Montana",
+      "Name": "Austin Knudsen",
+      "Party": "Republican",
+      "AssumedOffice": 44200,
+      "State": "Montana",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Nebraska",
+      "Name": "Doug Peterson",
+      "Party": "Republican",
+      "AssumedOffice": 42012,
+      "State": "Nebraska",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Nevada",
+      "Name": "Aaron D. Ford",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Nevada",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of New Hampshire",
+      "Name": "John Formella",
+      "Party": "Republican",
+      "AssumedOffice": "April 22, 2021",
+      "State": "New Hampshire",
+      "ElectedOrAppointed": "Appointed by Governor"
+    },
+    {
+      "Position": "Attorney General of New Jersey",
+      "Name": "Matt Platkin",
+      "Party": "Democratic",
+      "AssumedOffice": 44833,
+      "State": "New Jersey",
+      "ElectedOrAppointed": "Appointed by Governor"
+    },
+    {
+      "Position": "Attorney General of New Mexico",
+      "Name": "Hector Balderas",
+      "Party": "Democratic",
+      "AssumedOffice": 2015,
+      "State": "New Mexico",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of New York",
+      "Name": "Letitia James",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "New York",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of North Carolina",
+      "Name": "Josh Stein",
+      "Party": "Democratic",
+      "AssumedOffice": 42736,
+      "State": "North Carolina",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of North Dakota",
+      "Name": "Drew Wrigley",
+      "Party": "Republican",
+      "AssumedOffice": 44601,
+      "State": "North Dakota",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Ohio",
+      "Name": "Dave Yost",
+      "Party": "Republican",
+      "AssumedOffice": 43479,
+      "State": "Ohio",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Oklahoma",
+      "Name": "John O'Connor",
+      "Party": "Republican",
+      "AssumedOffice": 44400,
+      "State": "Oklahoma",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Oregon",
+      "Name": "Ellen Rosenblum",
+      "Party": "Democratic",
+      "AssumedOffice": 41089,
+      "State": "Oregon",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Pennsylvania",
+      "Name": "Josh Shapiro",
+      "Party": "Democratic",
+      "AssumedOffice": 42752,
+      "State": "Pennsylvania",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Rhode Island",
+      "Name": "Peter Neronha",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "Rhode Island",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of South Carolina",
+      "Name": "Alan Wilson",
+      "Party": "Republican",
+      "AssumedOffice": 40555,
+      "State": "South Carolina",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of South Dakota",
+      "Name": "Mark Vargo",
+      "Party": "Republican",
+      "AssumedOffice": 44740,
+      "State": "South Dakota",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Tennessee",
+      "Name": "Jonathan Skrmetti",
+      "Party": "Republican",
+      "AssumedOffice": 44805,
+      "State": "Tennessee",
+      "ElectedOrAppointed": "Appointed by the State Supreme Court"
+    },
+    {
+      "Position": "Attorney General of Texas",
+      "Name": "Ken Paxton",
+      "Party": "Republican",
+      "AssumedOffice": 2015,
+      "State": "Texas",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Utah",
+      "Name": "Sean D. Reyes",
+      "Party": "Republican",
+      "AssumedOffice": 41638,
+      "State": "Utah",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Vermont",
+      "Name": "Susanne Young",
+      "Party": "Republican",
+      "AssumedOffice": 44747,
+      "State": "Vermont",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Virginia",
+      "Name": "Jason Miyares",
+      "Party": "Republican",
+      "AssumedOffice": 44576,
+      "State": "Virginia",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Washington",
+      "Name": "Bob Ferguson",
+      "Party": "Democratic",
+      "AssumedOffice": 41290,
+      "State": "Washington",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of West Virginia",
+      "Name": "Patrick Morrisey",
+      "Party": "Republican",
+      "AssumedOffice": 41288,
+      "State": "West Virginia",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Wisconsin",
+      "Name": "Josh Kaul",
+      "Party": "Democratic",
+      "AssumedOffice": 43472,
+      "State": "Wisconsin",
+      "ElectedOrAppointed": "Elected"
+    },
+    {
+      "Position": "Attorney General of Wyoming",
+      "Name": "Bridget Hill",
+      "Party": "Republican",
+      "AssumedOffice": 43539,
+      "State": "Wyoming",
+      "ElectedOrAppointed": "Appointed by Governor"
+    },
+    {
+      "Position": "Attorney General of the Northern Mariana Islands",
+      "Name": "Edward Manibusan",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 42016,
+      "State": "Northern Mariana Islands",
+      "ElectedOrAppointed": "N/A"
+    }
+  ]
+}

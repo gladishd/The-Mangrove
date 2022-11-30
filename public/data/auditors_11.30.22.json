@@ -1,0 +1,263 @@
+{
+  "Sheet1": [
+    {
+      "Position": "Alabama Auditor",
+      "Name": "Jim Zeigler",
+      "Party": "Republican",
+      "AssumedOffice": 42023,
+      "State": "Alabama"
+    },
+    {
+      "Position": "Arizona Auditor General",
+      "Name": "Lindsey Perry",
+      "Party": "Nonpartisan",
+      "AssumedOffice": "April 18, 2018",
+      "State": "Arizona"
+    },
+    {
+      "Position": "Arkansas Auditor of State",
+      "Name": "Andrea Lea",
+      "Party": "Republican",
+      "AssumedOffice": 42017,
+      "State": "Arkansas"
+    },
+    {
+      "Position": "California State Auditor",
+      "Name": "Michael Tilden",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 44561,
+      "State": "Caliorni"
+    },
+    {
+      "Position": "Delaware State Auditor",
+      "Name": "Dennis Greenhouse",
+      "Party": "Democratic",
+      "AssumedOffice": 44854,
+      "State": "Delaware"
+    },
+    {
+      "Position": "Georgia State Auditor",
+      "Name": "Greg Griffin",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 41091,
+      "State": "Georgia"
+    },
+    {
+      "Position": "Hawaii State Auditor",
+      "Name": "Les Kondo",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 42491,
+      "State": "Hawaii"
+    },
+    {
+      "Position": "Illinois Auditor General",
+      "Name": "Frank J. Mautino",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 42370,
+      "State": "Illinois"
+    },
+    {
+      "Position": "Indiana Auditor of State",
+      "Name": "Tera Klutz",
+      "Party": "Republican",
+      "AssumedOffice": 42744,
+      "State": "Indiana"
+    },
+    {
+      "Position": "Iowa Auditor of State",
+      "Name": "Rob Sand",
+      "Party": "Democratic",
+      "AssumedOffice": 2019,
+      "State": "Iowa"
+    },
+    {
+      "Position": "Kentucky Auditor of Public Accounts",
+      "Name": "Mike Harmon",
+      "Party": "Republican",
+      "AssumedOffice": 2016,
+      "State": "Kentucky"
+    },
+    {
+      "Position": "Maine State Auditor",
+      "Name": "Matthew Dunlap",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 44879,
+      "State": "Maine"
+    },
+    {
+      "Position": "Massachusetts Auditor of the Commonwealth",
+      "Name": "Suzanne Bump",
+      "Party": "Democratic",
+      "AssumedOffice": 40562,
+      "State": "Massachusetts"
+    },
+    {
+      "Position": "Michigan Auditor General",
+      "Name": "Doug Ringler",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 2014,
+      "State": "Michigan"
+    },
+    {
+      "Position": "Minnesota State Auditor",
+      "Name": "Julie Blaha",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "Minnesota"
+    },
+    {
+      "Position": "Mississippi State Auditor",
+      "Name": "Shad White",
+      "Party": "Republican",
+      "AssumedOffice": 2018,
+      "State": "Mississippi"
+    },
+    {
+      "Position": "Missouri State Auditor",
+      "Name": "Nicole Galloway",
+      "Party": "Democratic",
+      "AssumedOffice": "April 27, 2015",
+      "State": "Missouri"
+    },
+    {
+      "Position": "Montana Commissioner of Securities and Insurance, State Auditor",
+      "Name": "Troy Downing",
+      "Party": "Republican",
+      "AssumedOffice": 44200,
+      "State": "Montana"
+    },
+    {
+      "Position": "Nebraska Auditor of Public Accounts",
+      "Name": "Charlie Janssen",
+      "Party": "Republican",
+      "AssumedOffice": 42012,
+      "State": "Nebraska"
+    },
+    {
+      "Position": "New Mexico State Auditor",
+      "Name": "Brian S. Col贸n",
+      "Party": "Democratic",
+      "AssumedOffice": 43466,
+      "State": "New Mexico"
+    },
+    {
+      "Position": "North Carolina State Auditor",
+      "Name": "Beth Wood",
+      "Party": "Democratic",
+      "AssumedOffice": 2009,
+      "State": "North Carolina"
+    },
+    {
+      "Position": "North Dakota State Auditor",
+      "Name": "Josh Gallion",
+      "Party": "Republican",
+      "AssumedOffice": 42719,
+      "State": "North Dakota"
+    },
+    {
+      "Position": "Ohio Auditor of State",
+      "Name": "Keith Faber",
+      "Party": "Republican",
+      "AssumedOffice": 43476,
+      "State": "Ohio"
+    },
+    {
+      "Position": "Oklahoma State Auditor and Inspector",
+      "Name": "Cindy Byrd",
+      "Party": "Republican",
+      "AssumedOffice": 43466,
+      "State": "Oklahoma"
+    },
+    {
+      "Position": "Pennsylvania Auditor General",
+      "Name": "Timothy DeFoor",
+      "Party": "Republican",
+      "AssumedOffice": 44215,
+      "State": "Pennsylvania"
+    },
+    {
+      "Position": "Public Auditor of Guam",
+      "Name": "Benjamin Cruz",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 43356,
+      "State": "Guam"
+    },
+    {
+      "Position": "Rhode Island Auditor General",
+      "Name": "Dennis Hoyle",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 2010,
+      "State": "Rhode Island"
+    },
+    {
+      "Position": "South Carolina State Auditor",
+      "Name": "George L. Kennedy, III",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 2015,
+      "State": "South Carolina"
+    },
+    {
+      "Position": "South Dakota State Auditor",
+      "Name": "Richard Sattgast",
+      "Party": "Republican",
+      "AssumedOffice": 43472,
+      "State": "South Dakota"
+    },
+    {
+      "Position": "Texas State Auditor",
+      "Name": "Lisa Collier",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 42374,
+      "State": "Texas"
+    },
+    {
+      "Position": "Utah State Auditor",
+      "Name": "John Dougall",
+      "Party": "Republican",
+      "AssumedOffice": 41281,
+      "State": "Utah"
+    },
+    {
+      "Position": "Vermont State Auditor",
+      "Name": "Doug Hoffer",
+      "Party": "Democratic",
+      "AssumedOffice": 41284,
+      "State": "Vermont"
+    },
+    {
+      "Position": "Washington State Auditor",
+      "Name": "Pat McCarthy",
+      "Party": "Democratic",
+      "AssumedOffice": 42746,
+      "State": "Washington"
+    },
+    {
+      "Position": "West Virginia State Auditor",
+      "Name": "John B. McCuskey",
+      "Party": "Republican",
+      "AssumedOffice": 42751,
+      "State": "West Virginia"
+    },
+    {
+      "Position": "Wisconsin State Auditor",
+      "Name": "Joe Chrisman",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 40711,
+      "State": "Wisconsin"
+    },
+    {
+      "Position": "Wyoming Department of Audit Director",
+      "Name": "Justin Chavez",
+      "Party": "Nonpartisan",
+      "AssumedOffice": 44419,
+      "State": "Wyoming"
+    },
+    {
+      "Position": "Wyoming State Auditor",
+      "Name": "Kristi Racines",
+      "Party": "Republican",
+      "AssumedOffice": 43466,
+      "State": "Wyoming"
+    }
+  ]
+}

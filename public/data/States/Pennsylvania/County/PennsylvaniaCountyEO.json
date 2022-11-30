@@ -1,0 +1,6175 @@
+{
+  "Sheet1": [
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Kelly A. Lawver",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "John Phillips",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Pat Felix",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Brian Sinnett",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Beverly Boyd",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Karen Heflin",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "James W. Muller",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Christine Redding",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Randy Phiel",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Jim Martin",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Marty Qually",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Manager",
+      "Party": "N/A",
+      "Name": "Steve Nevada",
+      "Is Elected": "No"
+    },
+    {
+      "County": "Adams",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Chief Clerk",
+      "Party": "N/A",
+      "Name": "Paula Neiman",
+      "Is Elected": "No"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Rich Fitzgerald",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Corey O'Connor",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Stephen A. Zappala Jr.",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Kevin M. Kraus",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "John K. Weinstein",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Bethany Hallam",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Samuel DeMarco III",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 1",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Jack Betkowski",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 2",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Suzanne Filiaggi",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 3",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Anita Prizo",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 4",
+      "Position": "County Councilor, President",
+      "Party": "Democrat",
+      "Name": "Patrick Catena",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 5",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Tom Duerr",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 6",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "John F. Palmiere",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 7",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Nicholas Futules",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 8",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Michelle Naccarati-Chapkis",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 9",
+      "Position": "County Councilor, Vice President",
+      "Party": "Democrat",
+      "Name": "Robert J. Macey",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 10",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "DeWitt Walton",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 11",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Paul Klein",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 12",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Robert Palmosina",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Allegheny",
+      "Scope": "County District",
+      "County District": "Allegheny County District 13",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Olivia \"Liv\" Bennett",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Donald Myers",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Jason Renshaw",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Democrat",
+      "Name": "Pat Fabian",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Katie Charlton",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Bill Rupert",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Brian Myers",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Myra \"Tammy\" Miller",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Amanda Hiles",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Marianne Hileman",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary and Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Brenda C. George",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Senior Judge",
+      "Party": "Democrat",
+      "Name": "Kenneth G. Valasek",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "President Judge",
+      "Party": "Democrat",
+      "Name": "James Panchik",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Senior Judge",
+      "Party": "Democrat",
+      "Name": "Joseph A. Nickleach Sr.",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Armstrong",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "Democrat",
+      "Name": "Chase McClister",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Daniel C. Camp III",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Tony Amadio",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Jack Manning",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Judy Enslen",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Maria Longo",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "David Gabauer",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "David Lozier",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Michael Rossi",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Ronald Alberti",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Tony Guy",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Beaver",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Sandie Egley",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Bedford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Barry L. Dallara",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Bedford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Deb Baughman",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Bedford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Republican",
+      "Name": "Alan Frederick",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "James P. Troutman",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Sandy Graffius",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "John A. Fielding III",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "John T. Adams",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Jonathan K. Del Collo",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Mary Kozak",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Larry J. Medaglia Jr.",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Eric Weaknecht",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "A. Dennis Adams",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Christian Leinbach",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Kevin Barnhardt",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Berks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Michael S. Rivera",
+      "Is Elected": "Yes"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Robin Patton"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "A.C. Stickel"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Patricia Ross"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Pete Weeks"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Marry Ann Bennis"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "James Ott"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "James Carothers"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Bruce Erb"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Laura Burke"
+    },
+    {
+      "County": "Blair",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Republican",
+      "Name": "Amy Webster"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Dawn Close"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "James Bowen"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Shelia Johnson"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Clinton J. Walters"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Matthew Allen"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Daryl Miller"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Doug McLinko"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "John Sullivan"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Jeff Warner"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Eric Matthews"
+    },
+    {
+      "County": "Bradford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Sebrina Shanks"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Brian Munroe"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Pamela A. Van Blunk"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Meredith J. Buck"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Kris Ballerini"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Matthew \"Matt\" Weintraub"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Coleen Christian"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Daniel \"Dan\" McPhillips"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "Linda Bobrin"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Frederick \"Fred\" A. Harran"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Democrat",
+      "Name": "Diane M. Ellis-Marseglia"
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Robert \"Bob\" J. Harvie Jr."
+    },
+    {
+      "County": "Bucks",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Gene DiGirolamo"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Richard Goldinger"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Ben Holland"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "William F. Young III"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Diane Marburger"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Kelly Ferrari"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Lisa Lotz"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Michael Slupe"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Michele Mustello"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Sara Edwards"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Leslie Osche"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Kim Geyer"
+    },
+    {
+      "County": "Butler",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Kevin Boozel"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Gregory J. Neugebauer"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Max R. Pavlovich"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Ed Cernic Jr."
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Jeffrey Lees"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Lisa Crynock"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Melissa Kimla"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Cindy Perrone"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Don Robertson"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Lisa Kozorosky"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Thomas C. Chernisky"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "William \"B.J.\" Smith"
+    },
+    {
+      "County": "Cambria",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Scott W. Hunt"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Allen Neyman"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Register of Wills and Recorder of Deeds and Prothonotary",
+      "Party": "Republican",
+      "Name": "Mary Grace Olay"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Staci Brown"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Paul J. Malizia"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Lori J. Reed"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "James D. Moate"
+    },
+    {
+      "County": "Cameron",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Ann M. Losey"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Mark A. Sverchek"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Robert W. Miller Jr."
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Michael Greek"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Kayla Semmel"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Donna Gentile"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Daniel Zeigler"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Kevin Zelienka"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Wayne Nothstein"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Chris Lukasevich"
+    },
+    {
+      "County": "Carbon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Rocky Ahner"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Democrat",
+      "Name": "Jeremy Breon"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Jason Moser"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Scott Sayers"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Bernie Cantorna"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Joe Davidson"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Christine Millinder"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Bryan Sampsel"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Colleen Kennedy"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Jury Commissioner",
+      "Party": "Democrat",
+      "Name": "Laura Shadle"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Democrat",
+      "Name": "Michael Pipe"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Mark Higgins"
+    },
+    {
+      "County": "Centre",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Steven G. Dershem"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Yolanda Van de Krol"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Margaret Reif"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Sophia Garcia-Jackson"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Patricia Masiano"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Deborah Ryan"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Debbie Bookman"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Chris Pielli"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "Michele Vaughn"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Fredda Maddox"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Michelle Kichline"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Josh Maxwell"
+    },
+    {
+      "County": "Chester",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Marian Moskowitz"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Drew Welsh"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Dan Shingledecker"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Rex Munsee"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Karyn Montana"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Wayne Brosius"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Ted Tharan"
+    },
+    {
+      "County": "Clarion",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Ed Heasley"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Brian K. Spencer"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Robert Edwards"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Kim Shaffer Snyder"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Ryan P. Syaers"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Maurene Inlow"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Michael Churner"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Carol Fox"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "David Glass"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Antonio Scotto"
+    },
+    {
+      "County": "Clearfield",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "John Sobel"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Chief Clerk",
+      "Party": "N/A",
+      "Name": "Jann Meyers"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Cynthia Love"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "David Strouse"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Jennifer Hoy"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Michelle Kunes"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Rita O'Brien"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Michelle Crowell"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Brooke Fravel"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Kerry Stover"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Miles Kessinger"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Jeffrey Snyder"
+    },
+    {
+      "County": "Clinton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Angela Harding"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Chief Judge",
+      "Party": "Democrat",
+      "Name": "Thomas A. James"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "Republican",
+      "Name": "Gary Norton"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Chief Clerk",
+      "Party": "Democrat",
+      "Name": "Gail Kipp"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Jeremy Reese"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Beverly Michael"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Tim Chamberlain"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Shirley Turner"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Tami B. Kline"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "David Kovach"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Rich Ridgway"
+    },
+    {
+      "County": "Columbia",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Chris Young"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "President Judge of the Court of Common Pleas",
+      "Party": "N/A",
+      "Name": "John F. Spataro"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge of the Court of Common Pleas",
+      "Party": "N/A",
+      "Name": "Mark Stevens"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Diana Perry"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Kathleen Roae"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Christopher  Seeley"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Patricia Wetherbee"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Scott Schell"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Francis Schultz"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Emmy Arnett"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Beth Forbes"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "David L. Powers"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Christine Krzysiak"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Eric Henry"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Francis Weiderspahn"
+    },
+    {
+      "County": "Crawford",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary and Treasurer",
+      "Party": "Democrat",
+      "Name": "J. Christopher Soff"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Dennis Lebo"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Alfred Whitcomb"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Charles Hall"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "M. L. \"Skip\" Ebert"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Dale Sabadish"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Tammy L. Shearer"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Lisa M. Grayson, Esq."
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Ron Anderson"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "John Gross"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Gary  Eichelberger"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Vince DiFilippo"
+    },
+    {
+      "County": "Cumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Jean Foschi"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Dale Klein"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller (acting)",
+      "Party": "Republican",
+      "Name": "Jim Markel"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Graham Hetrick"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Fran Chardo"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Matt Krupp"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Jim Zugay"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Clerk of the Orphans' Court",
+      "Party": "Republican",
+      "Name": "Jean Marfizo King"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Nick Chimienti"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Janis Creason"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Solicitor",
+      "Party": "N/A",
+      "Name": "Joseph A. Curcillo III, Esq."
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Michael Pries"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Chad Saylor"
+    },
+    {
+      "County": "Dauphin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Democrat",
+      "Name": "George P. Hartwick III"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Joanne Phillips, Esq."
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Jack Stollsteimer"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "Rachel Ezell Berry"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Jerry Sanders"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor, Chair",
+      "Party": "Democrat",
+      "Name": "Dr. Monica Taylor"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Elaine Paul Schaefer"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Kevin M. Madden"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Christine Reuther"
+    },
+    {
+      "County": "Delaware",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Richard Womack"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Susanne Schneider"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Michelle Muccio"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Shawn McMahon"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Lee Neureiter"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Todd Caltagarone"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Peggy Schneider"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Joseph Daghir"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "M. Fritz Lecker"
+    },
+    {
+      "County": "Elk",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Matthew G. Quesenberry"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Republican",
+      "Name": "Russell Robison"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Judith M. Lynch"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Republican",
+      "Name": "Richard Schenker"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Mark A. DiVecchio"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Barry Grossman"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Kathleen Dahlkemper"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Republican",
+      "Name": "Brenton Davis"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 1",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Terry Scutella"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 2",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Andre Horton"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 3",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Mary Rennie"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 4",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Jim Winarski"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 5",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Brian Shank"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 6",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Sam \"Charlie\" Bayle"
+    },
+    {
+      "County": "Erie",
+      "Scope": "County District",
+      "County District": "Erie County District 7",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Ellen Schauerman"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Records",
+      "Party": "Democrat",
+      "Name": "Kenneth Gamble"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Dr. Kyle W. Foust"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Lyell Cook"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Jack Daneri"
+    },
+    {
+      "County": "Erie",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "John Loomis"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "N/A",
+      "Name": "Timothy C. Dye"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Scott T. Abraham"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Phillip E. Reilly"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Richard Bower"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Jon R. Marietta Jr."
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "N/A",
+      "Name": "Jeffrey L. Redman"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "James Custer"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Melissa Tzan"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "President Judge",
+      "Party": "N/A",
+      "Name": "John F. Wagner Jr."
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Steve P. Leskinen"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Nancy Vernon"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Linda Cordaro"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Joseph M. George Jr."
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Dave Lohr"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, First Vice-Chair",
+      "Party": "N/A",
+      "Name": "Vincent A Vicites"
+    },
+    {
+      "County": "Fayette",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Second Vice-Chair",
+      "Party": "N/A",
+      "Name": "Scott Dunn"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Clerk of Orphans' Court and Prothonotary and Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Dawn M. Millin"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Norman J. Wimer"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Alyce M. Busch"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Daniel Miller"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "William D. Carbaugh Jr."
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Stacey L. Barnes"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Mark S. Kingston"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Basil D. Huffman"
+    },
+    {
+      "County": "Forest",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Robert J. Snyder Jr."
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "N/A",
+      "Name": "Todd Rock"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Harold wissinger"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Jeff Conner"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Matthew Fogal"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "N/A",
+      "Name": "Timothy Sponseller"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Linda Miller"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Dane Anthony"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Melody Shuman"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "David Keller"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "John Flannery"
+    },
+    {
+      "County": "Franklin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Robert Ziobrowski"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Travis L. Kendall"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Berley Souders"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Clerk of Orphans' Court and Prothonotary and Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Patty Fix"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Keith Stains"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Monica Seville"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Holly R. Falkosky"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Margaret A. Kobel"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Penny S. Kipp"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Paula Jean Shives"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Randolph H. Bunch"
+    },
+    {
+      "County": "Fulton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Stuart Lee Ulsh"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "President Judge",
+      "Party": "N/A",
+      "Name": "Louis Dayich"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "David Russo"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Marcus Simms"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Gene Rush"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Sherry Wise"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Susan White"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Donna Tharp"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Cory Grandel"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Ami Cree"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Mike Belding"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Betsy McClure"
+    },
+    {
+      "County": "Greene",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Blair Zimmerman"
+    },
+    {
+      "County": "Huntingdon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Mark Sather"
+    },
+    {
+      "County": "Huntingdon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Scott Walls"
+    },
+    {
+      "County": "Huntingdon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Jeffrey Thomas"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Jerry L. Overman Jr."
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Robert Manzi"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Randy Degenkolb"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Maria Jack"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Robert Fyock"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Kimberly McCullough"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Donna Cupp"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Bonni S. Dunlap"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "James P. Smith Jr."
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Michael Keith"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Robin Gorman"
+    },
+    {
+      "County": "Indiana",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Sherene Hess"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Jeff Burkett"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Jacqueline Mizerock"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "David B. Inzana"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge",
+      "Party": "N/A",
+      "Name": "Gregory M. Bazylak"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Tonya S. Geist"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "James \"Moon\" VanSteenberg"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Herbert L. Bullers Jr."
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Scott E. North"
+    },
+    {
+      "County": "Jefferson",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Jeffrey E. Pisarcik"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Miriam M. Anstine"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Nancy H. Phelan"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Laura A. Cunningham"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Lee Snyder"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Cory J. Snook"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Orphans' Court and Recorder of Deeds and Register of Wills",
+      "Party": "N/A",
+      "Name": "Alicia A. Seigler"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "N/A",
+      "Name": "Lori A. Ferry"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Joshua L. Stimeling"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Laurie S. Hower"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Alice J. Gray"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Todd A. Graybill"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "N/A",
+      "Name": "Mark R. Partner"
+    },
+    {
+      "County": "Juniata",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, County Administrator",
+      "Party": "N/A",
+      "Name": "Jim Bahorik"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Judicial Records",
+      "Party": "Democrat",
+      "Name": "Mauri B. Kelly"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Gary DiBileo"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Timothy Rowland"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Edward Karpovich"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Mark Powell"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Evie Rafalko-McNulty"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "Frances Kovaleski"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Mark McAndrew"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Chris Chermak"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Jerry Notarianni"
+    },
+    {
+      "County": "Lackawanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Debi Domenick"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Mary Anater"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Lisa Colon"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Stephen Diamantoni"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Heather Adams"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Andrew Spade"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Ann Hess"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Ann Cooper"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Chris Leppler"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Amber Green"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Joshua Parsons"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Ray D'Agostino"
+    },
+    {
+      "County": "Lancaster",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "John Trescot"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Democrat",
+      "Name": "Jodi Esoldo"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "DREP",
+      "Name": "David Gettings"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Joshua Lamancusa"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Janet Kalajainen"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Perry Quahliero"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Richrad Rapone"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Richard Johnson"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Morgan Boyd"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Dan Vogler"
+    },
+    {
+      "County": "Lawrence",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Loretta Spielvogel"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Barbara A. Smith"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Robert M. Mettley"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Jeffrey A. Yocum"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Pier Hess Graf"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Dawn M. Blauch"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Clerk of the Orphans' Court",
+      "Party": "N/A",
+      "Name": "Brian C. Craig"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Sallie A. Neuin"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Jeffrie C. Marley Jr."
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Robert J. Phillips"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Michael J. Kuhn"
+    },
+    {
+      "County": "Lebanon",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "N/A",
+      "Name": "Jo Ellen Litz"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Judicial Records",
+      "Party": "Democrat",
+      "Name": "Andrea Naugle"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Mark Pinsley"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Daniel A. Buglio"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "James B. Martin"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Joseph Hanna"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Republican",
+      "Name": "Jane R. Erving"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Don Cunningham"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "William H. Hansell Jr."
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Matt Croslis"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Tom Muller"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Phil Armstrong"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "County District",
+      "County District": "Lehigh County District 1",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Antonio Pineda"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "County District",
+      "County District": "Lehigh County District 2",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Rob Beitler"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "County District",
+      "County District": "Lehigh County District 3",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Zach Cole Borghi"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "County District",
+      "County District": "Lehigh County District 4",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Geoff Brace"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "County District",
+      "County District": "Lehigh County District 5",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Jeffrey Dutt"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Bob Elbich"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Dave Harrington"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Dan Hartzell"
+    },
+    {
+      "County": "Lehigh",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Zakiya Smalls"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Walter L. Griffith Jr."
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Director of Human Resources",
+      "Party": "N/A",
+      "Name": "Angela Gavlick"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Samuel Sanguedocle"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Chief Public Defender",
+      "Party": "N/A",
+      "Name": "Steven M. Greenwald"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Brian M. Szumski"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor, Chair",
+      "Party": "Republican",
+      "Name": "Kendra M. Radle"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor, Vice-Chair",
+      "Party": "Republican",
+      "Name": "John Lombardo"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Carl Bienias"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Kevin Lescavage"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Lee Ann McDermott"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Tim McGinley"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Matthew Mitchell"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Chris R. Perry"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Brian Thornton"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Stephen J. Urban"
+    },
+    {
+      "County": "Luzerne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Gregory S. Wolovich"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Krista B. Rogers"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Charles E Kiessling Jr."
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Ryan C. Gardner"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Thomas D. Heap"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "David A. Huffman"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "R. Mark Lusk"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Cindy S. Newcomer"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Scott L. Metzger"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Tony R. Mussare"
+    },
+    {
+      "County": "Lycoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "N/A",
+      "Name": "Richard Mirabito"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "N/A",
+      "Name": "Jody Bloomquist"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Michael F. Cahill"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Stephanie Vettenburg-Shaffer"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Vicky Madine"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds (acting)",
+      "Party": "N/A",
+      "Name": "Michele L. Vogel-Snyder"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Clerk of the Orphans' Court",
+      "Party": "N/A",
+      "Name": "Wendy Yaros"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Melissa Jo Smith"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Carol Duffy"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Cliff Lane"
+    },
+    {
+      "County": "McKean",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Thomas Kreiner"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "President Judge of the Court of Common Pleas",
+      "Party": "Republican",
+      "Name": "Daniel P. Wallace"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge of the Court of Common Pleas",
+      "Party": "Republican",
+      "Name": "D. Neil McEwen"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge of the Court of Common Pleas",
+      "Party": "Republican",
+      "Name": "Tedd C. Nesbit"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Judge of the Court of Common Pleas",
+      "Party": "Republican",
+      "Name": "Ronald D. Amrhein Jr."
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Register of Wills",
+      "Party": "Republican",
+      "Name": "Mary Jo Basilone DePreta"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Pete Acker"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "John A. Libonati"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Bruce Rosa"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Amber White"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Ruth Bice"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Dee Dee Zickar"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Steve Sherman"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Matthew McConnell"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Scott Boyd"
+    },
+    {
+      "County": "Mercer",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Timothy McGonigle"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Daniel P. Lynch"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Christopher Torquato"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Tammy Stuck"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Orphans' Court and Recorder of Deeds and Register of Wills",
+      "Party": "N/A",
+      "Name": "Ellen Amspacker"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "James L. Drayer"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Diane L. Griffith"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Kevin P. Kodish"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Mark Sunderland"
+    },
+    {
+      "County": "Mifflin",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Robert Postal"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Mario Merhige"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Thomas Yanac"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "E. David Christine Jr."
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "George Warden"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Josephine Ferro"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Ken Morris"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Theresa Johnson"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Democrat",
+      "Name": "Sharon Laverdure"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "John Moyer"
+    },
+    {
+      "County": "Monroe",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "John Christy"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Lori Schreiber"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Karen Geld Sanchez"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Michael Milbourne"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Kevin R. Steele"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Noah Marlier"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Jeanne Sorg"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "D. Bruce Hanes"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Sean Kilkenny"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Democrat",
+      "Name": "Jason Salus"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Jury Commissioner",
+      "Party": "Democrat",
+      "Name": "Joanne Cisco Olszewski"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Jury Commissioner",
+      "Party": "Republican",
+      "Name": "Merry Woods"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Democrat",
+      "Name": "Val Arkoosh"
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Kenneth E. Lawrence Jr."
+    },
+    {
+      "County": "Montgomery",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Joseph Gale"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Linda Weaver"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Clerk of Orphans' Court and Prothonotary",
+      "Party": "N/A",
+      "Name": "Susan M. Kauwell"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Clair R. Heath"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Norma Bird"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Ken Holdren"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Dan Hartman"
+    },
+    {
+      "County": "Montour",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Trevor Finn"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Executive",
+      "Party": "Democrat",
+      "Name": "Lamont McClure"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor, President",
+      "Party": "Democrat",
+      "Name": "Lori Vargo Heffner"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "John A. Brown"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "John P. Goffredo"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Ronald R. Heckman"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Tara Zrinski"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "County District",
+      "County District": "Northampton County District 1",
+      "Position": "County Councilor",
+      "Party": "Democrat",
+      "Name": "Kevin Lott"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "County District",
+      "County District": "Northampton County District 2",
+      "Position": "County Councilor, Vice President",
+      "Party": "Democrat",
+      "Name": "Kerry Myers"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "County District",
+      "County District": "Northampton County District 3",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "John Cusick"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "County District",
+      "County District": "Northampton County District 4",
+      "Position": "County Councilor",
+      "Party": "Republican",
+      "Name": "Tom Giovanni"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Richard J.  Szulborski"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Terry Houck"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Democrat",
+      "Name": "Holly Ruggiero"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Democrat",
+      "Name": "Gina Gibbs"
+    },
+    {
+      "County": "Northampton",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Democrat",
+      "Name": "Leigh Ann Fisher"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Jamie Saleski"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Democrat",
+      "Name": "Christopher L. Grayson"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Anthony Matulewicz III"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Christina Mertz"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Robert J. Wolfe"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Kevin P. Gilroy"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "James F. Kelley"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Kymberley Best"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Joseph Klebon"
+    },
+    {
+      "County": "Northumberland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Samuel Schiccatano"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Zoe Burd"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Robert Ressler"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Lauren Eichelberger"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Wendy Welfley"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "David Hammar"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Jan Gibboney"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Brian S. Allen"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Gary R. Eby"
+    },
+    {
+      "County": "Perry",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Democrat",
+      "Name": "Brenda L. Watson"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Denise Fitzpatrick"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Christpoher P. Brighton"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Raymond Tonkin"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Sharon Schroeder"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Kerry Welsh"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "John Gilpin"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Ron Schmalzle"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Matthew M. Osterberg"
+    },
+    {
+      "County": "Pike",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Steve Guccini"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Kevein Dusenbury"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Andy Watson"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Clerk of Orphans' Court and Prothonotary",
+      "Party": "N/A",
+      "Name": "Kathy S. Schroeder"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Nicole Larsen"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Glenn C. Drake II"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Krista Miller"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Nancy Grupp"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Paul Heimel"
+    },
+    {
+      "County": "Potter",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Barry Hayman"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Maria Casey"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller (acting)",
+      "Party": "Republican",
+      "Name": "Sharyn Yackenchick"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "David J. Moylan"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Michael O'Pake"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Bridge McGowan Miller"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Ann Dudish"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Theresa Santai-Gaffney"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Democrat",
+      "Name": "Joseph Groody"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Linda Marchalk"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Barron \"Boots\" Hetherington"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "George Halcovage"
+    },
+    {
+      "County": "Schuylkill",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Gary J. Hess"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Bill Pheasant"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Michael Piecuch"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Clerk of Orphans' Court and Prothonotary",
+      "Party": "N/A",
+      "Name": "Stephanie Wolf"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Stacey L. Zerbe"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "John A. Zechman"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Debra Kratzer"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Joe Kantz"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Chuck Steininger"
+    },
+    {
+      "County": "Snyder",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "N/A",
+      "Name": "Adam Ewig"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Rose Svonavec"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Brian Fochtman"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Cullen Swank"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Jeffrey L. Thomas"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Patricia Peifer",
+      "Is Elected": "no"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Sharon Ackerman"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "N/A"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Tony DeLuca"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Jerry Lyons",
+      "Is Elected": "no"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "JoAnne Walls"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Shelley Glessner"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Gerald Walker"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Colleen R. Dawson"
+    },
+    {
+      "County": "Somerset",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "Democrat",
+      "Name": "Pamela Tokar-Ickes"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Julie Gavitt-Shaffer"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary and Register of Wills and Recorder of Deeds",
+      "Party": "Democrat",
+      "Name": "Kellie Carpenter"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Robert Montgomery"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Katrina Wilkins"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Wendy Hasings"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Brian Hoffman"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Democrat",
+      "Name": "Donna Iannone"
+    },
+    {
+      "County": "Sullivan",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Darlene Fenton"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Jan Krupinski"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Tony Conarton"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Marion O'Malley"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Michelle Estabrook"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Lance Benedict"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Jason Miller"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "George Starzec"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Susan Jennings"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Judith Herschel"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Alan M. Hall"
+    },
+    {
+      "County": "Susquehanna",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Elizabeth M. Arnold"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Krista Deats"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Jane E. Wetherbee"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "Republican",
+      "Name": "Marie Seymour"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Kera Hackett"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Frank Levindoski"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "James L. Wilson"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Rebecca B. Briggs"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Elizabeth T. Craig"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Amy Kane Perry"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Roger C. Bunn"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Erick J. Coolidge"
+    },
+    {
+      "County": "Tioga",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Mark L. Hamilton"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "D. Peter Johnson"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Diane Miller"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Ernest Ritter"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Carol Manbeck"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Robert Sundin"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Donna Gemberling"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Diane Reigle"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Lisa A. Seward"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Dominick Adamo"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Jeff Reber"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Preston Boop"
+    },
+    {
+      "County": "Union",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Secretary",
+      "Party": "N/A",
+      "Name": "Stacy Richards"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Terri L. McFadden"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Marci Wilson"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Jamie L. Weaver"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Christina Rugh"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Eric Foy"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer (acting)",
+      "Party": "N/A",
+      "Name": "Jeannie Ritchey"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Shawn White"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Lana Linden"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Sue R. Hannon"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Sam Breene"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Mike Dulaney"
+    },
+    {
+      "County": "Venango",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Albert \"Chip\" Abramovic"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Richard Hutley"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Heleena Swanson"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "N/A",
+      "Name": "Sue Swanson"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "N/A",
+      "Name": "Melissa Zydonik"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "N/A",
+      "Name": "Robert Greene"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts and Prothonotary",
+      "Party": "N/A",
+      "Name": "Jennifer Phillips"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "N/A",
+      "Name": "Lisa Burkhouse"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "N/A",
+      "Name": "Brian Zeybel"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "N/A",
+      "Name": "Dennis Munksgard"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "N/A",
+      "Name": "Ben Kafferlin"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "N/A",
+      "Name": "Tricia Durbin"
+    },
+    {
+      "County": "Warren",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "N/A",
+      "Name": "Jeff Eggleston"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Brenda Davis"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "April Sloane"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Democrat",
+      "Name": "Timothy Warco"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Jason Walsh"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Laura Hough"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Carrie Perrell"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "James Roman"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Anthony Andronas"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Tom Flickinger"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Public Safety Director",
+      "Party": "Independent",
+      "Name": "Jeffrey A. Yates"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Lawrence Maggi"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Diana Irey"
+    },
+    {
+      "County": "Washington",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Nick Sherman"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Carla J. Komar"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Kathy Schloesser"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Catherine Jane Rickard"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Edward R. Howell"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "A.G. Howell"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Edward \"Ned\" Sandercock"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Debbie Bates"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Christopher Rosler"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Brian T. Field"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Brian W. Smith"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Joseph Adams"
+    },
+    {
+      "County": "Wayne",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Jocelyn Cramer"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Megan Loughner"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Jeff Balzer"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Tim Carson"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "Nicole Ziccarelli"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Gina O'Barto"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Frank Schiefer"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills",
+      "Party": "Republican",
+      "Name": "Sherry Magretti-Hamilton"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "James Albert"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Jared M. Squires"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Sean Kertes"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Gina Cerilli"
+    },
+    {
+      "County": "Westmoreland",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Doug Chew"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Democrat",
+      "Name": "Laura Dickson"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Ashley Ritz Darby"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Auditor",
+      "Party": "Republican",
+      "Name": "Judy Shupp"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Democrat",
+      "Name": "Jeff Mitchell"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Cindy Adams"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Dennis Montross"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Robert Roberts"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Patricia Mead"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Chair",
+      "Party": "Republican",
+      "Name": "Richard Wilbur"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-Chair",
+      "Party": "Republican",
+      "Name": "Thomas Henry"
+    },
+    {
+      "County": "Wyoming",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Democrat",
+      "Name": "Ernest King"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Clerk of Courts",
+      "Party": "Republican",
+      "Name": "Dan Byrnes"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Controller",
+      "Party": "Republican",
+      "Name": "Greg Bower"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Coroner",
+      "Party": "Republican",
+      "Name": "Pamela Gay"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "District Attorney",
+      "Party": "Republican",
+      "Name": "David Sunday"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Prothonotary",
+      "Party": "Republican",
+      "Name": "Allison Blew"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Recorder of Deeds",
+      "Party": "Republican",
+      "Name": "Laura Shue"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Register of Wills and Clerk of the Orphans' Court",
+      "Party": "Republican",
+      "Name": "Bryan Tate"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Sheriff",
+      "Party": "Republican",
+      "Name": "Richard P. Keuerleber III"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "Treasurer",
+      "Party": "Republican",
+      "Name": "Barbara Bair"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, President",
+      "Party": "Republican",
+      "Name": "Julie Wheeler"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner",
+      "Party": "Republican",
+      "Name": "Ron Smith"
+    },
+    {
+      "County": "York",
+      "Scope": "Countywide",
+      "County District": "N/A",
+      "Position": "County Commissioner, Vice-President",
+      "Party": "Democrat",
+      "Name": "Doug Hoke"
+    }
+  ]
+}
