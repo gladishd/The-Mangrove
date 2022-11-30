@@ -472,7 +472,7 @@ export default class Home extends React.Component {
                 }
               }
               ).map(element => {
-                return <a href={'/representatives?repId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
                     <b>Name:</b>
@@ -492,7 +492,7 @@ export default class Home extends React.Component {
                 }
               }
               ).map(element => {
-                return <a href={'/senators?senId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×400' alt='new' width={125} height={125} />
                     <b>Name:</b>
@@ -505,7 +505,7 @@ export default class Home extends React.Component {
                 </a>
               })
             }
-            <a href={'/currentLegislators0?legId=' + null}>
+            <a href={'/users?name=' + null}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×300' alt='new' width={125} height={125} />
                 {
@@ -532,7 +532,7 @@ export default class Home extends React.Component {
                 }
               </div>
             </a>
-            <a href={'/currentLegislators1?legId=' + null}>
+            <a href={'/users?name=' + null}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
                 {
@@ -559,7 +559,7 @@ export default class Home extends React.Component {
                 }
               </div>
             </a>
-            <a href={'/currentLegislators2?legId=' + null}>
+            <a href={'/users?name=' + null}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
                 {
@@ -588,7 +588,7 @@ export default class Home extends React.Component {
             </a>
             {
               this.state.fileNameAttorneyGeneral && this.state.fileNameAttorneyGeneral.map(element => {
-                <a href={'/attorneyGenerals?attId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/350×300' alt='new' width={125} height={125} />
                     {
@@ -615,7 +615,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameGovernorsData && this.state.fileNameGovernorsData.map(element => {
-                <a href={'/governors?govId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×350' alt='new' width={125} height={125} />
                     {
@@ -643,7 +643,7 @@ export default class Home extends React.Component {
 
             {
               this.state.fileNameLtnGovernor && this.state.fileNameLtnGovernor.map(element => {
-                return <a href={'/ltngovernors?ltnId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/320×300' alt='new' width={125} height={125} />
                     {
@@ -671,7 +671,7 @@ export default class Home extends React.Component {
             }
             {
               this.state.fileNameSecretaries && this.state.fileNameSecretaries.map(element => {
-                <a href={'/secretariesofstate?secId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -698,7 +698,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameAuditors && this.state.fileNameAuditors.map(element => {
-                return <a href={'/auditors?audId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -726,7 +726,7 @@ export default class Home extends React.Component {
             }
             {
               this.state.fileNameTreasurers && this.state.fileNameTreasurers.map(element => {
-                return <a href={'/treasurers?treId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -755,7 +755,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
-                return <a href={'/counties?countId=' + null}>
+                return <a href={'/users?name=' + null}>
                   <div className="card">
                     <img src={`https://source.unsplash.com/random/400x400`} alt='new' width={125} height={125} />
                     {
