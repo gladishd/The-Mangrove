@@ -586,54 +586,60 @@ export default class Home extends React.Component {
                 }
               </div>
             </a>
-            <a href={'/attorneyGenerals?attId=' + null}>
-              <div className="card">
-                <img src='https://source.unsplash.com/random/350×300' alt='new' width={125} height={125} />
-                {
-                  this.state.cookieValue &&
-                  Object.keys(this.state.cookieValue).length &&
-                  this.state.flattenedAddress &&
-                  <div>
-                    <div>
-                      <b>Name: </b>
-                      {this.state.fileNameAttorneyGeneral[0].Name}
-                    </div>
-                    <div>
-                      <b>Party: </b>
-                      {this.state.fileNameAttorneyGeneral[0].Party}
-                    </div>
-                    <div>
-                      <b>Position: </b>
-                      {this.state.fileNameAttorneyGeneral[0].Position}
-                    </div>
+            {
+              this.state.fileNameAttorneyGeneral && this.state.fileNameAttorneyGeneral.map(element => {
+                <a href={'/attorneyGenerals?attId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/350×300' alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {element.Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
                   </div>
-                }
-              </div>
-            </a>
-            <a href={'/governors?govId=' + null}>
-              <div className="card">
-                <img src='https://source.unsplash.com/random/300×350' alt='new' width={125} height={125} />
-                {
-                  this.state.cookieValue &&
-                  Object.keys(this.state.cookieValue).length &&
-                  this.state.flattenedAddress &&
-                  <div>
-                    <div>
-                      <b>Name: </b>
-                      {this.state.fileNameGovernorsData[0].Name}
-                    </div>
-                    <div>
-                      <b>Party: </b>
-                      {this.state.fileNameGovernorsData[0].Party}
-                    </div>
-                    <div>
-                      <b>Position: </b>
-                      {this.state.fileNameGovernorsData[0].Position}
-                    </div>
+                </a>
+              })}
+            {
+              this.state.fileNameGovernorsData && this.state.fileNameGovernorsData.map(element => {
+                <a href={'/governors?govId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/300×350' alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {element.Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
                   </div>
-                }
-              </div>
-            </a>
+                </a>
+              })}
 
             {
               this.state.fileNameLtnGovernor && this.state.fileNameLtnGovernor.map(element => {
@@ -647,15 +653,15 @@ export default class Home extends React.Component {
                       <div>
                         <div>
                           <b>Name: </b>
-                          {this.state.fileNameLtnGovernor[0].Name}
+                          {element.Name}
                         </div>
                         <div>
                           <b>Party: </b>
-                          {this.state.fileNameLtnGovernor[0].Party}
+                          {element.Party}
                         </div>
                         <div>
                           <b>Position: </b>
-                          {this.state.fileNameLtnGovernor[0].Position}
+                          {element.Position}
                         </div>
                       </div>
                     }
@@ -663,33 +669,33 @@ export default class Home extends React.Component {
                 </a>
               })
             }
-
-
-
-            <a href={'/secretariesofstate?secId=' + null}>
-              <div className="card">
-                <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
-                {
-                  this.state.cookieValue &&
-                  Object.keys(this.state.cookieValue).length &&
-                  this.state.flattenedAddress &&
-                  <div>
-                    <div>
-                      <b>Name: </b>
-                      {this.state.fileNameSecretaries[0].Name}
-                    </div>
-                    <div>
-                      <b>Party: </b>
-                      {this.state.fileNameSecretaries[0].Party}
-                    </div>
-                    <div>
-                      <b>Position: </b>
-                      {this.state.fileNameSecretaries[0].Position}
-                    </div>
+            {
+              this.state.fileNameSecretaries && this.state.fileNameSecretaries.map(element => {
+                <a href={'/secretariesofstate?secId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {element.Name}
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
                   </div>
-                }
-              </div>
-            </a>
+                </a>
+              })}
             {
               this.state.fileNameAuditors && this.state.fileNameAuditors.map(element => {
                 return <a href={'/auditors?audId=' + null}>
@@ -718,34 +724,35 @@ export default class Home extends React.Component {
                 </a>
               })
             }
-
-
-            <a href={'/treasurers?treId=' + null}>
-              <div className="card">
-                <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
-                {
-                  this.state.cookieValue &&
-                  Object.keys(this.state.cookieValue).length &&
-                  this.state.flattenedAddress &&
-                  <div>
-                    <div>
-                      <b>Name: </b>
-                      {this.state.fileNameTreasurers[0].Name}
-                    </div>
-                    <div>
-                      <b>Party: </b>
-                      {this.state.fileNameTreasurers[0].Party}
-                    </div>
-                    <div>
-                      <b>Position: </b>
-                      {this.state.fileNameTreasurers[0].Position}
-                    </div>
+            {
+              this.state.fileNameTreasurers && this.state.fileNameTreasurers.map(element => {
+                return <a href={'/treasurers?treId=' + null}>
+                  <div className="card">
+                    <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
+                    {
+                      this.state.cookieValue &&
+                      Object.keys(this.state.cookieValue).length &&
+                      this.state.flattenedAddress &&
+                      <div>
+                        <div>
+                          <b>Name: </b>
+                          {
+                            element.Name
+                          }
+                        </div>
+                        <div>
+                          <b>Party: </b>
+                          {element.Party}
+                        </div>
+                        <div>
+                          <b>Position: </b>
+                          {element.Position}
+                        </div>
+                      </div>
+                    }
                   </div>
-                }
-              </div>
-            </a>
-
-
+                </a>
+              })}
             {
               this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
                 return <a href={'/counties?countId=' + null}>
