@@ -110,11 +110,13 @@ export default class Home extends React.Component {
     }
   }
   fetchCountyOfState(fullStateName, county) {
+    console.log("The full state name is for county of Illinois", fullStateName, county)
     let stringSearch = fullStateName
     try {
       let fileName = `${stringSearch}CountyEO`
       var data = require(`../public/data/States/${stringSearch}/County/${fileName}`);
       let filteredData = data.Sheet1.filter(element => {
+        console.warn("During filtering, ", element.County, county)
         return element.County == county
       })
       console.log("On fetchCountyOfState ", filteredData)
@@ -764,6 +766,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
+                console.warn("The File name County element is ", element)
                 return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src={`https://source.unsplash.com/random/400x400`} alt='new' width={125} height={125} />

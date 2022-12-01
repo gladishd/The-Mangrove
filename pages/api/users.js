@@ -17,18 +17,12 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 var db = firebaseApp.firestore()
 export default async function handler(req, res) {
-
-
-
   // session = req.session;
   // if (session && session.userid) {
   //   res.status(200).json({ success: 'success' })
   // } else {
   //   res.status(200).json({ failure: 'failure' })
   // }
-
-
-
   let response = []
   if (req.method === 'GET') {
     await db.collection('new-users')
