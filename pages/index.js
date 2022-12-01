@@ -61,7 +61,16 @@ export default class Home extends React.Component {
     this.setUsername = this.setUsername.bind(this)
     this.setPassword = this.setPassword.bind(this)
     this.login = this.login.bind(this)
+    this.setSessionStorage = this.setSessionStorage.bind(this)
   }
+
+  setSessionStorage(e, localData) {
+    // e.preventDefault()
+    console.warn("the set session storage function takes the event e, and ", e.target.value, localData)
+    sessionStorage.setItem("users", JSON.stringify(localData))
+    console.log(sessionStorage.getItem("users"))
+  }
+
   componentDidUpdate() {
     if (!this.state.latAndLongFromAddress && this.state.flattenedAddress) {
       let latAndLongFromAddress = this.state.flattenedAddress["results.0.location.lat"] + ", " + this.state.flattenedAddress["results.0.location.lng"]
@@ -472,7 +481,7 @@ export default class Home extends React.Component {
                 }
               }
               ).map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://images.unsplash.com/photo-1498644035638-2c3357894b10' alt='new' width={125} height={125} />
                     <b>Name:</b>
@@ -492,7 +501,7 @@ export default class Home extends React.Component {
                 }
               }
               ).map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×400' alt='new' width={125} height={125} />
                     <b>Name:</b>
@@ -505,7 +514,7 @@ export default class Home extends React.Component {
                 </a>
               })
             }
-            <a href={'/users?name=' + null}>
+            <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.0.bio"])}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×300' alt='new' width={125} height={125} />
                 {
@@ -532,7 +541,7 @@ export default class Home extends React.Component {
                 }
               </div>
             </a>
-            <a href={'/users?name=' + null}>
+            <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.1"])}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
                 {
@@ -559,7 +568,7 @@ export default class Home extends React.Component {
                 }
               </div>
             </a>
-            <a href={'/users?name=' + null}>
+            <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, this.state.flattenedAddress["results.0.fields.congressional_districts.0.current_legislators.2"])}>
               <div className="card">
                 <img src='https://source.unsplash.com/random/200×200' alt='new' width={125} height={125} />
                 {
@@ -588,7 +597,7 @@ export default class Home extends React.Component {
             </a>
             {
               this.state.fileNameAttorneyGeneral && this.state.fileNameAttorneyGeneral.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/350×300' alt='new' width={125} height={125} />
                     {
@@ -615,7 +624,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameGovernorsData && this.state.fileNameGovernorsData.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×350' alt='new' width={125} height={125} />
                     {
@@ -643,7 +652,7 @@ export default class Home extends React.Component {
 
             {
               this.state.fileNameLtnGovernor && this.state.fileNameLtnGovernor.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/320×300' alt='new' width={125} height={125} />
                     {
@@ -671,7 +680,7 @@ export default class Home extends React.Component {
             }
             {
               this.state.fileNameSecretaries && this.state.fileNameSecretaries.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -698,7 +707,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameAuditors && this.state.fileNameAuditors.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -726,7 +735,7 @@ export default class Home extends React.Component {
             }
             {
               this.state.fileNameTreasurers && this.state.fileNameTreasurers.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src='https://source.unsplash.com/random/300×320' alt='new' width={125} height={125} />
                     {
@@ -755,7 +764,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
-                return <a href={'/users?name=' + null}>
+                return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src={`https://source.unsplash.com/random/400x400`} alt='new' width={125} height={125} />
                     {
