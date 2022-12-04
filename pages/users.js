@@ -27,17 +27,18 @@ import Posts from '../helpers/components/Posts/Posts';
 import { connect } from 'react-redux';
 // import { fetchSingleInt, duplicateCurrentInt, removeIntThunk, updateIntThunk } from './redux/reducer1';
 // import { fetchTextThunkCreator, updateTextThunkCreator } from './redux/reducer2'; - redux-demo folder
-const mapStateToProps = function (store) {
-  return {
-    reduxStore: store
-  };
-}
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getSingleInt: () => { dispatch(fetchSingleInt()) },
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
+// const mapStateToProps = function (store) {
+//   return {
+//     reduxStore: store
+//   };
+// }
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     getSingleInt: () => { dispatch(fetchSingleInt()) },
+//   }
+// }
+// export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
+export default class Welcome extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -171,4 +172,4 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
       </div>
     </div>
   }
-})
+}
