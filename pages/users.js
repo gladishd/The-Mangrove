@@ -4,7 +4,7 @@ import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-import useStyles from './styles';
+import useStyles from '../helpers/styles';
 import { createPost, updatePost } from '../helpers/actions/posts';
 
 /**
