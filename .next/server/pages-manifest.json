@@ -5,5 +5,6 @@
   "/": "pages/index.js",
   "/api/ArcGISData": "pages/api/ArcGISData.js",
   "/api/users": "pages/api/users.js",
-  "/users": "pages/users.js"
+  "/api/sessions": "pages/api/sessions.js",
+  "/mangrove-the-backstory": "pages/mangrove-the-backstory.js"
 }
