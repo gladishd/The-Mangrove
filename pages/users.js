@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 import useStyles from './styles';
-import { createPost, updatePost } from './actions/posts';
+import { createPost, updatePost } from '../helpers/actions/posts';
 
 /**
  * Here we will make the imports from social/client/src/App.js, that is what imports the Form.js component...
