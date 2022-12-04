@@ -13,8 +13,8 @@ import { createPost, updatePost } from './actions/posts';
 
 import { Container, AppBar, Grow, Grid } from '@material-ui/core';
 
-import { getPosts } from './actions/posts';
-import Posts from './components/Posts/Posts';
+import { getPosts } from '../helpers/actions/posts';
+import Posts from '../helpers/components/Posts/Posts';
 // import Form from './components/Form/Form';
 // import logo from './images/logo.png';
 
