@@ -3,7 +3,6 @@ import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 
-
 import useStyles from '../helpers/styles';
 import { createPost, updatePost } from '../helpers/actions/posts';
 
@@ -25,20 +24,20 @@ import Posts from '../helpers/components/Posts/Posts';
  *
  * */
 import { connect } from 'react-redux';
-// import { fetchSingleInt, duplicateCurrentInt, removeIntThunk, updateIntThunk } from './redux/reducer1';
-// import { fetchTextThunkCreator, updateTextThunkCreator } from './redux/reducer2'; - redux-demo folder
-// const mapStateToProps = function (store) {
-//   return {
-//     reduxStore: store
-//   };
-// }
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     getSingleInt: () => { dispatch(fetchSingleInt()) },
-//   }
-// }
-// export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
-export default class Welcome extends React.Component {
+import { fetchSingleInt, duplicateCurrentInt, removeIntThunk, updateIntThunk } from './redux/reducer1';
+import { fetchTextThunkCreator, updateTextThunkCreator } from './redux/reducer2'; //- redux - demo folder
+const mapStateToProps = function (store) {
+  return {
+    reduxStore: store
+  };
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getSingleInt: () => { dispatch(fetchSingleInt()) },
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
+  // export default class Welcome extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -172,4 +171,4 @@ export default class Welcome extends React.Component {
       </div>
     </div>
   }
-}
+})
