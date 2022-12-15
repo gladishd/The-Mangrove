@@ -24,8 +24,7 @@ import Posts from '../helpers/components/Posts/Posts';
  *
  * */
 import { connect } from 'react-redux';
-import { fetchSingleInt, duplicateCurrentInt, removeIntThunk, updateIntThunk } from './redux/reducer1';
-import { fetchTextThunkCreator, updateTextThunkCreator } from './redux/reducer2'; //- redux - demo folder
+
 const mapStateToProps = function (store) {
   return {
     reduxStore: store
