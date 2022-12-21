@@ -33,6 +33,8 @@ const mapStateToProps = function (store) {
 const mapDispatchToProps = (dispatch) => {
   return {
     getSingleInt: () => { dispatch(fetchSingleInt()) },
+    updatePostThunk: (currentId, postData) => { dispatch(updatePost(currentId, postData)) },
+    createPostThunk: (postData) => { dispatch(createPost(postData)) },
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
@@ -49,6 +51,12 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.setPostData = this.setPostData.bind(this)
+    this.clear = this.clear.bind(this)
+  }
+
+  clear() {
+    setCurrentId(null);
+    setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   }
 
   componentDidMount() {
@@ -82,11 +90,13 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
     e.preventDefault();
     // Focus on currentId
     if (this.state.currentId) {
-      dispatch(updatePost(this.state.currentId, this.state.postData));
+      // dispatch(updatePost(this.state.currentId, this.state.postData));
+      this.props.updatePostThunk(this.state.currentId, this.state.postData)
     } else {
-      dispatch(createPost(this.state.postData));
+      // dispatch(createPost(this.state.postData));
+      this.props.createPostThunk(this.state.postData)
     }
-    clear();
+    // clear();
   }
 
   render() {
