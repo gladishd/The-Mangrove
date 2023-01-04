@@ -13,10 +13,13 @@ export const getPosts = () => async (dispatch) => {
 }
 
 export const createPost = (post) => async (dispatch) => {
+    console.log("What is the post?100509093i3 ", post)
     try {
         const { data } = await api.createPost(post);
 
-        dispatch({ type: 'CREATE', payload: data });
+        // dispatch({ type: 'CREATE', payload: data });
+
+        dispatch({ type: 'CREATE', payload: data })
     } catch (error) {
         console.log(error.message);
     }

@@ -76,24 +76,34 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
     // const classes = useStyles()
   }
 
-  setPostData(e, postObject) {
+  setPostData(Whatisit) {
     // e.preventDefault();
     // this.setState({
     //   message: '',
     //   selectedFile: ''
     // })
-    this.setState(postObject)
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log('OfopJ"fpFP')
+    console.log("What ist he post object?", Whatisit)
+    this.setState({ postData: Whatisit })
     // The postObject should consist of a "message" and a "selectedFile".
   }
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log("THe Values on SuBmiT Are ")
     // Focus on currentId
     if (this.state.currentId) {
       // dispatch(updatePost(this.state.currentId, this.state.postData));
       this.props.updatePostThunk(this.state.currentId, this.state.postData)
     } else {
       // dispatch(createPost(this.state.postData));
+      console.log("'What' is the createpost thunk being called with ? ", this.state.postData)
       this.props.createPostThunk(this.state.postData)
     }
     // clear();
@@ -161,6 +171,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
               <TextField name="message" variant="outlined" label="Message" fullWidth
                 // value={postData.message}
                 onChange={
+                  // e => console.log("The value of e is this ", e);
                   (e) => this.setPostData({ ...this.state.postData, message: e.target.value })
                 } />
               <div
