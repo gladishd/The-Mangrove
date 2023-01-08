@@ -13,7 +13,10 @@ import { createPost, updatePost } from '../helpers/actions/posts';
 import { Container, AppBar, Grow, Grid } from '@material-ui/core';
 
 import { getPosts } from '../helpers/actions/posts';
-import Posts from '../helpers/components/Posts/Posts';
+// import Posts from '../helpers/components/Posts/Posts';
+// import Post from '../social/client/src/components/Posts/Post';
+import Post from './Posts/Post/Post';
+
 // import Form from './components/Form/Form';
 // import logo from './images/logo.png';
 
@@ -35,6 +38,7 @@ const mapDispatchToProps = (dispatch) => {
     getSingleInt: () => { dispatch(fetchSingleInt()) },
     updatePostThunk: (currentId, postData) => { dispatch(updatePost(currentId, postData)) },
     createPostThunk: (postData) => { dispatch(createPost(postData)) },
+    getPostsThunk: () => { dispatch(getPosts()) }
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extends React.Component {
@@ -64,8 +68,10 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
     //dispatch(getPosts());}, [currentId, dispatch]);
 
 
-    console.log("did we get anything from the currentId, setCurrentId? ", "it may be possible to get things like ", this.props, this.props.currentId, this.props.setCurrentId)
 
+    this.props.getPostsThunk();
+
+    console.log("did we get anything from the currentId, setCurrentId? ", "it may be possible to get things like ", this.props, this.props.currentId, this.props.setCurrentId, this.state)
 
     let users = JSON.parse(sessionStorage.getItem("users"))
     let map = new Map(Object.entries(users))
@@ -74,6 +80,10 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
       map,
     })
     // const classes = useStyles()
+  }
+
+  componentDidUpdate() {
+    console.log("What is the props value? ", this.props)
   }
 
   setPostData(Whatisit) {
@@ -124,6 +134,19 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
           height: '100vh',
           width: '50vw'
         }}>
+          {
+            this.props.reduxStore.posts.length ?
+              <Grid container alignItems="stretch" spacing={3}>
+                {this.props.reduxStore.posts.map((post) => (
+                  <Grid key={post._id} item xs={12} sm={6}>
+                    hellloooooo
+                    <Post post={post}
+                    // setCurrentId={setCurrentId}
+                    />
+                  </Grid>
+                ))}
+              </Grid> : <div>There are no posts!</div>
+          }
           This half will be the same thing we had on the previous, page, this one will have Name, Party, and Position; the design. There will be also be more information such as Phone, Address, Bio, ....
           <div>
             <b>Assumed Office: </b>

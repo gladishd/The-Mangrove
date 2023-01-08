@@ -14,7 +14,7 @@ const url = 'http://localhost:5000/posts';
 
 export const fetchPosts = () => {
   console.log("We are fetching with the 'input'", url)
-  axios.get(url)
+  return axios.get(url)
 };
 export const createPost = (newPost) => {
   console.log("The url is what is it? provided in the global context. The real input we have is ", newPost)

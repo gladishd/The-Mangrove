@@ -5,7 +5,7 @@ import * as api from './postsAPI.js';
 export const getPosts = () => async (dispatch) => {
     try {
         const { data } = await api.fetchPosts();
-
+        console.log("What'st he data any anohwohowho ho w", data)
         dispatch({ type: 'FETCH_ALL', payload: data });
     } catch (error) {
         console.log(error.message);
