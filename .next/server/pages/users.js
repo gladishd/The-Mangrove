@@ -1,185 +1,468 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/users";
-exports.ids = ["pages/users"];
+exports.id = 2892;
+exports.ids = [2892,5036,4931];
 exports.modules = {
 
-/***/ "./helpers/actions/posts.js":
-/*!**********************************!*\
-  !*** ./helpers/actions/posts.js ***!
-  \**********************************/
+/***/ 991:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createPost\": () => (/* binding */ createPost),\n/* harmony export */   \"deletePost\": () => (/* binding */ deletePost),\n/* harmony export */   \"getPosts\": () => (/* binding */ getPosts),\n/* harmony export */   \"updatePost\": () => (/* binding */ updatePost)\n/* harmony export */ });\n/* harmony import */ var _postsAPI_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./postsAPI.js */ \"./helpers/actions/postsAPI.js\");\n// import * as api from '../api/index.js';\n\n// Action Creators\nconst getPosts = ()=>async (dispatch)=>{\n        try {\n            const { data  } = await _postsAPI_js__WEBPACK_IMPORTED_MODULE_0__.fetchPosts();\n            console.log(\"What'st he data any anohwohowho ho w\", data);\n            dispatch({\n                type: \"FETCH_ALL\",\n                payload: data\n            });\n        } catch (error) {\n            console.log(error.message);\n        }\n    };\nconst createPost = (post)=>async (dispatch)=>{\n        console.log(\"What is the post?100509093i3 \", post);\n        try {\n            const { data  } = await _postsAPI_js__WEBPACK_IMPORTED_MODULE_0__.createPost(post);\n            // dispatch({ type: 'CREATE', payload: data });\n            dispatch({\n                type: \"CREATE\",\n                payload: data\n            });\n        } catch (error) {\n            console.log(error.message);\n        }\n    };\nconst updatePost = (id, post)=>async (dispatch)=>{\n        try {\n            const { data  } = await _postsAPI_js__WEBPACK_IMPORTED_MODULE_0__.updatePost(id, post);\n            dispatch({\n                type: \"UPDATE\",\n                payload: data\n            });\n        } catch (error) {\n            console.log(error);\n        }\n    };\nconst deletePost = (id)=>async (dispatch)=>{\n        try {\n            await _postsAPI_js__WEBPACK_IMPORTED_MODULE_0__.deletePost(id);\n            dispatch({\n                type: \"DELETE\",\n                payload: id\n            });\n        } catch (error) {\n            console.log(error);\n        }\n    };\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9oZWxwZXJzL2FjdGlvbnMvcG9zdHMuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQSwwQ0FBMEM7QUFDTDtBQUVyQyxrQkFBa0I7QUFDWCxNQUFNQyxXQUFXLElBQU0sT0FBT0MsV0FBYTtRQUM5QyxJQUFJO1lBQ0EsTUFBTSxFQUFFQyxLQUFJLEVBQUUsR0FBRyxNQUFNSCxvREFBYztZQUNyQ0ssUUFBUUMsR0FBRyxDQUFDLHdDQUF3Q0g7WUFDcERELFNBQVM7Z0JBQUVLLE1BQU07Z0JBQWFDLFNBQVNMO1lBQUs7UUFDaEQsRUFBRSxPQUFPTSxPQUFPO1lBQ1pKLFFBQVFDLEdBQUcsQ0FBQ0csTUFBTUMsT0FBTztRQUM3QjtJQUNKLEVBQUM7QUFFTSxNQUFNQyxhQUFhLENBQUNDLE9BQVMsT0FBT1YsV0FBYTtRQUNwREcsUUFBUUMsR0FBRyxDQUFDLGlDQUFpQ007UUFDN0MsSUFBSTtZQUNBLE1BQU0sRUFBRVQsS0FBSSxFQUFFLEdBQUcsTUFBTUgsb0RBQWMsQ0FBQ1k7WUFFdEMsK0NBQStDO1lBRS9DVixTQUFTO2dCQUFFSyxNQUFNO2dCQUFVQyxTQUFTTDtZQUFLO1FBQzdDLEVBQUUsT0FBT00sT0FBTztZQUNaSixRQUFRQyxHQUFHLENBQUNHLE1BQU1DLE9BQU87UUFDN0I7SUFDSixFQUFDO0FBRU0sTUFBTUcsYUFBYSxDQUFDQyxJQUFJRixPQUFTLE9BQU9WLFdBQWE7UUFDeEQsSUFBSTtZQUNBLE1BQU0sRUFBRUMsS0FBSSxFQUFFLEdBQUcsTUFBTUgsb0RBQWMsQ0FBQ2MsSUFBSUY7WUFFMUNWLFNBQVM7Z0JBQUVLLE1BQU07Z0JBQVVDLFNBQVNMO1lBQUs7UUFDN0MsRUFBRSxPQUFPTSxPQUFPO1lBQ1pKLFFBQVFDLEdBQUcsQ0FBQ0c7UUFDaEI7SUFDSixFQUFDO0FBRU0sTUFBTU0sYUFBYSxDQUFDRCxLQUFPLE9BQU9aLFdBQWE7UUFDbEQsSUFBSTtZQUNBLE1BQU1GLG9EQUFjLENBQUNjO1lBRXJCWixTQUFTO2dCQUFFSyxNQUFNO2dCQUFVQyxTQUFTTTtZQUFHO1FBQzNDLEVBQUUsT0FBT0wsT0FBTztZQUNaSixRQUFRQyxHQUFHLENBQUNHO1FBQ2hCO0lBQ0osRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2V4YW1wbGUtYXBwLy4vaGVscGVycy9hY3Rpb25zL3Bvc3RzLmpzP2FhZDMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaW1wb3J0ICogYXMgYXBpIGZyb20gJy4uL2FwaS9pbmRleC5qcyc7XHJcbmltcG9ydCAqIGFzIGFwaSBmcm9tICcuL3Bvc3RzQVBJLmpzJztcclxuXHJcbi8vIEFjdGlvbiBDcmVhdG9yc1xyXG5leHBvcnQgY29uc3QgZ2V0UG9zdHMgPSAoKSA9PiBhc3luYyAoZGlzcGF0Y2gpID0+IHtcclxuICAgIHRyeSB7XHJcbiAgICAgICAgY29uc3QgeyBkYXRhIH0gPSBhd2FpdCBhcGkuZmV0Y2hQb3N0cygpO1xyXG4gICAgICAgIGNvbnNvbGUubG9nKFwiV2hhdCdzdCBoZSBkYXRhIGFueSBhbm9od29ob3dobyBobyB3XCIsIGRhdGEpXHJcbiAgICAgICAgZGlzcGF0Y2goeyB0eXBlOiAnRkVUQ0hfQUxMJywgcGF5bG9hZDogZGF0YSB9KTtcclxuICAgIH0gY2F0Y2ggKGVycm9yKSB7XHJcbiAgICAgICAgY29uc29sZS5sb2coZXJyb3IubWVzc2FnZSk7XHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBjcmVhdGVQb3N0ID0gKHBvc3QpID0+IGFzeW5jIChkaXNwYXRjaCkgPT4ge1xyXG4gICAgY29uc29sZS5sb2coXCJXaGF0IGlzIHRoZSBwb3N0PzEwMDUwOTA5M2kzIFwiLCBwb3N0KVxyXG4gICAgdHJ5IHtcclxuICAgICAgICBjb25zdCB7IGRhdGEgfSA9IGF3YWl0IGFwaS5jcmVhdGVQb3N0KHBvc3QpO1xyXG5cclxuICAgICAgICAvLyBkaXNwYXRjaCh7IHR5cGU6ICdDUkVBVEUnLCBwYXlsb2FkOiBkYXRhIH0pO1xyXG5cclxuICAgICAgICBkaXNwYXRjaCh7IHR5cGU6ICdDUkVBVEUnLCBwYXlsb2FkOiBkYXRhIH0pXHJcbiAgICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgICAgIGNvbnNvbGUubG9nKGVycm9yLm1lc3NhZ2UpO1xyXG4gICAgfVxyXG59XHJcblxyXG5leHBvcnQgY29uc3QgdXBkYXRlUG9zdCA9IChpZCwgcG9zdCkgPT4gYXN5bmMgKGRpc3BhdGNoKSA9PiB7XHJcbiAgICB0cnkge1xyXG4gICAgICAgIGNvbnN0IHsgZGF0YSB9ID0gYXdhaXQgYXBpLnVwZGF0ZVBvc3QoaWQsIHBvc3QpO1xyXG5cclxuICAgICAgICBkaXNwYXRjaCh7IHR5cGU6ICdVUERBVEUnLCBwYXlsb2FkOiBkYXRhIH0pO1xyXG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcclxuICAgICAgICBjb25zb2xlLmxvZyhlcnJvcik7XHJcbiAgICB9XHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBkZWxldGVQb3N0ID0gKGlkKSA9PiBhc3luYyAoZGlzcGF0Y2gpID0+IHtcclxuICAgIHRyeSB7XHJcbiAgICAgICAgYXdhaXQgYXBpLmRlbGV0ZVBvc3QoaWQpO1xyXG5cclxuICAgICAgICBkaXNwYXRjaCh7IHR5cGU6ICdERUxFVEUnLCBwYXlsb2FkOiBpZCB9KTtcclxuICAgIH0gY2F0Y2ggKGVycm9yKSB7XHJcbiAgICAgICAgY29uc29sZS5sb2coZXJyb3IpO1xyXG4gICAgfVxyXG59XHJcbiJdLCJuYW1lcyI6WyJhcGkiLCJnZXRQb3N0cyIsImRpc3BhdGNoIiwiZGF0YSIsImZldGNoUG9zdHMiLCJjb25zb2xlIiwibG9nIiwidHlwZSIsInBheWxvYWQiLCJlcnJvciIsIm1lc3NhZ2UiLCJjcmVhdGVQb3N0IiwicG9zdCIsInVwZGF0ZVBvc3QiLCJpZCIsImRlbGV0ZVBvc3QiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./helpers/actions/posts.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ users)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+// EXTERNAL MODULE: external "@material-ui/core"
+var core_ = __webpack_require__(8130);
+;// CONCATENATED MODULE: external "react-file-base64"
+const external_react_file_base64_namespaceObject = require("react-file-base64");
+var external_react_file_base64_default = /*#__PURE__*/__webpack_require__.n(external_react_file_base64_namespaceObject);
+// EXTERNAL MODULE: external "react-redux"
+var external_react_redux_ = __webpack_require__(6022);
+// EXTERNAL MODULE: external "@material-ui/core/styles"
+var styles_ = __webpack_require__(8308);
+;// CONCATENATED MODULE: ./helpers/styles.js
+
+/* harmony default export */ const styles = ((0,styles_.makeStyles)((theme)=>({
+        mainContainer: {
+            display: "flex",
+            alignItems: "center"
+        },
+        smMargin: {
+            margin: theme.spacing(1)
+        },
+        actionDiv: {
+            textAlign: "center"
+        }
+    })));
+
+// EXTERNAL MODULE: external "axios"
+var external_axios_ = __webpack_require__(2167);
+var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
+;// CONCATENATED MODULE: ./helpers/actions/postsAPI.js
+// import axios from 'axios';
+// const url = 'http://localhost:5000/posts';
+// export const fetchPosts = () => axios.get(url);
+// export const createPost = (newPost) => axios.post(url, newPost);
+// export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
+// export const deletePost = (id) => axios.delete(`${url}/${id}`);
+
+// const url = 'http://localhost:5000/posts';
+const url = "https://project-mern-memories.onrender.com/posts";
+const fetchPosts = ()=>{
+    console.log("We are fetching with the 'input'", url);
+    return external_axios_default().get(url);
+};
+const createPost = (newPost)=>{
+    console.log("The url is what is it? provided in the global context. The real input we have is ", newPost);
+    external_axios_default().post(url, newPost);
+};
+const updatePost = (id, updatedPost)=>{
+    console.log("We can still update the post but we do it with id", id, "and updatedPost ", updatedPost);
+    external_axios_default().patch(`${url}/${id}`, updatedPost);
+};
+const deletePost = (id)=>{
+    console.log("We are about to delete a post at this Id", id);
+    axios.delete(`${url}/${id}`);
+};
+
+;// CONCATENATED MODULE: ./helpers/actions/posts.js
+// import * as api from '../api/index.js';
+
+// Action Creators
+const getPosts = ()=>async (dispatch)=>{
+        try {
+            const { data  } = await fetchPosts();
+            console.log("What'st he data any anohwohowho ho w", data);
+            dispatch({
+                type: "FETCH_ALL",
+                payload: data
+            });
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
+const posts_createPost = (post)=>async (dispatch)=>{
+        console.log("What is the post?100509093i3 ", post);
+        try {
+            const { data  } = await createPost(post);
+            // dispatch({ type: 'CREATE', payload: data });
+            dispatch({
+                type: "CREATE",
+                payload: data
+            });
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
+const posts_updatePost = (id, post)=>async (dispatch)=>{
+        try {
+            const { data  } = await updatePost(id, post);
+            dispatch({
+                type: "UPDATE",
+                payload: data
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    };
+const posts_deletePost = (id)=>async (dispatch)=>{
+        try {
+            await api.deletePost(id);
+            dispatch({
+                type: "DELETE",
+                payload: id
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+// EXTERNAL MODULE: ./pages/Posts/Post/Post.js
+var Post = __webpack_require__(6189);
+;// CONCATENATED MODULE: ./pages/users.js
+
+
+
+
+
+
+
+/**
+ * Here we will make the imports from social/client/src/App.js, that is what imports the Form.js component...
+ */ 
+
+// import Posts from '../helpers/components/Posts/Posts';
+// import Post from '../social/client/src/components/Posts/Post';
+
+// import Form from './components/Form/Form';
+// import logo from './images/logo.png';
+/**
+ * Now we are done making the imports from ./actions/posts. What remains to be done now?
+ *
+ * */ 
+const mapStateToProps = function(store) {
+    return {
+        reduxStore: store
+    };
+};
+const mapDispatchToProps = (dispatch)=>{
+    return {
+        getSingleInt: ()=>{
+            dispatch(fetchSingleInt());
+        },
+        updatePostThunk: (currentId, postData1)=>{
+            dispatch(posts_updatePost(currentId, postData1));
+        },
+        createPostThunk: (postData1)=>{
+            dispatch(posts_createPost(postData1));
+        },
+        getPostsThunk: ()=>{
+            dispatch(getPosts());
+        }
+    };
+};
+/* harmony default export */ const users = ((0,external_react_redux_.connect)(mapStateToProps, mapDispatchToProps)(class Welcome extends (external_react_default()).Component {
+    // export default class Welcome extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            users: null,
+            map: null,
+            message: "",
+            selectedFile: "",
+            postData: null,
+            currentId: null
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.setPostData = this.setPostData.bind(this);
+        this.clear = this.clear.bind(this);
+    }
+    clear() {
+        setCurrentId(null);
+        setPostData({
+            creator: "",
+            title: "",
+            message: "",
+            tags: "",
+            selectedFile: ""
+        });
+    }
+    componentDidMount() {
+        /**Instead of doing this in the useEffect hook, */ //dispatch(getPosts());}, [currentId, dispatch]);
+        this.props.getPostsThunk();
+        console.log("did we get anything from the currentId, setCurrentId? ", "it may be possible to get things like ", this.props, this.props.currentId, this.props.setCurrentId, this.state);
+        let users = JSON.parse(sessionStorage.getItem("users"));
+        let map = new Map(Object.entries(users));
+        this.setState({
+            users: users,
+            map
+        });
+    // const classes = useStyles()
+    }
+    componentDidUpdate() {
+        console.log("What is the props value? ", this.props);
+    }
+    setPostData(Whatisit) {
+        // e.preventDefault();
+        // this.setState({
+        //   message: '',
+        //   selectedFile: ''
+        // })
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log('OfopJ"fpFP');
+        console.log("What ist he post object?", Whatisit);
+        this.setState({
+            postData: Whatisit
+        });
+    // The postObject should consist of a "message" and a "selectedFile".
+    }
+    handleSubmit(e) {
+        e.preventDefault();
+        console.log("THe Values on SuBmiT Are ");
+        // Focus on currentId
+        if (this.state.currentId) {
+            // dispatch(updatePost(this.state.currentId, this.state.postData));
+            this.props.updatePostThunk(this.state.currentId, this.state.postData);
+        } else {
+            // dispatch(createPost(this.state.postData));
+            console.log("'What' is the createpost thunk being called with ? ", this.state.postData);
+            this.props.createPostThunk(this.state.postData);
+        }
+    // clear();
+    }
+    render() {
+        return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h1", {
+                    children: [
+                        "Hello, ",
+                        this.state.users && this.state.users.Name
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    style: {
+                        display: "flex",
+                        flexDirection: "row",
+                        height: "100vh",
+                        width: "100vw",
+                        backgroundColor: "palegoldenrod"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            style: {
+                                backgroundColor: "royalblue",
+                                height: "100vh",
+                                width: "50vw"
+                            },
+                            children: [
+                                this.props.reduxStore.posts.length ? /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid, {
+                                    container: true,
+                                    alignItems: "stretch",
+                                    spacing: 3,
+                                    children: this.props.reduxStore.posts.map((post)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Grid, {
+                                            item: true,
+                                            xs: 12,
+                                            sm: 6,
+                                            children: [
+                                                "hellloooooo",
+                                                /*#__PURE__*/ jsx_runtime_.jsx(Post["default"], {
+                                                    post: post
+                                                })
+                                            ]
+                                        }, post._id))
+                                }) : /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    children: "There are no posts!"
+                                }),
+                                "This half will be the same thing we had on the previous, page, this one will have Name, Party, and Position; the design. There will be also be more information such as Phone, Address, Bio, ....",
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                            children: "Assumed Office: "
+                                        }),
+                                        this.state.users && this.state.users.AssumedOffice
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                            children: "District: "
+                                        }),
+                                        this.state.users && this.state.users.District
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                            children: "Party: "
+                                        }),
+                                        this.state.users && this.state.users.Party
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                            children: "State: "
+                                        }),
+                                        this.state.users && this.state.users.State
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            style: {
+                                backgroundColor: "aqua",
+                                height: "100vh",
+                                width: "50vw"
+                            },
+                            children: [
+                                "Social Feed",
+                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Paper, {
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("form", {
+                                        autoComplete: "off",
+                                        noValidate: true,
+                                        //  className={`${classes.root} ${classes.form}`}
+                                        onSubmit: (e)=>this.handleSubmit(e),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Typography, {
+                                                variant: "h6",
+                                                children: "a Post "
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.TextField, {
+                                                name: "message",
+                                                variant: "outlined",
+                                                label: "Message",
+                                                fullWidth: true,
+                                                // value={postData.message}
+                                                onChange: // e => console.log("The value of e is this ", e);
+                                                (e)=>this.setPostData({
+                                                        ...this.state.postData,
+                                                        message: e.target.value
+                                                    })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((external_react_file_base64_default()), {
+                                                    type: "file",
+                                                    multiple: false,
+                                                    onDone: ({ base64  })=>setPostData({
+                                                            ...postData,
+                                                            selectedFile: base64
+                                                        })
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                                // className={classes.buttonSubmit}
+                                                variant: "contained",
+                                                color: "primary",
+                                                size: "large",
+                                                type: "submit",
+                                                fullWidth: true,
+                                                children: "Submit"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                                variant: "contained",
+                                                color: "secondary",
+                                                size: "small",
+                                                // onClick={clear}
+                                                fullWidth: true,
+                                                children: "Clear"
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    ]
+                })
+            ]
+        });
+    }
+}));
+
 
 /***/ }),
 
-/***/ "./helpers/actions/postsAPI.js":
-/*!*************************************!*\
-  !*** ./helpers/actions/postsAPI.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createPost\": () => (/* binding */ createPost),\n/* harmony export */   \"deletePost\": () => (/* binding */ deletePost),\n/* harmony export */   \"fetchPosts\": () => (/* binding */ fetchPosts),\n/* harmony export */   \"updatePost\": () => (/* binding */ updatePost)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"axios\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n// import axios from 'axios';\n// const url = 'http://localhost:5000/posts';\n// export const fetchPosts = () => axios.get(url);\n// export const createPost = (newPost) => axios.post(url, newPost);\n// export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);\n// export const deletePost = (id) => axios.delete(`${url}/${id}`);\n\n// const url = 'http://localhost:5000/posts';\nconst url = \"https://project-mern-memories.onrender.com/posts\";\nconst fetchPosts = ()=>{\n    console.log(\"We are fetching with the 'input'\", url);\n    return axios__WEBPACK_IMPORTED_MODULE_0___default().get(url);\n};\nconst createPost = (newPost)=>{\n    console.log(\"The url is what is it? provided in the global context. The real input we have is \", newPost);\n    axios__WEBPACK_IMPORTED_MODULE_0___default().post(url, newPost);\n};\nconst updatePost = (id, updatedPost)=>{\n    console.log(\"We can still update the post but we do it with id\", id, \"and updatedPost \", updatedPost);\n    axios__WEBPACK_IMPORTED_MODULE_0___default().patch(`${url}/${id}`, updatedPost);\n};\nconst deletePost = (id)=>{\n    console.log(\"We are about to delete a post at this Id\", id);\n    axios__WEBPACK_IMPORTED_MODULE_0___default()[\"delete\"](`${url}/${id}`);\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9oZWxwZXJzL2FjdGlvbnMvcG9zdHNBUEkuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUEsNkJBQTZCO0FBRTdCLDZDQUE2QztBQUk3QyxrREFBa0Q7QUFDbEQsbUVBQW1FO0FBQ25FLDJGQUEyRjtBQUMzRixrRUFBa0U7QUFDeEM7QUFFMUIsNkNBQTZDO0FBQzdDLE1BQU1DLE1BQU07QUFFTCxNQUFNQyxhQUFhLElBQU07SUFDOUJDLFFBQVFDLEdBQUcsQ0FBQyxvQ0FBb0NIO0lBQ2hELE9BQU9ELGdEQUFTLENBQUNDO0FBQ25CLEVBQUU7QUFDSyxNQUFNSyxhQUFhLENBQUNDLFVBQVk7SUFDckNKLFFBQVFDLEdBQUcsQ0FBQyxxRkFBcUZHO0lBQ2pHUCxpREFBVSxDQUFDQyxLQUFLTTtBQUNsQixFQUFDO0FBQ00sTUFBTUUsYUFBYSxDQUFDQyxJQUFJQyxjQUFnQjtJQUM3Q1IsUUFBUUMsR0FBRyxDQUFDLHFEQUFxRE0sSUFBSSxvQkFBb0JDO0lBQ3pGWCxrREFBVyxDQUFDLENBQUMsRUFBRUMsSUFBSSxDQUFDLEVBQUVTLEdBQUcsQ0FBQyxFQUFFQztBQUM5QixFQUFDO0FBQ00sTUFBTUUsYUFBYSxDQUFDSCxLQUFPO0lBQ2hDUCxRQUFRQyxHQUFHLENBQUMsNENBQTRDTTtJQUN4RFYsc0RBQVksQ0FBQyxDQUFDLEVBQUVDLElBQUksQ0FBQyxFQUFFUyxHQUFHLENBQUM7QUFDN0IsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2V4YW1wbGUtYXBwLy4vaGVscGVycy9hY3Rpb25zL3Bvc3RzQVBJLmpzPzZhZTkiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcblxuLy8gY29uc3QgdXJsID0gJ2h0dHA6Ly9sb2NhbGhvc3Q6NTAwMC9wb3N0cyc7XG5cblxuXG4vLyBleHBvcnQgY29uc3QgZmV0Y2hQb3N0cyA9ICgpID0+IGF4aW9zLmdldCh1cmwpO1xuLy8gZXhwb3J0IGNvbnN0IGNyZWF0ZVBvc3QgPSAobmV3UG9zdCkgPT4gYXhpb3MucG9zdCh1cmwsIG5ld1Bvc3QpO1xuLy8gZXhwb3J0IGNvbnN0IHVwZGF0ZVBvc3QgPSAoaWQsIHVwZGF0ZWRQb3N0KSA9PiBheGlvcy5wYXRjaChgJHt1cmx9LyR7aWR9YCwgdXBkYXRlZFBvc3QpO1xuLy8gZXhwb3J0IGNvbnN0IGRlbGV0ZVBvc3QgPSAoaWQpID0+IGF4aW9zLmRlbGV0ZShgJHt1cmx9LyR7aWR9YCk7XG5pbXBvcnQgYXhpb3MgZnJvbSAnYXhpb3MnO1xuXG4vLyBjb25zdCB1cmwgPSAnaHR0cDovL2xvY2FsaG9zdDo1MDAwL3Bvc3RzJztcbmNvbnN0IHVybCA9ICdodHRwczovL3Byb2plY3QtbWVybi1tZW1vcmllcy5vbnJlbmRlci5jb20vcG9zdHMnO1xuXG5leHBvcnQgY29uc3QgZmV0Y2hQb3N0cyA9ICgpID0+IHtcbiAgY29uc29sZS5sb2coXCJXZSBhcmUgZmV0Y2hpbmcgd2l0aCB0aGUgJ2lucHV0J1wiLCB1cmwpXG4gIHJldHVybiBheGlvcy5nZXQodXJsKVxufTtcbmV4cG9ydCBjb25zdCBjcmVhdGVQb3N0ID0gKG5ld1Bvc3QpID0+IHtcbiAgY29uc29sZS5sb2coXCJUaGUgdXJsIGlzIHdoYXQgaXMgaXQ/IHByb3ZpZGVkIGluIHRoZSBnbG9iYWwgY29udGV4dC4gVGhlIHJlYWwgaW5wdXQgd2UgaGF2ZSBpcyBcIiwgbmV3UG9zdClcbiAgYXhpb3MucG9zdCh1cmwsIG5ld1Bvc3QpO1xufVxuZXhwb3J0IGNvbnN0IHVwZGF0ZVBvc3QgPSAoaWQsIHVwZGF0ZWRQb3N0KSA9PiB7XG4gIGNvbnNvbGUubG9nKFwiV2UgY2FuIHN0aWxsIHVwZGF0ZSB0aGUgcG9zdCBidXQgd2UgZG8gaXQgd2l0aCBpZFwiLCBpZCwgXCJhbmQgdXBkYXRlZFBvc3QgXCIsIHVwZGF0ZWRQb3N0KVxuICBheGlvcy5wYXRjaChgJHt1cmx9LyR7aWR9YCwgdXBkYXRlZFBvc3QpO1xufVxuZXhwb3J0IGNvbnN0IGRlbGV0ZVBvc3QgPSAoaWQpID0+IHtcbiAgY29uc29sZS5sb2coXCJXZSBhcmUgYWJvdXQgdG8gZGVsZXRlIGEgcG9zdCBhdCB0aGlzIElkXCIsIGlkKVxuICBheGlvcy5kZWxldGUoYCR7dXJsfS8ke2lkfWApO1xufVxuIl0sIm5hbWVzIjpbImF4aW9zIiwidXJsIiwiZmV0Y2hQb3N0cyIsImNvbnNvbGUiLCJsb2ciLCJnZXQiLCJjcmVhdGVQb3N0IiwibmV3UG9zdCIsInBvc3QiLCJ1cGRhdGVQb3N0IiwiaWQiLCJ1cGRhdGVkUG9zdCIsInBhdGNoIiwiZGVsZXRlUG9zdCIsImRlbGV0ZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./helpers/actions/postsAPI.js\n");
-
-/***/ }),
-
-/***/ "./helpers/styles.js":
-/*!***************************!*\
-  !*** ./helpers/styles.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__.makeStyles)((theme)=>({\n        mainContainer: {\n            display: \"flex\",\n            alignItems: \"center\"\n        },\n        smMargin: {\n            margin: theme.spacing(1)\n        },\n        actionDiv: {\n            textAlign: \"center\"\n        }\n    })));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9oZWxwZXJzL3N0eWxlcy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBc0Q7QUFFdEQsaUVBQWVBLG9FQUFVQSxDQUFDLENBQUNDLFFBQVc7UUFDcENDLGVBQWU7WUFDYkMsU0FBUztZQUNUQyxZQUFZO1FBQ2Q7UUFDQUMsVUFBVTtZQUNSQyxRQUFRTCxNQUFNTSxPQUFPLENBQUM7UUFDeEI7UUFDQUMsV0FBVztZQUNUQyxXQUFXO1FBQ2I7SUFDRixLQUFJIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZXhhbXBsZS1hcHAvLi9oZWxwZXJzL3N0eWxlcy5qcz84MmQ0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1ha2VTdHlsZXMgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXMnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgbWFrZVN0eWxlcygodGhlbWUpID0+ICh7XHJcbiAgbWFpbkNvbnRhaW5lcjoge1xyXG4gICAgZGlzcGxheTogJ2ZsZXgnLFxyXG4gICAgYWxpZ25JdGVtczogJ2NlbnRlcicsXHJcbiAgfSxcclxuICBzbU1hcmdpbjoge1xyXG4gICAgbWFyZ2luOiB0aGVtZS5zcGFjaW5nKDEpLFxyXG4gIH0sXHJcbiAgYWN0aW9uRGl2OiB7XHJcbiAgICB0ZXh0QWxpZ246ICdjZW50ZXInLFxyXG4gIH0sXHJcbn0pKTtcclxuIl0sIm5hbWVzIjpbIm1ha2VTdHlsZXMiLCJ0aGVtZSIsIm1haW5Db250YWluZXIiLCJkaXNwbGF5IiwiYWxpZ25JdGVtcyIsInNtTWFyZ2luIiwibWFyZ2luIiwic3BhY2luZyIsImFjdGlvbkRpdiIsInRleHRBbGlnbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./helpers/styles.js\n");
-
-/***/ }),
-
-/***/ "./pages/Posts/Post/Post.js":
-/*!**********************************!*\
-  !*** ./pages/Posts/Post/Post.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ \"@material-ui/core\");\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _material_ui_icons_ThumbUpAlt__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/ThumbUpAlt */ \"@material-ui/icons/ThumbUpAlt\");\n/* harmony import */ var _material_ui_icons_ThumbUpAlt__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ThumbUpAlt__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Delete */ \"@material-ui/icons/Delete\");\n/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/MoreHoriz */ \"@material-ui/icons/MoreHoriz\");\n/* harmony import */ var _material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! moment */ \"moment\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles */ \"./pages/Posts/Post/styles.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);\n\n\n\n\n\n\n\n\n\n// import { deletePost } from '../../../actions/posts';\nconst Post = ({ post , setCurrentId  })=>{\n    const classes = (0,_styles__WEBPACK_IMPORTED_MODULE_7__[\"default\"])();\n    const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_8__.useDispatch)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Card, {\n        className: classes.card,\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.CardMedia, {\n                className: classes.media,\n                image: post.selectedFile,\n                title: post.title\n            }, void 0, false, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 19,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: classes.overlay,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                        variant: \"h6\",\n                        children: post.creator\n                    }, void 0, false, {\n                        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                        lineNumber: 21,\n                        columnNumber: 17\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                        variant: \"body2\",\n                        children: moment__WEBPACK_IMPORTED_MODULE_6___default()(post.createdAt).fromNow()\n                    }, void 0, false, {\n                        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                        lineNumber: 22,\n                        columnNumber: 17\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 20,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: classes.overlay2,\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                    style: {\n                        color: \"white\"\n                    },\n                    size: \"small\",\n                    onClick: ()=>setCurrentId(post._id),\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_5___default()), {\n                        fontSize: \"medium\"\n                    }, void 0, false, {\n                        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                        lineNumber: 26,\n                        columnNumber: 21\n                    }, undefined)\n                }, void 0, false, {\n                    fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                    lineNumber: 25,\n                    columnNumber: 17\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 24,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: classes.details,\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                    variant: \"body2\",\n                    color: \"textSecondary\",\n                    children: \"#\" + post.tags\n                }, void 0, false, {\n                    fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                    lineNumber: 30,\n                    columnNumber: 17\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 29,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                className: classes.title,\n                variant: \"h5\",\n                gutterBottom: true,\n                children: post.title\n            }, void 0, false, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 32,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.CardContent, {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                    variant: \"h5\",\n                    gutterBottom: true,\n                    children: post.message\n                }, void 0, false, {\n                    fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                    lineNumber: 34,\n                    columnNumber: 17\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 33,\n                columnNumber: 13\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.CardActions, {\n                className: classes.cardActions,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                        size: \"small\",\n                        color: \"primary\",\n                        onClick: ()=>{},\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_material_ui_icons_ThumbUpAlt__WEBPACK_IMPORTED_MODULE_3___default()), {\n                                fontSize: \"small\"\n                            }, void 0, false, {\n                                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                                lineNumber: 38,\n                                columnNumber: 21\n                            }, undefined),\n                            \"Like\",\n                            post.likeCount\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                        lineNumber: 37,\n                        columnNumber: 17\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                        size: \"small\",\n                        color: \"primary\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_4___default()), {\n                                fontSize: \"small\"\n                            }, void 0, false, {\n                                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                                lineNumber: 45,\n                                columnNumber: 21\n                            }, undefined),\n                            \"Delete\"\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                        lineNumber: 42,\n                        columnNumber: 17\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n                lineNumber: 36,\n                columnNumber: 13\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/deangladish/Da-Repo/pages/Posts/Post/Post.js\",\n        lineNumber: 18,\n        columnNumber: 9\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Post); //line 26 had an issue, used to be:\n /*\r\n<Typography variant=\"body2\" color=\"textSecondary\">{post.tags.map((tag) => `#${tag} `)}</Typography>\r\n\r\npost.tags.map wasn't considered a function.\r\nNow, with what's currently in place, I can edit the tags, however, it won't have the hashtag format\r\n*/ \n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9Qb3N0cy9Qb3N0L1Bvc3QuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFBMEI7QUFDd0U7QUFDdkM7QUFDUjtBQUNNO0FBQzdCO0FBRUs7QUFDUztBQUUxQyx1REFBdUQ7QUFFdkQsTUFBTWEsT0FBTyxDQUFDLEVBQUVDLEtBQUksRUFBRUMsYUFBWSxFQUFFLEdBQUs7SUFDckMsTUFBTUMsVUFBVUwsbURBQVNBO0lBQ3pCLE1BQU1NLFdBQVdMLHdEQUFXQTtJQUU1QixxQkFDSSw4REFBQ1gsbURBQUlBO1FBQUNpQixXQUFXRixRQUFRRyxJQUFJOzswQkFDekIsOERBQUNmLHdEQUFTQTtnQkFBQ2MsV0FBV0YsUUFBUUksS0FBSztnQkFBRUMsT0FBT1AsS0FBS1EsWUFBWTtnQkFBRUMsT0FBT1QsS0FBS1MsS0FBSzs7Ozs7OzBCQUNoRiw4REFBQ0M7Z0JBQUlOLFdBQVdGLFFBQVFTLE9BQU87O2tDQUMzQiw4REFBQ25CLHlEQUFVQTt3QkFBQ29CLFNBQVE7a0NBQU1aLEtBQUthLE9BQU87Ozs7OztrQ0FDdEMsOERBQUNyQix5REFBVUE7d0JBQUNvQixTQUFRO2tDQUFTaEIsNkNBQU1BLENBQUNJLEtBQUtjLFNBQVMsRUFBRUMsT0FBTzs7Ozs7Ozs7Ozs7OzBCQUUvRCw4REFBQ0w7Z0JBQUlOLFdBQVdGLFFBQVFjLFFBQVE7MEJBQzVCLDRFQUFDekIscURBQU1BO29CQUFDMEIsT0FBTzt3QkFBRUMsT0FBTztvQkFBUTtvQkFBR0MsTUFBSztvQkFBUUMsU0FBUyxJQUFNbkIsYUFBYUQsS0FBS3FCLEdBQUc7OEJBQ2hGLDRFQUFDMUIscUVBQWFBO3dCQUFDMkIsVUFBUzs7Ozs7Ozs7Ozs7Ozs7OzswQkFHaEMsOERBQUNaO2dCQUFJTixXQUFXRixRQUFRcUIsT0FBTzswQkFDM0IsNEVBQUMvQix5REFBVUE7b0JBQUNvQixTQUFRO29CQUFRTSxPQUFNOzhCQUFpQixNQUFNbEIsS0FBS3dCLElBQUk7Ozs7Ozs7Ozs7OzBCQUV0RSw4REFBQ2hDLHlEQUFVQTtnQkFBQ1ksV0FBV0YsUUFBUU8sS0FBSztnQkFBRUcsU0FBUTtnQkFBS2EsWUFBWTswQkFBRXpCLEtBQUtTLEtBQUs7Ozs7OzswQkFDM0UsOERBQUNwQiwwREFBV0E7MEJBQ1IsNEVBQUNHLHlEQUFVQTtvQkFBQ29CLFNBQVE7b0JBQUthLFlBQVk7OEJBQUV6QixLQUFLMEIsT0FBTzs7Ozs7Ozs7Ozs7MEJBRXZELDhEQUFDdEMsMERBQVdBO2dCQUFDZ0IsV0FBV0YsUUFBUXlCLFdBQVc7O2tDQUN2Qyw4REFBQ3BDLHFEQUFNQTt3QkFBQzRCLE1BQUs7d0JBQVFELE9BQU07d0JBQVVFLFNBQVMsSUFBTSxDQUFFOzswQ0FDbEQsOERBQUMzQixzRUFBY0E7Z0NBQUM2QixVQUFTOzs7Ozs7NEJBQVU7NEJBRWxDdEIsS0FBSzRCLFNBQVM7Ozs7Ozs7a0NBRW5CLDhEQUFDckMscURBQU1BO3dCQUFDNEIsTUFBSzt3QkFBUUQsT0FBTTs7MENBR3ZCLDhEQUFDeEIsa0VBQVVBO2dDQUFDNEIsVUFBUzs7Ozs7OzRCQUFVOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBTW5EO0FBRUEsaUVBQWV2QixJQUFJQSxFQUFDLENBRXBCLG1DQUFtQztDQUNuQyIsInNvdXJjZXMiOlsid2VicGFjazovL2V4YW1wbGUtYXBwLy4vcGFnZXMvUG9zdHMvUG9zdC9Qb3N0LmpzPzE3OTQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgQ2FyZCwgQ2FyZEFjdGlvbnMsIENhcmRDb250ZW50LCBDYXJkTWVkaWEsIEJ1dHRvbiwgVHlwb2dyYXBoeSB9IGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlJztcclxuaW1wb3J0IFRodW1iVXBBbHRJY29uIGZyb20gJ0BtYXRlcmlhbC11aS9pY29ucy9UaHVtYlVwQWx0JztcclxuaW1wb3J0IERlbGV0ZUljb24gZnJvbSAnQG1hdGVyaWFsLXVpL2ljb25zL0RlbGV0ZSc7XHJcbmltcG9ydCBNb3JlSG9yaXpJY29uIGZyb20gJ0BtYXRlcmlhbC11aS9pY29ucy9Nb3JlSG9yaXonO1xyXG5pbXBvcnQgbW9tZW50IGZyb20gJ21vbWVudCc7XHJcblxyXG5pbXBvcnQgdXNlU3R5bGVzIGZyb20gJy4vc3R5bGVzJztcclxuaW1wb3J0IHsgdXNlRGlzcGF0Y2ggfSBmcm9tICdyZWFjdC1yZWR1eCc7XHJcblxyXG4vLyBpbXBvcnQgeyBkZWxldGVQb3N0IH0gZnJvbSAnLi4vLi4vLi4vYWN0aW9ucy9wb3N0cyc7XHJcblxyXG5jb25zdCBQb3N0ID0gKHsgcG9zdCwgc2V0Q3VycmVudElkIH0pID0+IHtcclxuICAgIGNvbnN0IGNsYXNzZXMgPSB1c2VTdHlsZXMoKTtcclxuICAgIGNvbnN0IGRpc3BhdGNoID0gdXNlRGlzcGF0Y2goKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxDYXJkIGNsYXNzTmFtZT17Y2xhc3Nlcy5jYXJkfT5cclxuICAgICAgICAgICAgPENhcmRNZWRpYSBjbGFzc05hbWU9e2NsYXNzZXMubWVkaWF9IGltYWdlPXtwb3N0LnNlbGVjdGVkRmlsZX0gdGl0bGU9e3Bvc3QudGl0bGV9IC8+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLm92ZXJsYXl9PlxyXG4gICAgICAgICAgICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD1cImg2XCI+e3Bvc3QuY3JlYXRvcn08L1R5cG9ncmFwaHk+XHJcbiAgICAgICAgICAgICAgICA8VHlwb2dyYXBoeSB2YXJpYW50PVwiYm9keTJcIj57bW9tZW50KHBvc3QuY3JlYXRlZEF0KS5mcm9tTm93KCl9PC9UeXBvZ3JhcGh5PlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMub3ZlcmxheTJ9PlxyXG4gICAgICAgICAgICAgICAgPEJ1dHRvbiBzdHlsZT17eyBjb2xvcjogJ3doaXRlJyB9fSBzaXplPVwic21hbGxcIiBvbkNsaWNrPXsoKSA9PiBzZXRDdXJyZW50SWQocG9zdC5faWQpfT5cclxuICAgICAgICAgICAgICAgICAgICA8TW9yZUhvcml6SWNvbiBmb250U2l6ZT1cIm1lZGl1bVwiIC8+XHJcbiAgICAgICAgICAgICAgICA8L0J1dHRvbj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLmRldGFpbHN9PlxyXG4gICAgICAgICAgICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD1cImJvZHkyXCIgY29sb3I9XCJ0ZXh0U2Vjb25kYXJ5XCI+e1wiI1wiICsgcG9zdC50YWdzfTwvVHlwb2dyYXBoeT5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDxUeXBvZ3JhcGh5IGNsYXNzTmFtZT17Y2xhc3Nlcy50aXRsZX0gdmFyaWFudD1cImg1XCIgZ3V0dGVyQm90dG9tPntwb3N0LnRpdGxlfTwvVHlwb2dyYXBoeT5cclxuICAgICAgICAgICAgPENhcmRDb250ZW50PlxyXG4gICAgICAgICAgICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD1cImg1XCIgZ3V0dGVyQm90dG9tPntwb3N0Lm1lc3NhZ2V9PC9UeXBvZ3JhcGh5PlxyXG4gICAgICAgICAgICA8L0NhcmRDb250ZW50PlxyXG4gICAgICAgICAgICA8Q2FyZEFjdGlvbnMgY2xhc3NOYW1lPXtjbGFzc2VzLmNhcmRBY3Rpb25zfT5cclxuICAgICAgICAgICAgICAgIDxCdXR0b24gc2l6ZT1cInNtYWxsXCIgY29sb3I9XCJwcmltYXJ5XCIgb25DbGljaz17KCkgPT4geyB9fT5cclxuICAgICAgICAgICAgICAgICAgICA8VGh1bWJVcEFsdEljb24gZm9udFNpemU9XCJzbWFsbFwiIC8+XHJcbiAgICAgICAgICAgICAgICAgICAgTGlrZVxyXG4gICAgICAgICAgICAgICAgICAgIHtwb3N0Lmxpa2VDb3VudH1cclxuICAgICAgICAgICAgICAgIDwvQnV0dG9uPlxyXG4gICAgICAgICAgICAgICAgPEJ1dHRvbiBzaXplPVwic21hbGxcIiBjb2xvcj1cInByaW1hcnlcIlxyXG4gICAgICAgICAgICAgICAgLy8gb25DbGljaz17KCkgPT4gZGlzcGF0Y2goZGVsZXRlUG9zdChwb3N0Ll9pZCkpfVxyXG4gICAgICAgICAgICAgICAgPlxyXG4gICAgICAgICAgICAgICAgICAgIDxEZWxldGVJY29uIGZvbnRTaXplPVwic21hbGxcIiAvPlxyXG4gICAgICAgICAgICAgICAgICAgIERlbGV0ZVxyXG4gICAgICAgICAgICAgICAgPC9CdXR0b24+XHJcbiAgICAgICAgICAgIDwvQ2FyZEFjdGlvbnM+XHJcbiAgICAgICAgPC9DYXJkPlxyXG4gICAgKTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgUG9zdDtcclxuXHJcbi8vbGluZSAyNiBoYWQgYW4gaXNzdWUsIHVzZWQgdG8gYmU6XHJcbi8qXHJcbjxUeXBvZ3JhcGh5IHZhcmlhbnQ9XCJib2R5MlwiIGNvbG9yPVwidGV4dFNlY29uZGFyeVwiPntwb3N0LnRhZ3MubWFwKCh0YWcpID0+IGAjJHt0YWd9IGApfTwvVHlwb2dyYXBoeT5cclxuXHJcbnBvc3QudGFncy5tYXAgd2Fzbid0IGNvbnNpZGVyZWQgYSBmdW5jdGlvbi5cclxuTm93LCB3aXRoIHdoYXQncyBjdXJyZW50bHkgaW4gcGxhY2UsIEkgY2FuIGVkaXQgdGhlIHRhZ3MsIGhvd2V2ZXIsIGl0IHdvbid0IGhhdmUgdGhlIGhhc2h0YWcgZm9ybWF0XHJcbiovXHJcbiJdLCJuYW1lcyI6WyJSZWFjdCIsIkNhcmQiLCJDYXJkQWN0aW9ucyIsIkNhcmRDb250ZW50IiwiQ2FyZE1lZGlhIiwiQnV0dG9uIiwiVHlwb2dyYXBoeSIsIlRodW1iVXBBbHRJY29uIiwiRGVsZXRlSWNvbiIsIk1vcmVIb3Jpekljb24iLCJtb21lbnQiLCJ1c2VTdHlsZXMiLCJ1c2VEaXNwYXRjaCIsIlBvc3QiLCJwb3N0Iiwic2V0Q3VycmVudElkIiwiY2xhc3NlcyIsImRpc3BhdGNoIiwiY2xhc3NOYW1lIiwiY2FyZCIsIm1lZGlhIiwiaW1hZ2UiLCJzZWxlY3RlZEZpbGUiLCJ0aXRsZSIsImRpdiIsIm92ZXJsYXkiLCJ2YXJpYW50IiwiY3JlYXRvciIsImNyZWF0ZWRBdCIsImZyb21Ob3ciLCJvdmVybGF5MiIsInN0eWxlIiwiY29sb3IiLCJzaXplIiwib25DbGljayIsIl9pZCIsImZvbnRTaXplIiwiZGV0YWlscyIsInRhZ3MiLCJndXR0ZXJCb3R0b20iLCJtZXNzYWdlIiwiY2FyZEFjdGlvbnMiLCJsaWtlQ291bnQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/Posts/Post/Post.js\n");
-
-/***/ }),
-
-/***/ "./pages/Posts/Post/styles.js":
-/*!************************************!*\
-  !*** ./pages/Posts/Post/styles.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ \"@material-ui/core/styles\");\n/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__.makeStyles)({\n    media: {\n        height: 0,\n        paddingTop: \"56.25%\",\n        backgroundColor: \"rgba(0, 0, 0, 0.5)\",\n        backgroundBlendMode: \"darken\"\n    },\n    border: {\n        border: \"solid\"\n    },\n    fullHeightCard: {\n        height: \"100%\"\n    },\n    card: {\n        display: \"flex\",\n        flexDirection: \"column\",\n        justifyContent: \"space-between\",\n        borderRadius: \"15px\",\n        height: \"100%\",\n        position: \"relative\"\n    },\n    overlay: {\n        position: \"absolute\",\n        top: \"20px\",\n        left: \"20px\",\n        color: \"white\"\n    },\n    overlay2: {\n        position: \"absolute\",\n        top: \"20px\",\n        right: \"20px\",\n        color: \"white\"\n    },\n    grid: {\n        display: \"flex\"\n    },\n    details: {\n        display: \"flex\",\n        justifyContent: \"space-between\",\n        margin: \"20px\"\n    },\n    title: {\n        padding: \"0 16px\"\n    },\n    cardActions: {\n        padding: \"0 16px 8px 16px\",\n        display: \"flex\",\n        justifyContent: \"space-between\"\n    }\n}));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9Qb3N0cy9Qb3N0L3N0eWxlcy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBc0Q7QUFFdEQsaUVBQWVBLG9FQUFVQSxDQUFDO0lBQ3hCQyxPQUFPO1FBQ0xDLFFBQVE7UUFDUkMsWUFBWTtRQUNaQyxpQkFBaUI7UUFDakJDLHFCQUFxQjtJQUN2QjtJQUNBQyxRQUFRO1FBQ05BLFFBQVE7SUFDVjtJQUNBQyxnQkFBZ0I7UUFDZEwsUUFBUTtJQUNWO0lBQ0FNLE1BQU07UUFDSkMsU0FBUztRQUNUQyxlQUFlO1FBQ2ZDLGdCQUFnQjtRQUNoQkMsY0FBYztRQUNkVixRQUFRO1FBQ1JXLFVBQVU7SUFDWjtJQUNBQyxTQUFTO1FBQ1BELFVBQVU7UUFDVkUsS0FBSztRQUNMQyxNQUFNO1FBQ05DLE9BQU87SUFDVDtJQUNBQyxVQUFVO1FBQ1JMLFVBQVU7UUFDVkUsS0FBSztRQUNMSSxPQUFPO1FBQ1BGLE9BQU87SUFDVDtJQUNBRyxNQUFNO1FBQ0pYLFNBQVM7SUFDWDtJQUNBWSxTQUFTO1FBQ1BaLFNBQVM7UUFDVEUsZ0JBQWdCO1FBQ2hCVyxRQUFRO0lBQ1Y7SUFDQUMsT0FBTztRQUNMQyxTQUFTO0lBQ1g7SUFDQUMsYUFBYTtRQUNYRCxTQUFTO1FBQ1RmLFNBQVM7UUFDVEUsZ0JBQWdCO0lBQ2xCO0FBQ0YsRUFBRSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZXhhbXBsZS1hcHAvLi9wYWdlcy9Qb3N0cy9Qb3N0L3N0eWxlcy5qcz8zZDM2Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1ha2VTdHlsZXMgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9zdHlsZXMnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgbWFrZVN0eWxlcyh7XHJcbiAgbWVkaWE6IHtcclxuICAgIGhlaWdodDogMCxcclxuICAgIHBhZGRpbmdUb3A6ICc1Ni4yNSUnLFxyXG4gICAgYmFja2dyb3VuZENvbG9yOiAncmdiYSgwLCAwLCAwLCAwLjUpJyxcclxuICAgIGJhY2tncm91bmRCbGVuZE1vZGU6ICdkYXJrZW4nLFxyXG4gIH0sXHJcbiAgYm9yZGVyOiB7XHJcbiAgICBib3JkZXI6ICdzb2xpZCcsXHJcbiAgfSxcclxuICBmdWxsSGVpZ2h0Q2FyZDoge1xyXG4gICAgaGVpZ2h0OiAnMTAwJScsXHJcbiAgfSxcclxuICBjYXJkOiB7XHJcbiAgICBkaXNwbGF5OiAnZmxleCcsXHJcbiAgICBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJyxcclxuICAgIGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicsXHJcbiAgICBib3JkZXJSYWRpdXM6ICcxNXB4JyxcclxuICAgIGhlaWdodDogJzEwMCUnLFxyXG4gICAgcG9zaXRpb246ICdyZWxhdGl2ZScsXHJcbiAgfSxcclxuICBvdmVybGF5OiB7XHJcbiAgICBwb3NpdGlvbjogJ2Fic29sdXRlJyxcclxuICAgIHRvcDogJzIwcHgnLFxyXG4gICAgbGVmdDogJzIwcHgnLFxyXG4gICAgY29sb3I6ICd3aGl0ZScsXHJcbiAgfSxcclxuICBvdmVybGF5Mjoge1xyXG4gICAgcG9zaXRpb246ICdhYnNvbHV0ZScsXHJcbiAgICB0b3A6ICcyMHB4JyxcclxuICAgIHJpZ2h0OiAnMjBweCcsXHJcbiAgICBjb2xvcjogJ3doaXRlJyxcclxuICB9LFxyXG4gIGdyaWQ6IHtcclxuICAgIGRpc3BsYXk6ICdmbGV4JyxcclxuICB9LFxyXG4gIGRldGFpbHM6IHtcclxuICAgIGRpc3BsYXk6ICdmbGV4JyxcclxuICAgIGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicsXHJcbiAgICBtYXJnaW46ICcyMHB4JyxcclxuICB9LFxyXG4gIHRpdGxlOiB7XHJcbiAgICBwYWRkaW5nOiAnMCAxNnB4JyxcclxuICB9LFxyXG4gIGNhcmRBY3Rpb25zOiB7XHJcbiAgICBwYWRkaW5nOiAnMCAxNnB4IDhweCAxNnB4JyxcclxuICAgIGRpc3BsYXk6ICdmbGV4JyxcclxuICAgIGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicsXHJcbiAgfSxcclxufSk7Il0sIm5hbWVzIjpbIm1ha2VTdHlsZXMiLCJtZWRpYSIsImhlaWdodCIsInBhZGRpbmdUb3AiLCJiYWNrZ3JvdW5kQ29sb3IiLCJiYWNrZ3JvdW5kQmxlbmRNb2RlIiwiYm9yZGVyIiwiZnVsbEhlaWdodENhcmQiLCJjYXJkIiwiZGlzcGxheSIsImZsZXhEaXJlY3Rpb24iLCJqdXN0aWZ5Q29udGVudCIsImJvcmRlclJhZGl1cyIsInBvc2l0aW9uIiwib3ZlcmxheSIsInRvcCIsImxlZnQiLCJjb2xvciIsIm92ZXJsYXkyIiwicmlnaHQiLCJncmlkIiwiZGV0YWlscyIsIm1hcmdpbiIsInRpdGxlIiwicGFkZGluZyIsImNhcmRBY3Rpb25zIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/Posts/Post/styles.js\n");
-
-/***/ }),
-
-/***/ "./pages/users.js":
-/*!************************!*\
-  !*** ./pages/users.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ \"@material-ui/core\");\n/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_file_base64__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-file-base64 */ \"react-file-base64\");\n/* harmony import */ var react_file_base64__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_file_base64__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _helpers_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../helpers/styles */ \"./helpers/styles.js\");\n/* harmony import */ var _helpers_actions_posts__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../helpers/actions/posts */ \"./helpers/actions/posts.js\");\n/* harmony import */ var _Posts_Post_Post__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Posts/Post/Post */ \"./pages/Posts/Post/Post.js\");\n\n\n\n\n\n\n\n/**\n * Here we will make the imports from social/client/src/App.js, that is what imports the Form.js component...\n */ \n\n// import Posts from '../helpers/components/Posts/Posts';\n// import Post from '../social/client/src/components/Posts/Post';\n\n// import Form from './components/Form/Form';\n// import logo from './images/logo.png';\n/**\n * Now we are done making the imports from ./actions/posts. What remains to be done now?\n *\n * */ \nconst mapStateToProps = function(store) {\n    return {\n        reduxStore: store\n    };\n};\nconst mapDispatchToProps = (dispatch)=>{\n    return {\n        getSingleInt: ()=>{\n            dispatch(fetchSingleInt());\n        },\n        updatePostThunk: (currentId, postData1)=>{\n            dispatch((0,_helpers_actions_posts__WEBPACK_IMPORTED_MODULE_6__.updatePost)(currentId, postData1));\n        },\n        createPostThunk: (postData1)=>{\n            dispatch((0,_helpers_actions_posts__WEBPACK_IMPORTED_MODULE_6__.createPost)(postData1));\n        },\n        getPostsThunk: ()=>{\n            dispatch((0,_helpers_actions_posts__WEBPACK_IMPORTED_MODULE_6__.getPosts)());\n        }\n    };\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_4__.connect)(mapStateToProps, mapDispatchToProps)(class Welcome extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {\n    // export default class Welcome extends React.Component {\n    constructor(props){\n        super(props);\n        this.state = {\n            users: null,\n            map: null,\n            message: \"\",\n            selectedFile: \"\",\n            postData: null,\n            currentId: null\n        };\n        this.handleSubmit = this.handleSubmit.bind(this);\n        this.setPostData = this.setPostData.bind(this);\n        this.clear = this.clear.bind(this);\n    }\n    clear() {\n        setCurrentId(null);\n        setPostData({\n            creator: \"\",\n            title: \"\",\n            message: \"\",\n            tags: \"\",\n            selectedFile: \"\"\n        });\n    }\n    componentDidMount() {\n        /**Instead of doing this in the useEffect hook, */ //dispatch(getPosts());}, [currentId, dispatch]);\n        this.props.getPostsThunk();\n        console.log(\"did we get anything from the currentId, setCurrentId? \", \"it may be possible to get things like \", this.props, this.props.currentId, this.props.setCurrentId, this.state);\n        let users = JSON.parse(sessionStorage.getItem(\"users\"));\n        let map = new Map(Object.entries(users));\n        this.setState({\n            users: users,\n            map\n        });\n    // const classes = useStyles()\n    }\n    componentDidUpdate() {\n        console.log(\"What is the props value? \", this.props);\n    }\n    setPostData(Whatisit) {\n        // e.preventDefault();\n        // this.setState({\n        //   message: '',\n        //   selectedFile: ''\n        // })\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log('OfopJ\"fpFP');\n        console.log(\"What ist he post object?\", Whatisit);\n        this.setState({\n            postData: Whatisit\n        });\n    // The postObject should consist of a \"message\" and a \"selectedFile\".\n    }\n    handleSubmit(e) {\n        e.preventDefault();\n        console.log(\"THe Values on SuBmiT Are \");\n        // Focus on currentId\n        if (this.state.currentId) {\n            // dispatch(updatePost(this.state.currentId, this.state.postData));\n            this.props.updatePostThunk(this.state.currentId, this.state.postData);\n        } else {\n            // dispatch(createPost(this.state.postData));\n            console.log(\"'What' is the createpost thunk being called with ? \", this.state.postData);\n            this.props.createPostThunk(this.state.postData);\n        }\n    // clear();\n    }\n    render() {\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: [\n                        \"Hello, \",\n                        this.state.users && this.state.users.Name\n                    ]\n                }, void 0, true, {\n                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                    lineNumber: 124,\n                    columnNumber: 7\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    style: {\n                        display: \"flex\",\n                        flexDirection: \"row\",\n                        height: \"100vh\",\n                        width: \"100vw\",\n                        backgroundColor: \"palegoldenrod\"\n                    },\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            style: {\n                                backgroundColor: \"royalblue\",\n                                height: \"100vh\",\n                                width: \"50vw\"\n                            },\n                            children: [\n                                this.props.reduxStore.posts.length ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Grid, {\n                                    container: true,\n                                    alignItems: \"stretch\",\n                                    spacing: 3,\n                                    children: this.props.reduxStore.posts.map((post)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Grid, {\n                                            item: true,\n                                            xs: 12,\n                                            sm: 6,\n                                            children: [\n                                                \"hellloooooo\",\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Posts_Post_Post__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {\n                                                    post: post\n                                                }, void 0, false, {\n                                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                    lineNumber: 143,\n                                                    columnNumber: 21\n                                                }, this)\n                                            ]\n                                        }, post._id, true, {\n                                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                            lineNumber: 141,\n                                            columnNumber: 19\n                                        }, this))\n                                }, void 0, false, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 139,\n                                    columnNumber: 15\n                                }, this) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    children: \"There are no posts!\"\n                                }, void 0, false, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 148,\n                                    columnNumber: 25\n                                }, this),\n                                \"This half will be the same thing we had on the previous, page, this one will have Name, Party, and Position; the design. There will be also be more information such as Phone, Address, Bio, ....\",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                            children: \"Assumed Office: \"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                            lineNumber: 152,\n                                            columnNumber: 13\n                                        }, this),\n                                        this.state.users && this.state.users.AssumedOffice\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 151,\n                                    columnNumber: 11\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                            children: \"District: \"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                            lineNumber: 158,\n                                            columnNumber: 13\n                                        }, this),\n                                        this.state.users && this.state.users.District\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 157,\n                                    columnNumber: 11\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                            children: \"Party: \"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                            lineNumber: 164,\n                                            columnNumber: 13\n                                        }, this),\n                                        this.state.users && this.state.users.Party\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 163,\n                                    columnNumber: 11\n                                }, this),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"b\", {\n                                            children: \"State: \"\n                                        }, void 0, false, {\n                                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                            lineNumber: 170,\n                                            columnNumber: 13\n                                        }, this),\n                                        this.state.users && this.state.users.State\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 169,\n                                    columnNumber: 11\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                            lineNumber: 132,\n                            columnNumber: 9\n                        }, this),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            style: {\n                                backgroundColor: \"aqua\",\n                                height: \"100vh\",\n                                width: \"50vw\"\n                            },\n                            children: [\n                                \"Social Feed\",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Paper, {\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                                        autoComplete: \"off\",\n                                        noValidate: true,\n                                        //  className={`${classes.root} ${classes.form}`}\n                                        onSubmit: (e)=>this.handleSubmit(e),\n                                        children: [\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Typography, {\n                                                variant: \"h6\",\n                                                children: \"a Post \"\n                                            }, void 0, false, {\n                                                fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                lineNumber: 190,\n                                                columnNumber: 15\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.TextField, {\n                                                name: \"message\",\n                                                variant: \"outlined\",\n                                                label: \"Message\",\n                                                fullWidth: true,\n                                                // value={postData.message}\n                                                onChange: // e => console.log(\"The value of e is this \", e);\n                                                (e)=>this.setPostData({\n                                                        ...this.state.postData,\n                                                        message: e.target.value\n                                                    })\n                                            }, void 0, false, {\n                                                fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                lineNumber: 194,\n                                                columnNumber: 15\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((react_file_base64__WEBPACK_IMPORTED_MODULE_3___default()), {\n                                                    type: \"file\",\n                                                    multiple: false,\n                                                    onDone: ({ base64  })=>setPostData({\n                                                            ...postData,\n                                                            selectedFile: base64\n                                                        })\n                                                }, void 0, false, {\n                                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                    lineNumber: 203,\n                                                    columnNumber: 17\n                                                }, this)\n                                            }, void 0, false, {\n                                                fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                lineNumber: 200,\n                                                columnNumber: 15\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                                                // className={classes.buttonSubmit}\n                                                variant: \"contained\",\n                                                color: \"primary\",\n                                                size: \"large\",\n                                                type: \"submit\",\n                                                fullWidth: true,\n                                                children: \"Submit\"\n                                            }, void 0, false, {\n                                                fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                lineNumber: 205,\n                                                columnNumber: 15\n                                            }, this),\n                                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.Button, {\n                                                variant: \"contained\",\n                                                color: \"secondary\",\n                                                size: \"small\",\n                                                // onClick={clear}\n                                                fullWidth: true,\n                                                children: \"Clear\"\n                                            }, void 0, false, {\n                                                fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                                lineNumber: 208,\n                                                columnNumber: 15\n                                            }, this)\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                        lineNumber: 186,\n                                        columnNumber: 13\n                                    }, this)\n                                }, void 0, false, {\n                                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                                    lineNumber: 183,\n                                    columnNumber: 11\n                                }, this)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                            lineNumber: 177,\n                            columnNumber: 9\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n                    lineNumber: 125,\n                    columnNumber: 7\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/deangladish/Da-Repo/pages/users.js\",\n            lineNumber: 123,\n            columnNumber: 12\n        }, this);\n    }\n}));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QUNyQixZQUFZLENBQUNxQjs7MERBRWpDLDhEQUFDekQseURBQVVBO2dEQUFDd0YsU0FBUTswREFDMEI7Ozs7OzswREFHOUMsOERBQUMxRix3REFBU0E7Z0RBQUMyRixNQUFLO2dEQUFVRCxTQUFRO2dEQUFXRSxPQUFNO2dEQUFVQyxTQUFTO2dEQUNwRSwyQkFBMkI7Z0RBQzNCQyxVQUNFLGtEQUFrRDtnREFDbEQsQ0FBQ25DLElBQU0sSUFBSSxDQUFDbkIsV0FBVyxDQUFDO3dEQUFFLEdBQUcsSUFBSSxDQUFDUCxLQUFLLENBQUNQLFFBQVE7d0RBQUVVLFNBQVN1QixFQUFFb0MsTUFBTSxDQUFDQyxLQUFLO29EQUFDOzs7Ozs7MERBRTlFLDhEQUFDbEM7MERBR0MsNEVBQUMxRCwwREFBUUE7b0RBQUM2RixNQUFLO29EQUFPQyxVQUFVLEtBQUs7b0RBQUVDLFFBQVEsQ0FBQyxFQUFFQyxPQUFNLEVBQUUsR0FBSzVELFlBQVk7NERBQUUsR0FBR2QsUUFBUTs0REFBRVcsY0FBYytEO3dEQUFPOzs7Ozs7Ozs7OzswREFFakgsOERBQUNuRyxxREFBTUE7Z0RBQ0wsbUNBQW1DO2dEQUNuQ3lGLFNBQVE7Z0RBQVlXLE9BQU07Z0RBQVVDLE1BQUs7Z0RBQVFMLE1BQUs7Z0RBQVNKLFNBQVM7MERBQUM7Ozs7OzswREFDM0UsOERBQUM1RixxREFBTUE7Z0RBQUN5RixTQUFRO2dEQUFZVyxPQUFNO2dEQUFZQyxNQUFLO2dEQUNqRCxrQkFBa0I7Z0RBQ2xCVCxTQUFTOzBEQUFDOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztJQU14QjtBQUNGLEVBQUUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9leGFtcGxlLWFwcC8uL3BhZ2VzL3VzZXJzLmpzPzAwNjAiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBUZXh0RmllbGQsIEJ1dHRvbiwgVHlwb2dyYXBoeSwgUGFwZXIgfSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZSc7XG5pbXBvcnQgRmlsZUJhc2UgZnJvbSAncmVhY3QtZmlsZS1iYXNlNjQnO1xuaW1wb3J0IHsgdXNlRGlzcGF0Y2gsIHVzZVNlbGVjdG9yIH0gZnJvbSAncmVhY3QtcmVkdXgnO1xuXG5pbXBvcnQgdXNlU3R5bGVzIGZyb20gJy4uL2hlbHBlcnMvc3R5bGVzJztcbmltcG9ydCB7IGNyZWF0ZVBvc3QsIHVwZGF0ZVBvc3QgfSBmcm9tICcuLi9oZWxwZXJzL2FjdGlvbnMvcG9zdHMnO1xuXG4vKipcbiAqIEhlcmUgd2Ugd2lsbCBtYWtlIHRoZSBpbXBvcnRzIGZyb20gc29jaWFsL2NsaWVudC9zcmMvQXBwLmpzLCB0aGF0IGlzIHdoYXQgaW1wb3J0cyB0aGUgRm9ybS5qcyBjb21wb25lbnQuLi5cbiAqL1xuXG5pbXBvcnQgeyBDb250YWluZXIsIEFwcEJhciwgR3JvdywgR3JpZCB9IGZyb20gJ0BtYXRlcmlhbC11aS9jb3JlJztcblxuaW1wb3J0IHsgZ2V0UG9zdHMgfSBmcm9tICcuLi9oZWxwZXJzL2FjdGlvbnMvcG9zdHMnO1xuLy8gaW1wb3J0IFBvc3RzIGZyb20gJy4uL2hlbHBlcnMvY29tcG9uZW50cy9Qb3N0cy9Qb3N0cyc7XG4vLyBpbXBvcnQgUG9zdCBmcm9tICcuLi9zb2NpYWwvY2xpZW50L3NyYy9jb21wb25lbnRzL1Bvc3RzL1Bvc3QnO1xuaW1wb3J0IFBvc3QgZnJvbSAnLi9Qb3N0cy9Qb3N0L1Bvc3QnO1xuXG4vLyBpbXBvcnQgRm9ybSBmcm9tICcuL2NvbXBvbmVudHMvRm9ybS9Gb3JtJztcbi8vIGltcG9ydCBsb2dvIGZyb20gJy4vaW1hZ2VzL2xvZ28ucG5nJztcblxuXG5cbi8qKlxuICogTm93IHdlIGFyZSBkb25lIG1ha2luZyB0aGUgaW1wb3J0cyBmcm9tIC4vYWN0aW9ucy9wb3N0cy4gV2hhdCByZW1haW5zIHRvIGJlIGRvbmUgbm93P1xuICpcbiAqICovXG5pbXBvcnQgeyBjb25uZWN0IH0gZnJvbSAncmVhY3QtcmVkdXgnO1xuXG5jb25zdCBtYXBTdGF0ZVRvUHJvcHMgPSBmdW5jdGlvbiAoc3RvcmUpIHtcbiAgcmV0dXJuIHtcbiAgICByZWR1eFN0b3JlOiBzdG9yZVxuICB9O1xufVxuY29uc3QgbWFwRGlzcGF0Y2hUb1Byb3BzID0gKGRpc3BhdGNoKSA9PiB7XG4gIHJldHVybiB7XG4gICAgZ2V0U2luZ2xlSW50OiAoKSA9PiB7IGRpc3BhdGNoKGZldGNoU2luZ2xlSW50KCkpIH0sXG4gICAgdXBkYXRlUG9zdFRodW5rOiAoY3VycmVudElkLCBwb3N0RGF0YSkgPT4geyBkaXNwYXRjaCh1cGRhdGVQb3N0KGN1cnJlbnRJZCwgcG9zdERhdGEpKSB9LFxuICAgIGNyZWF0ZVBvc3RUaHVuazogKHBvc3REYXRhKSA9PiB7IGRpc3BhdGNoKGNyZWF0ZVBvc3QocG9zdERhdGEpKSB9LFxuICAgIGdldFBvc3RzVGh1bms6ICgpID0+IHsgZGlzcGF0Y2goZ2V0UG9zdHMoKSkgfVxuICB9XG59XG5leHBvcnQgZGVmYXVsdCBjb25uZWN0KG1hcFN0YXRlVG9Qcm9wcywgbWFwRGlzcGF0Y2hUb1Byb3BzKShjbGFzcyBXZWxjb21lIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgLy8gZXhwb3J0IGRlZmF1bHQgY2xhc3MgV2VsY29tZSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gIGNvbnN0cnVjdG9yKHByb3BzKSB7XG4gICAgc3VwZXIocHJvcHMpXG4gICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgIHVzZXJzOiBudWxsLFxuICAgICAgbWFwOiBudWxsLFxuICAgICAgbWVzc2FnZTogJycsXG4gICAgICBzZWxlY3RlZEZpbGU6ICcnLFxuICAgICAgcG9zdERhdGE6IG51bGwsXG4gICAgICBjdXJyZW50SWQ6IG51bGwsXG4gICAgfVxuICAgIHRoaXMuaGFuZGxlU3VibWl0ID0gdGhpcy5oYW5kbGVTdWJtaXQuYmluZCh0aGlzKVxuICAgIHRoaXMuc2V0UG9zdERhdGEgPSB0aGlzLnNldFBvc3REYXRhLmJpbmQodGhpcylcbiAgICB0aGlzLmNsZWFyID0gdGhpcy5jbGVhci5iaW5kKHRoaXMpXG4gIH1cblxuICBjbGVhcigpIHtcbiAgICBzZXRDdXJyZW50SWQobnVsbCk7XG4gICAgc2V0UG9zdERhdGEoeyBjcmVhdG9yOiAnJywgdGl0bGU6ICcnLCBtZXNzYWdlOiAnJywgdGFnczogJycsIHNlbGVjdGVkRmlsZTogJycgfSk7XG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICAvKipJbnN0ZWFkIG9mIGRvaW5nIHRoaXMgaW4gdGhlIHVzZUVmZmVjdCBob29rLCAqL1xuICAgIC8vZGlzcGF0Y2goZ2V0UG9zdHMoKSk7fSwgW2N1cnJlbnRJZCwgZGlzcGF0Y2hdKTtcblxuXG5cbiAgICB0aGlzLnByb3BzLmdldFBvc3RzVGh1bmsoKTtcblxuICAgIGNvbnNvbGUubG9nKFwiZGlkIHdlIGdldCBhbnl0aGluZyBmcm9tIHRoZSBjdXJyZW50SWQsIHNldEN1cnJlbnRJZD8gXCIsIFwiaXQgbWF5IGJlIHBvc3NpYmxlIHRvIGdldCB0aGluZ3MgbGlrZSBcIiwgdGhpcy5wcm9wcywgdGhpcy5wcm9wcy5jdXJyZW50SWQsIHRoaXMucHJvcHMuc2V0Q3VycmVudElkLCB0aGlzLnN0YXRlKVxuXG4gICAgbGV0IHVzZXJzID0gSlNPTi5wYXJzZShzZXNzaW9uU3RvcmFnZS5nZXRJdGVtKFwidXNlcnNcIikpXG4gICAgbGV0IG1hcCA9IG5ldyBNYXAoT2JqZWN0LmVudHJpZXModXNlcnMpKVxuICAgIHRoaXMuc2V0U3RhdGUoe1xuICAgICAgdXNlcnM6IHVzZXJzLFxuICAgICAgbWFwLFxuICAgIH0pXG4gICAgLy8gY29uc3QgY2xhc3NlcyA9IHVzZVN0eWxlcygpXG4gIH1cblxuICBjb21wb25lbnREaWRVcGRhdGUoKSB7XG4gICAgY29uc29sZS5sb2coXCJXaGF0IGlzIHRoZSBwcm9wcyB2YWx1ZT8gXCIsIHRoaXMucHJvcHMpXG4gIH1cblxuICBzZXRQb3N0RGF0YShXaGF0aXNpdCkge1xuICAgIC8vIGUucHJldmVudERlZmF1bHQoKTtcbiAgICAvLyB0aGlzLnNldFN0YXRlKHtcbiAgICAvLyAgIG1lc3NhZ2U6ICcnLFxuICAgIC8vICAgc2VsZWN0ZWRGaWxlOiAnJ1xuICAgIC8vIH0pXG4gICAgY29uc29sZS5sb2coJ09mb3BKXCJmcEZQJylcbiAgICBjb25zb2xlLmxvZygnT2ZvcEpcImZwRlAnKVxuICAgIGNvbnNvbGUubG9nKCdPZm9wSlwiZnBGUCcpXG4gICAgY29uc29sZS5sb2coJ09mb3BKXCJmcEZQJylcbiAgICBjb25zb2xlLmxvZygnT2ZvcEpcImZwRlAnKVxuICAgIGNvbnNvbGUubG9nKCdPZm9wSlwiZnBGUCcpXG4gICAgY29uc29sZS5sb2coJ09mb3BKXCJmcEZQJylcbiAgICBjb25zb2xlLmxvZyhcIldoYXQgaXN0IGhlIHBvc3Qgb2JqZWN0P1wiLCBXaGF0aXNpdClcbiAgICB0aGlzLnNldFN0YXRlKHsgcG9zdERhdGE6IFdoYXRpc2l0IH0pXG4gICAgLy8gVGhlIHBvc3RPYmplY3Qgc2hvdWxkIGNvbnNpc3Qgb2YgYSBcIm1lc3NhZ2VcIiBhbmQgYSBcInNlbGVjdGVkRmlsZVwiLlxuICB9XG5cbiAgaGFuZGxlU3VibWl0KGUpIHtcbiAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgY29uc29sZS5sb2coXCJUSGUgVmFsdWVzIG9uIFN1Qm1pVCBBcmUgXCIpXG4gICAgLy8gRm9jdXMgb24gY3VycmVudElkXG4gICAgaWYgKHRoaXMuc3RhdGUuY3VycmVudElkKSB7XG4gICAgICAvLyBkaXNwYXRjaCh1cGRhdGVQb3N0KHRoaXMuc3RhdGUuY3VycmVudElkLCB0aGlzLnN0YXRlLnBvc3REYXRhKSk7XG4gICAgICB0aGlzLnByb3BzLnVwZGF0ZVBvc3RUaHVuayh0aGlzLnN0YXRlLmN1cnJlbnRJZCwgdGhpcy5zdGF0ZS5wb3N0RGF0YSlcbiAgICB9IGVsc2Uge1xuICAgICAgLy8gZGlzcGF0Y2goY3JlYXRlUG9zdCh0aGlzLnN0YXRlLnBvc3REYXRhKSk7XG4gICAgICBjb25zb2xlLmxvZyhcIidXaGF0JyBpcyB0aGUgY3JlYXRlcG9zdCB0aHVuayBiZWluZyBjYWxsZWQgd2l0aCA/IFwiLCB0aGlzLnN0YXRlLnBvc3REYXRhKVxuICAgICAgdGhpcy5wcm9wcy5jcmVhdGVQb3N0VGh1bmsodGhpcy5zdGF0ZS5wb3N0RGF0YSlcbiAgICB9XG4gICAgLy8gY2xlYXIoKTtcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gPGRpdj5cbiAgICAgIDxoMT5IZWxsbywge3RoaXMuc3RhdGUudXNlcnMgJiYgdGhpcy5zdGF0ZS51c2Vycy5OYW1lfTwvaDE+XG4gICAgICA8ZGl2IHN0eWxlPXt7XG4gICAgICAgIGRpc3BsYXk6IFwiZmxleFwiLFxuICAgICAgICBmbGV4RGlyZWN0aW9uOiAncm93JyxcbiAgICAgICAgaGVpZ2h0OiBcIjEwMHZoXCIsXG4gICAgICAgIHdpZHRoOiAnMTAwdncnLFxuICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICdwYWxlZ29sZGVucm9kJ1xuICAgICAgfX0+XG4gICAgICAgIDxkaXYgc3R5bGU9e3tcbiAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICdyb3lhbGJsdWUnLFxuICAgICAgICAgIGhlaWdodDogJzEwMHZoJyxcbiAgICAgICAgICB3aWR0aDogJzUwdncnXG4gICAgICAgIH19PlxuICAgICAgICAgIHtcbiAgICAgICAgICAgIHRoaXMucHJvcHMucmVkdXhTdG9yZS5wb3N0cy5sZW5ndGggP1xuICAgICAgICAgICAgICA8R3JpZCBjb250YWluZXIgYWxpZ25JdGVtcz1cInN0cmV0Y2hcIiBzcGFjaW5nPXszfT5cbiAgICAgICAgICAgICAgICB7dGhpcy5wcm9wcy5yZWR1eFN0b3JlLnBvc3RzLm1hcCgocG9zdCkgPT4gKFxuICAgICAgICAgICAgICAgICAgPEdyaWQga2V5PXtwb3N0Ll9pZH0gaXRlbSB4cz17MTJ9IHNtPXs2fT5cbiAgICAgICAgICAgICAgICAgICAgaGVsbGxvb29vb29cbiAgICAgICAgICAgICAgICAgICAgPFBvc3QgcG9zdD17cG9zdH1cbiAgICAgICAgICAgICAgICAgICAgLy8gc2V0Q3VycmVudElkPXtzZXRDdXJyZW50SWR9XG4gICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICAgIDwvR3JpZD4gOiA8ZGl2PlRoZXJlIGFyZSBubyBwb3N0cyE8L2Rpdj5cbiAgICAgICAgICB9XG4gICAgICAgICAgVGhpcyBoYWxmIHdpbGwgYmUgdGhlIHNhbWUgdGhpbmcgd2UgaGFkIG9uIHRoZSBwcmV2aW91cywgcGFnZSwgdGhpcyBvbmUgd2lsbCBoYXZlIE5hbWUsIFBhcnR5LCBhbmQgUG9zaXRpb247IHRoZSBkZXNpZ24uIFRoZXJlIHdpbGwgYmUgYWxzbyBiZSBtb3JlIGluZm9ybWF0aW9uIHN1Y2ggYXMgUGhvbmUsIEFkZHJlc3MsIEJpbywgLi4uLlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8Yj5Bc3N1bWVkIE9mZmljZTogPC9iPlxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICB0aGlzLnN0YXRlLnVzZXJzICYmIHRoaXMuc3RhdGUudXNlcnMuQXNzdW1lZE9mZmljZVxuICAgICAgICAgICAgfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8Yj5EaXN0cmljdDogPC9iPlxuICAgICAgICAgICAge1xuICAgICAgICAgICAgICB0aGlzLnN0YXRlLnVzZXJzICYmIHRoaXMuc3RhdGUudXNlcnMuRGlzdHJpY3RcbiAgICAgICAgICAgIH1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPGI+UGFydHk6IDwvYj5cbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgdGhpcy5zdGF0ZS51c2VycyAmJiB0aGlzLnN0YXRlLnVzZXJzLlBhcnR5XG4gICAgICAgICAgICB9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxiPlN0YXRlOiA8L2I+XG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgIHRoaXMuc3RhdGUudXNlcnMgJiYgdGhpcy5zdGF0ZS51c2Vycy5TdGF0ZVxuICAgICAgICAgICAgfVxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IHN0eWxlPXt7XG4gICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAnYXF1YScsXG4gICAgICAgICAgaGVpZ2h0OiAnMTAwdmgnLFxuICAgICAgICAgIHdpZHRoOiAnNTB2dydcbiAgICAgICAgfX0+XG4gICAgICAgICAgU29jaWFsIEZlZWRcbiAgICAgICAgICA8UGFwZXJcbiAgICAgICAgICAvLyBjbGFzc05hbWU9e2NsYXNzZXMucGFwZXJ9XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPGZvcm0gYXV0b0NvbXBsZXRlPSdvZmYnIG5vVmFsaWRhdGVcbiAgICAgICAgICAgICAgLy8gIGNsYXNzTmFtZT17YCR7Y2xhc3Nlcy5yb290fSAke2NsYXNzZXMuZm9ybX1gfVxuICAgICAgICAgICAgICBvblN1Ym1pdD17ZSA9PiB0aGlzLmhhbmRsZVN1Ym1pdChlKX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD1cImg2XCI+XG4gICAgICAgICAgICAgICAgey8qIHtjdXJyZW50SWQgPyAnRWRpdGluZycgOiAnQ3JlYXRpbmcnfSAqL31cbiAgICAgICAgICAgICAgICBhIFBvc3QgPC9UeXBvZ3JhcGh5PlxuXG4gICAgICAgICAgICAgIDxUZXh0RmllbGQgbmFtZT1cIm1lc3NhZ2VcIiB2YXJpYW50PVwib3V0bGluZWRcIiBsYWJlbD1cIk1lc3NhZ2VcIiBmdWxsV2lkdGhcbiAgICAgICAgICAgICAgICAvLyB2YWx1ZT17cG9zdERhdGEubWVzc2FnZX1cbiAgICAgICAgICAgICAgICBvbkNoYW5nZT17XG4gICAgICAgICAgICAgICAgICAvLyBlID0+IGNvbnNvbGUubG9nKFwiVGhlIHZhbHVlIG9mIGUgaXMgdGhpcyBcIiwgZSk7XG4gICAgICAgICAgICAgICAgICAoZSkgPT4gdGhpcy5zZXRQb3N0RGF0YSh7IC4uLnRoaXMuc3RhdGUucG9zdERhdGEsIG1lc3NhZ2U6IGUudGFyZ2V0LnZhbHVlIH0pXG4gICAgICAgICAgICAgICAgfSAvPlxuICAgICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgIC8vIGNsYXNzTmFtZT17Y2xhc3Nlcy5maWxlSW5wdXR9XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICA8RmlsZUJhc2UgdHlwZT1cImZpbGVcIiBtdWx0aXBsZT17ZmFsc2V9IG9uRG9uZT17KHsgYmFzZTY0IH0pID0+IHNldFBvc3REYXRhKHsgLi4ucG9zdERhdGEsIHNlbGVjdGVkRmlsZTogYmFzZTY0IH0pfSAvPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPEJ1dHRvblxuICAgICAgICAgICAgICAgIC8vIGNsYXNzTmFtZT17Y2xhc3Nlcy5idXR0b25TdWJtaXR9XG4gICAgICAgICAgICAgICAgdmFyaWFudD1cImNvbnRhaW5lZFwiIGNvbG9yPVwicHJpbWFyeVwiIHNpemU9XCJsYXJnZVwiIHR5cGU9XCJzdWJtaXRcIiBmdWxsV2lkdGg+U3VibWl0PC9CdXR0b24+XG4gICAgICAgICAgICAgIDxCdXR0b24gdmFyaWFudD1cImNvbnRhaW5lZFwiIGNvbG9yPVwic2Vjb25kYXJ5XCIgc2l6ZT1cInNtYWxsXCJcbiAgICAgICAgICAgICAgICAvLyBvbkNsaWNrPXtjbGVhcn1cbiAgICAgICAgICAgICAgICBmdWxsV2lkdGg+Q2xlYXI8L0J1dHRvbj5cbiAgICAgICAgICAgIDwvZm9ybT5cbiAgICAgICAgICA8L1BhcGVyPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICB9XG59KVxuIl0sIm5hbWVzIjpbIlJlYWN0IiwidXNlU3RhdGUiLCJ1c2VFZmZlY3QiLCJUZXh0RmllbGQiLCJCdXR0b24iLCJUeXBvZ3JhcGh5IiwiUGFwZXIiLCJGaWxlQmFzZSIsInVzZURpc3BhdGNoIiwidXNlU2VsZWN0b3IiLCJ1c2VTdHlsZXMiLCJjcmVhdGVQb3N0IiwidXBkYXRlUG9zdCIsIkNvbnRhaW5lciIsIkFwcEJhciIsIkdyb3ciLCJHcmlkIiwiZ2V0UG9zdHMiLCJQb3N0IiwiY29ubmVjdCIsIm1hcFN0YXRlVG9Qcm9wcyIsInN0b3JlIiwicmVkdXhTdG9yZSIsIm1hcERpc3BhdGNoVG9Qcm9wcyIsImRpc3BhdGNoIiwiZ2V0U2luZ2xlSW50IiwiZmV0Y2hTaW5nbGVJbnQiLCJ1cGRhdGVQb3N0VGh1bmsiLCJjdXJyZW50SWQiLCJwb3N0RGF0YSIsImNyZWF0ZVBvc3RUaHVuayIsImdldFBvc3RzVGh1bmsiLCJXZWxjb21lIiwiQ29tcG9uZW50IiwiY29uc3RydWN0b3IiLCJwcm9wcyIsInN0YXRlIiwidXNlcnMiLCJtYXAiLCJtZXNzYWdlIiwic2VsZWN0ZWRGaWxlIiwiaGFuZGxlU3VibWl0IiwiYmluZCIsInNldFBvc3REYXRhIiwiY2xlYXIiLCJzZXRDdXJyZW50SWQiLCJjcmVhdG9yIiwidGl0bGUiLCJ0YWdzIiwiY29tcG9uZW50RGlkTW91bnQiLCJjb25zb2xlIiwibG9nIiwiSlNPTiIsInBhcnNlIiwic2Vzc2lvblN0b3JhZ2UiLCJnZXRJdGVtIiwiTWFwIiwiT2JqZWN0IiwiZW50cmllcyIsInNldFN0YXRlIiwiY29tcG9uZW50RGlkVXBkYXRlIiwiV2hhdGlzaXQiLCJlIiwicHJldmVudERlZmF1bHQiLCJyZW5kZXIiLCJkaXYiLCJoMSIsIk5hbWUiLCJzdHlsZSIsImRpc3BsYXkiLCJmbGV4RGlyZWN0aW9uIiwiaGVpZ2h0Iiwid2lkdGgiLCJiYWNrZ3JvdW5kQ29sb3IiLCJwb3N0cyIsImxlbmd0aCIsImNvbnRhaW5lciIsImFsaWduSXRlbXMiLCJzcGFjaW5nIiwicG9zdCIsIml0ZW0iLCJ4cyIsInNtIiwiX2lkIiwiYiIsIkFzc3VtZWRPZmZpY2UiLCJEaXN0cmljdCIsIlBhcnR5IiwiU3RhdGUiLCJmb3JtIiwiYXV0b0NvbXBsZXRlIiwibm9WYWxpZGF0ZSIsIm9uU3VibWl0IiwidmFyaWFudCIsIm5hbWUiLCJsYWJlbCIsImZ1bGxXaWR0aCIsIm9uQ2hhbmdlIiwidGFyZ2V0IiwidmFsdWUiLCJ0eXBlIiwibXVsdGlwbGUiLCJvbkRvbmUiLCJiYXNlNjQiLCJjb2xvciIsInNpemUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/users.js\n");
-
-/***/ }),
-
-/***/ "@material-ui/core":
-/*!************************************!*\
-  !*** external "@material-ui/core" ***!
-  \************************************/
+/***/ 8130:
 /***/ ((module) => {
 
 module.exports = require("@material-ui/core");
 
 /***/ }),
 
-/***/ "@material-ui/core/styles":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/styles" ***!
-  \*******************************************/
+/***/ 8308:
 /***/ ((module) => {
 
 module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 
-/***/ "@material-ui/icons/Delete":
-/*!********************************************!*\
-  !*** external "@material-ui/icons/Delete" ***!
-  \********************************************/
+/***/ 5652:
 /***/ ((module) => {
 
 module.exports = require("@material-ui/icons/Delete");
 
 /***/ }),
 
-/***/ "@material-ui/icons/MoreHoriz":
-/*!***********************************************!*\
-  !*** external "@material-ui/icons/MoreHoriz" ***!
-  \***********************************************/
+/***/ 3992:
 /***/ ((module) => {
 
 module.exports = require("@material-ui/icons/MoreHoriz");
 
 /***/ }),
 
-/***/ "@material-ui/icons/ThumbUpAlt":
-/*!************************************************!*\
-  !*** external "@material-ui/icons/ThumbUpAlt" ***!
-  \************************************************/
+/***/ 1822:
 /***/ ((module) => {
 
 module.exports = require("@material-ui/icons/ThumbUpAlt");
 
 /***/ }),
 
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
+/***/ 2167:
 /***/ ((module) => {
 
 module.exports = require("axios");
 
 /***/ }),
 
-/***/ "moment":
-/*!*************************!*\
-  !*** external "moment" ***!
-  \*************************/
+/***/ 2245:
 /***/ ((module) => {
 
 module.exports = require("moment");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-file-base64":
-/*!************************************!*\
-  !*** external "react-file-base64" ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = require("react-file-base64");
-
-/***/ }),
-
-/***/ "react-redux":
-/*!******************************!*\
-  !*** external "react-redux" ***!
-  \******************************/
+/***/ 6022:
 /***/ ((module) => {
 
 module.exports = require("react-redux");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -190,7 +473,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/users.js"));
+var __webpack_exports__ = __webpack_require__.X(0, [4811,6189], () => (__webpack_exec__(991)));
 module.exports = __webpack_exports__;
 
 })();

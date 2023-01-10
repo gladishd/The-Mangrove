@@ -1,1 +1,25 @@
-{}
+{
+  "../node_modules/@arcgis/core/kernel.js -> ./request.js": {
+    "id": 4143,
+    "files": []
+  },
+  "../node_modules/@arcgis/core/request.js -> ./core/workers/request.js": {
+    "id": 3714,
+    "files": [
+      "static/chunks/3714.8643a939e45cbba4.js"
+    ]
+  },
+  "../node_modules/@arcgis/core/request.js -> ./identity/IdentityManager.js": {
+    "id": 3712,
+    "files": [
+      "static/chunks/3712.5bae7958fc0a7a8d.js",
+      "static/chunks/1993.e48628c6013958ff.js"
+    ]
+  },
+  "../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js": {
+    "id": 576,
+    "files": [
+      "static/chunks/576.cc8d88d453b4104b.js"
+    ]
+  }
+}
