@@ -8,14 +8,14 @@ import AllPagesPDFViewer from "../helpers/components/pdf/all-pages";
 /* This is required only if the project file is located
 inside the app. Otherwise you can use the external link of the pdf file*/
 // import samplePDF from "./sample.pdf";
-import samplePDF from "../public/mangroveBackstory.pdf";
+// import samplePDF from "../public/mangroveBackstory.pdf";
 
 // import "./styles.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h4>Single Page</h4>
+      {/* <h4>Single Page</h4>
       <SinglePagePDFViewer pdf={samplePDF} />
 
       <hr />
@@ -23,8 +23,8 @@ export default function App() {
       <h4>All Pages</h4>
       <div className="all-page-container">
         <AllPagesPDFViewer pdf={samplePDF} />
-      </div>
-
+      </div> */}
+      Comments stuff out
       <hr />
     </div>
   );
