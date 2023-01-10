@@ -81,7 +81,7 @@
 
 // export default ExamplePDFViewer
 
-import pdf from '../public/mangroveBackstory.pdf';
+// import pdf from '../public/mangroveBackstory.pdf';
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 
@@ -95,7 +95,7 @@ function MyApp() {
 
   return (
     <div>
-      <Document
+      {/* <Document
         // file='../public/mangroveBackstory.pdf'
         file={pdf}
         onLoadSuccess={onDocumentLoadSuccess}
@@ -104,7 +104,8 @@ function MyApp() {
       </Document>
       <p>
         Page {pageNumber} of {numPages}
-      </p>
+      </p> */}
+      hi
     </div>
   );
 }
