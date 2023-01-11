@@ -1,8 +1,8 @@
 "use strict";
 (() => {
 var exports = {};
-exports.id = 4562;
-exports.ids = [4562,8976,162];
+exports.id = 562;
+exports.ids = [562,162,976];
 exports.modules = {
 
 /***/ 496:
@@ -58,7 +58,7 @@ module.exports = Candidate;
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [9370], () => (__webpack_exec__(5089)));
+var __webpack_exports__ = __webpack_require__.X(0, [370], () => (__webpack_exec__(5089)));
 module.exports = __webpack_exports__;
 
 })();

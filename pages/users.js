@@ -3,7 +3,6 @@ import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 
-import useStyles from '../helpers/styles';
 import { createPost, updatePost } from '../helpers/actions/posts';
 
 /**
@@ -79,7 +78,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
       users: users,
       map,
     })
-    // const classes = useStyles()
   }
 
   componentDidUpdate() {
@@ -92,14 +90,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(class Welcome extend
     //   message: '',
     //   selectedFile: ''
     // })
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log('OfopJ"fpFP')
-    console.log("What ist he post object?", Whatisit)
+    console.log("What is the post object?", Whatisit)
     this.setState({ postData: Whatisit })
     // The postObject should consist of a "message" and a "selectedFile".
   }
