@@ -1,25 +1,24 @@
 {
   "../node_modules/@arcgis/core/kernel.js -> ./request.js": {
-    "id": 4143,
+    "id": "../node_modules/@arcgis/core/kernel.js -> ./request.js",
     "files": []
   },
   "../node_modules/@arcgis/core/request.js -> ./core/workers/request.js": {
-    "id": 3714,
+    "id": "../node_modules/@arcgis/core/request.js -> ./core/workers/request.js",
     "files": [
-      "static/chunks/714.f70876468c9c17b8.js"
+      "static/chunks/node_modules_arcgis_core_core_workers_request_js.js"
     ]
   },
   "../node_modules/@arcgis/core/request.js -> ./identity/IdentityManager.js": {
-    "id": 3712,
+    "id": "../node_modules/@arcgis/core/request.js -> ./identity/IdentityManager.js",
     "files": [
-      "static/chunks/712.a4e9e5c0eaf25556.js",
-      "static/chunks/993.3b05b9246c79e901.js"
+      "static/chunks/node_modules_arcgis_core_identity_IdentityManager_js.js"
     ]
   },
   "../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js": {
-    "id": 576,
+    "id": "../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js",
     "files": [
-      "static/chunks/576.cc8d88d453b4104b.js"
+      "static/chunks/node_modules_stencil_core_internal_client_shadow-css_js.js"
     ]
   }
 }
