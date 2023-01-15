@@ -39,11 +39,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/signup-politician.js"
-    ],
-    "/signup-voter": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/signup-voter.js"
     ]
   },
   "ampFirstPages": []
