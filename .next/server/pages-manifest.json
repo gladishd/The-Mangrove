@@ -2,12 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/signup-politician": "pages/signup-politician.js",
-  "/api/signup": "pages/api/signup.js",
-  "/api/sessions": "pages/api/sessions.js",
-  "/api/userDatabase": "pages/api/userDatabase.js",
-  "/api/ArcGISData": "pages/api/ArcGISData.js",
-  "/api/users": "pages/api/users.js",
-  "/signup-fork": "pages/signup-fork.js",
-  "/": "pages/index.js"
+  "/politician": "pages/politician.js"
 }
