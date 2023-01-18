@@ -27,6 +27,11 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import React from 'react'
 import axios from 'axios'
 
+import { default as AuthContext } from "../mern-auth-client/src/context/AuthContext";
+
+// import { useContext } from "react";
+// const { getLoggedIn } = useContext(AuthContext);
+
 export default class SignupPolitician extends React.Component {
   constructor(props) {
     super(props)
@@ -34,6 +39,11 @@ export default class SignupPolitician extends React.Component {
 
     }
     this.submitForm = this.submitForm.bind(this)
+  }
+
+  async componentDidMount() {
+    const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn");
+    console.log('loggedInRes is ', loggedInRes)
   }
 
   async submitForm(e) {
@@ -48,7 +58,7 @@ export default class SignupPolitician extends React.Component {
     // let City = e.target.elements.City.value
     let formBasicCheckbox = e.target.elements.formBasicCheckbox.value
 
-    await axios.post('/api/signup', {
+    const registerData = {
       formBasicEmail,
       formBasicPassword,
       formBasicPasswordConfirm,
@@ -56,7 +66,13 @@ export default class SignupPolitician extends React.Component {
       formMiddleInitial,
       formLastName,
       formBasicCheckbox
-    })
+    }
+
+    await axios.post('/api/signup', registerData)
+
+    // await axios.post("http://localhost:5000/auth/", registerData);
+
+    await getLoggedIn();
 
     try {
       let response = await axios.post(

@@ -1,8 +1,9 @@
 // https://github.com/gladishd/mern-auth-client/blob/master/src/components/politicians/Politicians.js
 import React, { useEffect, useState } from "react";
-import PoliticianForm from "./PoliticianForm";
-import PoliticianList from "./PoliticianList";
+import PoliticianForm from "../mern-auth-client/src/components/politicians/PoliticianForm";
+import PoliticianList from "../mern-auth-client/src/components/politicians/PoliticianList";
 import axios from "axios";
+// import { default as Navbar } from "../mern-auth-client/src/components/layout/Navbar.js"
 
 console.log("is the pages/Politician.js even loaded ? ")
 
@@ -23,6 +24,7 @@ function Politicians() {
     <div>
       <PoliticianForm getPoliticians={getPoliticians} />
       <PoliticianList politicians={politicians} />
+      {/* <Navbar /> */}
     </div>
   );
 };

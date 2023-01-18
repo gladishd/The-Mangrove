@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/politician": "pages/politician.js"
+  "/newLogin": "pages/newLogin.js",
+  "/": "pages/index.js",
+  "/api/ArcGISData": "pages/api/ArcGISData.js",
+  "/api/users": "pages/api/users.js"
 }

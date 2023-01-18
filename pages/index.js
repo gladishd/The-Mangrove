@@ -364,6 +364,8 @@ export default class Home extends React.Component {
   login = async e => {
     e.preventDefault()
     let { username, password } = this.state
+
+
     firebaseApp.auth().signInWithEmailAndPassword(username, password).then(async response => {
       var response = await axios.post(
         '/api/sessions',
@@ -379,6 +381,11 @@ export default class Home extends React.Component {
       .catch(err => {
         alert(err)
       })
+
+    await axios.post("http://localhost:5000/auth/login", {
+      username, password
+    })
+
     return;
   }
   render() {
