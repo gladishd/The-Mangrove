@@ -12,8 +12,13 @@ class Register extends React.Component {
     this.state = {
       email: '',
       password: '',
+      passwordVerify: '',
     };
     this.register = this.register.bind(this)
+  }
+
+  componentDidUpdate() {
+    console.log("the value on this.state is ", this.state)
   }
 
   //   const[email, setEmail] = useState("");
@@ -27,9 +32,11 @@ class Register extends React.Component {
     e.preventDefault();
 
     try {
-      const registerData = {
-        email, password, passwordVerify,
-      };
+      // const registerData = {
+      //   email, password, passwordVerify,
+      // };
+
+      const registerData = this.state;
 
       await axios.post("http://localhost:5000/auth/", registerData);
       // await getLoggedIn();
