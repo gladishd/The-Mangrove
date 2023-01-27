@@ -3,6 +3,7 @@ import axios from "axios";
 // import AuthContext from "../mern-auth-client/src/context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import Register from "../mern-auth-client/src/components/auth/Register.js"
+import LogOutBtn from "./api/LogOutBtn.js"
 
 class Login extends React.Component {
   constructor(props) {
@@ -44,8 +45,8 @@ class Login extends React.Component {
       console.log("the original page newlogin res is ", res)
 
       // await getLoggedIn();
-      // const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn");
-      // console.log("howIsDotDataTrue", howIsDotDataTrue)
+      const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn", { withCredentials: true });
+      console.log("howIsDotDataTrue", howIsDotDataTrue)
       // navigate("/");
 
     } catch (error) {
@@ -75,6 +76,7 @@ class Login extends React.Component {
           <button type="submit">Log in</button>
         </form>
         <Register />
+        <LogOutBtn />
       </div>
     );
   }
