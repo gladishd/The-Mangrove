@@ -32,13 +32,20 @@ class Login extends React.Component {
 
       console.log("The email is not defined. The email is defined.  ", loginData)
 
-      const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn");
-      console.log("loggedInRes is ", loggedInRes)
+      // const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn");
+      // console.log("loggedInRes is ", loggedInRes)
 
-      await axios.post("http://localhost:5000/auth/login", loginData);
+      // await axios.post("http://localhost:5000/auth/login", loginData);
+      let res = await axios.post("http://localhost:5000/auth/login", {
+        email: "withouspaces&registercommas@a.com",
+        password: "password"
+      }, { withCredentials: true });
+
+      console.log("the original page newlogin res is ", res)
+
       // await getLoggedIn();
-      const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn");
-      console.log("howIsDotDataTrue", howIsDotDataTrue)
+      // const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn");
+      // console.log("howIsDotDataTrue", howIsDotDataTrue)
       // navigate("/");
 
     } catch (error) {
