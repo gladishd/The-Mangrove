@@ -1,0 +1,1 @@
+{"c":["webpack"],"r":["pages/newLogin"],"m":["./mern-auth-client/src/components/auth/Register.js","./mern-auth-client/src/context/AuthContext.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fdeangladish%2FDa-Repo%2Fpages%2FnewLogin.js&page=%2FnewLogin!","./pages/api/LogOutBtn.js","./pages/newLogin.js"]}

@@ -116,7 +116,7 @@ export default class Home extends React.Component {
       let fileName = `${stringSearch}CountyEO`
       var data = require(`../public/data/States/${stringSearch}/County/${fileName}`);
       let filteredData = data.Sheet1.filter(element => {
-        console.warn("During filtering, ", element.County, county)
+        // console.warn("During filtering, ", element.County, county)
         return element.County == county
       })
       console.log("On fetchCountyOfState ", filteredData)
@@ -242,6 +242,7 @@ export default class Home extends React.Component {
     })
   }
   async dataFetchPoliticians(data) {
+    console.log("The dataFetchPoliticians function is fetching this data ", data)
     await this.setState({
       cookieValue: data,
     })
@@ -412,7 +413,13 @@ export default class Home extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="ProfilePageOld">
-          <main style={{ zIndex: '3', display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none" }}>
+          {
+            console.log("What is on this.state.cookieValue anyway? ", this.state.cookieValue)
+          }
+          <main style={{
+            zIndex: '3',
+            display: this.state.cookieValue && Object.keys(this.state.cookieValue).length == 0 ? "flex" : "none"
+          }}>
             <h1 className="title" style={{ zIndex: '3', color: 'white' }}>
               <img style={{ width: '200px', height: '200px' }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mangroves_at_sunset.jpg/1200px-Mangroves_at_sunset.jpg" />
             </h1>
@@ -773,7 +780,7 @@ export default class Home extends React.Component {
               })}
             {
               this.state.fileNameCounty && this.state.fileNameCounty.map(element => {
-                console.warn("The File name County element is ", element)
+                // console.warn("The File name County element is ", element)
                 return <a href={'/users?name=' + null} onClick={e => this.setSessionStorage(e, element)}>
                   <div className="card">
                     <img src={`https://source.unsplash.com/random/400x400`} alt='new' width={125} height={125} />
