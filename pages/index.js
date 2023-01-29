@@ -382,9 +382,9 @@ export default class Home extends React.Component {
         alert(err)
       })
 
-    await axios.post("http://localhost:5000/auth/login", {
-      username, password
-    })
+    // await axios.post("http://localhost:5000/auth/login", {
+    //   username, password
+    // })
 
     return;
   }
