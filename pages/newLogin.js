@@ -11,6 +11,7 @@ class Login extends React.Component {
     this.state = {
       email: '',
       password: '',
+      loginRes: null
     };
     this.login = this.login.bind(this)
   }
@@ -37,21 +38,34 @@ class Login extends React.Component {
       // console.log("loggedInRes is ", loggedInRes)
 
       // await axios.post("http://localhost:5000/auth/login", loginData);
+      // let res = await axios.post("http://mern-auth-server-8y95.onrender.com/auth/login", {
       let res = await axios.post("http://localhost:5000/auth/login", {
         email: "withouspaces&registercommas@a.com",
         password: "password"
       }, { withCredentials: true });
-
       console.log("the original page newlogin res is ", res)
-
       // await getLoggedIn();
+
+      // const howIsDotDataTrue = await axios.get("http://mern-auth-server-8y95.onrender.com/auth/loggedIn", { withCredentials: true });
       const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn", { withCredentials: true });
+
       console.log("howIsDotDataTrue", howIsDotDataTrue)
       // navigate("/");
-
     } catch (error) {
       console.error(error);
     }
+  }
+
+  async componentDidMount() {
+    // const loggedInRes = await axios.get("http://mern-auth-server-8y95.onrender.com/auth/loggedIn",
+    const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn",
+      {
+        withCredentials: true
+      });
+    console.log("The value of loggedINRes is ", loggedInRes)
+    this.setState({
+      loginRes: loggedInRes.data
+    })
   }
 
   render() {
@@ -77,6 +91,16 @@ class Login extends React.Component {
         </form>
         <Register />
         <LogOutBtn />
+        <div style={{ fontFamily: "initial", fontSize: "1.5em" }}>
+          <div style={{ textDecoration: "line-through" }}>
+            are we able to fetch the browser token? That's beside the point.
+          </div>
+          The server response token is
+          {
+            this.state.loginRes && "Logged In" || "Not Logged In"
+          }
+        </div>
+
       </div>
     );
   }
