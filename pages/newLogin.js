@@ -38,16 +38,16 @@ class Login extends React.Component {
       // console.log("loggedInRes is ", loggedInRes)
 
       // await axios.post("http://localhost:5000/auth/login", loginData);
-      // let res = await axios.post("http://mern-auth-server-8y95.onrender.com/auth/login", {
-      let res = await axios.post("http://localhost:5000/auth/login", {
+      // let res = await axios.post("http://localhost:5000/auth/login", {
+      let res = await axios.post("https://mern-auth-server-8y95.onrender.com/auth/login", {
         email: "withouspaces&registercommas@a.com",
         password: "password"
       }, { withCredentials: true });
       console.log("the original page newlogin res is ", res)
       // await getLoggedIn();
 
-      // const howIsDotDataTrue = await axios.get("http://mern-auth-server-8y95.onrender.com/auth/loggedIn", { withCredentials: true });
-      const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn", { withCredentials: true });
+      const howIsDotDataTrue = await axios.get("https://mern-auth-server-8y95.onrender.com/auth/loggedIn", { withCredentials: true });
+      // const howIsDotDataTrue = await axios.get("http://localhost:5000/auth/loggedIn", { withCredentials: true });
 
       console.log("howIsDotDataTrue", howIsDotDataTrue)
       // navigate("/");
@@ -57,8 +57,8 @@ class Login extends React.Component {
   }
 
   async componentDidMount() {
-    // const loggedInRes = await axios.get("http://mern-auth-server-8y95.onrender.com/auth/loggedIn",
-    const loggedInRes = await axios.get("http://localhost:5000/auth/loggedIn",
+    // const loggedInRes = await axios.get("https://localhost:5000/auth/loggedIn",
+    const loggedInRes = await axios.get("https://mern-auth-server-8y95.onrender.com/auth/loggedIn",
       {
         withCredentials: true
       });
