@@ -10,8 +10,8 @@
 // export const deletePost = (id) => axios.delete(`${url}/${id}`);
 import axios from 'axios';
 
-// const url = 'http://localhost:5000/posts';
-const url = 'https://project-mern-memories.onrender.com/posts';
+const url = 'http://localhost:5000/posts';
+// const url = 'https://project-mern-memories.onrender.com/posts';
 
 export const fetchPosts = () => {
   console.log("We are fetching with the 'input'", url)
