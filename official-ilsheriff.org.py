@@ -39,6 +39,10 @@ def scrape_county_information(url):
         "div", class_="person-phone").text.strip()
     print("the phone number element is going to be ", phone_number_element)
 
+    name_element = soup.find(
+        "div", class_="emp-content").text.strip()
+    print("the name element is going to be ", name_element)
+
     location_element = soup.find(
         "div", class_="person-priaddress").text.strip()
     print('does location element exist ', location_element)
