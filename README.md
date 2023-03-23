@@ -1,3 +1,7 @@
+python3 official-ilsheriff.org.py
+
+python3 official-wikipedia.org.py
+
 python3 beautiful-soup.py
 
 pip3 install spacy
