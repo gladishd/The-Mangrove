@@ -31,45 +31,34 @@ def scrape_county_information(url):
 
     soup = BeautifulSoup(response.content, "html.parser")
 
-    # county_name = soup.find("h1", class_="entry-title").text.strip()
-    # Extract the text and strip the white-space from it
     county_name = soup.find("h3").text.strip()
-    print("the county name is going to be ", county_name)
 
     phone_number_element = soup.find(
-        "div", class_="person-phone").text.strip()
-    print("the phone number element is going to be ", phone_number_element)
-
-    name_element = soup.find(
-        "div", class_="emp-content").text.strip()
-    print("the name element is going to be ", name_element)
+        "div", class_="person-phone")
+    phone_number = phone_number_element.text.strip() if phone_number_element else None
 
     location_element = soup.find(
-        "div", class_="person-priaddress").text.strip()
-    print('does location element exist ', location_element)
+        "div", class_="person-priaddress")
+    location = location_element.text.strip() if location_element else None
 
-    email = soup.find(
+    email_element = soup.find(
         "a", class_="social-icon email animate fa fa-envelope fa-fw")
-    if (email):
-        print('email is ', email)
+    email = email_element.get("href").replace(
+        "mailto:", "") if email_element else None
 
-    # return {"County Name": county_name, "Phone Number": phone_number, "Address": location}
+    return {"County Name": county_name, "Phone Number": phone_number, "Location": location, "Email": email}
 
 
-for county in counties:
+for county in counties[:3]:
     county["county_link"] = "https://www.ilsheriff.org" + county["county_link"]
-
-# for county in counties:
-#     county_info = scrape_county_information(county["county_link"])
-#     # county.update(county_info) # Python is linear so comment this out to access the rest of the counties
-
 
 with open('sheriffs.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['County Name', 'Phone Number', 'Location', 'Email'])
-    for county in counties:
+    for i, county in enumerate(counties[:3]):
         county_info = scrape_county_information(county["county_link"])
         writer.writerow([county_info.get('County Name', ''),
                          county_info.get('Phone Number', ''),
-                         county_info.get('Address', ''),
+                         county_info.get('Location', ''),
                          county_info.get('Email', '')])
+        print(f"Scraped data for county {i + 1} of 3")

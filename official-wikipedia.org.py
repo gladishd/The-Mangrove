@@ -1,5 +1,6 @@
 # If it doesn't have a field,
 
+import openpyxl
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,7 +22,7 @@ def scrape_county_links(url):
     count = 0
 
     for row in table.find_all("tr")[1:]:
-        if count >= 1:
+        if count >= 2:
             break
         cells = row.find_all("td")
         beautifulSoupObject = cells[0].find("a")
@@ -67,3 +68,21 @@ for link in county_links:
     print("the refined link in county link is: ", link)
 
 # I've got the links. That is about 90% of the scraping.
+
+# create a new workbook
+wb = openpyxl.Workbook()
+
+# select the active worksheet
+ws = wb.active
+
+# write headers to the first row of the worksheet
+ws.append(["County Name", "County Link"])
+
+# iterate through the county_links list and write the data to the worksheet
+for link in county_links:
+    # extract the county name from the link
+    county_name = link.split("/")[-1].replace("_", " ").title()
+    ws.append([county_name, link])
+
+# save the workbook to a file
+wb.save("county_links.xlsx")
