@@ -23,8 +23,12 @@ for div in member_divs:
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # Get the representative's name
+    links_div = soup.find('a', {'class': 'notranslate'})
+    print("https://ilga.gov" + links_div['href'])
+
     name_div = soup.find('span', {'class': 'heading notranslate'})
     name = name_div.text.strip()
+    print(name)
 
     # Get the representative's district number
     district_span1 = soup.find(
@@ -36,3 +40,23 @@ for div in member_divs:
 
 # Save the workbook
 wb.save('ilga_members.xlsx')
+
+
+url = "https://ilga.gov/senate/Senator.asp?MemberID=3177"
+response = requests.get(url)
+
+if response.status_code != 200:
+    print(f"Failed to fetch {url}")
+    exit()
+
+soup = BeautifulSoup(response.content, "html.parser")
+print(soup)
+
+# Scrape the desired information from the page
+senator_name = soup.select_one(".row h1").text.strip()
+district_info = soup.select_one(".district").text.strip()
+
+print("Senator Name:", senator_name)
+print("District Info:", district_info)
+
+# Scrape other desired information from the page

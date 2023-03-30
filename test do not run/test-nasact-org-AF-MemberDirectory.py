@@ -1,9 +1,11 @@
+# https://www.nasact.org/robots.txt
+
 import requests
 from bs4 import BeautifulSoup
 
 # Needs Re-direct.
 # url = "https://www.nasact.org/AF_MemberDirectory.asp"
-url = "https://www.nasact.org/directory_search.asp?id=28"
+# url = "https://www.nasact.org/directory_search.asp?id=28"
 
 # Make a GET request to the page
 # response = requests.get(requests.get(url).url)
@@ -14,7 +16,8 @@ url = "https://www.nasact.org/directory_search.asp?id=28"
 # https://www.nasact.org/AF_MemberDirectory.asp.
 # What is the function?
 
-url = 'https://nasact.membershipsoftware.org/directory_search.asp?id=28'
+# url = 'https://nasact.membershipsoftware.org/directory_search.asp?id=28'
+url = 'https://nasact.membershipsoftware.org/directory_search.asp?id=2'
 response = requests.get(url)
 
 if response.status_code == 200:
